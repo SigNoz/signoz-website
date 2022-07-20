@@ -10,19 +10,15 @@ const useDevice = (): DeviceDetection => ({
   isDesktop,
 });
 
-import { ReactNode, useLayoutEffect, useRef, useState } from "react";
+import React, { ReactElement, useLayoutEffect, useRef, useState } from "react";
 
 export interface DeviceProps {
   desktop?: boolean;
   mobile?: boolean;
-  children: ReactNode;
+  children: ReactElement;
 }
 
-const Device = ({
-  desktop,
-  mobile,
-  children,
-}: DeviceProps): ReactNode | null => {
+const Device = ({ desktop, mobile, children }: DeviceProps): JSX.Element => {
   const { isMobile } = useDevice();
   const [isMobileState, setIsMobileState] = useState<boolean>(isMobile);
   const resizeTimer = useRef<NodeJS.Timeout>();
@@ -42,9 +38,11 @@ const Device = ({
     };
   }, []);
 
-  return (isMobileState && mobile) || (!isMobileState && desktop)
-    ? children
-    : null;
+  return (isMobileState && mobile) || (!isMobileState && desktop) ? (
+    children
+  ) : (
+    <React.Fragment />
+  );
 };
 
 export default Device;
