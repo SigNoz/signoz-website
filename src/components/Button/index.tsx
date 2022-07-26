@@ -3,10 +3,12 @@ import cx from "classnames";
 
 const Button = ({
   onClick,
-  variant = "primary",
+  variant = "secondary",
   type = "button",
   disabled = false,
   children = "",
+  fullWidth,
+  className,
 }: ButtonProps): JSX.Element => {
   const onKeyDownHandler: React.KeyboardEventHandler<HTMLButtonElement> =
     useCallback(
@@ -25,7 +27,18 @@ const Button = ({
   return (
     <button
       onKeyDown={onKeyDownHandler}
-      className=""
+      type={type}
+      className={cx(
+        {
+          "bg-signoz-primary text-white": variant === "primary",
+          "bg-white text-black border border-solid border-signoz-medium":
+            variant === "secondary",
+          "w-full": fullWidth,
+          "opacity-50 cursor-not-allowed": disabled,
+        },
+        "rounded-lg px-6 py-4 text-sm font-semibold",
+        className
+      )}
       tabIndex={0}
       onClick={onClick}
       disabled={disabled}
@@ -41,6 +54,8 @@ interface ButtonProps {
   disabled?: boolean;
   children: React.ReactNode;
   type?: "button" | "submit" | "reset";
+  fullWidth?: boolean;
+  className?: string;
 }
 
 export default Button;
