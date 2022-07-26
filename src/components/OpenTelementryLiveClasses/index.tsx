@@ -21,8 +21,8 @@ const OpenTelementryLiveClasses = (): JSX.Element => {
         />
       </div>
 
-      <Card className="bg-signoz-medium rounded-r-none rounded-l-none md:w-full md:px-14 md:pt-12">
-        <Title className="text-white md:text-3xl">
+      <Card className="bg-signoz-medium rounded-tl-none rounded-tr-none md:w-full md:px-14 md:pt-12">
+        <Title className="text-white text-2xl md:text-3xl">
           OpenTelemetry Live MasterClasses
         </Title>
         <div className="text-signoz-light mt-4 font-openSans font-light text-base">

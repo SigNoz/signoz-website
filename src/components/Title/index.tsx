@@ -12,7 +12,7 @@ const Title = ({
   return (
     <div
       className={cx(
-        "font-WorkSans font-bold text-base md:text-2xl leading-tight tracking-tight not-italic",
+        "font-WorkSans font-bold text-2xl md:text-2xl leading-tight tracking-tight not-italic",
         className
       )}
       style={style}

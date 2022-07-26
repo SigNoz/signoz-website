@@ -22,14 +22,15 @@ const FAQ = () => {
   ];
   return (
     <>
-      <Title className="text-center" isLastWordColor>
-        Frequently asked questions
-      </Title>
-      <div className="font-openSans text-center mt-4 font-light text-base text-signoz-pure">
-        If you are hesitating, do not worry - we are here to explain everything
-        you might want to know. Let us help!{" "}
+      <div className="flex flex-col items-center justify-center text-center">
+        <Title className="text-2xl" isLastWordColor>
+          Frequently asked questions
+        </Title>
+        <div className="font-openSans text-center mt-4 font-light text-base text-signoz-pure">
+          If you are hesitating, do not worry - we are here to explain
+          everything you might want to know. Let us help!{" "}
+        </div>
       </div>
-
       <div className="p-4">
         {Faqs.map((faq) => (
           <Accordion

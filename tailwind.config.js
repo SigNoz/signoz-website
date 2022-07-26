@@ -42,6 +42,12 @@ module.exports = {
         6: "6px",
         8: "8px",
       },
+      letterSpacing: {
+        lightTigher: `-0.015em`,
+      },
+      lineHeight: {
+        150: "150%",
+      },
     },
     backgroundPosition: {
       "bottom-1": "1rem",
