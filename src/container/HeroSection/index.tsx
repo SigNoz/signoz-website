@@ -1,14 +1,20 @@
 import Button from "components/Button";
 import Subtext from "components/SubText";
 import Title from "components/Title";
-import React from "react";
+import React, { useCallback } from "react";
 import VideoPlayer from "components/VideoPlayer";
 import { useIsDesktop } from "hooks/useDeviceType";
+import { bookDemoLink } from "./util";
 
 const HeroSection = (): JSX.Element => {
   const isDesktop = useIsDesktop();
 
   const PlayIconHeightController = isDesktop ? "72px" : "30px";
+
+  const onBookDemoHandler = useCallback(() => {
+    window.open(bookDemoLink);
+  }, []);
+
   return (
     <div className="bg-[url('/images/bglines.png')] bg-no-repeat bg-contain">
       <div
@@ -32,6 +38,7 @@ const HeroSection = (): JSX.Element => {
             className="mt-4 md:mt-0 mb-8 md:mb-0"
             fullWidth
             variant="secondary"
+            onClick={onBookDemoHandler}
           >
             Book a demo
           </Button>

@@ -7,41 +7,97 @@ const TrustedTeams = (): JSX.Element => {
     {
       src: "/images/trusted-teams/cafe24.png",
       alt: "Cafe24",
-    },
-    {
-      src: "/images/trusted-teams/fi.png",
-      alt: "Cafe24",
+      width: 64.8,
+      height: 24,
     },
     {
       src: "/images/trusted-teams/naver.png",
-      alt: "Cafe24",
+      alt: "naver",
+      width: 68,
+      height: 12,
+    },
+    {
+      src: "/images/trusted-teams/fi.png",
+      alt: "fi",
+      width: 24,
+      height: 24,
+    },
+    {
+      src: "/images/trusted-teams/turvo.png",
+      alt: "turvo",
+      width: 92.5,
+      height: 24,
     },
     {
       src: "/images/trusted-teams/outplay.png",
-      alt: "Cafe24",
+      alt: "outplay",
+      width: 105.68,
+      height: 24,
     },
     {
       src: "/images/trusted-teams/cafe24.png",
       alt: "Cafe24",
+      width: 64.8,
+      height: 24,
+    },
+    {
+      src: "/images/trusted-teams/fi.png",
+      alt: "fi",
+      width: 24,
+      height: 24,
+    },
+    {
+      src: "/images/trusted-teams/cafe24.png",
+      alt: "Cafe24",
+      width: 64.8,
+      height: 24,
+    },
+    {
+      src: "/images/trusted-teams/naver.png",
+      alt: "naver",
+      width: 68,
+      height: 12,
+    },
+    {
+      src: "/images/trusted-teams/fi.png",
+      alt: "fi",
+      width: 24,
+      height: 24,
+    },
+    {
+      src: "/images/trusted-teams/turvo.png",
+      alt: "turvo",
+      width: 92.5,
+      height: 24,
+    },
+    {
+      src: "/images/trusted-teams/naver.png",
+      alt: "naver",
+      width: 68,
+      height: 12,
     },
   ];
 
   return (
-    <div>
-      <Subtext>Trusted by teams at</Subtext>
-      <div>
-        {imagesSrc.map((image, index) => (
-          <div key={index}>
-            <NextImage
-              src={image.src}
-              alt={image.alt}
-              key={image.alt}
-              layout="intrinsic"
-              width={50}
-              height={50}
-            />
-          </div>
-        ))}
+    <div className="md:max-w-[1156px] m-auto w-full">
+      <Subtext className="font-light text-center mb-4">
+        Trusted by teams at
+      </Subtext>
+      <div className="shadow-1 bg-white">
+        <div className="p-4 flex flex-wrap gap-8 md:gap-[50px] items-center justify-center md:py-9 md:px-14">
+          {imagesSrc.map((image, index) => (
+            <div key={index + image.alt}>
+              <NextImage
+                src={image.src}
+                alt={image.alt}
+                key={image.alt}
+                layout="intrinsic"
+                width={image.width}
+                height={image.height}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
