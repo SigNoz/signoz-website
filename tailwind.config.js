@@ -24,7 +24,7 @@ module.exports = {
         "signoz-dark-light": "#74797F",
         "signoz-pure": "#051326",
         "signoz-light": "#FAFAFA",
-        "white-light": "#D9D9D9",
+        "signoz-light-pink": "##F0DAD5",
       },
       backgroundImage: {
         "hero-pattern-gradient":
