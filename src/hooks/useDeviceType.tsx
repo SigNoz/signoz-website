@@ -26,11 +26,11 @@ const useIsDesktopSSR = () => {
   return useContext(MediaQueryContext) !== "mobile";
 };
 
-const useIsDesktop = () => {
+const useIsDesktop = (minWidth = 768) => {
   if (typeof window === "undefined") {
     return useIsDesktopSSR();
   }
-  return useMediaQuery("only screen and (min-width: 768px)");
+  return useMediaQuery(`only screen and (min-width: ${minWidth}px)`);
 };
 
 export { DeviceTypeProvider, useIsDesktop };
