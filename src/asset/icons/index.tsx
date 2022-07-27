@@ -3,11 +3,15 @@ import Plus from "./icons/plus";
 import WhySignozCard from "./icons/whysignozcard";
 import ShieldIcon from "./icons/shield";
 import DataStorage from "./icons/dataStorage";
-import NoComplianceDocument from "./icons/noComplianceDocument";
-import ShieldWithTick from "./icons/shieldWithTick";
+import NoComplianceDocument from "./icons/nocompliancedocument";
+import ShieldWithTick from "./icons/shieldwithTick";
 import ComplianceDocumentTick from "./icons/complianceDocumentTick";
 import Share from "./icons/Share";
 import Linkedin from "./icons/linkedin";
+import Logo from "./icons/logo";
+import HamburgerMenu from "./icons/hamburgermenu";
+import CloseIcon from "./icons/closeicon";
+import GithubIcon from "./icons/github";
 
 type Icons =
   | "plus"
@@ -19,7 +23,11 @@ type Icons =
   | "shieldWithTick"
   | "compliancedocumenttick"
   | "share"
-  | "linkedin";
+  | "linkedin"
+  | "logo"
+  | "hamburgermenu"
+  | "closeIcon"
+  | "github";
 
 const getIcons = (
   icons: Icons,
@@ -48,6 +56,14 @@ const getIcons = (
       return <Share className={className} />;
     case "linkedin":
       return <Linkedin className={className} />;
+    case "logo":
+      return <Logo className={className} />;
+    case "hamburgermenu":
+      return <HamburgerMenu className={className} />;
+    case "closeIcon":
+      return <CloseIcon className={className} />;
+    case "github":
+      return <GithubIcon className={className} />;
     default: {
       throw new Error("Icon not found");
     }
