@@ -78,7 +78,7 @@ const WhySignozMore = () => {
                     <div className="text-base text-signoz-pure font-semibold md:text-2xl md:font-bold">
                       {title}
                     </div>
-                    <div className="text-sm text-signoz-dark-intermediate mt-2 tracking-lightTigher font-light">
+                    <div className="text-sm md:text-base text-signoz-dark-intermediate mt-2 tracking-lightTigher font-light">
                       {text}
                     </div>
                   </div>
