@@ -1,5 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -55,8 +53,6 @@ module.exports = {
       top: "1rem",
     },
   },
-  experimental: {
-    optimizeUniversalDefaults: true,
-  },
+  experimental: {},
   plugins: [require("@tailwindcss/line-clamp")],
 };

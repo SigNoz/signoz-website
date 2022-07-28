@@ -34,12 +34,10 @@ const getIcons = (
   className?: IconProps["className"]
 ): JSX.Element => {
   switch (icons) {
-    case "plus": {
+    case "plus":
       return <Plus className={className} />;
-    }
-    case "minus": {
+    case "minus":
       return <Minus className={className} />;
-    }
     case "whysignozcard":
       return <WhySignozCard className={className} />;
     case "shield":
