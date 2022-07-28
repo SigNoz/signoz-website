@@ -4,7 +4,7 @@ import WhySignozCard from "./icons/whysignozcard";
 import ShieldIcon from "./icons/shield";
 import DataStorage from "./icons/dataStorage";
 import NoComplianceDocument from "./icons/compliancedocument";
-import ShieldWithTick from "./icons/shieldwithTick";
+import ShieldWithTick from "./icons/shieldwiththeTick";
 import ComplianceDocumentTick from "./icons/complianceDocumentTick";
 import Share from "./icons/Share";
 import Linkedin from "./icons/linkedin";
