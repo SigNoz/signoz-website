@@ -31,9 +31,9 @@ const Feedback = (): JSX.Element => {
           <Title className="text-signoz-primary-light mt-2">
             Rachid Zarouali
           </Title>
-          <SubText className="text-signoz-dark-intermediate">
+          <div className="text-signoz-dark-intermediate text-sm md:text-base">
             Docker Captain, Microsoft Azure MVP
-          </SubText>
+          </div>
           <div className="mt-2">{getIcons("linkedin")}</div>
         </div>
       </div>

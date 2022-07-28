@@ -1,18 +1,13 @@
 import Card from "components/Card";
-import Title, { TitleProps } from "components/Title";
+import { TitleProps } from "components/Title";
 import ToolTipPollygon from "components/TooltipPolygon";
 
 const Content = ({ children }: ContentProps) => {
   return (
     <Card className="relative">
-      <Title
-        style={{
-          fontWeight: 600,
-        }}
-        className="text-center font-openSans"
-      >
+      <div className="text-center font-semibold md:text-xl font-openSans">
         {children}
-      </Title>
+      </div>
       <ToolTipPollygon />
     </Card>
   );

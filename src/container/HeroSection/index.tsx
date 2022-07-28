@@ -1,5 +1,4 @@
 import Button from "components/Button";
-import Subtext from "components/SubText";
 import Title from "components/Title";
 import React, { useCallback } from "react";
 import VideoPlayer from "components/VideoPlayer";
@@ -26,10 +25,10 @@ const HeroSection = (): JSX.Element => {
         <Title className="text-2xl md:text-5xl">
           Much more than an application monitoring tool
         </Title>
-        <Subtext className="mt-4">
+        <div className="mt-4 md:font-light md:text-2xl text-base">
           Understand the performance of your applications and identify any
           potential problems before your users
-        </Subtext>
+        </div>
         <div className="flex flex-col md:flex-row md:w-[25rem] md:m-auto md:mt-8">
           <Button className="mt-8 md:mt-0 md:mr-6" fullWidth variant="primary">
             Get started for free

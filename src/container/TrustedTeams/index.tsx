@@ -1,6 +1,7 @@
 import React from "react";
 import Subtext from "components/SubText";
 import NextImage from "next/image";
+import Card from "components/Card";
 
 const TrustedTeams = (): JSX.Element => {
   const imagesSrc = [
@@ -83,7 +84,7 @@ const TrustedTeams = (): JSX.Element => {
       <Subtext className="font-light text-center mb-4">
         Trusted by teams at
       </Subtext>
-      <div className="shadow-1 bg-white">
+      <Card className="w-[95%] m-auto shadow-1">
         <div className="p-4 flex flex-wrap gap-8 md:gap-[50px] items-center justify-center md:py-9 md:px-14">
           {imagesSrc.map((image, index) => (
             <div key={index + image.alt}>
@@ -98,7 +99,7 @@ const TrustedTeams = (): JSX.Element => {
             </div>
           ))}
         </div>
-      </div>
+      </Card>
     </div>
   );
 };

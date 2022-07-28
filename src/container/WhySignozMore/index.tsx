@@ -45,7 +45,7 @@ const WhySignozMore = () => {
               <Title className="text-center md:w-80 md:text-left">
                 Why is SigNoz more than an APM?
               </Title>
-              <Subtext className="w-80 mt-6">
+              <Subtext className="w-80 mt-6 md:font-light md:text-base">
                 We provide all features like metrics and request traces which
                 APMs provide, in addition to filtering on trace data and custom
                 aggregation on it.
@@ -58,7 +58,7 @@ const WhySignozMore = () => {
               <Title className="text-center md:w-80 md:text-left">
                 Why is SigNoz more than an APM?
               </Title>
-              <Subtext className="md:w-80 mt-4 text-center w-full">
+              <Subtext className="md:w-80 mt-4 font-light text-center w-full">
                 We provide all features like metrics and request traces which
                 APMs provide, in addition to filtering on trace data and custom
                 aggregation on it.
@@ -78,7 +78,7 @@ const WhySignozMore = () => {
                     <div className="text-base text-signoz-pure font-semibold md:text-2xl md:font-bold">
                       {title}
                     </div>
-                    <div className="text-sm text-signoz-dark-intermediate mt-2 tracking-lightTigher">
+                    <div className="text-sm text-signoz-dark-intermediate mt-2 tracking-lightTigher font-light">
                       {text}
                     </div>
                   </div>
