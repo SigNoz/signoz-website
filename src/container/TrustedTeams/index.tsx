@@ -84,7 +84,7 @@ const TrustedTeams = (): JSX.Element => {
       <Subtext className="font-light text-center mb-4">
         Trusted by teams at
       </Subtext>
-      <Card className="w-[95%] m-auto shadow-1">
+      <Card className="w-[95%] m-auto shadow-1 mb-10">
         <div className="p-4 flex flex-wrap gap-8 md:gap-[50px] items-center justify-center md:py-9 md:px-14">
           {imagesSrc.map((image, index) => (
             <div key={index + image.alt}>
