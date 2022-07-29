@@ -21,7 +21,7 @@ export function ErrorResponseHandler(error: AxiosError): ErrorResponse {
         };
       }
 
-      const { errors, error } = data;
+      const { errors, error } = data as any;
 
       const errorMessage =
         Array.isArray(errors) && errors.length >= 1 ? errors[0].msg : error;
