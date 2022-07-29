@@ -22,9 +22,11 @@ const SubscribeToUpdates = () => {
 
   return (
     <form className="md:max-w-[920px] m-auto" onSubmit={onClickHandler}>
-      <Card className="flex gap-4 flex-col md:flex-row">
+      <Card className="flex gap-4 flex-col md:flex-row p-9">
         <div className="md:flex-1 md:items-center md:flex">
-          <Title className="text-center">Subscribe to receive updates</Title>
+          <Title className="md:text-left text-center line-clamp-2 w-full md:w-2/3">
+            Subscribe to receive updates
+          </Title>
         </div>
         <div className="md:flex-1">
           <EmailInput

@@ -12,6 +12,9 @@ import Logo from "./icons/logo";
 import HamburgerMenu from "./icons/hamburgermenu";
 import CloseIcon from "./icons/closeicon";
 import GithubIcon from "./icons/github";
+import ArrowDown from "./icons/arrowDown";
+import ArrowUp from "./icons/arrowUp";
+import LogoWithText from "./icons/logowithtext";
 
 type Icons =
   | "plus"
@@ -26,8 +29,11 @@ type Icons =
   | "linkedin"
   | "logo"
   | "hamburgermenu"
-  | "closeIcon"
-  | "github";
+  | "close"
+  | "github"
+  | "arrowDown"
+  | "arrowUp"
+  | "logowithtext";
 
 const getIcons = (
   icons: Icons,
@@ -58,10 +64,16 @@ const getIcons = (
       return <Logo className={className} />;
     case "hamburgermenu":
       return <HamburgerMenu className={className} />;
-    case "closeIcon":
+    case "close":
       return <CloseIcon className={className} />;
     case "github":
       return <GithubIcon className={className} />;
+    case "arrowDown":
+      return <ArrowDown className={className} />;
+    case "arrowUp":
+      return <ArrowUp className={className} />;
+    case "logowithtext":
+      return <LogoWithText className={className} />;
     default: {
       throw new Error("Icon not found");
     }

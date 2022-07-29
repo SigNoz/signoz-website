@@ -17,7 +17,7 @@ const EmailInput = ({
       type={"email"}
       placeholder={placeholder}
       className={cx(
-        "h-12 w-full px-4 py-3 border border-solid border-signoz-medium rounded-lg text-signoz-dark-light text-base font-light font-openSans",
+        "h-12 w-full px-4 py-3 border border-solid border-signoz-medium rounded-lg text-signoz-dark-light text-base font-light font-openSans border-opacity-5",
         className
       )}
       required={required}

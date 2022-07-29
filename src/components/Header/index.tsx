@@ -50,7 +50,7 @@ const Header = (): JSX.Element => {
         </div>
         <PropertyControlledComponent controllerProperty={!isDesktop}>
           <div onClick={onToggleHandler} className="cursor-pointer">
-            {isOpen ? getIcons("closeIcon") : getIcons("hamburgermenu")}
+            {isOpen ? getIcons("close") : getIcons("hamburgermenu")}
           </div>
         </PropertyControlledComponent>
       </div>
