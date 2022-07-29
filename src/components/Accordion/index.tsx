@@ -24,7 +24,12 @@ const Accordion = ({ expandableText, text, className }: AccordionProps) => {
       )}
     >
       <div className="flex">
-        <div className="flex-1 font-openSans font-normal text-base leading-relaxed mr-3 ">
+        <div
+          className="flex-1 font-openSans text-base leading-relaxed mr-3"
+          style={{
+            fontWeight: isOpen ? "600" : "400",
+          }}
+        >
           {text}
         </div>
         <div className="flex justify-center items-center">
@@ -33,7 +38,7 @@ const Accordion = ({ expandableText, text, className }: AccordionProps) => {
       </div>
 
       {isOpen && (
-        <div className="text-signoz-dark-intermediate font-openSans text-sm mt-3">
+        <div className="text-signoz-dark-intermediate font-semibold font-openSans text-sm mt-3">
           {expandableText}
         </div>
       )}
