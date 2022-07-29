@@ -11,12 +11,9 @@ const Accordion = ({ expandableText, text, className }: AccordionProps) => {
 
   return (
     <div
-      style={{
-        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.03)",
-      }}
       onClick={onToggleHandler}
       className={cx(
-        "flex py-6 px-4 bg-white cursor-pointer flex-col",
+        "flex py-6 px-4 bg-white cursor-pointer flex-col shadow-1 mt-3",
         {
           "text-signoz-primary": isOpen,
         },
