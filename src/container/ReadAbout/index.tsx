@@ -11,10 +11,10 @@ const OutPlay = (): JSX.Element => {
     <div>
       {/* <div className="bg-signoz-secondary-light">
         <NextImage
-          src={"/images/outPlay.jpg"}
+          src={"/images/readabout/outplay.png"}
           layout="intrinsic"
-          width={176}
-          height={40}
+          width={700}
+          height={200}
         />
       </div> */}
       <Card>

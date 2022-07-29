@@ -22,11 +22,13 @@ module.exports = {
         "signoz-dark-light": "#74797F",
         "signoz-pure": "#051326",
         "signoz-light": "#FAFAFA",
-        "signoz-light-pink": "##F0DAD5",
+        "signoz-light-pink": "#F0DAD5",
       },
       backgroundImage: {
         "hero-pattern-gradient":
           "linear-gradient(0deg, rgba(19, 39, 66, 0.008) -18.5%, rgba(246, 170, 152, 0.128) 25.41%, rgba(250, 250, 250, 0.4) 104.41%),url('/images/whysignozmore.jpg')",
+        "card-pattern-gradient":
+          "linear-gradient(0deg, rgba(250, 250, 250, 0.4) -18.5%, rgba(246, 170, 152, 0.128) 25.41%, rgba(19, 39, 66, 0.008) 104.41%),url('/images/coloredbglines.png')",
       },
       boxShadow: {
         1: "0px 8px 24px 4px rgba(0, 0, 0, 0.05)",
@@ -45,6 +47,9 @@ module.exports = {
       },
       lineHeight: {
         150: "150%",
+      },
+      borderRadius: {
+        top1: "0.6rem 0.6rem 0rem 0rem",
       },
     },
     backgroundPosition: {

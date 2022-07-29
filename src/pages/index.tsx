@@ -4,6 +4,8 @@ import GetLockedWithVendors from "container/GetLockedWithVendors";
 import WhySignozMore from "container/WhySignozMore";
 import HeroSection from "container/HeroSection";
 import TrustedTeams from "container/TrustedTeams";
+import Tutorials from "container/Tutorials";
+import LatestBlogPosts from "container/LatestBlogPost";
 
 const HomePage = () => {
   return (
@@ -14,6 +16,10 @@ const HomePage = () => {
       <TrustedTeams />
       <WhySignozMore />
       <div className="w-[95%] m-auto">
+        <div className="mt-16 mb-16">
+          <Tutorials />
+        </div>
+        <LatestBlogPosts />
         <div className="mb-16">
           <GetLockedWithVendors />
         </div>

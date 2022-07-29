@@ -6,6 +6,8 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { headerElements, leftItems, rightItems } from "./config";
 import { useIsDesktop } from "hooks/useDeviceType";
+import { useQuery } from "@tanstack/react-query";
+import getRepoInfo from "api/getRepoInfo";
 
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),
@@ -14,6 +16,9 @@ const PropertyControlledComponent = dynamic(
 
 const Header = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
+  const repoInfoResult = useQuery({
+    queryFn: getRepoInfo,
+  });
 
   const onToggleHandler = () => {
     setIsOpen((state) => !state);
@@ -22,6 +27,12 @@ const Header = (): JSX.Element => {
   const router = useRouter();
 
   const isDesktop = useIsDesktop(980);
+
+  const onGithubClickHandler = () => {
+    window.open(repoInfoResult.data?.payload?.svn_url, "_blank");
+  };
+
+  const repoCount = repoInfoResult.data?.payload?.stargazers_count || "-";
 
   return (
     <header
@@ -49,7 +60,6 @@ const Header = (): JSX.Element => {
           <div className="flex flex-col gap-6">
             {headerElements.map(({ name, path }) => {
               const isActive = router.pathname === path;
-
               return (
                 <ul key={name}>
                   <li
@@ -64,10 +74,14 @@ const Header = (): JSX.Element => {
                 </ul>
               );
             })}
-            <div className="flex gap-2">{getIcons("github")}6,699</div>
+            <div onClick={onGithubClickHandler} className="flex gap-2">
+              {getIcons("github")}
+              {repoCount}
+            </div>
           </div>
         </div>
       </PropertyControlledComponent>
+
       <PropertyControlledComponent controllerProperty={isDesktop}>
         <div className="w-full justify-around items-center flex">
           <div className="flex gap-12">
@@ -89,8 +103,12 @@ const Header = (): JSX.Element => {
             })}
           </div>
           <div className="flex gap-12">
-            <div className="flex gap-2 items-center font-bold cursor-pointer">
-              {getIcons("github")}6999
+            <div
+              onClick={onGithubClickHandler}
+              className="flex gap-2 items-center font-bold cursor-pointer"
+            >
+              {getIcons("github")}
+              {repoCount}
             </div>
             {rightItems.map(({ name, path }) => {
               const isActive = router.pathname === path;

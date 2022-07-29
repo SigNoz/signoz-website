@@ -1,6 +1,5 @@
 import React from "react";
 import NextImage from "next/image";
-import Title from "components/Title";
 import Subtext from "components/SubText";
 
 const AuthorBy = (): JSX.Element => {
@@ -11,10 +10,13 @@ const AuthorBy = (): JSX.Element => {
         layout="intrinsic"
         width={48}
         height={48}
+        className="rounded-full"
       />
       <div>
-        <Title>Pawan Bhadauria</Title>
-        <Subtext>VP - Engineering, Outplay</Subtext>
+        <div className="text-signoz-medium font-semibold text-base">
+          Pawan Bhadauria
+        </div>
+        <Subtext className="font-light">VP - Engineering, Outplay</Subtext>
       </div>
     </div>
   );
