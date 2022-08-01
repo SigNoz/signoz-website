@@ -1,10 +1,12 @@
 import Card from "components/Card";
 import { TitleProps } from "components/Title";
 import ToolTipPollygon from "components/TooltipPolygon";
+import cx from "classnames";
+import React from "react";
 
-const Content = ({ children }: ContentProps) => {
+const Content = ({ children, className }: ContentProps) => {
   return (
-    <Card className="relative">
+    <Card className={cx("relative", className)}>
       <div className="text-center font-semibold md:text-xl font-openSans">
         {children}
       </div>
@@ -14,7 +16,8 @@ const Content = ({ children }: ContentProps) => {
 };
 
 interface ContentProps {
-  children: TitleProps["children"];
+  children: React.ReactNode;
+  className?: string;
 }
 
 export default Content;

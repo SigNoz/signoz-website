@@ -15,6 +15,8 @@ import GithubIcon from "./icons/github";
 import ArrowDown from "./icons/arrowDown";
 import ArrowUp from "./icons/arrowUp";
 import LogoWithText from "./icons/logowithtext";
+import ArrowLeft from "./icons/arrowLeft";
+import ArrowRight from "./icons/arrowRight";
 
 type Icons =
   | "plus"
@@ -33,7 +35,9 @@ type Icons =
   | "github"
   | "arrowDown"
   | "arrowUp"
-  | "logowithtext";
+  | "logowithtext"
+  | "arrowLeft"
+  | "arrowRight";
 
 const getIcons = (
   icons: Icons,
@@ -74,6 +78,10 @@ const getIcons = (
       return <ArrowUp className={className} />;
     case "logowithtext":
       return <LogoWithText className={className} />;
+    case "arrowLeft":
+      return <ArrowLeft className={className} />;
+    case "arrowRight":
+      return <ArrowRight className={className} />;
     default: {
       throw new Error("Icon not found");
     }

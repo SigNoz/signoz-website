@@ -6,6 +6,8 @@ import HeroSection from "container/HeroSection";
 import TrustedTeams from "container/TrustedTeams";
 import Tutorials from "container/Tutorials";
 import LatestBlogPosts from "container/LatestBlogPost";
+import ReadAbout from "container/ReadAbout";
+import SignozFeedback from "container/SignozFeedback";
 
 const HomePage = () => {
   return (
@@ -17,8 +19,14 @@ const HomePage = () => {
       <WhySignozMore />
       <div className="w-[95%] m-auto">
         <div className="mt-16 mb-16">
+          <ReadAbout />
+        </div>
+        <div className="mt-16 mb-16">
           <Tutorials />
         </div>
+      </div>
+      <SignozFeedback />
+      <div className="w-[95%] m-auto">
         <LatestBlogPosts />
         <div className="mb-16">
           <GetLockedWithVendors />

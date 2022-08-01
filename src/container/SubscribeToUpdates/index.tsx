@@ -4,13 +4,20 @@ import Button from "components/Button";
 import Card from "components/Card";
 import { useCallback, useState } from "react";
 import { isValidEmail } from "./utils";
+import sendSubscribeEmail from "api/sendSubscribeEmail";
+
 const SubscribeToUpdates = () => {
   const [email, setEmail] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const onClickHandler: React.FormEventHandler<HTMLFormElement> = useCallback(
-    (event) => {
+    async (event) => {
       event.preventDefault();
-      console.log(email);
+      setLoading(true);
+      await sendSubscribeEmail({
+        email,
+      });
+      setLoading(false);
     },
     [email]
   );
@@ -38,7 +45,7 @@ const SubscribeToUpdates = () => {
         </div>
         <div>
           <Button
-            disabled={!isValidEmail(email)}
+            disabled={!isValidEmail(email) || loading}
             fullWidth
             type="submit"
             variant="primary"

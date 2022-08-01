@@ -2,12 +2,20 @@ import React from "react";
 import Content from "./Content";
 import Image from "next/image";
 import Title from "components/Title";
-import SubText from "components/SubText";
 import getIcons from "asset/icons";
+import { useIsDesktop } from "hooks/useDeviceType";
 
 const Feedback = (): JSX.Element => {
+  const isDesktop = useIsDesktop();
+
   return (
-    <div className="p-4 bg-signoz-light bg-[url('/images/QuotationMark.png')] bg-no-repeat md:bg-[length:10rem] bg-[length:8rem] bg-left-1">
+    <div
+      style={{
+        backgroundPositionX: isDesktop ? "20%" : "10%",
+        backgroundPositionY: isDesktop ? "0%" : "10%",
+      }}
+      className="p-4 bg-signoz-light bg-[url('/images/QuotationMark.png')] bg-no-repeat md:bg-[length:10rem] bg-[length:8rem] bg-left-1"
+    >
       <div className="md:max-w-2xl md:m-auto">
         <Content>
           <span>
