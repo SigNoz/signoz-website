@@ -3,13 +3,25 @@ import getIcons from "asset/icons";
 import AuthorBy from "components/AuthorBy";
 import Card from "components/Card";
 import cx from "classnames";
-import { useState } from "react";
+import { useRef, useState } from "react";
+
+import { useIntersection } from 'react-use';
 
 const FeedbackCard = (props: FeedbackCardProps): JSX.Element => {
   const [isMouseHover, setIsMouseHover] = useState<boolean>(false);
 
+  const intersectionRef = useRef(null);
+  const intersection = useIntersection(intersectionRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1
+  });
+
   return (
-    <div>
+    <div ref={intersectionRef}>
+      {intersection && intersection.intersectionRatio < 1
+        ? 'Obscured'
+        : 'Fully in view'}
       <Card className="w-[448px] h-[240px]">
         <img
           className="absolute top-0 left-0 w-10 h-10"
