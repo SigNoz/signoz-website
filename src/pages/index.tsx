@@ -28,7 +28,7 @@ const HomePage = () => {
       <SignozFeedback />
       <div className="w-[95%] m-auto">
         <LatestBlogPosts />
-        <div className="mb-16">
+        <div className="mb-16 mt-16">
           <GetLockedWithVendors />
         </div>
         <OpenTelementryLiveClasses />
