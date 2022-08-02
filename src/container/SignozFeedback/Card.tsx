@@ -3,16 +3,16 @@ import getIcons from "asset/icons";
 import AuthorBy from "components/AuthorBy";
 import Card from "components/Card";
 import cx from "classnames";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const FeedbackCard = (props: FeedbackCardProps): JSX.Element => {
   const [isMouseHover, setIsMouseHover] = useState<boolean>(false);
 
   return (
-    <div>
-      <Card className="w-[448px] h-[240px]">
+    <div id={props.id}>
+      <Card className="relative p-8 w-[448px] h-[240px]">
         <img
-          className="absolute top-0 left-0 w-10 h-10"
+          className="absolute top-8 left-5 w-10 h-10"
           src="/images/QuotationMark.png"
           alt="quotation mark"
         />
@@ -45,6 +45,8 @@ export interface FeedbackCardProps {
   authorName: string;
   authorImage: string;
   authorPosition: string;
+  reference?: React.Ref<HTMLDivElement>;
+  id: string;
 }
 
 export default FeedbackCard;
