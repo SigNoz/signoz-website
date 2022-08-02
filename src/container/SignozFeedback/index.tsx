@@ -88,7 +88,7 @@ const SignozFeedback = (): JSX.Element => {
   const onClickLeft = (currentSlide: number) => {
     const el = document.getElementById("feedbackContainer");
     el?.scrollBy({
-      left: -el.clientWidth,
+      left: -cardWidth * 1.5,
       behavior: "smooth",
     });
     if (currentSlide > 0 && el) {
@@ -99,7 +99,7 @@ const SignozFeedback = (): JSX.Element => {
   const onClickRight = (currentSlide: number) => {
     const el = document.getElementById("feedbackContainer");
     el?.scrollBy({
-      left: el.clientWidth,
+      left: cardWidth * 1.5,
       behavior: "smooth",
     });
 
