@@ -1,5 +1,6 @@
 const metaData: Record<string, string> = {
-  brandName: "Brand Name",
+  brandName: "Signoz",
+  locale: "en-US",
 };
 
 export default metaData;
