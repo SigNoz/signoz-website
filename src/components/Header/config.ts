@@ -24,7 +24,7 @@ export const rightItems: Links[] = [
   },
   {
     name: "Blog",
-    path: "/blog",
+    path: "/blogs",
   },
   {
     name: "Community",

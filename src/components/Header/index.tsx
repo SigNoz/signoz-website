@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import cx from "classnames";
 import getIcons from "asset/icons";
 import Link from "next/link";
@@ -19,6 +19,11 @@ const Header = (): JSX.Element => {
   const repoInfoResult = useQuery({
     queryFn: getRepoInfo,
   });
+  const { push } = useRouter();
+
+  const onClickLogoHandler = useCallback(() => {
+    push("/");
+  }, [push]);
 
   const onToggleHandler = () => {
     setIsOpen((state) => !state);
@@ -42,7 +47,10 @@ const Header = (): JSX.Element => {
       })}
     >
       <div className="font-openSans flex items-center justify-between relative">
-        <div className="flex items-center">
+        <div
+          onClick={onClickLogoHandler}
+          className="flex items-center cursor-pointer"
+        >
           <div>{getIcons("logo")}</div>
           <div className="text-signoz-medium text-xl ml-3 font-bold">
             SigNoz
@@ -98,6 +106,9 @@ const Header = (): JSX.Element => {
                   >
                     <Link href={path}>{name}</Link>
                   </li>
+                  {isActive && (
+                    <div className="h-[2px] w-4 bg-signoz-primary" />
+                  )}
                 </ul>
               );
             })}
@@ -123,6 +134,9 @@ const Header = (): JSX.Element => {
                   >
                     <Link href={path}>{name}</Link>
                   </li>
+                  {isActive && (
+                    <div className="h-[2px] w-4 bg-signoz-primary" />
+                  )}
                 </ul>
               );
             })}
