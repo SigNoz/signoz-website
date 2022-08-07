@@ -9,7 +9,7 @@ const OpenTelementryLiveClasses = (): JSX.Element => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:max-w-5xl m-auto">
+    <div className="flex flex-col md:flex-row m-auto">
       <div className="md:max-w-md md:w-full h-full">
         <Image
           layout="responsive"

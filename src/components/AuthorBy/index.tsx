@@ -7,6 +7,8 @@ const AuthorBy = ({
   name,
   position,
   className,
+  nameClassName,
+  positionClassName,
 }: AuthorProps): JSX.Element => {
   return (
     <div className={cx("flex gap-2", className)}>
@@ -18,8 +20,20 @@ const AuthorBy = ({
         className="rounded-full"
       />
       <div>
-        <div className="text-signoz-medium font-semibold text-base">{name}</div>
-        <div className="text-signoz-dark-intermediate text-xs mt-1 font-light">
+        <div
+          className={cx(
+            "text-signoz-medium font-semibold text-base",
+            nameClassName
+          )}
+        >
+          {name}
+        </div>
+        <div
+          className={cx(
+            "text-signoz-dark-intermediate text-xs mt-1 font-light",
+            positionClassName
+          )}
+        >
           {position}
         </div>
       </div>
@@ -32,6 +46,8 @@ interface AuthorProps {
   avatar: string;
   position: string;
   className?: string;
+  nameClassName?: string;
+  positionClassName?: string;
 }
 
 export default AuthorBy;

@@ -31,7 +31,9 @@ const HomePage = () => {
         <div className="mb-16 mt-16">
           <GetLockedWithVendors />
         </div>
-        <OpenTelementryLiveClasses />
+        <div className="md:max-w-5xl m-auto">
+          <OpenTelementryLiveClasses />
+        </div>
         <div className="mt-16">
           <FAQ />
         </div>
