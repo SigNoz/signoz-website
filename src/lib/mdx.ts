@@ -10,9 +10,9 @@ import remarkGfm from "remark-gfm";
 import remarkFootnotes from "remark-footnotes";
 import remarkMath from "remark-math";
 import remarkExtractFrontmatter from "./remark-extract-frontmatter";
-import remarkCodeTitles from "./remark-code-title";
-import remarkTocHeadings from "./remark-toc-headings";
-import remarkImgToJsx from "./remark-img-to-jsx";
+// import remarkCodeTitles from "./remark-code-title";
+// import remarkTocHeadings from "./remark-toc-headings";
+// import remarkImgToJsx from "./remark-img-to-jsx";
 // Rehype packages
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -73,19 +73,19 @@ export async function getFileBySlug(type: string, slug: string) {
     source,
     // mdx imports can be automatically source from the components directory
     cwd: path.join(root, "components"),
-    xdmOptions(options, frontmatter) {
+    mdxOptions(options: any, frontmatter: any) {
       // this is the recommended way to add custom remark/rehype plugins:
       // The syntax might look weird, but it protects you in case we add/remove
       // plugins in the future.
       options.remarkPlugins = [
         ...(options.remarkPlugins ?? []),
         remarkExtractFrontmatter,
-        [remarkTocHeadings, { exportRef: toc }],
+        // [remarkTocHeadings, { exportRef: toc }],
         remarkGfm,
-        remarkCodeTitles,
+        // remarkCodeTitles,
         [remarkFootnotes, { inlineNotes: true }],
         remarkMath,
-        remarkImgToJsx,
+        // remarkImgToJsx,
       ];
       options.rehypePlugins = [
         ...(options.rehypePlugins ?? []),
@@ -120,14 +120,14 @@ export async function getFileBySlug(type: string, slug: string) {
   };
 }
 
-export async function getAllFilesFrontMatter(folder) {
+export async function getAllFilesFrontMatter(folder: string) {
   const prefixPaths = path.join(root, "data", folder);
 
   const files = getAllFilesRecursively(prefixPaths);
 
-  const allFrontMatter = [];
+  const allFrontMatter: any = [];
 
-  files.forEach((file) => {
+  files.forEach((file: string) => {
     // Replace is needed to work on Windows
     const fileName = file.slice(prefixPaths.length + 1).replace(/\\/g, "/");
     // Remove Unexpected File
@@ -147,5 +147,5 @@ export async function getAllFilesFrontMatter(folder) {
     }
   });
 
-  return allFrontMatter.sort((a, b) => dateSortDesc(a.date, b.date));
+  return allFrontMatter.sort((a: any, b: any) => dateSortDesc(a.date, b.date));
 }
