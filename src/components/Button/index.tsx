@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import cx from "classnames";
 
 const Button = ({
@@ -9,6 +9,7 @@ const Button = ({
   children = "",
   fullWidth,
   className,
+  style,
 }: ButtonProps): JSX.Element => {
   const onKeyDownHandler: React.KeyboardEventHandler<HTMLButtonElement> =
     useCallback(
@@ -26,6 +27,7 @@ const Button = ({
 
   return (
     <button
+      style={style}
       onKeyDown={onKeyDownHandler}
       type={type}
       className={cx(
@@ -56,6 +58,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
   fullWidth?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export default Button;

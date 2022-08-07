@@ -7,6 +7,7 @@ import { useMemo, useState } from "react";
 import AuthorBy from "components/AuthorBy";
 import { useIsDesktop } from "hooks/useDeviceType";
 import { useInterval } from "react-use";
+import SearchBar from "../SearchBar";
 
 const HeroSection = () => {
   const isDesktop = useIsDesktop();
@@ -66,13 +67,15 @@ const HeroSection = () => {
   );
 
   return (
-    <div className="flex  flex-col md:flex-row">
-      <div className="flex-1 order-1 md:order-2">
+    <div className="flex relative flex-col md:flex-row">
+      <div className="flex-1 order-1 h-full md:order-2">
         <NextImage
           src={"/blogs/hero-section-1.png"}
           layout="responsive"
           width={403}
-          height={268}
+          height={300}
+          objectFit="cover"
+          objectPosition={"center"}
         />
       </div>
       <div
@@ -101,6 +104,7 @@ const HeroSection = () => {
         </div>
         <div className="order-3 mt-6">{Element}</div>
       </div>
+      <SearchBar />
     </div>
   );
 };

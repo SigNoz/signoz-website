@@ -17,6 +17,7 @@ import ArrowUp from "./icons/arrowUp";
 import LogoWithText from "./icons/logowithtext";
 import ArrowLeft from "./icons/arrowLeft";
 import ArrowRight from "./icons/arrowRight";
+import Search from "./icons/search";
 
 type Icons =
   | "plus"
@@ -37,7 +38,8 @@ type Icons =
   | "arrowUp"
   | "logowithtext"
   | "arrowLeft"
-  | "arrowRight";
+  | "arrowRight"
+  | "search";
 
 const getIcons = (
   icons: Icons,
@@ -82,6 +84,8 @@ const getIcons = (
       return <ArrowLeft className={className} />;
     case "arrowRight":
       return <ArrowRight className={className} />;
+    case "search":
+      return <Search className={className} />;
     default: {
       throw new Error("Icon not found");
     }
