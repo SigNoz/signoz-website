@@ -49,7 +49,8 @@ const SectionBlogs = ({ section }: SectionBlogsProps): JSX.Element => {
           timeToReadInMinutes={3}
         />
       </div>
-      {isDesktop && Element}
+
+      {!isDesktop && Element}
     </div>
   );
 };

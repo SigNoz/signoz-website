@@ -76,7 +76,7 @@ const OpentelementryImplementation = () => {
           ))}
         </div>
 
-        {isDesktop && Element}
+        {!isDesktop && Element}
 
         {isDesktop && (
           <div className="">
