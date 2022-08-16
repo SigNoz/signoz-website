@@ -35,7 +35,7 @@ export const useSectionScroll = ({
 
   return (
     <>
-      <div style={style} className={cx("flex justify-center gap-4")}>
+      <div style={style} className={cx("flex justify-center gap-4 my-4")}>
         {new Array(3).fill(0).map((_, index) => (
           <div
             key={index + _}

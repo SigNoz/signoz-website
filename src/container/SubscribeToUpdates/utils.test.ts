@@ -7,5 +7,6 @@ describe("SubscribeToUpdates", () => {
     expect(isValidEmail("asd@")).toBe(false);
     expect(isValidEmail("asd@asd.com")).toBe(true);
     expect(isValidEmail("asdasd@")).toBe(false);
+    expect(isValidEmail("sample")).toBe(false);
   });
 });

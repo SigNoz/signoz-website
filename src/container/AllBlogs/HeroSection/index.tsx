@@ -8,6 +8,7 @@ import AuthorBy from "components/AuthorBy";
 import { useIsDesktop } from "hooks/useDeviceType";
 import { useInterval } from "react-use";
 import SearchBar from "../SearchBar";
+import cx from "classnames";
 
 const HeroSection = () => {
   const isDesktop = useIsDesktop();
@@ -76,11 +77,17 @@ const HeroSection = () => {
           height={300}
           objectFit="cover"
           objectPosition={"center"}
+          priority
         />
       </div>
       <div
         id={section + "scrollContainer"}
-        className="flex-1 bg-signoz-medium p-4 md:pl-36 md:pt-8 order-2 md:order-1"
+        className={cx(
+          "flex-1 bg-signoz-medium p-4 md:pl-36 md:pt-8 order-2 md:order-1",
+          {
+            "pb-10": !isDesktop,
+          }
+        )}
       >
         <Title className="text-white">{selectedBlog.title}</Title>
 

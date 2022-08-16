@@ -12,10 +12,6 @@ const nextConfig = withMDX({
   reactStrictMode: true,
   swcMinify: true,
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
 });
 
 module.exports = nextConfig;

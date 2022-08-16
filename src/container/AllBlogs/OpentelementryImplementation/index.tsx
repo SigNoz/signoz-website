@@ -28,7 +28,7 @@ const OpentelementryImplementation = () => {
       description:
         "OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and ",
       title:
-        "Latest top 11 distributed tracing tools [perfect for microservices]",
+        "Latest top 11 distributed tracing tools [perfect for microservices] 1",
     },
     {
       date: new Date(),
@@ -37,7 +37,7 @@ const OpentelementryImplementation = () => {
       description:
         "OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and ",
       title:
-        "Latest top 11 distributed tracing tools [perfect for microservices]",
+        "Latest top 11 distributed tracing tools [perfect for microservices] 2",
     },
     {
       date: new Date(),
@@ -46,7 +46,7 @@ const OpentelementryImplementation = () => {
       description:
         "OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and ",
       title:
-        "Latest top 11 distributed tracing tools [perfect for microservices]",
+        "Latest top 11 distributed tracing tools [perfect for microservices] 3",
     },
   ];
 

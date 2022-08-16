@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.DocSearch-Button{
+  background-color: white !important;
+  margin:0 !important;
+  border:1px solid #404C5E!important ;
+  opacity:0.5;
+  
+  border-radius: 0.5rem/* 8px */ !important;
+  border-right-width:0 !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  height:40px !important;
+}
+
+.DocSearch-Button:active, .DocSearch-Button:focus, .DocSearch-Button:hover {
+    background: none !important;
+    box-shadow: none !important;
+    color: var(--docsearch-text-color);
+    outline: none;
+}

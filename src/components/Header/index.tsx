@@ -62,7 +62,6 @@ const Header = (): JSX.Element => {
           </div>
         </PropertyControlledComponent>
       </div>
-
       <PropertyControlledComponent controllerProperty={isOpen}>
         <div className="mt-4 absolute z-10 left-0 bg-white w-full px-6 pb-8">
           <div className="flex flex-col gap-6">
@@ -89,7 +88,6 @@ const Header = (): JSX.Element => {
           </div>
         </div>
       </PropertyControlledComponent>
-
       <PropertyControlledComponent controllerProperty={isDesktop}>
         <div className="w-full justify-around items-center flex">
           <div className="flex gap-12">

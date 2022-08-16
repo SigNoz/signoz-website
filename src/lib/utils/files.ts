@@ -23,11 +23,14 @@ const walkDir = (fullPath: string) => {
 const pathJoinPrefix = (prefix: string) => (extraPath: string) =>
   path.join(prefix, extraPath);
 
-const getAllFilesRecursively = (folder: string) =>
-  pipe(
+const getAllFilesRecursively = (folder: string): string[] => {
+  const paths = pipe(
     fs.readdirSync,
     map(pipe(pathJoinPrefix(folder), walkDir)),
     flattenArray
   )(folder);
+
+  return paths;
+};
 
 export default getAllFilesRecursively;
