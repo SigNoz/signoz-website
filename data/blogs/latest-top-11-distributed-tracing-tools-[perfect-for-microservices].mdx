@@ -16,8 +16,6 @@ keywords:
 
 In this blog, I will discuss about how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.
 
-<!--truncate-->
-
 ![Cover Image](/img/blog/2019/08/Python-Prometheus-2.webp)
 
 ## Setting up Prometheus and Grafana in EKS
@@ -39,8 +37,10 @@ also add `--set server.global.scrape_interval="10s"` while installing prometheus
 
 **Prometheus server by default is not exposed to public** and you can access the prometheus expression browser by running below commands in your localhost/environment:
 
-    $ PROM_SERVER_POD=$(kubectl -n prometheus get pod -l component=server -o jsonpath="{.items[0].metadata.name}")
-    $ kubectl -n prometheus port-forward $PROM_SERVER_POD 9090
+    ```bash
+        $ PROM_SERVER_POD=$(kubectl -n prometheus get pod -l component=server -o jsonpath="{.items[0].metadata.name}")
+        $ kubectl -n prometheus port-forward $PROM_SERVER_POD 9090
+    ```
 
 Now you can access the prometheus expression browser at `http://localhost:9090`
 
