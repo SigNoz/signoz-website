@@ -4,10 +4,11 @@ import { useSectionScroll } from "hooks/useSectionScroll";
 import { useCallback, useState } from "react";
 import SectionHeader from "../SectionHeader";
 
-const MostRecentPost = (): JSX.Element => {
+const MostRecentPost = (props: MostRecentPostProps): JSX.Element => {
   const onClickViewAllPost = useCallback(() => {
     console.log("asd");
   }, []);
+
   const isDesktop = useIsDesktop();
 
   const [currentSelected, setCurrentSelected] = useState<number>(0);
@@ -20,35 +21,7 @@ const MostRecentPost = (): JSX.Element => {
     setCurrentSelected,
   });
 
-  const blogs: BlogCardProps[] = [
-    {
-      date: new Date(),
-      tags: "product",
-      timeToReadInMinutes: 2,
-      description:
-        "OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and ",
-      title:
-        "Latest top 11 distributed tracing tools [perfect for microservices] 1",
-    },
-    {
-      date: new Date(),
-      tags: "technical",
-      timeToReadInMinutes: 1,
-      description:
-        "OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and ",
-      title:
-        "Latest top 11 distributed tracing tools [perfect for microservices] 2",
-    },
-    {
-      date: new Date(),
-      tags: "tools",
-      timeToReadInMinutes: 3,
-      description:
-        "OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and ",
-      title:
-        "Latest top 11 distributed tracing tools [perfect for microservices] 3",
-    },
-  ];
+  const blogs: BlogCardProps[] = [...props.data];
 
   const firstBlogs = blogs[0];
   const rest = blogs.slice(1);
@@ -87,5 +60,9 @@ const MostRecentPost = (): JSX.Element => {
     </>
   );
 };
+
+interface MostRecentPostProps {
+  data: BlogCardProps[];
+}
 
 export default MostRecentPost;

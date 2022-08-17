@@ -7,6 +7,7 @@ const Card = ({
   refernce,
   id,
   style,
+  onClick,
 }: CardProps): JSX.Element => {
   return (
     <div
@@ -14,6 +15,7 @@ const Card = ({
       className={cx("p-4 bg-white rounded-lg shadow-1", className)}
       ref={refernce}
       style={style}
+      onClick={onClick}
     >
       {children}
     </div>
@@ -26,6 +28,7 @@ interface CardProps {
   refernce?: React.Ref<HTMLDivElement>;
   id?: string;
   style?: React.CSSProperties;
+  onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 
 export default Card;

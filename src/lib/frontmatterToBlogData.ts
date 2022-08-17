@@ -1,0 +1,53 @@
+import { BlogCardProps } from "components/BlogCard";
+import { FrontMatterProps } from "./mdx";
+type AllTags = BlogCardProps["tags"];
+
+export const blogsTagtoTagsMapping: Record<AllTags, string> = {
+  tools: "tools_comparison",
+  technical: "technical",
+  "hero-section": "hero-section",
+  "most-recent-post": "most-recent-post",
+  "open-telementry-implementations": "open-telementry-implementations",
+  product: "product",
+};
+
+const isTagsMapping = (tag: string): tag is AllTags => {
+  return Object.keys(blogsTagtoTagsMapping).includes(tag);
+};
+
+const extractDate = (date: string | null): Date => {
+  if (date === null) {
+    return new Date();
+  }
+
+  return new Date(date);
+};
+
+export const getBlogCard = (
+  post: FrontMatterProps,
+  layout?: BlogCardProps["layout"]
+): BlogCardProps => {
+  const { title, date, tags, description = "", time } = post;
+
+  const tagsMapped = tags.filter((tag) => isTagsMapping(tag));
+
+  const tag = tagsMapped[0];
+
+  return {
+    title,
+    tags: tag as AllTags,
+    description,
+    timeToReadInMinutes: time.minutes,
+    date: extractDate(date),
+    layout,
+  };
+};
+
+export const getSectionPosts = (posts: FrontMatterProps[], tagss: AllTags) => {
+  return posts
+    .filter((post) =>
+      post.tags.find((tag) => tag === blogsTagtoTagsMapping[tagss])
+    )
+    .filter((_, index) => index < 3)
+    .map((post) => getBlogCard(post));
+};

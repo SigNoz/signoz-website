@@ -1,8 +1,9 @@
 import Card from "components/Card";
 import NextImage from "next/image";
-import { getBlogFooter, getTags, months } from "./utils";
+import { getBlogFooter, getTags } from "./utils";
 import cx from "classnames";
-import React, { useMemo } from "react";
+import React, { useMemo, useCallback } from "react";
+import { useRouter } from "next/router";
 
 const BlogCard = ({
   tags,
@@ -18,13 +19,20 @@ const BlogCard = ({
     [timeToReadInMinutes, date]
   );
 
+  const { push } = useRouter();
+
+  const onClickHandler = useCallback(() => {
+    push(`/blog/${title}`);
+  }, [push, title]);
+
   return (
     <Card
       style={{ padding: 0, ...cardStyle }}
-      className={cx("min-w-[369px] flex p-0", {
+      className={cx("min-w-[369px] flex p-0 cursor-pointer", {
         "flex-col": layout === "left",
         "flex-row": layout === "right",
       })}
+      onClick={onClickHandler}
     >
       <div className="min-w-[380px] rounded-lg overflow-hidden">
         <NextImage
@@ -32,6 +40,9 @@ const BlogCard = ({
           layout="responsive"
           width={380}
           height={208}
+          objectFit="cover"
+          alt="header"
+          objectPosition={"center"}
         />
       </div>
 

@@ -44,5 +44,7 @@ export const getBlogFooter = (date: Date, timeToReadInMinutes: number) => {
   const year = dateDisplay.getFullYear();
   const month = months[dateDisplay.getMonth()];
   const dateD = dateDisplay.getDate();
-  return `${month} ${dateD} ${year} · ${timeToReadInMinutes} min read`;
+  return `${month} ${dateD} ${year} · ${timeToReadInMinutes.toPrecision(2)} ${
+    timeToReadInMinutes < 3 ? "min" : "mins"
+  } read`;
 };
