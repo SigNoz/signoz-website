@@ -27,7 +27,7 @@ export const getBlogCard = (
   post: FrontMatterProps,
   layout?: BlogCardProps["layout"]
 ): BlogCardProps => {
-  const { title, date, tags, description = "", time } = post;
+  const { title, date, tags, description = "", time, slug } = post;
 
   const tagsMapped = tags.filter((tag) => isTagsMapping(tag));
 
@@ -40,6 +40,7 @@ export const getBlogCard = (
     timeToReadInMinutes: time.minutes,
     date: extractDate(date),
     layout,
+    slug: slug,
   };
 };
 

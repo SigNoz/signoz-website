@@ -13,6 +13,7 @@ const BlogCard = ({
   layout = "left",
   description,
   cardStyle,
+  slug,
 }: BlogCardProps) => {
   const dateToRender = useMemo(
     () => getBlogFooter(date, timeToReadInMinutes),
@@ -22,8 +23,8 @@ const BlogCard = ({
   const { push } = useRouter();
 
   const onClickHandler = useCallback(() => {
-    push(`/blog/${title}`);
-  }, [push, title]);
+    push(`/blog/${slug}`);
+  }, [push, slug]);
 
   return (
     <Card
@@ -89,6 +90,7 @@ export interface BlogCardProps {
   layout?: "right" | "left";
   description?: string;
   cardStyle?: React.CSSProperties;
+  slug?: string;
 }
 
 export default BlogCard;
