@@ -8,6 +8,7 @@ export const useSectionScroll = ({
   setCurrentSelected,
   section,
   style,
+  cards = 3,
 }: useSectionScrollProps): JSX.Element => {
   const isDesktop = useIsDesktop();
   const scrollHandler = useCallback(
@@ -36,7 +37,7 @@ export const useSectionScroll = ({
   return (
     <>
       <div style={style} className={cx("flex justify-center gap-4 my-4")}>
-        {new Array(3).fill(0).map((_, index) => (
+        {new Array(cards).fill(0).map((_, index) => (
           <div
             key={index + _}
             className={cx("rounded-full w-2 h-2", {
@@ -55,4 +56,5 @@ interface useSectionScrollProps {
   setCurrentSelected: React.Dispatch<React.SetStateAction<number>>;
   section: BlogCardProps["tags"];
   style?: React.CSSProperties;
+  cards?: number;
 }

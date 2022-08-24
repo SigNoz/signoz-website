@@ -35,7 +35,11 @@ const HeroSection = (props: HeroSectionProps) => {
 
   const selectedBlog = content[currentSelected];
   const dateToRender = useMemo(
-    () => getBlogFooter(selectedBlog.date, selectedBlog.timeToReadInMinutes),
+    () =>
+      getBlogFooter(
+        selectedBlog.date || new Date(),
+        selectedBlog.timeToReadInMinutes
+      ),
     [selectedBlog]
   );
 

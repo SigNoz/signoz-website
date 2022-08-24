@@ -18,6 +18,8 @@ import LogoWithText from "./icons/logowithtext";
 import ArrowLeft from "./icons/arrowLeft";
 import ArrowRight from "./icons/arrowRight";
 import Search from "./icons/search";
+import Twitter from "./icons/twitter";
+import Facebook from "./icons/facebook";
 
 type Icons =
   | "plus"
@@ -39,7 +41,9 @@ type Icons =
   | "logowithtext"
   | "arrowLeft"
   | "arrowRight"
-  | "search";
+  | "search"
+  | "twitter"
+  | "facebook";
 
 const getIcons = (
   icons: Icons,
@@ -86,6 +90,10 @@ const getIcons = (
       return <ArrowRight className={className} />;
     case "search":
       return <Search className={className} />;
+    case "twitter":
+      return <Twitter className={className} />;
+    case "facebook":
+      return <Facebook className={className} />;
     default: {
       throw new Error("Icon not found");
     }

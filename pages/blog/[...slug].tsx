@@ -9,6 +9,12 @@ import {
 // import { generateRss } from "lib/generateRss";
 import { ReadTimeResults } from "reading-time";
 import { NextPage, GetStaticProps, GetStaticPropsContext } from "next";
+import { MDXLayoutRenderer } from "components/MDX";
+import Layout from "container/Layout";
+import { TocHeadingProps } from "components/MDX/components/TOCInline";
+import SectionBlogs from "container/AllBlogs/SectionBlogs";
+import { getBlogCard } from "lib/frontmatterToBlogData";
+import ShareIcons, { ShareIcon } from "components/ShareIcons";
 
 export async function getStaticPaths() {
   const posts = getFiles("blogs");
@@ -68,9 +74,13 @@ export interface AuthorDetails {
 }
 
 interface BlogProps {
-  prev: null | FrontMatterProps;
-  next: null | FrontMatterProps;
-  post: FrontMatterProps;
+  prev: FrontMatterProps;
+  next: FrontMatterProps;
+  post: {
+    frontMatter: FrontMatterProps;
+    mdxSource: string;
+    toc: TocHeadingProps["toc"];
+  };
   authorDetails: AuthorDetails[];
 }
 
@@ -80,8 +90,74 @@ const Blogs: NextPage<BlogProps> = ({
   post,
   authorDetails,
 }: BlogProps) => {
-  console.log({ prev, next, post, authorDetails });
-  return <div>asd</div>;
+  const { frontMatter, mdxSource, toc } = post;
+
+  const allFrontMatterPosts = [{ ...frontMatter }];
+
+  if (next !== null) {
+    allFrontMatterPosts.push(next);
+  }
+  if (prev !== null) {
+    allFrontMatterPosts.push(prev);
+  }
+
+  const recentBlogs = allFrontMatterPosts.map((frontMatter) =>
+    getBlogCard(frontMatter)
+  );
+
+  const shareIcons: ShareIcon[] = [
+    {
+      type: "twitter",
+      url: "https://twitter.com/intent/tweet?text=Hello%20world",
+    },
+    {
+      type: "facebook",
+      url: "https://twitter.com/intent/tweet?text=Hello%20world",
+    },
+    {
+      type: "linkedin",
+      url: "https://twitter.com/intent/tweet?text=Hello%20world",
+    },
+  ];
+
+  return (
+    <>
+      {frontMatter.draft !== true ? (
+        <>
+          <div className="flex flex-col md:flex-row">
+            <div>
+              <Layout
+                toc={toc}
+                frontMatter={frontMatter}
+                authorDetails={authorDetails}
+              >
+                <MDXLayoutRenderer
+                  {...{
+                    authorDetails,
+                    frontmatter: frontMatter,
+                    mdxSource,
+                    next,
+                    prev,
+                    toc,
+                  }}
+                />
+              </Layout>
+            </div>
+            <ShareIcons shareIcons={shareIcons} />
+          </div>
+          <div className="bg-recommended-postw">
+            <SectionBlogs section="blog-recent-post" data={recentBlogs} />
+          </div>
+        </>
+      ) : (
+        <div className="mt-24 text-center">
+          <span role="img" aria-label="roadwork sign">
+            🚧
+          </span>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Blogs;

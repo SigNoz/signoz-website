@@ -16,6 +16,7 @@ const SectionBlogs = ({ section, data }: SectionBlogsProps): JSX.Element => {
     currentSelected,
     section,
     setCurrentSelected,
+    cards: data.length,
   });
 
   return (

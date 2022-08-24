@@ -17,6 +17,9 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
     case "most-recent-post": {
       return "Most Recent Posts";
     }
+    case "blog-recent-post": {
+      return "Recommended for you";
+    }
     default: {
       console.error("Tags is not implemented");
       return "";
@@ -44,7 +47,7 @@ export const getBlogFooter = (date: Date, timeToReadInMinutes: number) => {
   const year = dateDisplay.getFullYear();
   const month = months[dateDisplay.getMonth()];
   const dateD = dateDisplay.getDate();
-  return `${month} ${dateD} ${year} · ${timeToReadInMinutes.toPrecision(2)} ${
+  return `${month} ${dateD} ${year} · ${timeToReadInMinutes?.toPrecision(2)} ${
     timeToReadInMinutes < 3 ? "min" : "mins"
   } read`;
 };

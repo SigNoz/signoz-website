@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 const BlogCard = ({
   tags,
   title,
-  date,
+  date = new Date(),
   timeToReadInMinutes,
   layout = "left",
   description,
@@ -83,9 +83,10 @@ export interface BlogCardProps {
     | "technical"
     | "open-telementry-implementations"
     | "most-recent-post"
-    | "hero-section";
+    | "hero-section"
+    | "blog-recent-post";
   title: string;
-  date: Date;
+  date?: Date;
   timeToReadInMinutes: number;
   layout?: "right" | "left";
   description?: string;

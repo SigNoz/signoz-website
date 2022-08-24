@@ -9,6 +9,7 @@ export const blogsTagtoTagsMapping: Record<AllTags, string> = {
   "most-recent-post": "most-recent-post",
   "open-telementry-implementations": "open-telementry-implementations",
   product: "product",
+  "blog-recent-post": "blog-recent-post",
 };
 
 const isTagsMapping = (tag: string): tag is AllTags => {
@@ -27,7 +28,14 @@ export const getBlogCard = (
   post: FrontMatterProps,
   layout?: BlogCardProps["layout"]
 ): BlogCardProps => {
-  const { title, date, tags, description = "", time, slug } = post;
+  const {
+    title,
+    date,
+    tags,
+    description = "",
+    time = { minutes: 0 },
+    slug,
+  } = post;
 
   const tagsMapped = tags.filter((tag) => isTagsMapping(tag));
 
@@ -37,7 +45,7 @@ export const getBlogCard = (
     title,
     tags: tag as AllTags,
     description,
-    timeToReadInMinutes: time.minutes,
+    timeToReadInMinutes: time?.minutes || 0,
     date: extractDate(date),
     layout,
     slug: slug,
