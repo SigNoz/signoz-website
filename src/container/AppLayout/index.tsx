@@ -1,9 +1,16 @@
-import Header from "components/Header";
-import Footer from "components/Footer";
 import BlogStrip from "components/BlogStrip";
 import { PropsWithChildren } from "react";
 import { useIsDesktop } from "hooks/useDeviceType";
 import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("components/Header"), {
+  ssr: false,
+  loading: () => <div>loading...</div>,
+});
+const Footer = dynamic(() => import("components/Footer"), {
+  ssr: false,
+  loading: () => <div>loading...</div>,
+});
 
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),

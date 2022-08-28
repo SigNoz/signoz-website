@@ -14,7 +14,7 @@
     <guid>undefined/blog/monitor-gunicorn-django-in-prometheus</guid>
     <title>Monitoring OpenMetrics for Gunicorn and Django application in Prometheus</title>
     <link>undefined/blog/monitor-gunicorn-django-in-prometheus</link>
-    undefined
+    <description>In this blog, let&#39;s see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>tools_comparison</category><category>monitoring</category><category>prometheus</category><category>gunicorn</category><category>django</category>
@@ -24,7 +24,7 @@
     <guid>undefined/blog/monitoring-tools-comparing-instana-and-sysdig</guid>
     <title>Monitoring Tools: Comparing Instana and Sysdig</title>
     <link>undefined/blog/monitoring-tools-comparing-instana-and-sysdig</link>
-    undefined
+    <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code.</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>tools_comparison</category>
@@ -34,7 +34,7 @@
     <guid>undefined/blog/sample-post</guid>
     <title>sample-post</title>
     <link>undefined/blog/sample-post</link>
-    undefined
+    <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>tools_comparison</category>
@@ -44,7 +44,7 @@
     <guid>undefined/blog/sample-tools</guid>
     <title>sample-tools</title>
     <link>undefined/blog/sample-tools</link>
-    undefined
+    <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>tools_comparison</category>
@@ -54,7 +54,7 @@
     <guid>undefined/blog/some-techincal</guid>
     <title>some-techincal</title>
     <link>undefined/blog/some-techincal</link>
-    undefined
+    <description>in this sample description we will discuss about monitoring tools comparing instana and sysdig</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>technical</category>
@@ -64,7 +64,7 @@
     <guid>undefined/blog/some-techincal-issues</guid>
     <title>The Time Machine</title>
     <link>undefined/blog/some-techincal-issues</link>
-    undefined
+    <description>The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...</description>
     <pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>writings</category><category>book</category><category>reflection</category>
