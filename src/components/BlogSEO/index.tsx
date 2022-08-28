@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 const BlogsSEO = ({
   title,
   description,
-  keywords,
+  keywords = [],
   coverImage,
   publishedTime,
   authorName,
-  tags,
+  tags = [],
 }: BlogsSEOProps): JSX.Element => {
   const currentHost = process.env.NEXT_PUBLIC_PATH;
   const { asPath } = useRouter();
