@@ -5,8 +5,8 @@ import {
   getFileBySlug,
   getFiles,
 } from "lib/mdx";
-// import fs from "fs";
-// import { generateRss } from "lib/generateRss";
+import fs from "fs";
+import { generateRss } from "lib/generateRss";
 import { ReadTimeResults } from "reading-time";
 import { NextPage, GetStaticProps, GetStaticPropsContext } from "next";
 import { MDXLayoutRenderer } from "components/MDX";
@@ -14,7 +14,14 @@ import Layout from "container/Layout";
 import { TocHeadingProps } from "components/MDX/components/TOCInline";
 import SectionBlogs from "container/AllBlogs/SectionBlogs";
 import { getBlogCard } from "lib/frontmatterToBlogData";
-import ShareIcons, { ShareIcon } from "components/ShareIcons";
+const ShareIcons = dynamic(() => import("components/ShareIcons"), {
+  ssr: false,
+});
+import { ShareIcon } from "components/ShareIcons";
+import { useRouter } from "next/router";
+import BlogTag from "components/BlogTag";
+import BlogsSEO from "components/BlogSEO";
+import dynamic from "next/dynamic";
 
 export async function getStaticPaths() {
   const posts = getFiles("blogs");
@@ -52,10 +59,10 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
   const authorDetails = await Promise.all(authorPromise);
 
   // rss
-  // if (allPosts.length > 0) {
-  //   const rss = generateRss(allPosts);
-  //   fs.writeFileSync("./public/feed.xml", rss);
-  // }
+  if (allPosts.length > 0) {
+    const rss = generateRss(allPosts);
+    fs.writeFileSync("./public/feed.xml", rss);
+  }
 
   return { props: { post, authorDetails, prev, next } };
 }
@@ -91,6 +98,7 @@ const Blogs: NextPage<BlogProps> = ({
   authorDetails,
 }: BlogProps) => {
   const { frontMatter, mdxSource, toc } = post;
+  const { asPath } = useRouter();
 
   const allFrontMatterPosts = [{ ...frontMatter }];
 
@@ -108,23 +116,35 @@ const Blogs: NextPage<BlogProps> = ({
   const shareIcons: ShareIcon[] = [
     {
       type: "twitter",
-      url: "https://twitter.com/intent/tweet?text=Hello%20world",
+      url: `https://twitter.com/intent/tweet?text=${asPath}`,
     },
     {
       type: "facebook",
-      url: "https://twitter.com/intent/tweet?text=Hello%20world",
+      url: `https://twitter.com/intent/tweet?text=${asPath}`,
     },
     {
       type: "linkedin",
-      url: "https://twitter.com/intent/tweet?text=Hello%20world",
+      url: `https://twitter.com/intent/tweet?text=${asPath}`,
     },
   ];
 
   return (
     <>
+      <BlogsSEO
+        {...{
+          authorName: authorDetails[0].name,
+          coverImage: frontMatter.image,
+          description: frontMatter.description,
+          title: frontMatter.title,
+          date: frontMatter.date,
+          tags: frontMatter.tags,
+          keywords: frontMatter.keywords,
+          publishedTime: frontMatter.date,
+        }}
+      />
       {frontMatter.draft !== true ? (
         <>
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row m-auto max-w-[1240px]">
             <div>
               <Layout
                 toc={toc}
@@ -143,7 +163,11 @@ const Blogs: NextPage<BlogProps> = ({
                 />
               </Layout>
             </div>
-            <ShareIcons shareIcons={shareIcons} />
+            <div className="flex flex-col md:ml-4 md:w-[30%] w-full">
+              <ShareIcons shareIcons={shareIcons} />
+
+              <BlogTag tags={frontMatter.tags} />
+            </div>
           </div>
           <div className="bg-recommended-postw">
             <SectionBlogs section="blog-recent-post" data={recentBlogs} />

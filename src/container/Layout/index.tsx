@@ -18,15 +18,22 @@ const Layout = ({
   const isDesktop = useIsDesktop(1200);
 
   return (
-    <div className="w-full m-auto p-4 flex flex-col gap-4  md:flex-row">
+    <div className="w-full m-auto flex flex-col gap-4  md:flex-row">
       {isDesktop && (
-        <div className=" max-w-[26rem]">
+        <div className="max-w-[26rem]">
           <TOCInline toc={toc} exclude="Overview" toHeading={6} />
         </div>
       )}
       <div className="md:max-w-[684px] md:m-auto  flex flex-col gap-4">
         <div>
-          <NextImage src={image} layout="responsive" height={172} width={400} />
+          <NextImage
+            placeholder="blur"
+            src={image}
+            blurDataURL={image}
+            layout="responsive"
+            height={172}
+            width={400}
+          />
           <div className="p-4">
             <div className="text-2xl font-bold tracking-lightTigher leading-[120%] text-signoz-medium">
               {title}
@@ -69,7 +76,7 @@ const Layout = ({
           </div>
         </div>
         {!isDesktop && <TOCInline toc={toc} exclude="Overview" toHeading={6} />}
-        {children}
+        <div className="p-4">{children}</div>
       </div>
     </div>
   );
