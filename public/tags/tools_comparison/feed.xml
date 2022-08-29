@@ -50,5 +50,15 @@
     <category>tools_comparison</category>
   </item>
 
+  <item>
+    <guid>undefined/blog/some-techincal-issues</guid>
+    <title>The Time Machine</title>
+    <link>undefined/blog/some-techincal-issues</link>
+    <description>The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...</description>
+    <pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools_comparison</category>
+  </item>
+
     </channel>
   </rss>

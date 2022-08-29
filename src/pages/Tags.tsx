@@ -22,7 +22,7 @@ const Tags = ({ posts, tag }: TagsPage) => {
     }
   );
 
-  const tagToRender = tagtomap[0][0];
+  const tagToRender = ((tagtomap || [])[0] || [])[0] || "";
 
   return (
     <div className="md:max-w-[1440px] m-auto p-4">
