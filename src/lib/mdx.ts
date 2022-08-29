@@ -20,6 +20,7 @@ import rehypeKatex from "rehype-katex";
 import rehypeCitation from "rehype-citation";
 import rehypePrismPlus from "rehype-prism-plus";
 import rehypePresetMinify from "rehype-preset-minify";
+import kebabCase from "./utils/kebab";
 
 const root = process.cwd();
 
@@ -30,6 +31,30 @@ export function getFiles(type: string) {
   return files.map((file: string) =>
     file.slice(prefixPaths.length + 1).replace(/\\/g, "/")
   );
+}
+
+export async function getAllTags(type: string) {
+  const files = getFiles(type);
+
+  let tagCount: { [key: string]: number } = {};
+
+  // Iterate through each post, putting all found tags into `tags`
+  files.forEach((file) => {
+    const source = fs.readFileSync(path.join(root, "data", type, file), "utf8");
+    const { data } = matter(source);
+    if (data.tags && data.draft !== true) {
+      data.tags.forEach((tag: string) => {
+        const formattedTag = kebabCase(tag);
+        if (formattedTag in tagCount) {
+          tagCount[formattedTag] += 1;
+        } else {
+          tagCount[formattedTag] = 1;
+        }
+      });
+    }
+  });
+
+  return tagCount;
 }
 
 export function formatSlug(slug: string) {

@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import Card from "components/Card";
-import NextImage from "next/image";
 import { getBlogFooter, getTags } from "./utils";
 import cx from "classnames";
 import React, { useMemo, useCallback } from "react";
@@ -29,21 +29,17 @@ const BlogCard = ({
   return (
     <Card
       style={{ padding: 0, ...cardStyle }}
-      className={cx("min-w-[369px] flex p-0 cursor-pointer", {
+      className={cx("flex p-0 cursor-pointer", {
         "flex-col": layout === "left",
         "flex-row": layout === "right",
       })}
       onClick={onClickHandler}
     >
-      <div className="min-w-[380px] rounded-lg overflow-hidden">
-        <NextImage
-          src="/blogs/header.jpg"
-          layout="responsive"
-          width={380}
-          height={208}
-          objectFit="cover"
-          alt="header"
-          objectPosition={"center"}
+      <div className="rounded-lg overflow-hidden">
+        <img
+          alt="blog cover image"
+          className="w-full h-full"
+          src={"/blogs/header.jpg"}
         />
       </div>
 
