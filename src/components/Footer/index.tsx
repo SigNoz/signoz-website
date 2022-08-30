@@ -5,7 +5,7 @@ import Link from "./Link";
 
 const Footer = () => {
   return (
-    <footer className="bg-signoz-medium relative md:mt-20">
+    <footer className="bg-signoz-medium relative mt-20">
       <div className="transform -translate-y-1/4 md:-translate-y-2/4">
         <div className="w-[95%] md:w-full m-auto">
           <SubscribeToUpdates />

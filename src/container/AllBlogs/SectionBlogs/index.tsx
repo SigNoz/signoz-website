@@ -32,7 +32,13 @@ const SectionBlogs = ({ section, data }: SectionBlogsProps): JSX.Element => {
         className="py-4 px-4 md:px-0 flex gap-6 overflow-x-scroll pb-6"
       >
         {data.map((post: BlogCardProps, index: number) => (
-          <BlogCard key={JSON.stringify(post)} {...post} />
+          <BlogCard
+            cardStyle={{
+              minWidth: "300px",
+            }}
+            key={JSON.stringify(post)}
+            {...post}
+          />
         ))}
       </div>
 

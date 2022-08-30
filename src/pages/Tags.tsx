@@ -28,7 +28,7 @@ const Tags = ({ posts, tag }: TagsPage) => {
     <div className="md:max-w-[1440px] m-auto p-4">
       <h1 className="text-4xl mb-6 font-bold">{`${tags} :`}</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {posts.map((post) => (
           <div key={post.title}>
             <BlogCard
