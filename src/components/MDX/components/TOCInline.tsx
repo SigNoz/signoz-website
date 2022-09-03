@@ -15,6 +15,7 @@ export interface TocHeadingProps {
   asDisclosure?: boolean;
   exclude?: string | string[];
   toc: TocHeading[];
+  isBorderVisible?: boolean;
 }
 
 const getInitialHeading = (
@@ -42,6 +43,7 @@ const TOCInline = ({
   toHeading = 6,
   asDisclosure = false,
   exclude = "",
+  isBorderVisible = true,
 }: TocHeadingProps) => {
   const re = Array.isArray(exclude)
     ? new RegExp("^(" + exclude.join("|") + ")$", "i")
@@ -79,12 +81,10 @@ const TOCInline = ({
         return (
           <div key={heading.value} className="flex">
             <div
-              className={cx(
-                {
-                  "border-l-signoz-primary": selectedUrl === heading.url,
-                },
-                "border-l border-solid mr-4"
-              )}
+              className={cx({
+                "border-l-signoz-primary": selectedUrl === heading.url,
+                "border-l border-solid mr-4": isBorderVisible,
+              })}
             />
             <li onClick={onClickHandler} className={`${isChild && "ml-2"}`}>
               <a

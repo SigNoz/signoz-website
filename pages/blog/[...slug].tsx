@@ -8,7 +8,7 @@ import {
 import fs from "fs";
 import { generateRss } from "lib/generateRss";
 import { ReadTimeResults } from "reading-time";
-import { NextPage, GetStaticProps, GetStaticPropsContext } from "next";
+import { NextPage, GetStaticPropsContext } from "next";
 import { MDXLayoutRenderer } from "components/MDX";
 import Layout from "container/Layout";
 import { TocHeadingProps } from "components/MDX/components/TOCInline";
@@ -22,6 +22,10 @@ import { useRouter } from "next/router";
 import BlogTag from "components/BlogTag";
 import BlogsSEO from "components/BlogSEO";
 import dynamic from "next/dynamic";
+const PropertyControlledComponent = dynamic(
+  () => import("components/PropertyControllComponent"),
+  { ssr: false }
+);
 
 export async function getStaticPaths() {
   const posts = getFiles("blogs");
@@ -128,6 +132,8 @@ const Blogs: NextPage<BlogProps> = ({
     },
   ];
 
+  const isBlogInDraft = frontMatter.draft === true;
+
   return (
     <>
       <BlogsSEO
@@ -142,7 +148,7 @@ const Blogs: NextPage<BlogProps> = ({
           publishedTime: frontMatter.date,
         }}
       />
-      {frontMatter.draft !== true ? (
+      <PropertyControlledComponent controllerProperty={!isBlogInDraft}>
         <>
           <div className="flex flex-col md:flex-row m-auto max-w-[1240px]">
             <div>
@@ -150,6 +156,8 @@ const Blogs: NextPage<BlogProps> = ({
                 toc={toc}
                 frontMatter={frontMatter}
                 authorDetails={authorDetails}
+                docsLinks={[]}
+                type="blogs"
               >
                 <MDXLayoutRenderer
                   {...{
@@ -173,13 +181,15 @@ const Blogs: NextPage<BlogProps> = ({
             <SectionBlogs section="blog-recent-post" data={recentBlogs} />
           </div>
         </>
-      ) : (
+      </PropertyControlledComponent>
+
+      <PropertyControlledComponent controllerProperty={isBlogInDraft}>
         <div className="mt-24 text-center">
           <span role="img" aria-label="roadwork sign">
             🚧
           </span>
         </div>
-      )}
+      </PropertyControlledComponent>
     </>
   );
 };

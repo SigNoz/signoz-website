@@ -24,7 +24,6 @@ export const MDXComponents = {
   // pre: Pre,
   p: Paragraph,
   h1: (props: any) => {
-    console.log({ props });
     return <Heading {...props} type="h1" />;
   },
   h2: (props: any) => <Heading {...props} type="h2" />,
