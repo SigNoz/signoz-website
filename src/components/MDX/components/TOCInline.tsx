@@ -79,7 +79,7 @@ const TOCInline = ({
       {filteredToc.map((heading) => {
         const isChild = heading.depth >= indentDepth;
         return (
-          <div key={heading.value} className="flex">
+          <div key={heading.value} className="flex mt-3">
             <div
               className={cx({
                 "border-l-signoz-primary": selectedUrl === heading.url,
@@ -88,7 +88,7 @@ const TOCInline = ({
             />
             <li onClick={onClickHandler} className={`${isChild && "ml-2"}`}>
               <a
-                className={cx({
+                className={cx("text-sm font-normal", {
                   "text-signoz-primary font-semibold text-base mb-2": !isChild,
                   "text-signoz-dark-light font-normal text-base mb-[6px]":
                     isChild,
@@ -105,18 +105,12 @@ const TOCInline = ({
   );
 
   return (
-    <>
-      {/* {asDisclosure ? ( */}
-      <details open>
-        <summary className="text-signoz-dark-light font-bold text-xs">
-          IN THIS ARTICLE
-        </summary>
-        <div className="ml-6">{tocList}</div>
-      </details>
-      {/* ) : (
-        tocList
-      )} */}
-    </>
+    <div className="font-WorkSans">
+      <div className="text-signoz-dark-light font-normal text-sm">
+        IN THIS ARTICLE
+      </div>
+      <div className="ml-6">{tocList}</div>
+    </div>
   );
 };
 
