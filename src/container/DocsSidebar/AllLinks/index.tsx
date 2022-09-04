@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { DocsLinks } from "..";
-import getIcons from "asset/icons";
 import Link from "./Link";
 
 interface LinksProps {

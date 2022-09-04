@@ -64,10 +64,6 @@ const TOCInline = ({
       !re.test(heading.value)
   );
 
-  if (filteredToc.length === 0) {
-    return <></>;
-  }
-
   const onClickHandler: React.MouseEventHandler<HTMLLIElement> = useCallback(
     (event) => {
       // @ts-ignore

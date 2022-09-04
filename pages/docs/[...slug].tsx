@@ -2,15 +2,8 @@ import { MDXLayoutRenderer } from "components/MDX";
 import { TocHeadingProps } from "components/MDX/components/TOCInline";
 import docsLinks from "lib/docsSidebar";
 import Layout from "container/Layout";
-import {
-  formatSlug,
-  FrontMatterProps,
-  getAllFilesFrontMatter,
-  getFileBySlug,
-  getFiles,
-} from "lib/mdx";
+import { formatSlug, FrontMatterProps, getFileBySlug, getFiles } from "lib/mdx";
 import { GetStaticPropsContext, NextPage } from "next";
-import { useState } from "react";
 
 interface DocsProps {
   docs: FrontMatterProps[];
@@ -37,7 +30,7 @@ export async function getStaticPaths() {
 }
 
 const Docs: NextPage<DocsProps> = (props: DocsProps): JSX.Element => {
-  const { docs, post } = props;
+  const { post } = props;
 
   const { frontMatter, mdxSource, toc } = post;
 
@@ -68,11 +61,9 @@ const Docs: NextPage<DocsProps> = (props: DocsProps): JSX.Element => {
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   const postSlug = (params?.slug as string[])?.join("/");
 
-  const allDocs = await getAllFilesFrontMatter("docs");
-
   const post = await getFileBySlug("docs", postSlug);
 
-  return { props: { docs: allDocs, post } };
+  return { props: { post } };
 }
 
 interface DocsProps {

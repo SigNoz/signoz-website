@@ -31,7 +31,7 @@ const Link = ({
     setActiveLink(link);
     const rootpaths: string = getPathFromNodeToRoot(rootLinks, link).join("");
 
-    replace(`/docs/${rootpaths}`);
+    replace(`/docs${rootpaths}`);
   }, [
     subLinks,
     setIsExpandale,
