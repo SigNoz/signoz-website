@@ -29,16 +29,10 @@ const SectionBlogs = ({ section, data }: SectionBlogsProps): JSX.Element => {
       />
       <div
         id={section + "scrollContainer"}
-        className="py-4 px-4 md:px-0 flex gap-6 overflow-x-scroll pb-6"
+        className="py-4 px-4 flex gap-6 overflow-x-scroll pb-6"
       >
-        {data.map((post: BlogCardProps, index: number) => (
-          <BlogCard
-            cardStyle={{
-              minWidth: "300px",
-            }}
-            key={JSON.stringify(post)}
-            {...post}
-          />
+        {data.map((post) => (
+          <BlogCard key={JSON.stringify(post)} {...post} />
         ))}
       </div>
 

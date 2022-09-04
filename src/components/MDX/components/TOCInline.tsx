@@ -41,7 +41,6 @@ const TOCInline = ({
   indentDepth = 3,
   fromHeading = 1,
   toHeading = 6,
-  asDisclosure = false,
   exclude = "",
   isBorderVisible = true,
 }: TocHeadingProps) => {
@@ -64,6 +63,10 @@ const TOCInline = ({
       heading.depth <= toHeading &&
       !re.test(heading.value)
   );
+
+  if (filteredToc.length === 0) {
+    return <></>;
+  }
 
   const onClickHandler: React.MouseEventHandler<HTMLLIElement> = useCallback(
     (event) => {

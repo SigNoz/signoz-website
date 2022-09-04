@@ -1,8 +1,5 @@
-import TOCInline, {
-  TocHeadingProps,
-} from "components/MDX/components/TOCInline";
+import TOCInline from "components/MDX/components/TOCInline";
 import { useIsDesktop } from "hooks/useDeviceType";
-import { FrontMatterProps } from "lib/mdx";
 import NextImage from "next/image";
 import React from "react";
 import { LayoutProps } from ".";
@@ -14,13 +11,13 @@ const Layout = ({ children, frontMatter, authorDetails, toc }: LayoutProps) => {
   const isDesktop = useIsDesktop(1200);
 
   return (
-    <div className="w-full m-auto flex flex-col gap-4  md:flex-row">
+    <div className="w-full m-auto flex flex-col gap-4 md:flex-row">
       {isDesktop && (
         <div className="max-w-[26rem]">
           <TOCInline toc={toc} exclude="Overview" toHeading={6} />
         </div>
       )}
-      <div className="md:max-w-[684px] md:m-auto  flex flex-col gap-4">
+      <div className="md:max-w-[684px] md:m-auto flex flex-col gap-4">
         <div>
           <NextImage
             placeholder="blur"

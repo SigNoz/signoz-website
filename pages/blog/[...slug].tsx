@@ -150,7 +150,7 @@ const Blogs: NextPage<BlogProps> = ({
       />
       <PropertyControlledComponent controllerProperty={!isBlogInDraft}>
         <>
-          <div className="flex flex-col md:flex-row m-auto max-w-[1240px]">
+          <div className="flex flex-col md:flex-row m-auto max-w-[1240px] justify-center w-full">
             <div>
               <Layout
                 toc={toc}
@@ -177,7 +177,7 @@ const Blogs: NextPage<BlogProps> = ({
               <BlogTag tags={frontMatter.tags} />
             </div>
           </div>
-          <div className="bg-recommended-postw">
+          <div className="bg-recommended-post">
             <SectionBlogs section="blog-recent-post" data={recentBlogs} />
           </div>
         </>

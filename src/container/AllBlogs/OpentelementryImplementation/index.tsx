@@ -33,13 +33,13 @@ const OpentelementryImplementation = ({
       <div className="flex flex-col md:flex-row">
         <div
           id={section + "scrollContainer"}
-          className="px-4 md:px-0 flex overflow-x-scroll md:flex-col gap-6 md:gap-0 flex-1"
+          className="pr-4 flex overflow-x-scroll md:flex-col gap-6 md:gap-0 flex-1"
         >
           {data.map((blog) => (
             <BlogCard
               cardStyle={{
                 boxShadow: "none",
-                marginTop: "1rem",
+                marginTop: "0rem",
                 background: "none",
               }}
               layout={isDesktop ? "right" : "left"}

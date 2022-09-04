@@ -52,11 +52,8 @@ export const getBlogCard = (
   };
 };
 
-export const getSectionPosts = (posts: FrontMatterProps[], tagss: AllTags) => {
-  return posts
-    .filter((post) =>
-      post.tags.find((tag) => tag === blogsTagtoTagsMapping[tagss])
-    )
+export const getSectionPosts = (posts: FrontMatterProps[], allTags: AllTags) =>
+  posts
+    .filter((post) => post.tags.find((tag) => tag === allTags))
     .filter((_, index) => index < 3)
     .map((post) => getBlogCard(post));
-};

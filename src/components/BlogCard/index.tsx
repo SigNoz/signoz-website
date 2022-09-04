@@ -35,10 +35,10 @@ const BlogCard = ({
       })}
       onClick={onClickHandler}
     >
-      <div className="rounded-lg overflow-hidden">
+      <div className="rounded-tr-lg rounded-tl-none overflow-hidden">
         <img
           alt="blog cover image"
-          className="w-full h-full"
+          className="w-full h-full rounded-tr-3xl rounded-tl-3xl rounded-bl-none rounded-br-none"
           src={"/blogs/header.jpg"}
         />
       </div>
