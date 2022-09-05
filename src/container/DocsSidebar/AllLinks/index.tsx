@@ -7,6 +7,8 @@ interface LinksProps {
   rootLinks: DocsLinks[];
   activeLink: string;
   setActiveLink: (link: string) => void;
+  level: number;
+  paths: string[];
 }
 
 const Links = ({
@@ -14,6 +16,8 @@ const Links = ({
   rootLinks,
   activeLink,
   setActiveLink,
+  level,
+  paths,
 }: LinksProps): JSX.Element => {
   return (
     <div>
@@ -25,6 +29,8 @@ const Links = ({
           key={link.link + link.name}
           activeLink={activeLink}
           setActiveLink={setActiveLink}
+          level={level}
+          paths={paths}
         />
       ))}
     </div>

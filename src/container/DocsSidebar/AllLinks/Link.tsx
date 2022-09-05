@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import { DocsLinks } from "..";
 import cx from "classnames";
 import AllLink from "./index";
@@ -12,17 +12,14 @@ const Link = ({
   rootLinks,
   activeLink,
   setActiveLink,
+  level,
+  paths,
 }: LinksProps): JSX.Element => {
   const { name, subLinks, link } = links;
-  const [isExpandale, setIsExpandale] = useState<boolean>(false);
+  const isCurrent = paths[level] === link;
+
+  const [isExpandale, setIsExpandale] = useState<boolean>(isCurrent);
   const { replace } = useRouter();
-
-  const activePath = useMemo(
-    () => getPathFromNodeToRoot(rootLinks, activeLink),
-    [activeLink, rootLinks]
-  );
-
-  const isPresent = activePath.includes(link);
 
   const onClickHandler = useCallback(() => {
     if (subLinks) {
@@ -46,17 +43,21 @@ const Link = ({
     <div key={name} className="w-[200px]">
       <div className="w-100% flex flex-col gap-4">
         <div
-          onClick={onClickHandler}
           className={cx(
-            " text-lg tracking-lightTigher p-[6px] rounded hover:bg-[#E6E6E6] cursor-pointer",
+            " text-lg tracking-lightTigher p-[6px] rounded hover:bg-[#E6E6E6]",
             {
-              "text-signoz-primary-light bg-[#E6E6E6]": isPresent,
-              "text-signoz-dark-light": !isPresent,
+              "text-signoz-primary-light bg-[#E6E6E6]": isCurrent,
+              "text-signoz-dark-light": !isCurrent,
             }
           )}
         >
           <div className="flex items-center justify-between">
-            <div className="flex items-center justify-between">{name}</div>
+            <div
+              onClick={onClickHandler}
+              className="flex items-center justify-between cursor-pointer"
+            >
+              {name}
+            </div>
             {subLinks &&
               subLinks?.length > 0 &&
               isExpandale &&
@@ -79,6 +80,8 @@ const Link = ({
               setActiveLink={setActiveLink}
               rootLinks={rootLinks}
               links={subLinks}
+              level={level + 1}
+              paths={paths}
             />
           )}
         </div>
@@ -87,12 +90,14 @@ const Link = ({
   );
 };
 
-interface LinksProps {
+export interface LinksProps {
   links: DocsLinks;
   index: number;
   rootLinks: DocsLinks[];
   activeLink: string;
   setActiveLink: (link: string) => void;
+  level: number;
+  paths: string[];
 }
 
 export default Link;
