@@ -1,13 +1,16 @@
 import BlogCard, { BlogCardProps } from "components/BlogCard";
 import { useIsDesktop } from "hooks/useDeviceType";
 import { useSectionScroll } from "hooks/useSectionScroll";
+import { useRouter } from "next/router";
 import { useCallback, useState } from "react";
 import SectionHeader from "../SectionHeader";
 
 const MostRecentPost = (props: MostRecentPostProps): JSX.Element => {
+  const { push } = useRouter();
+
   const onClickViewAllPost = useCallback(() => {
-    console.log("asd");
-  }, []);
+    push("/posts");
+  }, [push]);
 
   const isDesktop = useIsDesktop();
 

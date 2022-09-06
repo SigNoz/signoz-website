@@ -1,6 +1,5 @@
 import App, { AppContext, AppProps } from "next/app";
 import { MDXProvider } from "@mdx-js/react";
-import components from "lib/mdxComponents";
 import "../src/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import { DeviceType, DeviceTypeProvider } from "hooks/useDeviceType";
@@ -13,6 +12,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import { config } from "lib/react-query-config";
+import { MDXComponents } from "components/MDX";
 
 interface MyAppProps extends AppProps {
   device: DeviceType;
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps, device }: MyAppProps) {
         <DeviceTypeProvider type={device}>
           <ThemeProvider disableTransitionOnChange defaultTheme="light">
             <AppLayout>
-              <MDXProvider components={components}>
+              <MDXProvider components={MDXComponents}>
                 <Component {...pageProps} />
               </MDXProvider>
             </AppLayout>

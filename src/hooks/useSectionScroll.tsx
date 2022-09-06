@@ -34,13 +34,18 @@ export const useSectionScroll = ({
     };
   }, [section, scrollHandler, isDesktop]);
 
+  const onClickHandler = (index: number) => () => {
+    setCurrentSelected(index);
+  };
+
   return (
     <>
       <div style={style} className={cx("flex justify-center gap-4 my-4")}>
         {new Array(cards).fill(0).map((_, index) => (
           <div
+            onClick={onClickHandler(index)}
             key={index + _}
-            className={cx("rounded-full w-2 h-2", {
+            className={cx("rounded-full w-2 h-2 cursor-pointer", {
               "bg-signoz-medium-light": currentSelected !== index,
               "bg-signoz-primary": currentSelected === index,
             })}

@@ -3,14 +3,17 @@ import { useIsDesktop } from "hooks/useDeviceType";
 import { useCallback, useState } from "react";
 import SectionHeader from "../SectionHeader";
 import { useSectionScroll } from "hooks/useSectionScroll";
+import { useRouter } from "next/router";
 
 const SectionBlogs = ({ section, data }: SectionBlogsProps): JSX.Element => {
   const isDesktop = useIsDesktop();
   const [currentSelected, setCurrentSelected] = useState(0);
 
+  const { push } = useRouter();
+
   const onClickViewAllPost = useCallback(() => {
-    console.log("asd");
-  }, []);
+    push(`/tags/${section}`);
+  }, [push, section]);
 
   const Element = useSectionScroll({
     currentSelected,

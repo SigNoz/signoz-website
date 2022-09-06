@@ -26,6 +26,7 @@ module.exports = {
         "signoz-light-pink": "#F0DAD5",
         "signoz-purple": "#9966C9",
         "signoz-blue": "#547DD9",
+        "signoz-border": "#E6E6E6",
       },
       backgroundImage: {
         "hero-pattern-gradient":

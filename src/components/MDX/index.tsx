@@ -1,5 +1,5 @@
-import React, { Children, useMemo } from "react";
-import { getMDXComponent, MDXContentProps } from "mdx-bundler/client";
+import React, { useMemo } from "react";
+import { getMDXComponent } from "mdx-bundler/client";
 import Image from "./components/Image";
 import CustomLink from "./components/Link";
 import { TocHeadingProps } from "./components/TOCInline";
@@ -7,10 +7,16 @@ import Pre from "./components/Pre";
 import Paragraph from "./components/Paragraph";
 import Heading from "./components/Heading";
 import dynamic from "next/dynamic";
-const Code = dynamic(() => import("./Code"), {
+const Code = dynamic(() => import("./components/Code"), {
   ssr: false,
 });
 const TOCInline = dynamic(() => import("./components/TOCInline"), {
+  ssr: false,
+});
+const Youtube = dynamic(() => import("./components/Youtube"), {
+  ssr: false,
+});
+const ZoomImage = dynamic(() => import("./components/ZoomImage"), {
   ssr: false,
 });
 
@@ -21,7 +27,7 @@ export const MDXComponents = {
   Image,
   TOCInline,
   a: CustomLink,
-  // pre: Pre,
+  pre: Pre,
   p: Paragraph,
   h1: (props: any) => {
     return <Heading {...props} type="h1" />;
@@ -32,6 +38,8 @@ export const MDXComponents = {
   h5: (props: any) => <Heading {...props} type="h5" />,
   h6: (props: any) => <Heading {...props} type="h6" />,
   code: Code,
+  Youtube,
+  ZoomImage,
 };
 
 interface MDXLayoutProps {
@@ -46,6 +54,5 @@ interface MDXLayoutProps {
 export const MDXLayoutRenderer = ({ mdxSource, ...rest }: MDXLayoutProps) => {
   const MDXLayout = useMemo(() => getMDXComponent(mdxSource), [mdxSource]);
 
-  // @ts-ignore
   return <MDXLayout components={MDXComponents} {...rest} />;
 };

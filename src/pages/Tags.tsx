@@ -1,7 +1,7 @@
 import { TagsPage } from "../../pages/tags/[tag]";
-import BlogCard from "components/BlogCard";
-import { blogsTagtoTagsMapping, getBlogCard } from "lib/frontmatterToBlogData";
+import { blogsTagtoTagsMapping } from "lib/frontmatterToBlogData";
 import { useMemo } from "react";
+import GridBlogs from "components/GridBlogs";
 
 const Tags = ({ posts, tag }: TagsPage) => {
   const tags = useMemo(
@@ -28,19 +28,7 @@ const Tags = ({ posts, tag }: TagsPage) => {
     <div className="md:max-w-[1440px] m-auto p-4">
       <h1 className="text-4xl mb-6 font-bold">{`${tags} :`}</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {posts.map((post) => (
-          <div key={post.title}>
-            <BlogCard
-              cardStyle={{ height: "100%" }}
-              {...getBlogCard({
-                ...post,
-                tags: [tagToRender],
-              })}
-            />
-          </div>
-        ))}
-      </div>
+      <GridBlogs posts={posts} tagToRender={tagToRender} />
     </div>
   );
 };

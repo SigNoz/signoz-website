@@ -7,7 +7,7 @@ const Paragraph = ({ children }: Props) => {
 };
 
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default Paragraph;

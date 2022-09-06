@@ -4,13 +4,16 @@ import SectionHeader from "../SectionHeader";
 import NextImage from "next/image";
 import { useIsDesktop } from "hooks/useDeviceType";
 import { useSectionScroll } from "hooks/useSectionScroll";
+import { useRouter } from "next/router";
 
 const OpentelementryImplementation = ({
   data,
 }: OpentelementryImplementationProps) => {
+  const { push } = useRouter();
+
   const onClickViewAllPost = useCallback(() => {
-    console.log("asd");
-  }, []);
+    push("/tags/open-telementry-implementations");
+  }, [push]);
 
   const isDesktop = useIsDesktop();
   const [currentSelected, setCurrentSelected] = useState<number>(0);

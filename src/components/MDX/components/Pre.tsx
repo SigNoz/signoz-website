@@ -76,7 +76,7 @@ const Pre = (props: PreProps) => {
 };
 
 interface PreProps {
-  children: JSX.Element;
+  children?: React.ReactNode;
 }
 
 export default Pre;

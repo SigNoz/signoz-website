@@ -31,14 +31,15 @@ const HeroSection = (props: HeroSectionProps) => {
     section,
     setCurrentSelected,
     style: { justifyContent: isDesktop ? "flex-start" : "center" },
+    cards: content.length,
   });
 
   const selectedBlog = content[currentSelected];
   const dateToRender = useMemo(
     () =>
       getBlogFooter(
-        selectedBlog.date || new Date(),
-        selectedBlog.timeToReadInMinutes
+        selectedBlog?.date || new Date(),
+        selectedBlog?.timeToReadInMinutes
       ),
     [selectedBlog]
   );
