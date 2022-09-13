@@ -2,11 +2,11 @@
 import "react-medium-image-zoom/dist/styles.css";
 import Zoom from "react-medium-image-zoom";
 
-const ZoomImage = ({ image, alt }: ZoomImageProps): JSX.Element => (
+const ZoomImage = ({ image, alt, caption }: ZoomImageProps): JSX.Element => (
   <div className="w-full my-2">
     <Zoom zoomMargin={100}>
       <img src={image} alt={alt} />
-      <div className="text-center">{alt}</div>
+      {caption && <div className="text-center">{caption}</div>}
     </Zoom>
   </div>
 );
@@ -14,6 +14,7 @@ const ZoomImage = ({ image, alt }: ZoomImageProps): JSX.Element => (
 interface ZoomImageProps {
   image: string;
   alt: string;
+  caption?: string;
 }
 
 export default ZoomImage;
