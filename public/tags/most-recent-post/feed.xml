@@ -7,9 +7,19 @@
       <language>undefined</language>
       <managingEditor>undefined (undefined)</managingEditor>
       <webMaster>undefined (undefined)</webMaster>
-      <lastBuildDate>Fri, 30 Aug 2019 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 19 Sep 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="undefined/tags/most-recent-post/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>undefined/blog/opentelemetry-collector-complete-guide</guid>
+    <title>OpenTelemetry Collector - architecture and configuration guide</title>
+    <link>undefined/blog/opentelemetry-collector-complete-guide</link>
+    <description>OpenTelemetry collector provides a vendor-neutral way to collect, process, and export your telemetry data to an analysis backend of your choice. Learn how to configure..</description>
+    <pubDate>Mon, 19 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>most-recent-post</category>
+  </item>
+
   <item>
     <guid>undefined/blog/sample-post</guid>
     <title>sample-post</title>
