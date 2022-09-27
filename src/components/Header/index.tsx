@@ -41,7 +41,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header
-      className={cx({
+      className={cx("list-none", {
         flex: isDesktop,
         "items-center": isDesktop,
       })}
