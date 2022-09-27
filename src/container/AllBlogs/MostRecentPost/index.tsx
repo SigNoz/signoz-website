@@ -40,7 +40,7 @@ const MostRecentPost = (props: MostRecentPostProps): JSX.Element => {
         id={section + "scrollContainer"}
         className="overflow-x-scroll flex md:flex-row gap-4 px-4 md:px-0"
       >
-        <div className="flex-2">
+        <div className="w-full h-full">
           {firstBlogs && (
             <BlogCard
               cardStyle={{ background: "none", boxShadow: "none" }}
@@ -48,7 +48,7 @@ const MostRecentPost = (props: MostRecentPostProps): JSX.Element => {
             />
           )}
         </div>
-        <div className="flex-1 gap-4 flex md:flex-col">
+        <div className="min-w-[369px] flex-1 gap-4 flex md:flex-col">
           {rest.map((blog) => (
             <BlogCard
               cardStyle={{ background: "none", boxShadow: "none" }}

@@ -76,21 +76,22 @@ const TOCInline = ({
   const tocList = (
     <ul>
       {filteredToc.map((heading) => {
-        const isChild = heading.depth >= indentDepth;
+        const isSelected = selectedUrl === heading.url;
         return (
           <div key={heading.value} className="flex mt-3">
             <div
-              className={cx({
-                "border-l-signoz-primary": selectedUrl === heading.url,
-                "border-l border-solid mr-4": isBorderVisible,
+              className={cx("ml-[-2px]", {
+                "border-l-signoz-primary": isSelected,
+                "border-l-2 border-solid mr-4": isBorderVisible,
               })}
             />
-            <li onClick={onClickHandler} className={`${isChild && "ml-2"}`}>
+            <li onClick={onClickHandler} className={`${isSelected && "ml-2"}`}>
               <a
                 className={cx("text-sm font-normal", {
-                  "text-signoz-primary font-semibold text-base mb-2": !isChild,
-                  "text-signoz-dark-light font-normal text-base mb-[6px]":
-                    isChild,
+                  "text-signoz-dark-light font-semibold text-base mb-2":
+                    !isSelected,
+                  "text-signoz-primary  font-normal text-base mb-[6px]":
+                    isSelected,
                 })}
                 href={heading.url}
               >
@@ -108,7 +109,7 @@ const TOCInline = ({
       <div className="text-signoz-dark-light font-normal text-sm">
         IN THIS ARTICLE
       </div>
-      <div className="ml-6">{tocList}</div>
+      <div className="border-l-2 border-solid">{tocList}</div>
     </div>
   );
 };

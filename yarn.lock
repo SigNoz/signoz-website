@@ -3145,7 +3145,7 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.51.tgz#cfd70924a25a3fd32b218e5e420e6897e1ac4f40"
   integrity sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==
 
-"@types/github-slugger@^1.3.0":
+"@types/github-slugger@1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@types/github-slugger/-/github-slugger-1.3.0.tgz#16ab393b30d8ae2a111ac748a015ac05a1fc5524"
   integrity sha512-J/rMZa7RqiH/rT29TEVZO4nBoDP9XJOjnbbIofg7GQKs4JIduEO3WLpte+6WeUz/TcrXKlY+bM7FYrp8yFB+3g==
@@ -3219,7 +3219,7 @@
   resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.7.tgz#226a9e31680835a6188e887f3988e60c04d3f6a3"
   integrity sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==
 
-"@types/js-yaml@^4.0.5":
+"@types/js-yaml@4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-4.0.5.tgz#738dd390a6ecc5442f35e7f03fa1431353f7e138"
   integrity sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA==
@@ -7286,7 +7286,7 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha512-Ln0UQDlxH1BapMu3GPtf7CuYNwRZf2gwCuPqbyG6pB8WfmFpzqcy4xtAaAMUhnNqjMKTiCPZG2oMT3YSx8U2NA==
 
-github-slugger@^1.0.0, github-slugger@^1.1.1, github-slugger@^1.4.0:
+github-slugger@1.4.0, github-slugger@^1.0.0, github-slugger@^1.1.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.4.0.tgz#206eb96cdb22ee56fdc53a28d5a302338463444e"
   integrity sha512-w0dzqw/nt51xMVmlaV1+JRzN+oCa1KfcgGEWhxUG16wbdA+Xnt/yoFO8Z8x/V82ZcZ0wy6ln9QDup5avbhiDhQ==
@@ -9735,7 +9735,7 @@ mdurl@^1.0.0:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==
 
-mdx-bundler@^9.0.1:
+mdx-bundler@9.0.1:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/mdx-bundler/-/mdx-bundler-9.0.1.tgz#0ccb8ba0aaa1c4a22fbb64225b2d7f7e9c483552"
   integrity sha512-/ktO4WTwrZszPOISh9qU0Ud/WXlTZHqA9grErUZGc7WGd7mooJiCCxejkkzHy7TQf1PS83jGECLrTeSVUkqEkQ==
@@ -11788,12 +11788,12 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-lite-youtube-embed@^2.3.1:
+react-lite-youtube-embed@2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/react-lite-youtube-embed/-/react-lite-youtube-embed-2.3.1.tgz#f5ecb8e178b67e4b38670fccb32f05ccc80f0939"
   integrity sha512-14YlE6iZPHwqaQqSmwfI614qumdVAICU9PFmk34vcGnOfiixFjaATGkOfUd2TA6pFpVMP8DT2/l9ebu5/aKeag==
 
-react-medium-image-zoom@^5.0.2:
+react-medium-image-zoom@5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.0.2.tgz#2ec051205e7bfc53759f8a3a1bfd1c594f96100c"
   integrity sha512-DGdsNaixDgXnEFFpCV6YHJYG4VQOvzs3PHS3h+nfIV82GO0cWetXrBQFGA77DMGODe6DuBX2SQPqZAQVKpLdcw==
@@ -11835,7 +11835,7 @@ react-universal-interface@^0.6.2:
   resolved "https://registry.yarnpkg.com/react-universal-interface/-/react-universal-interface-0.6.2.tgz#5e8d438a01729a4dbbcbeeceb0b86be146fe2b3b"
   integrity sha512-dg8yXdcQmvgR13RIlZbTRQOoUrDciFVoSBZILwjE2LFISxZZ8loVJKAkuzswl5js8BHda79bIb2b84ehU8IjXw==
 
-react-use@^17.4.0:
+react-use@17.4.0:
   version "17.4.0"
   resolved "https://registry.yarnpkg.com/react-use/-/react-use-17.4.0.tgz#cefef258b0a6c534a5c8021c2528ac6e1a4cdc6d"
   integrity sha512-TgbNTCA33Wl7xzIJegn1HndB4qTS9u03QUwyNycUnXaweZkE4Kq2SB+Yoxx8qbshkZGYBDvUXbXWRUmQDcZZ/Q==
@@ -11943,7 +11943,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-reading-time@^1.5.0:
+reading-time@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/reading-time/-/reading-time-1.5.0.tgz#d2a7f1b6057cb2e169beaf87113cc3411b5bc5bb"
   integrity sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==
@@ -12053,7 +12053,7 @@ regjsparser@^0.8.2:
   dependencies:
     jsesc "~0.5.0"
 
-rehype-autolink-headings@^6.1.1:
+rehype-autolink-headings@6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/rehype-autolink-headings/-/rehype-autolink-headings-6.1.1.tgz#0cb874a56f3de6ead1c2268d7f0fc5006f244db5"
   integrity sha512-NMYzZIsHM3sA14nC5rAFuUPIOfg+DFmf9EY1YMhaNlB7+3kK/ZlE6kqPfuxr1tsJ1XWkTrMtMoyHosU70d35mA==
@@ -12064,6 +12064,26 @@ rehype-autolink-headings@^6.1.1:
     hast-util-heading-rank "^2.0.0"
     hast-util-is-element "^2.0.0"
     unified "^10.0.0"
+    unist-util-visit "^4.0.0"
+
+rehype-citation@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/rehype-citation/-/rehype-citation-0.4.0.tgz#477d565fed24802286ff64bff1986086b1d61a96"
+  integrity sha512-W2QAgZBepcu+Npg7jJZ2d/JGd+bDShKT5Ux2np7xsut7DMfL8cpG0ANCEYsUP8lFlt6+UlpI9404lHwW5zCQ7Q==
+  dependencies:
+    "@citation-js/core" "^0.5.4"
+    "@citation-js/date" "^0.5.1"
+    "@citation-js/name" "^0.4.2"
+    "@citation-js/plugin-bibjson" "^0.5.4"
+    "@citation-js/plugin-bibtex" "^0.5.5"
+    "@citation-js/plugin-csl" "^0.5.5"
+    citeproc "^2.4.62"
+    cross-fetch "^3.1.5"
+    hast-util-from-dom "^4.1.0"
+    hast-util-from-parse5 "^7.1.0"
+    parse5 "^6.0.1"
+    rehype-citation "^0.2.5-rc.0"
+    unified "^10.1.0"
     unist-util-visit "^4.0.0"
 
 rehype-citation@^0.2.5-rc.0:
@@ -12086,27 +12106,7 @@ rehype-citation@^0.2.5-rc.0:
     unified "^10.1.0"
     unist-util-visit "^4.0.0"
 
-rehype-citation@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/rehype-citation/-/rehype-citation-0.4.0.tgz#477d565fed24802286ff64bff1986086b1d61a96"
-  integrity sha512-W2QAgZBepcu+Npg7jJZ2d/JGd+bDShKT5Ux2np7xsut7DMfL8cpG0ANCEYsUP8lFlt6+UlpI9404lHwW5zCQ7Q==
-  dependencies:
-    "@citation-js/core" "^0.5.4"
-    "@citation-js/date" "^0.5.1"
-    "@citation-js/name" "^0.4.2"
-    "@citation-js/plugin-bibjson" "^0.5.4"
-    "@citation-js/plugin-bibtex" "^0.5.5"
-    "@citation-js/plugin-csl" "^0.5.5"
-    citeproc "^2.4.62"
-    cross-fetch "^3.1.5"
-    hast-util-from-dom "^4.1.0"
-    hast-util-from-parse5 "^7.1.0"
-    parse5 "^6.0.1"
-    rehype-citation "^0.2.5-rc.0"
-    unified "^10.1.0"
-    unist-util-visit "^4.0.0"
-
-rehype-katex@^6.0.2:
+rehype-katex@6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/rehype-katex/-/rehype-katex-6.0.2.tgz#20197bbc10bdf79f6b999bffa6689d7f17226c35"
   integrity sha512-C4gDAlS1+l0hJqctyiU64f9CvT00S03qV1T6HiMzbSuLBgWUtcqydWHY9OpKrm0SpkK16FNd62CDKyWLwV2ppg==
@@ -12300,7 +12300,7 @@ rehype-parse@^8.0.0, rehype-parse@^8.0.2:
     parse5 "^6.0.0"
     unified "^10.0.0"
 
-rehype-preset-minify@^6.0.0:
+rehype-preset-minify@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/rehype-preset-minify/-/rehype-preset-minify-6.0.0.tgz#1dc0ee0214a7475238182426b78c43761f333508"
   integrity sha512-MV+iXsjru4MoQThRU3ipvhmH7RxFdPY+46menxWb6z/Ib4WvVuLljNS2GkumT/bvLScc4996UiTNHNroae18ww==
@@ -12329,7 +12329,7 @@ rehype-preset-minify@^6.0.0:
     rehype-sort-attribute-values "^4.0.0"
     rehype-sort-attributes "^4.0.0"
 
-rehype-prism-plus@^1.4.2:
+rehype-prism-plus@1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/rehype-prism-plus/-/rehype-prism-plus-1.4.2.tgz#418e3c04811c70c3c2457eda12fb75bb27319443"
   integrity sha512-RQNQJIRiejJ6lUh8nm04jEoR0bSsWl2i4R0MXpJtvlRzwTU1D7qdHGT0veCIvuhXPRP4G7Obo4VGwOVAfOtXZw==
@@ -12414,7 +12414,7 @@ rehype-remove-style-type-css@^3.0.0:
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
 
-rehype-slug@^5.0.1:
+rehype-slug@5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/rehype-slug/-/rehype-slug-5.0.1.tgz#6e732d0c55b3b1e34187e74b7363fb53229e5f52"
   integrity sha512-X5v3wV/meuOX9NFcGhJvUpEjIvQl2gDvjg3z40RVprYFt7q3th4qMmYLULiu3gXvbNX1ppx+oaa6JyY1W67pTA==
@@ -12477,7 +12477,7 @@ remark-frontmatter@^4.0.1:
     micromark-extension-frontmatter "^1.0.0"
     unified "^10.0.0"
 
-remark-gfm@^3.0.1:
+remark-gfm@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/remark-gfm/-/remark-gfm-3.0.1.tgz#0b180f095e3036545e9dddac0e8df3fa5cfee54f"
   integrity sha512-lEFDoi2PICJyNrACFOfDD3JlLkuSbOa5Wd8EPt06HUdptv8Gn0bxYTdbU/XXQ3swAPkEaGxxPN9cbnMHvVu1Ig==
@@ -12487,7 +12487,7 @@ remark-gfm@^3.0.1:
     micromark-extension-gfm "^2.0.0"
     unified "^10.0.0"
 
-remark-math@^5.1.1:
+remark-math@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/remark-math/-/remark-math-5.1.1.tgz#459e798d978d4ca032e745af0bac81ddcdf94964"
   integrity sha512-cE5T2R/xLVtfFI4cCePtiRn+e6jKMtFDR3P8V3qpv8wpKjwvHoBA4eJzvX+nVrnlNy0911bdGmuspCSwetfYHw==

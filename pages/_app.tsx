@@ -24,13 +24,13 @@ function MyApp({ Component, pageProps, device }: MyAppProps) {
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
         <DeviceTypeProvider type={device}>
-          <ThemeProvider disableTransitionOnChange defaultTheme="light">
-            <AppLayout>
-              <MDXProvider components={MDXComponents}>
-                <Component {...pageProps} />
-              </MDXProvider>
-            </AppLayout>
-          </ThemeProvider>
+          {/* <ThemeProvider disableTransitionOnChange defaultTheme="light"> */}
+          <AppLayout>
+            <MDXProvider components={MDXComponents}>
+              <Component {...pageProps} />
+            </MDXProvider>
+          </AppLayout>
+          {/* </ThemeProvider> */}
         </DeviceTypeProvider>
       </Hydrate>
     </QueryClientProvider>
