@@ -23,3 +23,7 @@
     color: var(--docsearch-text-color);
     outline: none;
 }
+
+ul{
+  list-style-type: unset;
+}

@@ -85,7 +85,7 @@ const TOCInline = ({
                 "border-l-2 border-solid mr-4": isBorderVisible,
               })}
             />
-            <li onClick={onClickHandler} className={`${isSelected && "ml-2"}`}>
+            <li onClick={onClickHandler}>
               <a
                 className={cx("text-sm font-normal", {
                   "text-signoz-dark-light font-semibold text-base mb-2":
@@ -109,7 +109,7 @@ const TOCInline = ({
       <div className="text-signoz-dark-light font-normal text-sm">
         IN THIS ARTICLE
       </div>
-      <div className="border-l-2 border-solid">{tocList}</div>
+      <div className="border-l-2 border-solid list-none">{tocList}</div>
     </div>
   );
 };

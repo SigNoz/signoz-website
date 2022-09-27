@@ -37,6 +37,7 @@ const Layout = ({ children, frontMatter, authorDetails, toc }: LayoutProps) => {
                         layout="intrinsic"
                         width={48}
                         height={48}
+                        objectFit="cover"
                       />
                       <div className="flex flex-col gap-1 items-start justify-start ml-3">
                         <div className="text-base text-signoz-dark-intermediate font-semibold leading-[150%] w-60">
@@ -69,6 +70,7 @@ const Layout = ({ children, frontMatter, authorDetails, toc }: LayoutProps) => {
               height={172}
               width={400}
               className="rounded-lg"
+              objectFit="cover"
             />
           </div>
         </div>

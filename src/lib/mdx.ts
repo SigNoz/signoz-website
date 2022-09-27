@@ -20,6 +20,8 @@ import rehypeKatex from "rehype-katex";
 import rehypeCitation from "rehype-citation";
 import rehypePrismPlus from "rehype-prism-plus";
 import rehypePresetMinify from "rehype-preset-minify";
+import rehypeHighlight from "rehype-highlight";
+
 import kebabCase from "./utils/kebab";
 
 const root = process.cwd();
@@ -97,7 +99,7 @@ export async function getFileBySlug(type: string, slug: string) {
   const { code, frontmatter } = await bundleMDX({
     source,
     cwd: path.join(root, "components"),
-    mdxOptions(options: any, frontmatter: any) {
+    mdxOptions(options) {
       options.remarkPlugins = [
         ...(options.remarkPlugins ?? []),
         remarkExtractFrontmatter,
@@ -115,6 +117,7 @@ export async function getFileBySlug(type: string, slug: string) {
         rehypeKatex,
         [rehypeCitation, { path: path.join(root, "data") }],
         [rehypePrismPlus, { ignoreMissing: true }],
+        rehypeHighlight,
         rehypePresetMinify,
       ];
       return options;
