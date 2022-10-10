@@ -25,6 +25,7 @@ const Docs: NextPage<DocsProps> = (props: DocsProps): JSX.Element => {
       frontMatter={frontMatter}
       type="docs"
       toc={toc}
+      shareIcons={[]}
       docsLinks={docsLinks}
     >
       <div className="flex flex-col gap-5">
