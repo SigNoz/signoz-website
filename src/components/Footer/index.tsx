@@ -26,8 +26,6 @@ const Footer = () => {
           <Link text="MORE" subLinks={getSubLinks("MORE")} />
           <Link text="MORE" subLinks={getSubLinks("MORE")} />
           <Link text="MORE" subLinks={getSubLinks("MORE")} />
-          <Link text="MORE" subLinks={getSubLinks("MORE")} />
-          <Link text="MORE" subLinks={getSubLinks("MORE")} />
         </div>
       </div>
     </footer>

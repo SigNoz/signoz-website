@@ -1,4 +1,5 @@
 import { TocHeadingProps } from "components/MDX/components/TOCInline";
+import { ShareIcon } from "components/ShareIcons";
 import { DocsLinks } from "container/DocsSidebar";
 import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
@@ -12,6 +13,7 @@ const Layout = ({
   frontMatter,
   toc,
   docsLinks,
+  shareIcons,
 }: LayoutProps) => {
   if (type === "docs") {
     return (
@@ -23,6 +25,7 @@ const Layout = ({
           frontMatter,
           toc,
           type,
+          shareIcons,
         }}
       />
     );
@@ -37,6 +40,7 @@ const Layout = ({
           frontMatter,
           toc,
           type,
+          shareIcons,
         }}
       />
     );
@@ -52,6 +56,7 @@ export interface LayoutProps {
   authorDetails: AuthorDetails[];
   toc: TocHeadingProps["toc"];
   docsLinks: DocsLinks[];
+  shareIcons: ShareIcon[];
 }
 
 export default Layout;

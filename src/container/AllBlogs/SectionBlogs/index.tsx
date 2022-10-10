@@ -5,15 +5,23 @@ import SectionHeader from "../SectionHeader";
 import { useSectionScroll } from "hooks/useSectionScroll";
 import { useRouter } from "next/router";
 
-const SectionBlogs = ({ section, data }: SectionBlogsProps): JSX.Element => {
+const SectionBlogs = ({
+  section,
+  data,
+  customUrl,
+}: SectionBlogsProps): JSX.Element => {
   const isDesktop = useIsDesktop();
   const [currentSelected, setCurrentSelected] = useState(0);
 
   const { push } = useRouter();
 
   const onClickViewAllPost = useCallback(() => {
+    if (customUrl) {
+      push(customUrl);
+      return;
+    }
     push(`/tags/${section}`);
-  }, [push, section]);
+  }, [push, section, customUrl]);
 
   const Element = useSectionScroll({
     currentSelected,
@@ -53,6 +61,7 @@ const SectionBlogs = ({ section, data }: SectionBlogsProps): JSX.Element => {
 interface SectionBlogsProps {
   section: BlogCardProps["tags"];
   data: BlogCardProps[];
+  customUrl?: string;
 }
 
 export default SectionBlogs;

@@ -1,5 +1,5 @@
 const Pre = (props: PreProps) => {
-  return <pre>{props.children}</pre>;
+  return <pre className="overflow-scroll">{props.children}</pre>;
 };
 
 interface PreProps {

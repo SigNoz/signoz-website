@@ -5,7 +5,7 @@ date: 2022-09-19
 tags: [most-recent-post]
 authors: [ankit_nayan]
 description: OpenTelemetry collector provides a vendor-neutral way to collect, process, and export your telemetry data to an analysis backend of your choice. Learn how to configure..
-image: /blogs/sample.jpeg
+image: /blogs/2022/09/opentelemetry_collector_guide_cover.webp
 hide_table_of_contents: true
 keywords:
   - opentelemetry
@@ -15,22 +15,20 @@ keywords:
   - signoz
 ---
 
+<head>
+  <title>OpenTelemetry Collector | Complete Guide</title>
+  <link rel="canonical" href="https://signoz.io/blog/opentelemetry-collector-complete-guide/"/>
+</head>
 
-<Youtube id='Tl3Cz8tz4R8'/>
-<br/>
-`OpenTelemetry Collector` is a stand-alone service provided by OpenTelemetry. It can be used as a telemetry-processing system with a lot of flexible configurations to collect and manage telemetry data. Let's do a deep dive on OpenTelemetry Collectors to understand how it works.
-
-<ul>
-<li>1</li>
-<li>1</li>
-<li>1</li>
-</ul>
+OpenTelemetry Collector is a stand-alone service provided by OpenTelemetry. It can be used as a telemetry-processing system with a lot of flexible configurations to collect and manage telemetry data. Let's do a deep dive on OpenTelemetry Collectors to understand how it works.
 
 <ZoomImage
   image={"/blogs/header.jpg"}
   alt="Instana vs Sysdig"
   caption='Instana vs Sysdig'
 />
+
+[Python Instrumentation](https://signoz.io/docs/instrumentation/python/)
 
 
 The first step in setting up observability with OpenTelemetry is instrumentation. The application code is instrumented with OpenTelemetry client libraries that help generate telemetry data like logs, metrics, and traces.
@@ -41,21 +39,21 @@ OpenTelemetry collectors can be deployed in different ways. It can be deployed o
 
 You can also run your OpenTelemetry Collector as a stand-alone service. The client libraries of OpenTelemetry have an exporter that can be configured to send the telemetry data to the collector. Usually, a mixed pattern of OpenTelemetry Collectors is recommended to handle scale.
 
+<ZoomImage
+  image={"/blogs/2022/09/opentelemetry_architecture.webp"}
+  alt="OpenTelemetry Architecture"
+  caption='Architecture - How OpenTelemetry fits in an application architecture. OTel collector refers to OpenTelemetry Collector'
+/>
 
-<br></br>
-
-<figure data-zoomable align='center'>
-    <img src="/img/blog/2022/09/opentelemetry_architecture.webp" alt="OpenTelemetry Architecture"/>
-    <figcaption><i>Architecture - How OpenTelemetry fits in an application architecture. OTel collector refers to OpenTelemetry Collector</i></figcaption>
-</figure>
-
-<br></br>
 
 Before deep-diving into OpenTelemetry collectors, let's take a short detour to understand what OpenTelemetry is.
 
-## What is OpenTelemetry?
+
+### What is OpenTelemetry?
+
 
 <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry</a> is an open-source observability framework that aims to standardize the generation, collection, and management of telemetry data(Logs, metrics, and traces). It is incubated under Cloud Native Computing Foundation([CNCF](https://www.cncf.io/)), the same foundation which incubated Kubernetes.
+
 
 OpenTelemetry follows a <a href = "https://opentelemetry.io/docs/reference/specification/" rel="noopener noreferrer nofollow" target="_blank" >specification-driven</a>  development and provides client libraries to instrument applications in most programming languages. Once you have instrumented with OpenTelemetry, you should be able to collect various telemetry signals like logs, metrics, and traces from it. And that's where OpenTelemetry Collector comes into the picture.
 
@@ -73,18 +71,25 @@ List of reasons why to use OpenTelemetry Collector:
 - It enables quick config-based updates to your telemetry data pipeline. It is trivial to update a config file to receive data in another format.
 - It can also help collect host metrics such as RAM, CPU, and storage capacity.
 
+
 ## Architecture of OpenTelemetry collector
+
+<br></br>
 
 OpenTelemetry collector consists of three main components: Receivers, processors, and exporters.
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/2022/09/collector_pipeline.webp" alt="Architecture of OpenTelemetry Collector"/>
-    <figcaption><i>Architecture of OpenTelemetry Collector with receivers, processors and exporters.</i></figcaption>
-</figure>
+<br></br>
+
+<ZoomImage
+  image={"/blogs/2022/09/collector_pipeline.webp"}
+  alt="Architecture of OpenTelemetry Collector"
+  caption='Architecture of OpenTelemetry Collector with receivers, processors and exporters.'
+/>
+
+<br></br>
 
 
 ### Receivers
-
 Receivers are used to get data into the collector. Currently, the collector supports over forty different types of receivers. You can use the receivers to configure ports and formats the collector can take data in. It could be push or pull-based.
 
 You can receive data in multiple formats. It has a default OTLP format, but you can receive data in other popular open-source formats like Jaeger or Prometheus.
@@ -92,16 +97,17 @@ You can receive data in multiple formats. It has a default OTLP format, but you 
 ### Processors
 
 Processors are used to do any processing required on the collected data, like data massaging, data manipulation, or any change in the data as it flows through the collector. It can also be used to remove PII data from the collected telemetry data, which can be very useful.
-
 You can also do things like batching the data before sending it out, retrying in case the exporting fails, adding metadata, tail-based sampling, etc.
 
+
 ### Exporters
+
 
 Exporters are used to export data to an observability backend like [SigNoz](https://signoz.io/?utm_source=blog&utm_medium=opentelemetry_colllector). You can send out data in multiple data formats. You can send different telemetry signals to different backend analysis tools. For example, you can send traces to Jaeger and metrics to Prometheus.
 
 With the combination of these three components, OpenTelemetry Collector can be used to build data pipelines. Pipelines are configured via a YAML configuration file easily. This provides flexibility to teams managing their telemetry data.
 
-## **How to configure a OpenTelemetry collector?**
+## How to configure a OpenTelemetry collector?
 
 You need to configure the three components of the OpenTelemetry collector described above. Once configured, these components must be enabled via pipelines within the service section. SigNoz comes with an OpenTelemetry collector installed. You can find the configuration file of SigNoz OpenTelemetry collector <a href = "https://github.com/SigNoz/signoz/blob/develop/deploy/docker/clickhouse-setup/otel-collector-config.yaml" rel="noopener noreferrer nofollow" target="_blank" >here</a>.
 
@@ -109,10 +115,10 @@ You need to configure the three components of the OpenTelemetry collector descri
 
 In the sample code shown below, we have two receivers:
 
-1. OTLP<br></br>
+In the sample code shown below, we have two receivers:
+1. OTLP
 Default OpenTelemetry protocol to transfer telemetry data. SigNoz receives telemetry data in OTLP format.
-
-2. Jaeger<br></br>
+2. Jaeger
 You can also receive traces data in Jaeger format, which is a popular distributed tracing tool.
 
 ```bash
@@ -127,17 +133,29 @@ receivers:
           thrift_http:
 ```
 
+<br></br>
+
 ### Configuring Processors
 
+<br></br>
+
 There are three processors in the code sample shown below:
+
+<br></br>
 
 1. **Batch**<br></br>
    Batching helps better compress the data and reduce the number of outgoing connections required to transmit the data. This processor supports both size and time-based batching.
 
+<br></br>
+
 2. **Memory limiter**<br></br>
    The memory limiter processor is used to prevent out-of-memory situations on the collector. Given that the amount and type of data a collector processes are environment-specific and resource utilization of the collector is also dependent on the configured processors, it is important to put checks in place regarding memory usage.
+<br></br>
+
 3. **Queued retry**<br></br>
    This processor is highly recommended to configure for every collector as it minimizes the likelihood of data being dropped due to delays in processing or issues exporting the data.
+
+<br></br>
 
 ```bash
 processors:
@@ -157,15 +175,24 @@ processors:
         queue_size: 100
         retry_on_failure: true
 ```
+<br></br>
 
 You can find detailed information about these processors and more in <a href = "https://github.com/open-telemetry/opentelemetry-collector/tree/caadbbc476cc13ba87503b8ae7a1a8a50d5b22c4/processor" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry Collector GitHub repo</a>.
 
+<br></br>
+
 ### Configuring Exporters
+
+<br></br>
 
 In this sample code, we have created two exporters.
 
+<br></br>
+
 1. **kafka/traces**<br></br>
 This forwards collected traces to write to a kafka topic named as `otlp_spans`.
+
+<br></br>
 
 2. **kafka/metrics**<br></br>
 This forwards collected metrics to write to a kafka topic named as `otlp_metrics`.
@@ -184,19 +211,33 @@ exporters:
         protocol_version: 2.0.0
 ```
 
+<br></br>
+
 You can also configure extensions that enable things like monitoring the health of OpenTelemetry Collector.
+
+<br></br>
 
 ### Extensions
 
+<br></br>
+
 Extensions provide capabilities on top of the primary functionality of the OpenTelemetry Collector.
 
+<br></br>
+
 In this example, we have enabled two extensions.
+
+<br></br>
 
 1. **Health Check**<br></br>
 It enables a URL that can be used to check the status of the OpenTelemetry Collector.
 
+<br></br>
+
 2. **Zpages**<br></br>
 It enables an HTTP endpoint that provides live data for debugging different components of the OpenTelemetry Collector.
+
+<br></br>
 
 ```bash
 extensions:
@@ -204,17 +245,29 @@ extensions:
       zpages: {}
 ```
 
+<br></br>
+
 ### Configuring the service section and data pipelines
+
+<br></br>
 
 All the components that are configured must be enabled via pipelines within the `service` section. If a component is not defined in the service section, then it is not enabled. Pipelines make OpenTelemetry collector a must-have component in your architecture. It provides the flexibility of receiving and exporting data in multiple formats.
 
+<br></br>
+
 In the example shown below from SigNoz OTel Collector config file, we have enabled two pipelines.
+
+<br></br>
 
 1. **traces**<br></br>
 In this pipeline, we can receive traces in `jaeger` and `otlp` formats. We then use three processors on the collected traces, namely `signozspanmetrics/prometheus` and `batch`. We export the processed traces to write to in ClickHouse DB.
 
+<br></br>
+
 2. **metrics**<br></br>
 In the pipeline, we receive metrics in `otlp` formats. Process the collected metrics using batch processor and then export the processed metrics to ClickHouse.
+
+<br></br>
 
 ```bash
 service:
@@ -229,8 +282,11 @@ service:
           processors: [batch]
           exporters: [clickhousemetricswrite]
 ```
+<br></br>
 
 A sample OpenTelemetry Collector configuration file. (Source: <a href = "https://signoz.io/?utm_source=blog&utm_medium=opentelemetry_colllector" rel="noopener noreferrer nofollow" target="_blank" >SigNoz</a>)
+
+<br></br>
 
 ```bash
 receivers:
@@ -372,11 +428,20 @@ service:
       exporters: [clickhouselogsexporter]
 ```
 
+
+<br></br>
+
 ## Getting started with OpenTelemetry
+
+<br></br>
 
 OpenTelemetry provides a vendor-agnostic way of collecting and managing telemetry data. The next step is to choose a backend analysis tool that can help you make sense of the collected data. [SigNoz](https://signoz.io/?utm_source=blog&utm_medium=opentelemetry_colllector) is a full-stack open-source application performance monitoring and observability platform built natively for OpenTelemetry.
 
+<br></br>
+
 You can get started with SigNoz using just three commands at your terminal.
+
+<br></br>
 
 ```bash
 git clone -b main https://github.com/SigNoz/signoz.git
@@ -384,27 +449,49 @@ cd signoz/deploy/
 ./install.sh
 ```
 
+<br></br>
+
 For detailed instructions, you can visit our documentation.
+
+<br></br>
 
 [![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/?utm_source=blog&utm_medium=opentelemetry_colllector)
 
+<br></br>
+
 SigNoz can be used to visualize metrics and traces with charts that can enable quick insights for your teams.
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/common/signoz_charts_application_metrics.webp" alt="SigNoz dashboard showing overview metrics like RPS"/>
-    <figcaption><i>SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate</i></figcaption>
-</figure>
+<br></br>
+
+<ZoomImage
+  image={"/blogs/common/signoz_charts_application_metrics.webp"}
+  alt="SigNoz dashboard showing overview metrics like RPS"
+  caption='SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate'
+/>
 
 <br></br>
 
 You can try out SigNoz by visiting its GitHub repo 👇
 
+<br></br>
+
 [![SigNoz repo](/img/blog/common/signoz_github.webp)](https://github.com/signoz/signoz)
 
+<br></br>
 
+Here's a youtube video you can check out on the topic:
+
+<br></br>
+
+<Youtube id='Tl3Cz8tz4R8'/>
+
+<br></br>
 ___
 
+<br></br>
 #### **Related Content**
+
+<br></br>
 
 **[OpenTelemetry Tracing - things you need to know](https://signoz.io/blog/opentelemetry-tracing/)**<br></br>
 **[Monitor Nodejs Application with OpenTelemetry and SigNoz](https://signoz.io/opentelemetry/nodejs/)**<br></br>

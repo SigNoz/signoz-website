@@ -37,11 +37,7 @@ const getSubLinks = (section: string): SubLinks[] => {
     case "MORE": {
       return [
         {
-          text: "Technical Writer",
-          to: "/",
-        },
-        {
-          text: "Program",
+          text: "Technical Writer Program",
           to: "/",
         },
         {

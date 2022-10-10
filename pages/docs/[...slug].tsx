@@ -41,6 +41,7 @@ const Docs: NextPage<DocsProps> = (props: DocsProps): JSX.Element => {
       frontMatter={frontMatter}
       toc={toc}
       docsLinks={docsLinks}
+      shareIcons={[]}
     >
       <div className="flex flex-col gap-5">
         <MDXLayoutRenderer

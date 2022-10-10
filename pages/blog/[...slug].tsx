@@ -14,12 +14,8 @@ import Layout from "container/Layout";
 import { TocHeadingProps } from "components/MDX/components/TOCInline";
 import SectionBlogs from "container/AllBlogs/SectionBlogs";
 import { getBlogCard } from "lib/frontmatterToBlogData";
-const ShareIcons = dynamic(() => import("components/ShareIcons"), {
-  ssr: false,
-});
 import { ShareIcon } from "components/ShareIcons";
 import { useRouter } from "next/router";
-import BlogTag from "components/BlogTag";
 import BlogsSEO from "components/BlogSEO";
 import dynamic from "next/dynamic";
 const PropertyControlledComponent = dynamic(
@@ -79,8 +75,7 @@ export interface AuthorDetails {
   avatar: string;
   occupation: string;
   company: string;
-  twitter: string;
-  linkedin: string;
+  url: string;
   date: null | Date;
 }
 
@@ -151,34 +146,32 @@ const Blogs: NextPage<BlogProps> = ({
       <PropertyControlledComponent controllerProperty={!isBlogInDraft}>
         <>
           <div className="flex flex-col md:flex-row m-auto max-w-[1240px] justify-center w-full">
-            <div>
-              <Layout
-                toc={toc}
-                frontMatter={frontMatter}
-                authorDetails={authorDetails}
-                docsLinks={[]}
-                type="blogs"
-              >
-                <MDXLayoutRenderer
-                  {...{
-                    authorDetails,
-                    frontmatter: frontMatter,
-                    mdxSource,
-                    next,
-                    prev,
-                    toc,
-                  }}
-                />
-              </Layout>
-            </div>
-            <div className="flex flex-col md:ml-4 md:w-[30%] w-full">
-              <ShareIcons shareIcons={shareIcons} />
-
-              <BlogTag tags={frontMatter.tags} />
-            </div>
+            <Layout
+              toc={toc}
+              frontMatter={frontMatter}
+              authorDetails={authorDetails}
+              docsLinks={[]}
+              type="blogs"
+              shareIcons={shareIcons}
+            >
+              <MDXLayoutRenderer
+                {...{
+                  authorDetails,
+                  frontmatter: frontMatter,
+                  mdxSource,
+                  next,
+                  prev,
+                  toc,
+                }}
+              />
+            </Layout>
           </div>
-          <div className="bg-recommended-post">
-            <SectionBlogs section="blog-recent-post" data={recentBlogs} />
+          <div className="bg-recommended-post mt-4 md:mt-20">
+            <SectionBlogs
+              customUrl="/blogs"
+              section="blog-recent-post"
+              data={recentBlogs}
+            />
           </div>
         </>
       </PropertyControlledComponent>

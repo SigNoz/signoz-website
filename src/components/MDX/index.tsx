@@ -6,7 +6,11 @@ import { TocHeadingProps } from "./components/TOCInline";
 import Pre from "./components/Pre";
 import Paragraph from "./components/Paragraph";
 import Heading from "./components/Heading";
+import OL from "./components/OL";
+import UL from "./components/UL";
 import dynamic from "next/dynamic";
+import LI from "./components/LI";
+
 const Code = dynamic(() => import("./components/Code"), {
   ssr: false,
 });
@@ -29,9 +33,7 @@ export const MDXComponents = {
   a: CustomLink,
   pre: Pre,
   p: Paragraph,
-  h1: (props: any) => {
-    return <Heading {...props} type="h1" />;
-  },
+  h1: (props: any) => <Heading {...props} type="h1" />,
   h2: (props: any) => <Heading {...props} type="h2" />,
   h3: (props: any) => <Heading {...props} type="h3" />,
   h4: (props: any) => <Heading {...props} type="h4" />,
@@ -40,6 +42,9 @@ export const MDXComponents = {
   code: Code,
   Youtube,
   ZoomImage,
+  ol: OL,
+  ul: UL,
+  li: LI,
 };
 
 interface MDXLayoutProps {

@@ -8,6 +8,7 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
         />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

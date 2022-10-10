@@ -1,5 +1,4 @@
 import React from "react";
-import cx from "classnames";
 import { headingConfig } from "./config";
 import { useIsDesktop } from "hooks/useDeviceType";
 

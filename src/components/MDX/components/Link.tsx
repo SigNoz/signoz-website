@@ -16,7 +16,15 @@ const CustomLink = ({ href, ...rest }: LinkProps) => {
     return <a href={href} {...rest} />;
   }
 
-  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />;
+  return (
+    <a
+      className="text-signoz-primary"
+      target="_blank"
+      rel="noopener noreferrer"
+      href={href}
+      {...rest}
+    />
+  );
 };
 
 interface LinkProps {

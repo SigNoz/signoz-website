@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useCallback, useState } from "react";
 
 const LinkComponent = ({ subLinks, text }: LinkProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const isDesktop = useIsDesktop();
 
   const onClickHandler = useCallback(() => {
