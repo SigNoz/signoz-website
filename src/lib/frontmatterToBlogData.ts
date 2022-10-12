@@ -31,7 +31,7 @@ export const getBlogCard = (
   const {
     title,
     date,
-    tags,
+    tags = [],
     description = "",
     time = { minutes: 0 },
     slug,

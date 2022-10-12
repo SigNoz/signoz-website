@@ -24,7 +24,10 @@ const Code = ({ children }: Props) => {
     }, 2000);
   };
 
-if (Array.isArray(children)) {
+if (
+  Array.isArray(children) ||
+  (typeof children === "string" && children.indexOf(" ") >= 0)
+) {
   return (
     <div
       ref={textInput}
@@ -77,6 +80,7 @@ if (Array.isArray(children)) {
     </div>
   );
 }
+
 return (
   <div className="bg-signoz-medium bg-opacity-10 inline-block rounded-lg px-2">
     {children}

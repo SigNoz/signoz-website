@@ -58,13 +58,28 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
   });
   const authorDetails = await Promise.all(authorPromise);
 
+  const referencePost = post.frontMatter.referencePost || [];
+  const referencePromise = referencePost.map(async (reference) => {
+    const referenceResults = await getFileBySlug("blogs", reference);
+    return referenceResults;
+  });
+
+  const referenceDetails = await Promise.all(referencePromise);
   // rss
   if (allPosts.length > 0) {
     const rss = generateRss(allPosts);
     fs.writeFileSync("./public/feed.xml", rss);
   }
 
-  return { props: { post, authorDetails, prev, next } };
+  return {
+    props: {
+      post,
+      authorDetails,
+      prev,
+      next,
+      referencePost: referenceDetails.map((e) => e.frontMatter),
+    },
+  };
 }
 
 export interface AuthorDetails {
@@ -88,6 +103,7 @@ interface BlogProps {
     toc: TocHeadingProps["toc"];
   };
   authorDetails: AuthorDetails[];
+  referencePost: FrontMatterProps[];
 }
 
 const Blogs: NextPage<BlogProps> = ({
@@ -95,20 +111,12 @@ const Blogs: NextPage<BlogProps> = ({
   next,
   post,
   authorDetails,
+  referencePost,
 }: BlogProps) => {
   const { frontMatter, mdxSource, toc } = post;
   const { asPath } = useRouter();
 
-  const allFrontMatterPosts = [{ ...frontMatter }];
-
-  if (next !== null) {
-    allFrontMatterPosts.push(next);
-  }
-  if (prev !== null) {
-    allFrontMatterPosts.push(prev);
-  }
-
-  const recentBlogs = allFrontMatterPosts.map((frontMatter) =>
+  const recentBlogs = referencePost.map((frontMatter) =>
     getBlogCard(frontMatter)
   );
 

@@ -140,7 +140,8 @@ export async function getFileBySlug(type: string, slug: string) {
       fileName: fs.existsSync(mdxPath) ? `${slug}.mdx` : `${slug}.md`,
       ...frontmatter,
       date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
-      authors: frontmatter.authors || [],
+      authors: (frontmatter.authors as string[]) || [],
+      referencePost: (frontmatter.referencePost as string[]) || [],
     },
   };
 }
@@ -155,6 +156,7 @@ export interface FrontMatterProps {
   time: ReadTimeResults;
   keywords: string[];
   image: string;
+  referencePost?: string[];
 }
 
 const getDate = (date: string | null): Date => {
