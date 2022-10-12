@@ -6,7 +6,11 @@ const ZoomImage = ({ image, alt, caption }: ZoomImageProps): JSX.Element => (
   <div className="w-full my-2">
     <Zoom zoomMargin={100}>
       <img src={image} alt={alt} />
-      {caption && <div className="text-center">{caption}</div>}
+      {caption && (
+        <div className="text-center text-signoz-dark-intermediate">
+          {caption}
+        </div>
+      )}
     </Zoom>
   </div>
 );
