@@ -6,7 +6,7 @@ const CustomLink = ({ href, ...rest }: LinkProps) => {
 
   if (isInternalLink) {
     return (
-      <Link soft passHref href={href}>
+      <Link scroll={false} soft passHref href={href}>
         <a href={href} {...rest} />
       </Link>
     );

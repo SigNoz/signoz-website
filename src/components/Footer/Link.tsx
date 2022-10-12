@@ -28,7 +28,7 @@ const LinkComponent = ({ subLinks, text }: LinkProps) => {
           {(isOpen || isDesktop) && (
             <div className="mt-2 flex flex-col">
               {subLinks.map((link) => (
-                <Link href={link.to} passHref key={link.text}>
+                <Link scroll={false} href={link.to} passHref key={link.text}>
                   <a className="font-light mt-3 text-base font-openSans text-white">
                     {link.text}
                   </a>

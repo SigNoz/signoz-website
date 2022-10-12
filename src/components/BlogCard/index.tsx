@@ -23,7 +23,10 @@ const BlogCard = ({
   const { push } = useRouter();
 
   const onClickHandler = useCallback(() => {
-    push(`/blog/${slug}`);
+    push(`/blog/${slug}`, undefined, {
+      shallow: true,
+      scroll: false,
+    });
   }, [push, slug]);
 
   return (

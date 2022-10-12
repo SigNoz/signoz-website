@@ -10,7 +10,7 @@ const BlogTag = ({ tags }: BlogTagProps): JSX.Element => {
 
   const onTagClickHandler = useCallback(
     (tag: string) => () => {
-      push("/tags/[tag]", `/tags/${tag}`, { shallow: true });
+      push("/tags/[tag]", `/tags/${tag}`, { shallow: true, scroll: false });
     },
     [push]
   );

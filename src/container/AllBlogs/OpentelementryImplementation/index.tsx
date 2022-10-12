@@ -12,7 +12,10 @@ const OpentelementryImplementation = ({
   const { push } = useRouter();
 
   const onClickViewAllPost = useCallback(() => {
-    push("/tags/open-telementry-implementations");
+    push("/tags/open-telementry-implementations", undefined, {
+      shallow: true,
+      scroll: false,
+    });
   }, [push]);
 
   const isDesktop = useIsDesktop();

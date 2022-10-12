@@ -17,10 +17,16 @@ const SectionBlogs = ({
 
   const onClickViewAllPost = useCallback(() => {
     if (customUrl) {
-      push(customUrl);
+      push(customUrl, undefined, {
+        shallow: true,
+        scroll: false,
+      });
       return;
     }
-    push(`/tags/${section}`);
+    push(`/tags/${section}`, undefined, {
+      shallow: true,
+      scroll: false,
+    });
   }, [push, section, customUrl]);
 
   const Element = useSectionScroll({

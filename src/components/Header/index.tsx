@@ -22,7 +22,10 @@ const Header = (): JSX.Element => {
   const { push } = useRouter();
 
   const onClickLogoHandler = useCallback(() => {
-    push("/");
+    push("/", undefined, {
+      shallow: true,
+      scroll: false,
+    });
   }, [push]);
 
   const onToggleHandler = () => {
@@ -76,7 +79,9 @@ const Header = (): JSX.Element => {
                         : "font-semibold text-signoz-dark-light text-base"
                     }
                   >
-                    <Link href={path}>{name}</Link>
+                    <Link scroll={false} href={path}>
+                      {name}
+                    </Link>
                   </li>
                 </ul>
               );
@@ -102,7 +107,9 @@ const Header = (): JSX.Element => {
                         : "font-semibold text-signoz-dark-light text-base"
                     }
                   >
-                    <Link href={path}>{name}</Link>
+                    <Link scroll={false} href={path}>
+                      {name}
+                    </Link>
                   </li>
                   {isActive && (
                     <div className="h-[2px] w-4 bg-signoz-primary" />
@@ -130,7 +137,9 @@ const Header = (): JSX.Element => {
                         : "font-semibold text-signoz-dark-light text-base"
                     }
                   >
-                    <Link href={path}>{name}</Link>
+                    <Link scroll={false} href={path}>
+                      {name}
+                    </Link>
                   </li>
                   {isActive && (
                     <div className="h-[2px] w-4 bg-signoz-primary" />

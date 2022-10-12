@@ -9,7 +9,10 @@ const MostRecentPost = (props: MostRecentPostProps): JSX.Element => {
   const { push } = useRouter();
 
   const onClickViewAllPost = useCallback(() => {
-    push("/posts");
+    push("/posts", undefined, {
+      shallow: true,
+      scroll: false,
+    });
   }, [push]);
 
   const isDesktop = useIsDesktop();
