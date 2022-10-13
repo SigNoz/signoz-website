@@ -64,6 +64,7 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
 
   const post = await getFileBySlug("docs", postSlug);
 
+
   return { props: { post } };
 }
 

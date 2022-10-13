@@ -28,6 +28,22 @@ const docsLinks: DocsLinks[] = [
     name: "Architecture",
     subLinks: [],
   },
+  {
+    link: "/faqs",
+    name: "FAQs",
+    subLinks: [
+      {
+        link: "/installation",
+        name: "Installation",
+        subLinks: [],
+      },
+      {
+        link: "/instrumentation",
+        name: "Instrumentation",
+        subLinks: [],
+      },
+    ],
+  },
 ];
 
 export default docsLinks;
