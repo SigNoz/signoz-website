@@ -7,9 +7,19 @@
       <language>undefined</language>
       <managingEditor>undefined (undefined)</managingEditor>
       <webMaster>undefined (undefined)</webMaster>
-      <lastBuildDate>Mon, 19 Sep 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 04 Oct 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="undefined/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>undefined/blog/community-update-17</guid>
+    <title>First page of Hacker News, 9000+ GitHub stars, improved dashboards and documentation - SigNal 17</title>
+    <link>undefined/blog/community-update-17</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during September, 2022.</description>
+    <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>Product Updates</category>
+  </item>
+
   <item>
     <guid>undefined/blog/opentelemetry-collector-complete-guide</guid>
     <title>OpenTelemetry Collector - architecture and configuration guide</title>

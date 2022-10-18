@@ -83,7 +83,8 @@ export interface BlogCardProps {
     | "open-telementry-implementations"
     | "most-recent-post"
     | "hero-section"
-    | "blog-recent-post";
+    | "blog-recent-post"
+    | "product-updates";
   title: string;
   date?: Date;
   timeToReadInMinutes: number;

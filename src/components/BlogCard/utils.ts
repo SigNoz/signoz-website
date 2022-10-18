@@ -17,6 +17,9 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
     case "most-recent-post": {
       return "Most Recent Posts";
     }
+    case "product-updates": {
+      return "Product Updates";
+    }
     case "blog-recent-post": {
       return "Recommended for you";
     }
