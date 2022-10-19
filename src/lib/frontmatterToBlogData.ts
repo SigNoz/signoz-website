@@ -10,6 +10,7 @@ export const blogsTagtoTagsMapping: Record<AllTags, string> = {
   "open-telementry-implementations": "open-telementry-implementations",
   product: "product",
   "blog-recent-post": "blog-recent-post",
+  "product-updates":"product-updates",
 };
 
 const isTagsMapping = (tag: string): tag is AllTags => {
