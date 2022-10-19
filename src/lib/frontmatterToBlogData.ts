@@ -11,6 +11,8 @@ export const blogsTagtoTagsMapping: Record<AllTags, string> = {
   product: "product",
   "blog-recent-post": "blog-recent-post",
   "product-updates":"product-updates",
+  "observability":"observability",
+  "opentelemetry":"opentelemetry"
 };
 
 const isTagsMapping = (tag: string): tag is AllTags => {
