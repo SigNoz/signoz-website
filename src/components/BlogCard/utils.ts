@@ -26,6 +26,75 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
     case "tech-resources": {
       return "Tech Resources";
     }
+    case "dot-net": {
+      return ".NET";
+    }
+    case "apm": {
+      return "APM";
+    }
+    case "community": {
+      return "Community";
+    }
+    case "database-monitoring": {
+      return "Database Monitoring";
+    }
+    case "distributed-tracing": {
+      return "Distributed Tracing";
+    }
+    case "docker": {
+      return "Docker";
+    }
+    case "elixir-erlang": {
+      return "Elixir/Erlang";
+    }
+    case "go-golang": {
+      return "Go/Golang";
+    }
+    case "jaeger": {
+      return "Jaeger";
+    }
+    case "java": {
+      return "Java";
+    }
+    case "javascript": {
+      return "Javascript";
+    }
+    case "open-source": {
+      return "Open Source";
+    }
+    case "opentelemetry-instrumentation": {
+      return "OpenTelemetry Instrumentation";
+    }
+    case "php": {
+      return "PHP";
+    }
+    case "prometheus": {
+      return "Prometheus";
+    }
+    case "python": {
+      return "Python";
+    }
+    case "ruby": {
+      return "Ruby";
+    }
+    case "rust": {
+      return "Rust";
+    }
+    case "security": {
+      return "Security";
+    }
+    case "signoz": {
+      return "SigNoz";
+    }
+    case "talks": {
+      return "Talks";
+    }
+    case "tech-tutorial": {
+      return "Tech Tutorial";
+    }
+    case "tools-comparison": {
+      return "Tools Comparison";
+    }
     case "opentelemetry": {
       return "OpenTelemetry";
     }
