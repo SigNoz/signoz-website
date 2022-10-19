@@ -12,6 +12,7 @@ export const blogsTagtoTagsMapping: Record<AllTags, string> = {
   "blog-recent-post": "blog-recent-post",
   "product-updates":"product-updates",
   "observability":"observability",
+  "tech-resources":"tech-resources",
   "opentelemetry":"opentelemetry"
 };
 
