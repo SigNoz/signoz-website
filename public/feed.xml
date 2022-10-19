@@ -31,6 +31,16 @@
   </item>
 
   <item>
+    <guid>undefined/blog/open-source-observability</guid>
+    <title>An Open Source Observability Platform | SigNoz</title>
+    <link>undefined/blog/open-source-observability</link>
+    <description>We believe the aim of observability is to solve customer issues quickly. Creating monitoring dashboards is useless if it can’t help engineering teams quickly identify the root causes of performance issues...</description>
+    <pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>observability</category><category>OpenTelemetry</category>
+  </item>
+
+  <item>
     <guid>undefined/blog/opentelemetry-collector-complete-guide</guid>
     <title>OpenTelemetry Collector - architecture and configuration guide</title>
     <link>undefined/blog/opentelemetry-collector-complete-guide</link>

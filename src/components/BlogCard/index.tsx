@@ -42,7 +42,7 @@ const BlogCard = ({
         <img
           alt="blog cover image"
           className="w-full h-full rounded-tr-lg rounded-tl-lg rounded-bl-none rounded-br-none"
-          src={"/blogs/header.jpg"}
+          src={"/img/blog/header.jpg"}
         />
       </div>
 

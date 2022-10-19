@@ -5,7 +5,7 @@ date: 2022-10-17
 tags: [OpenTelemetry]
 authors: [ankit_anand]
 description: Unlike traces and metrics, OpenTelemetry logs take a different approach. In order to be successful, OpenTelemetry needs to support the existing legacy of logs and logging libraries. And this is the main design philosophy of OpenTelemetry logs....
-image: /blogs/2022/10/opentelemetry_logs_cover.webp
+image: /img/blog/2022/10/opentelemetry_logs_cover.webp
 keywords:
   - opentelemetry logs
   - opentelemetry log
@@ -46,7 +46,7 @@ Before deep diving into OpenTelemetry logs, let's briefly overview OpenTelemetry
 OpenTelemetry provides instrumentation libraries for your application. The development of these libraries is guided by the <a href = "https://github.com/open-telemetry/opentelemetry-specification" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry specification</a>. The OpenTelemetry specification describes the cross-language requirements and design expectations for all OpenTelemetry implementations in various programming languages.
 
 <figure data-zoomable align='center'>
-    <img src="/blogs/2022/09/opentelemetry_architecture.webp" alt="OpenTelemetry Architecture"/>
+    <img src="/img/blog/2022/09/opentelemetry_architecture.webp" alt="OpenTelemetry Architecture"/>
     <figcaption><i>How OpenTelemetry fits in an application architecture. OTel collector refers to OpenTelemetry Collector</i></figcaption>
 </figure>
 
@@ -97,7 +97,7 @@ In OpenTelemetry, there are two important context IDs for context propagation.
     A trace consists of multiple spans. Each span represents a single unit of logical work in the trace data. Spans have span ids that are used to represent the parent-child relationship.
     
     <figure data-zoomable align='center'>
-    <img src="/blogs/2022/10/otel_logs_traces.webp" alt="Traces in SigNoz"/>
+    <img src="/img/blog/2022/10/otel_logs_traces.webp" alt="Traces in SigNoz"/>
     <figcaption><i>A trace graph broken down into individual spans visualized as Flamegraphs and Gantt charts in SigNoz dashboard</i></figcaption>
     </figure><br></br>
 
@@ -152,7 +152,7 @@ OpenTelemetry provides instrumentation for generating logs. You then need a back
 The logs tab in SigNoz has advanced features like a log query builder, search across multiple fields, structured table view, JSON view, etc.
 
 <figure data-zoomable align='center'>
-    <img src="/blogs/common/signoz_logs.webp" alt="Log Management in SigNoz"/>
+    <img src="/img/blog/common/signoz_logs.webp" alt="Log Management in SigNoz"/>
     <figcaption><i>Logs management in SigNoz</i></figcaption>
 </figure>
 
@@ -161,7 +161,7 @@ The logs tab in SigNoz has advanced features like a log query builder, search ac
 You can also view logs in real-time with live tail logging.
 
 <figure data-zoomable align='center'>
-    <img src="/blogs/common/signoz_live_logs.webp" alt="Live tail logging in SigNoz"/>
+    <img src="/img/blog/common/signoz_live_logs.webp" alt="Live tail logging in SigNoz"/>
     <figcaption><i>Live tail logging in SigNoz</i></figcaption>
 </figure>
 
@@ -170,7 +170,7 @@ You can also view logs in real-time with live tail logging.
 With advanced Log Query Builder, you can filter out logs quickly with a mix and match of fields.
 
 <figure data-zoomable align='center'>
-    <img src="/blogs/common/signoz_log_query_builder.webp" alt="Advanced Log Query Builder in SigNoz"/>
+    <img src="/img/blog/common/signoz_log_query_builder.webp" alt="Advanced Log Query Builder in SigNoz"/>
     <figcaption><i>Advanced Log Query Builder in SigNoz</i></figcaption>
 </figure>
 
@@ -190,7 +190,7 @@ cd signoz/deploy/
 
 You can visit our documentation for instructions on how to install SigNoz using Docker Swarm and Helm Charts.
 
-[![Deployment Docs](/blogs/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/?utm_source=blog&utm_medium=opentelemetry_logs)
+[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/?utm_source=blog&utm_medium=opentelemetry_logs)
 
 You can also check out the documentation for logs [here](https://signoz.io/docs/userguide/logs/).
 
