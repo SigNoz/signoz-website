@@ -86,6 +86,7 @@ export interface BlogCardProps {
     | "blog-recent-post"
     | "product-updates"
     | "observability"
+    | "tech-resources"
     | "opentelemetry";
   title: string;
   date?: Date;
