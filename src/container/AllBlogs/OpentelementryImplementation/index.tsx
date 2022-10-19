@@ -60,7 +60,7 @@ const OpentelementryImplementation = ({
         {isDesktop && (
           <div className="">
             <NextImage
-              src={"/blogs/open-telementry.png"}
+              src={"/img/blog/open-telementry.png"}
               lang="en"
               layout="intrinsic"
               width={354}

@@ -48,7 +48,7 @@ const HeroSection = (props: HeroSectionProps) => {
     <div className="flex relative flex-col md:flex-row">
       <div className="flex-1 order-1 h-full md:order-2">
         <NextImage
-          src={"/blogs/hero-section-1.png"}
+          src={"/img/blog/hero-section-1.png"}
           layout="responsive"
           width={403}
           height={300}
