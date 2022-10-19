@@ -84,7 +84,9 @@ export interface BlogCardProps {
     | "most-recent-post"
     | "hero-section"
     | "blog-recent-post"
-    | "product-updates";
+    | "product-updates"
+    | "observability"
+    | "opentelemetry";
   title: string;
   date?: Date;
   timeToReadInMinutes: number;

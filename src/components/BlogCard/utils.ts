@@ -20,6 +20,12 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
     case "product-updates": {
       return "Product Updates";
     }
+    case "observability": {
+      return "Observability";
+    }
+    case "opentelemetry": {
+      return "OpenTelemetry";
+    }
     case "blog-recent-post": {
       return "Recommended for you";
     }
