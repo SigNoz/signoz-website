@@ -73,7 +73,7 @@ const Layout = ({
                       height={48}
                       objectFit="cover"
                       onClick={onClickHandler(author)}
-                      className="cursor-pointer"
+                      className="cursor-pointer rounded-full"
                     />
                     <div className="flex flex-col gap-1 items-start justify-start ml-3">
                       <div

@@ -77,8 +77,9 @@ const TOCInline = ({
     <ul>
       {filteredToc.map((heading) => {
         const isSelected = selectedUrl === heading.url;
+        const depth = heading.depth;
         return (
-          <div key={heading.value} className="flex mt-3">
+          <div key={heading.value} className={cx("flex mt-3")}>
             <div
               className={cx("ml-[-2px]", {
                 "border-l-signoz-primary": isSelected,
@@ -87,11 +88,12 @@ const TOCInline = ({
             />
             <li onClick={onClickHandler}>
               <a
-                className={cx("text-sm font-normal", {
+                className={cx("text-sm font-normal inline-block", {
                   "text-signoz-dark-light font-semibold text-base mb-2":
                     !isSelected,
                   "text-signoz-primary  font-normal text-base mb-[6px]":
                     isSelected,
+                  [`ml-${depth}`]: depth,
                 })}
                 href={heading.url}
               >
