@@ -51,6 +51,16 @@
   </item>
 
   <item>
+    <guid>undefined/blog/distributed-tracing</guid>
+    <title>What is Distributed Tracing and How to implement it with Open Source?</title>
+    <link>undefined/blog/distributed-tracing</link>
+    <description>Distributed tracing helps you track requests across microservices and understand issues affecting your application performance. It enables developers to understand how different components of a distributed system interact to process a user request.</description>
+    <pubDate>Mon, 26 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
     <guid>undefined/blog/opentelemetry-collector-complete-guide</guid>
     <title>OpenTelemetry Collector - architecture and configuration guide</title>
     <link>undefined/blog/opentelemetry-collector-complete-guide</link>
