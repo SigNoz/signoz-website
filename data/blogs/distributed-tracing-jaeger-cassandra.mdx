@@ -81,7 +81,7 @@ We need to modify the values.yaml file:
 
    serviceMonitor:
    enabled: true
-   additionalLabels: {release: prometheus}
+   additionalLabels: \{release: prometheus}
 
 4. Enable sample application already instrumented to send metrics to jaeger-agent. Read the full blog post on [this medium blog](https://medium.com/opentracing/take-opentracing-for-a-hotrod-ride-f6e3141f7941). For now, we just need to set `hotrod.enabled=true`
 

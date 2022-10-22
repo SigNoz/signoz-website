@@ -37,8 +37,10 @@ also add `--set server.global.scrape_interval="10s"` while installing prometheus
 
 **Prometheus server by default is not exposed to public** and you can access the prometheus expression browser by running below commands in your localhost/environment:
 
-    $ PROM_SERVER_POD=$(kubectl -n prometheus get pod -l component=server -o jsonpath="{.items[0].metadata.name}")
-    $ kubectl -n prometheus port-forward $PROM_SERVER_POD 9090
+```
+$ PROM_SERVER_POD=$(kubectl -n prometheus get pod -l component=server -o jsonpath="{.items[0].metadata.name}")
+$ kubectl -n prometheus port-forward $PROM_SERVER_POD 9090
+```
 
 Now you can access the prometheus expression browser at `http://localhost:9090`
 
