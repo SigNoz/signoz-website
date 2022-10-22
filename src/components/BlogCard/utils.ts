@@ -63,7 +63,7 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
       return "Open Source";
     }
     case "opentelemetry-instrumentation": {
-      return "OpenTelemetry Instrumentation";
+      return "opentelemetry-instrumentation";
     }
     case "php": {
       return "PHP";
@@ -90,10 +90,10 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
       return "Talks";
     }
     case "tech-tutorial": {
-      return "Tech Tutorial";
+      return "Tech tTutorial";
     }
     case "tools-comparison": {
-      return "Tools Comparison";
+      return "tools-comparison";
     }
     case "opentelemetry": {
       return "OpenTelemetry";
