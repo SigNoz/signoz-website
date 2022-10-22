@@ -32,9 +32,9 @@ In the world of microservices, a user request travels through hundreds of servic
 
 
 <ZoomImage
-    } alt="Microservices architecture"
+     alt="Microservices architecture"
     
-    image={"/img/blog/2021/09/jaeger_vs_zipkin_microservices_architecture.webp"
+    image={"/img/blog/2021/09/jaeger_vs_zipkin_microservices_architecture.webp"}
     caption="Microservice architecture of a fictional e-commerce application"
     
 />
@@ -49,9 +49,9 @@ User requests are broken down into spans.
 A **trace context** is passed along when requests travel between services, which tracks a user request across services. Thus, you can see how a user request performs across services and identify what exactly needs your attention without manually shifting through multiple dashboards.
 
 <ZoomImage
-    } alt="Trace context is passed to track user requests across services"
+     alt="Trace context is passed to track user requests across services"
     
-    image={"/img/blog/2021/09/opentelemetry_distributed_tracing-min.webp"
+    image={"/img/blog/2021/09/opentelemetry_distributed_tracing-min.webp"}
     caption="A trace context is passed when user requests pass from one service to another"
     
 />
@@ -65,9 +65,9 @@ Jaeger supports two popular open-source NoSQL databases as trace storage backend
 - ElasticSearch
 
 <ZoomImage
-    } alt="Architecture of Jaeger"
+    alt="Architecture of Jaeger"
     
-    image={"/img/blog/2021/09/Jaeger_architecture-min.webp"
+    image={"/img/blog/2021/09/Jaeger_architecture-min.webp"}
     caption="Architecture of Jaeger"
     
 />
@@ -90,11 +90,11 @@ It is responsible for finding the requested trace ID from the backend storage.
 The Compactors stream blocks to and from the backend storage to reduce the total number of blocks.
 
 <ZoomImage
-    } alt="Architecture of Grafana Tempo"
-    height={700}
-    image={"/img/blog/2021/09/grafana_tempo_architecture-min.webp"
+     alt="Architecture of Grafana Tempo"
+
+    image={"/img/blog/2021/09/grafana_tempo_architecture-min.webp"}
     caption="Grafana tempo architecture"
-    width={500}
+
 />
 
 ## Comparing Jaeger and Grafana Tempo
@@ -154,9 +154,9 @@ Grafana Tempo has its own custom TempoDB for storing trace data. TempoDB support
 In terms of the visualization layer, Grafana Tempo has the edge over Jaeger. Grafana Tempo is distributed tracing tool by Grafana - an open-source data visualization layer. You can connect different data sources to Grafana for visualization. Grafana has a built-in Tempo data source that can be used to query Tempo and visualize traces.
 
 <ZoomImage
-    } alt="Querying a trace on Grafana Tempo using a Trace ID"
+     alt="Querying a trace on Grafana Tempo using a Trace ID"
     
-    image={"/img/blog/2021/09/grafana_tempo_trace_query-min.webp"
+    image={"/img/blog/2021/09/grafana_tempo_trace_query-min.webp"}
     caption="Querying a trace on Grafana Tempo using a Trace ID"
     
 />
@@ -164,9 +164,9 @@ In terms of the visualization layer, Grafana Tempo has the edge over Jaeger. Gra
 Jaeger's UI is basic but comprehensive when it comes to distributed tracing. 
 
 <ZoomImage
-    } alt="Jaeger UI"
+    alt="Jaeger UI"
     
-    image={"/img/blog/2021/08/jaeger_ui-min.webp"
+    image={"/img/blog/2021/08/jaeger_ui-min.webp"}
     caption="Jaeger UI showing services and corresponding traces"
     
 />
@@ -181,9 +181,9 @@ SigNoz is a full-stack open-source application performance monitoring and observ
  SigNoz is built to support OpenTelemetry natively. <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTelemetry</b></a>  is becoming the world standard for generating and managing telemetry data (Logs, metrics, and traces). It also provides a fast OLAP datastore, ClickHouse as the storage backend.
 
  <ZoomImage
-    } alt="Architecture of SigNoz with OpenTelemetry and ClickHouse"
+     alt="Architecture of SigNoz with OpenTelemetry and ClickHouse"
     
-    image={"/img/blog/2021/09/SigNoz_architecture_clickhouse.webp"
+    image={"/img/blog/2021/09/SigNoz_architecture_clickhouse.webp"}
     caption="Architecture of SigNoz with ClickHouse as storage backend and OpenTelemetry for code instrumentatiion"
     
 />
@@ -191,9 +191,9 @@ SigNoz is a full-stack open-source application performance monitoring and observ
 SigNoz comes with out of box visualization of things like RED metrics.
 
 <ZoomImage
-    } alt="SigNoz UI showing the popular RED metrics"
+    alt="SigNoz UI showing the popular RED metrics"
     
-    image={"/img/blog/common/signoz_charts_application_metrics.webp"
+    image={"/img/blog/common/signoz_charts_application_metrics.webp"}
     caption="SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate"
     
 />
@@ -201,9 +201,9 @@ SigNoz comes with out of box visualization of things like RED metrics.
 You can also use flamegraphs to visualize spans from your trace data. All of this comes out of the box with SigNoz.
 
 <ZoomImage
-    } alt="Flamegraphs used to visualize spans of distributed tracing in SigNoz UI"
+     alt="Flamegraphs used to visualize spans of distributed tracing in SigNoz UI"
     
-    image={"/img/blog/common/signoz_flamegraphs.webp"
+    image={"/img/blog/common/signoz_flamegraphs.webp"}
     caption="Flamegraphs showing exact duration taken by each spans - a concept of distributed tracing"
     
 />

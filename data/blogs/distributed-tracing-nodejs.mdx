@@ -68,7 +68,7 @@ Here’s the architecture of the sample application along with OpenTelemetry and
 <ZoomImage
    alt="Sample nodejs app application architecture"
    
-   image={"/img/blog/2022/02/nodejs_app_flow.webp"
+   image={"/img/blog/2022/02/nodejs_app_flow.webp"}
    caption="Application architecture along with SigNoz and OpenTelemetry(OTel Collector)"
    
 />
@@ -101,7 +101,7 @@ When you are done installing SigNoz, you can access the UI at [http://localhost
 <ZoomImage
    alt="SigNoz dashboard"
    
-   image={"/img/blog/2022/02/signoz_dashboard.webp"
+   image={"/img/blog/2022/02/signoz_dashboard.webp"}
    caption="SigNoz dashboard - It shows services from a sample app that comes bundled with the application"
    
 />
@@ -240,10 +240,9 @@ Below are the steps to run the sample nodejs application with OpenTelemetry:
    mysql> show tables;
    ```
 
-   <ZoomImage
+<ZoomImage
    alt="Checking creation of tables"
-   
-   image={"/img/blog/2022/02/mysql_show_tables.webp"
+   image={"/img/blog/2022/02/mysql_show_tables.webp"}
    caption="Checking creation of tables after running microservices"
    
    />
@@ -266,7 +265,7 @@ This will run the app UI on port 5000. Open the UI at [http://localhost:5000/](h
 <ZoomImage
    alt="Running sample app UI"
    
-   image={"/img/blog/2022/03/serve_ui_port.png"
+   image={"/img/blog/2022/03/serve_ui_port.png"}
    caption="Running sample app UI"
    
 />
@@ -274,34 +273,29 @@ This will run the app UI on port 5000. Open the UI at [http://localhost:5000/](h
 1. **Create a new user**<br></br>
    Click `Create User` button to create a new user in the MySQL db.
 
-   <ZoomImage
+<ZoomImage
    alt="Create new user"
-   height={400}
-   image={"/img/blog/2022/03/create_user.webp"
+   image={"/img/blog/2022/03/create_user.webp"}
    caption="Create new user"
-   width={600}
    />
 
 2. **Transfer some amount**<br></br>
    Transfer some amount by clicking `Transfer Fund` button.
 
-   <ZoomImage
+<ZoomImage
    alt="Transfer some fund"
-   height={400}
-   image={"/img/blog/2022/03/transfer_fund.webp"
+   image={"/img/blog/2022/03/transfer_fund.webp"}
    caption="Transfer some fund"
-   width={600}
+
    />
 
 3. **Place an order**<br></br>
    Place an order by selecting a product from dropdown.
    
-   <ZoomImage
+<ZoomImage
    alt="Place an order"
-   height={400}
-   image={"/img/blog/2022/03/place_order.webp"
+   image={"/img/blog/2022/03/place_order.webp"}
    caption="Place an order"
-   width={600}
    />
 
 
@@ -316,7 +310,7 @@ Now go to SigNoz dashboard, wait for sometime and refresh the dashboard. You wil
 <ZoomImage
    alt="Sample app microservices monitored on the SigNoz dashboard"
    
-   image={"/img/blog/2022/02/nodejs_microservices_on_signoz.webp"
+   image={"/img/blog/2022/02/nodejs_microservices_on_signoz.webp"}
    caption="Microservices in our nodejs app being monitored in the SigNoz dashboard"
    
 />
@@ -362,7 +356,7 @@ The traces tab of SigNoz dashboard provides powerful filters to analyze the trac
 <ZoomImage
    alt="Count of requests in traces filter tab"
    
-   image={"/img/blog/2022/02/nodejs_count_of_requests.webp"
+   image={"/img/blog/2022/02/nodejs_count_of_requests.webp"}
    caption="Count of requests by service and HTTP status code"
    
 />
@@ -387,7 +381,7 @@ The traces tab of SigNoz dashboard provides powerful filters to analyze the trac
    <ZoomImage
    alt="Flamegraph and Gantt chart for the selected event"
    
-   image={"/img/blog/2022/02/flamegraphs_gantt_charts.webp"
+   image={"/img/blog/2022/02/flamegraphs_gantt_charts.webp"}
    caption="Flamegraph and Gantt chart for the selected event"
    
    />

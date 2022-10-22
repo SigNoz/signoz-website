@@ -81,7 +81,7 @@ redis-cli --latency -h 127.0.0.1 -p 6379
 The above command continuously samples latency by issuing `PING`. It returns an output as shown below:
 
 <ZoomImage
-    image={"/img/blog/2022/07/redis_cli_latency.webp" } alt="Latency using Redis CLI"/>
+    image={"/img/blog/2022/07/redis_cli_latency.webp" } alt="Latency using Redis CLI"
 />
 
 <br></br>
@@ -121,7 +121,7 @@ Cache Hit Ratio = (keyspace_hits)/(keyspace_hits + keyspace_misses)
 The Redis `INFO` command gives you the total number of `keyspace_hits` and `keyspace_misses`.
 
 <ZoomImage
-    image={"/img/blog/2022/07/redis_info_stats_keyspace.webp" } alt="Redis Cache Hit Ratio"/>
+    image={"/img/blog/2022/07/redis_info_stats_keyspace.webp" } alt="Redis Cache Hit Ratio"
 />
 
 <br></br>
@@ -203,7 +203,7 @@ Total number of commands processed by the Redis instance.
 keyspace is one of the sections in the Redis `INFO` command. It’s important to know the number of keys in the database. The `keyspace` parameter provides statistics about the number of keys, and the number of keys with an expiration.
 
 <ZoomImage
-    image={"/img/blog/2022/07/redis_info_keyspace.webp" } alt="Redis INFO keyspace"/>
+    image={"/img/blog/2022/07/redis_info_keyspace.webp" } alt="Redis INFO keyspace"
 />
 
 <br></br>

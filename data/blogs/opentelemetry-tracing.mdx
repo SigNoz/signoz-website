@@ -28,9 +28,9 @@ OpenTelemetry aims to standardize the creation and management of telemetry data.
 
 
 <ZoomImage
-    } alt="OpenTelemetry Architecture"
+     alt="OpenTelemetry Architecture"
     
-    image={"/img/blog/2021/08/opentelemetry_architecture-min.webp"
+    image={"/img/blog/2021/08/opentelemetry_architecture-min.webp"}
     caption="OpenTelemetry architecture - client libraries instrument application code to send telemetry data to a collector agent which then exports the data to a backend analysis tool."
     
 />
@@ -47,9 +47,9 @@ That's where distributed tracing comes into the picture. User requests are broke
 A trace context is passed along when requests travel between services, which tracks a user request across services. You can see how a user request performs across services and identify what exactly needs your attention without manually shifting through multiple dashboards.
 
 <ZoomImage
-    } alt="OpenTelemetry tracing uses trace context to track user request across services"
+     alt="OpenTelemetry tracing uses trace context to track user request across services"
     
-    image={"/img/blog/2021/09/opentelemetry_distributed_tracing-min.webp"
+    image={"/img/blog/2021/09/opentelemetry_distributed_tracing-min.webp"}
     caption="A trace context is passed when user requests pass from one service to another"
     
 />
@@ -59,9 +59,9 @@ Using OpenTelemetry you can encapsulate several pieces of information with a spa
 In the picture below, you can see the details for the selected span. [SigNoz](https://signoz.io/?utm_source=blog&utm_medium=article) is a lightweight open-source APM tool based on OpenTelemetry, which can be used as an analysis tool.
 
 <ZoomImage
-    } alt="Attributes can be added to spans for more context"
+    alt="Attributes can be added to spans for more context"
     
-    image={"/img/blog/2021/09/details_span-min.webp"
+    image={"/img/blog/2021/09/details_span-min.webp"}
     caption="SigNoz is a lightweight APM tool based on OpenTelemetry. it provides out of box visualization for traces and metrics."
     
 />
@@ -162,9 +162,9 @@ And that's where [SigNoz](https://signoz.io/?utm_source=blog&utm_medium=article
 SigNoz comes with out of box visualization of things like RED metrics. There is a unified UI of metrics and traces, unlike Prometheus, so that you can easily identify the root cause of issues causing things like latency in your apps.
 
 <ZoomImage
-    } alt="SigNoz dashboard showing popular RED metrics"
+    alt="SigNoz dashboard showing popular RED metrics"
     
-    image={"/img/blog/common/signoz_charts_application_metrics.webp"
+    image={"/img/blog/common/signoz_charts_application_metrics.webp"}
     caption="SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate"
     
 />

@@ -95,18 +95,18 @@ SigNoz supports all three telemetry signals under a single dashboard. You can se
 Get p90, p99 latencies, RPS, Error rates and top endpoints for a service out of the box.
 
 <figure data-zoomable>
-    <img src="/img/blog/common/signoz_charts_application_metrics.webp" alt="SigNoz dashboard showing popular RED metrics"/>
-    <figcaption><i>SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate</i></figcaption>
-</figure>
+    image={"/img/blog/common/signoz_charts_application_metrics.webp"} alt="SigNoz dashboard showing popular RED metrics"
+    caption="SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate"
+/>
 
 ### Seamless flow between metrics & traces
 
 Found something suspicious in a metric, just click that point in the graph & get details of traces which may be causing the issues. Seamless, Intuitive.
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/metrics_to_traces.webp" alt="Seamless flow between metrics and traces"/>
-    <figcaption><i>Move from metrics to traces at any point of time which needs more analysis</i></figcaption>
-</figure>
+<ZoomImage
+    image={"/img/blog/2022/04/metrics_to_traces.webp"} alt="Seamless flow between metrics and traces"
+    caption="Move from metrics to traces at any point of time which needs more analysis"
+/>
 
 ### Advanced filters on trace data
 
@@ -114,19 +114,19 @@ Under our traces tab, you can analyze the traces data using filters based on tag
 
 Using tags, you can find latency experienced by customers who have customer_type set as `premium`.
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/powerful_filters_on_traces_data.webp" alt="Filters on trace data"/>
-    <figcaption><i>Use advanced filters to analyze your trace data</i></figcaption>
-</figure>
+<ZoomImage
+    image={"/img/blog/2022/04/powerful_filters_on_traces_data.webp"} alt="Filters on trace data"
+    caption="Use advanced filters to analyze your trace data"
+/>
 
 ### Custom aggregates on filtered traces
 
 Create custom metrics from filtered traces to find metrics of any type of request. Want to find p99 latency of `customer_type: premium` who are seeing `status_code:400`. Just set the filters, and you have the graph. Boom!
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/custom_aggregates_filtered_data.webp" alt="Custom aggregates on filtered traces"/>
-    <figcaption><i>Find custom aggregates on filtered traces</i></figcaption>
-</figure>
+<ZoomImage
+    image={"/img/blog/2022/04/custom_aggregates_filtered_data.webp"} alt="Custom aggregates on filtered traces"
+    caption="Find custom aggregates on filtered traces"
+/>
 
 
 
@@ -134,29 +134,29 @@ Create custom metrics from filtered traces to find metrics of any type of reques
 
 Detailed flamegraph & Gantt charts to find the exact cause of the issue and which underlying requests are causing the problem. Is it a SQL query gone rogue or a Redis operation is causing an issue?
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/common/signoz_flamegraphs.webp" alt="Detailed Flamegraphs & Gantt charts"/>
-    <figcaption><i>Spans of a trace visualized with the help of flamegraphs and gantt charts in SigNoz dashboard</i></figcaption>
-</figure>
+<ZoomImage
+    image={"/img/blog/common/signoz_flamegraphs.webp"} alt="Detailed Flamegraphs & Gantt charts"
+    caption="Spans of a trace visualized with the help of flamegraphs and gantt charts in SigNoz dashboard"
+/>
 
 ### Logs Management with advanced log query builder and live tailing
 
 SigNoz provides Logs management with advanced log query builder. You can also monitor your logs in real-time using live tailing. 
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/common/signoz_logs.webp" alt="Logs tab in SigNoz"/>
-    <figcaption><i>Logs tab in SigNoz comes equipped with advanced logs query builder and live tailing</i></figcaption>
-</figure>
+<ZoomImage
+    image={"/img/blog/common/signoz_logs.webp"} alt="Logs tab in SigNoz"
+    caption="Logs tab in SigNoz comes equipped with advanced logs query builder and live tailing"
+/>
 
 
 ### Transparent usage Data
 
 You can drill down details of how many events is each application sending or at what granularity, so that you can adjust your sampling rate as needed and not get a shock at the end of the month ( case with SaaS vendors many a times)
 
-<figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/transparent_usage_data.webp" alt="Transparent usage data"/>
-    <figcaption><i>SigNoz provides usage explorer so that you are always informed about your usage</i></figcaption>
-</figure>
+<ZoomImage
+    image={"/img/blog/2022/04/transparent_usage_data.webp"} alt="Transparent usage data"
+    caption="SigNoz provides usage explorer so that you are always informed about your usage"
+/>
 
 ---
 

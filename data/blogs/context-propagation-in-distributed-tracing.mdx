@@ -25,8 +25,6 @@ In modern microservices-based applications, it is difficult to get an overview o
 
 
 
-
-
 Fundamentally, context propagation helps in distributed system monitoring by passing a context object(a unique identifier and some other metadata) with a transaction across multiple software components.
 
 > **What is context propagation in distributed tracing?**<br></br>
@@ -47,8 +45,7 @@ Distributed tracing is becoming the go-to solution for solving this complexity a
 
 <ZoomImage
    alt="A transaction broken down into all logical events that take place with the help of distributed tracing and represented with a Gantt chart"
-   
-   image={"/img/blog/2022/02/trace_spans.webp"
+   image={"/img/blog/2022/02/trace_spans.webp"}
    caption="A single transaction is broken down into various components it traverses. The above picture shows a popular way of visualizing a trace via Gantt charts. The width of the bars is proportional to the time a given operation took."
    
 />
@@ -70,8 +67,7 @@ A trace context is passed along the execution flow that can be used to correlate
 
 <ZoomImage
    alt="Context propagation in a fictional e-commerce web application. Trace context or request identifier is passed along the execution flow."
-   
-   image={"/img/blog/2022/02/context_propagation_in_distributed_systems.webp"
+   image={"/img/blog/2022/02/context_propagation_in_distributed_systems.webp"}
    caption="Context propagation in a fictional e-commerce web application. Trace context or request identifier is passed along the execution flow."
    
 />
@@ -87,8 +83,7 @@ Today’s applications based on distributed systems are quite complex. Multiple 
 
 <ZoomImage
     alt="Types of context propagation: In-process and Inter-process context propagation"
-   
-   image={"/img/blog/2022/02/types_of_context_propagation.webp"
+   image={"/img/blog/2022/02/types_of_context_propagation.webp"}
    caption="Types of context propagation: In-process and Inter-process context propagation"
    
 />

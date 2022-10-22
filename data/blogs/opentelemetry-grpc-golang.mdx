@@ -46,9 +46,7 @@ Apart from the above-mentioned key benefits, gRPC also promotes better design in
   href="https://opentelemetry.io/"
   rel="noopener noreferrer nofollow"
   target="_blank"
->
-  OpenTelemetry
-</a> is a vendor-agnostic set of tools, APIs, and SDKs used to create and manage
+>OpenTelemetry</a> is a vendor-agnostic set of tools, APIs, and SDKs used to create and manage
 telemetry data(Logs, metrics, and traces). It aims to make telemetry data(logs, metrics,
 and traces) a built-in feature of cloud-native software applications. The telemetry
 data generated helps to monitor application performance.
@@ -102,8 +100,6 @@ Our application is a simple Employee Service. Here is the architecture of the ap
 <ZoomImage
   image={"/img/blog/2022/04/grpc_application_architecture.webp"}
   alt="Application architecture"
-  width="70%"
-/>
 caption='Application architecture along with SigNoz and OpenTelemetry(OTel Collector)'
 />
 
@@ -160,9 +156,9 @@ OpenTelemetry needs the following libraries to instrument the golang-grpc app.
   alt="OpenTelemetry libraries required for monitoring gRPC"
 />
 
-<div>
+
   <br></br>
-</div>
+
 
 **Step 3:
 Creation of .proto files**<br></br>
@@ -306,8 +302,7 @@ Our example telemetry configuration assumes that our application is running loca
 <ZoomImage
   image={"/img/blog/2022/04/grpc_top_endpoints.webp"}
   alt="List of Top endpoints"
-/>
-caption='List of top endpoints of Go-gRPC-Otel-Server service shown by SigNoz' />
+  caption='List of top endpoints of Go-gRPC-Otel-Server service shown by SigNoz' />
 
 <div>
   <br></br>
@@ -331,8 +326,7 @@ You will see the flamegraph of the selected event, which shows how the request t
 <ZoomImage
   image={"/img/blog/2022/04/grpc_flamegraph.webp"}
   alt="Flamegraphs to visualize how a complete request performed"
-/>
-caption='Flamegraphs in SigNoz dashboard' />
+  caption='Flamegraphs in SigNoz dashboard' />
 
 <div>
   <br></br>
@@ -348,8 +342,7 @@ It also provides the [semantic_conventions](https://github.com/open-telemetry/o
 <ZoomImage
   image={"/img/blog/2022/04/grpc_mongodb_traces.webp"}
   alt="Traces for MongoDB"
-/>
-caption='SigNoz also provides more contextual data about MongoDB requests' />
+  caption='SigNoz also provides more contextual data about MongoDB requests' />
 
 <div>
   <br></br>
@@ -361,8 +354,7 @@ You can also use SigNoz dashboard to capture error in your MongoDB queries. If y
 <ZoomImage
   image={"/img/blog/2022/04/grpc_error_troubleshooting.webp"}
   alt="Troubleshooting an error"
-/>
-caption='Troubleshooting an error' />
+  caption='Troubleshooting an error' />
 
 ## Conclusion
 

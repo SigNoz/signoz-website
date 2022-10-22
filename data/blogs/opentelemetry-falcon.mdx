@@ -66,9 +66,9 @@ The application list shown in the dashboard is from a sample app called HOT R.O.
 
 
 <ZoomImage
-   } alt="SigNoz dashboard showing application list"
+   alt="SigNoz dashboard showing application list"
    
-   image={"/img/blog/2021/08/signoz_dashboard_hc.webp"
+   image={"/img/blog/2021/08/signoz_dashboard_hc.webp"}
    caption="SigNoz Dashboard"
    
 />
@@ -121,11 +121,12 @@ The application list shown in the dashboard is from a sample app called HOT R.O.
    pip3 install -r requirements/base.txt
    ```
    Here’s a snapshot of packages in the `base.txt` file to run the Flacon application with OpenTelemetry.
-   <ZoomImage
-   } alt="Python packages required for the application"
-   height={290}
-   image={"/img/blog/2022/02/opentelemetry_python_packages.png"
-   width={500}
+
+<ZoomImage
+   alt="Python packages required for the application"
+
+   image={"/img/blog/2022/02/opentelemetry_python_packages.png"}
+
    />
 
 4. **Install application-specific packages**<br></br>
@@ -161,9 +162,9 @@ The application list shown in the dashboard is from a sample app called HOT R.O.
    If you have installed SigNoz on your local machine, you can access the SigNoz dashboard at: [http://localhost:3301](http://localhost:3301)
 
 <ZoomImage
-   } alt="Falcon based application monitored on SigNoz dashboard"
+   alt="Falcon based application monitored on SigNoz dashboard"
    
-   image={"/img/blog/2022/02/falcon_app_monitored.webp"
+   image={"/img/blog/2022/02/falcon_app_monitored.webp"}
    caption="You will find the Falcon application in the list of applications monitored on SigNoz dashboard. The other applications are from a sample app that comes loaded with SigNoz."
    
 />
@@ -178,9 +179,9 @@ SigNoz comes with out of box RED metrics charts and visualization. RED metrics s
 - Duration taken by requests
 
 <ZoomImage
-    } alt="SigNoz charts and metrics"
+    alt="SigNoz charts and metrics"
     
-    image={"/img/blog/common/signoz_charts_application_metrics.webp"
+    image={"/img/blog/common/signoz_charts_application_metrics.webp"}
     caption="Measure things like application latency, requests per sec, error percentage and see your top endpoints with SigNoz."
     
 />
@@ -188,9 +189,9 @@ SigNoz comes with out of box RED metrics charts and visualization. RED metrics s
 You can then choose a particular timestamp where latency is high to drill down to traces around that timestamp.
 
 <ZoomImage
-    } alt="List of traces on SigNoz dashboard"
+    alt="List of traces on SigNoz dashboard"
     
-    image={"/img/blog/common/signoz_list_of_traces_hc.webp"
+    image={"/img/blog/common/signoz_list_of_traces_hc.webp"}
     caption="View of traces at a particular timestamp"
     
 />
@@ -198,9 +199,9 @@ You can then choose a particular timestamp where latency is high to drill down t
 You can use flamegraphs to exactly identify the issue causing the latency.
 
 <ZoomImage
-    } alt="Flamegraphs used to visualize spans of distributed tracing in SigNoz UI"
+    alt="Flamegraphs used to visualize spans of distributed tracing in SigNoz UI"
     
-    image={"/img/blog/common/signoz_flamegraphs.webp"
+    image={"/img/blog/common/signoz_flamegraphs.webp"}
     caption="View of traces at a particular timestamp"
     
 />
@@ -208,9 +209,9 @@ You can use flamegraphs to exactly identify the issue causing the latency.
 You can also build custom metrics dashboard for your infrastructure.
 
 <ZoomImage
-    } alt="Custom metrics dashboard"
+    alt="Custom metrics dashboard"
     
-    image={"/img/blog/common/signoz_custom_dashboard-min.webp"
+    image={"/img/blog/common/signoz_custom_dashboard-min.webp"}
     caption="You can also build a custom metrics dashboard for your infrastructure"
     
 />

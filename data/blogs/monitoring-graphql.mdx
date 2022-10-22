@@ -81,9 +81,9 @@ When you are done installing SigNoz, you can access the UI at [http://localhost
 
 
 <ZoomImage
-   } alt="SigNoz dashboard"
+    alt="SigNoz dashboard"
    
-   image={"/img/blog/2022/02/signoz_dashboard.webp"
+   image={"/img/blog/2022/02/signoz_dashboard.webp"}
    caption="SigNoz dashboard - It shows services from a sample app that comes bundled with the application"
    
 />
@@ -170,9 +170,9 @@ Below are the steps to run the sample GraphQL application with OpenTelemetry.
     
 
 <ZoomImage
-   } alt="GraphQL UI"
+    alt="GraphQL UI"
    
-   image={"/img/blog/2022/03/graphql_ui.webp"
+   image={"/img/blog/2022/03/graphql_ui.webp"}
    caption="GraphQL interface to fetch data using queries"
    
 />
@@ -200,9 +200,9 @@ query{
 Now, open the SigNoz dashboard in your browser at [http://localhost:3301/dashboard](http://localhost:3301/dashboard). You should now be able to notice `Graphql-service` in the list of services being monitored on the dashboard.
 
 <ZoomImage
-   } alt="GraphQL service being monitored by SigNoz"
+    alt="GraphQL service being monitored by SigNoz"
    
-   image={"/img/blog/2022/03/graphql_app_signoz_dashboard.webp"
+   image={"/img/blog/2022/03/graphql_app_signoz_dashboard.webp"}
    caption="GraphQL service being monitored by SigNoz"
    
 />
@@ -213,9 +213,9 @@ Here are a list of things that you can monitor about your GraphQL APIs with SigN
    Our example telemetry configuration assumes that GraphQL is running locally, and that we want to process every span individually as it's emitted.
 
 <ZoomImage
-   } alt="List of top endpoints of GraphQL service shown by SigNoz"
+    alt="List of top endpoints of GraphQL service shown by SigNoz"
    
-   image={"/img/blog/2022/03/graphql_top_endpoints.webp"
+   image={"/img/blog/2022/03/graphql_top_endpoints.webp"}
    caption="List of top endpoints of GraphQL service shown by SigNoz"
    
 />
@@ -225,9 +225,9 @@ Here are a list of things that you can monitor about your GraphQL APIs with SigN
    You can get a list of all the events(or [spans](https://signoz.io/blog/distributed-tracing-span/) as defined in distributed tracing) related to your `graphql-service`. Use powerful filters on the `Traces` tab of SigNoz dashboard to analyze your GraphQL performance.
 
 <ZoomImage
-    } alt="Traces tab of SigNoz dashboard"
+    alt="Traces tab of SigNoz dashboard"
     
-    image={"/img/blog/2022/03/traces_tab_graphql_spans.webp"
+    image={"/img/blog/2022/03/traces_tab_graphql_spans.webp"}
     caption="SigNoz captures all events related to the GraphQL service. You can use powerful filters to analyze and debug performance issues quickly."
     
     />
@@ -238,9 +238,9 @@ Here are a list of things that you can monitor about your GraphQL APIs with SigN
    Establishing a sequential flow of the query along with info on time taken by each part of the request can help identify latency issues quickly. You can see details like how much time did the resolver take. You can also see the related GraphQL query.
 
 <ZoomImage
-    } alt="Traces Detail tab of SigNoz dashboard"
+    alt="Traces Detail tab of SigNoz dashboard"
     
-    image={"/img/blog/2022/03/graphql_traces.webp"
+    image={"/img/blog/2022/03/graphql_traces.webp"}
     caption="Flamegraph and Gantt charts showing the flow of a request in detail"
     
     />
@@ -259,9 +259,9 @@ Here are a list of things that you can monitor about your GraphQL APIs with SigN
   ```
   
    <ZoomImage
-   } alt="GraphQL UI showing error"
+   alt="GraphQL UI showing error"
    
-   image={"/img/blog/2022/03/graphql_ui_error_message.webp"
+   image={"/img/blog/2022/03/graphql_ui_error_message.webp"}
    caption="Cannot query field"
    
    />
@@ -271,9 +271,9 @@ Here are a list of things that you can monitor about your GraphQL APIs with SigN
    Click on a particular trace to get a detailed view of the operation span with the error message and the offending query. In this case, you can see an internal server error related to the resolver.
    
    <ZoomImage
-    } alt="SigNoz Trace Detail Tab showing errors in GraphQL queries"
+    alt="SigNoz Trace Detail Tab showing errors in GraphQL queries"
     
-    image={"/img/blog/2022/03/graphql_error_traces.webp"
+    image={"/img/blog/2022/03/graphql_error_traces.webp"}
     caption="Error traces captured from the GraphQL query in Signoz dashboard"
     
     />

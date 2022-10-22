@@ -67,7 +67,7 @@ Here’s the architecture of the sample Java application along with OpenTelemetr
 <ZoomImage
    alt="Sample Java app application architecture with SigNoz and OpenTelemetry"
    
-   image={"/img/blog/2022/03/java_app_architecture_opentelemetry_signoz.webp"
+   image={"/img/blog/2022/03/java_app_architecture_opentelemetry_signoz.webp"}
    caption="Application architecture along with SigNoz and OpenTelemetry(OTel Collector)"
    
 />
@@ -100,7 +100,7 @@ When you are done installing SigNoz, you can access the UI at [http://localhost
 <ZoomImage
    alt="SigNoz dashboard"
    
-   image={"/img/blog/2022/02/signoz_dashboard.webp"
+   image={"/img/blog/2022/02/signoz_dashboard.webp"}
    caption="SigNoz dashboard - It shows services from a sample app that comes bundled with the application"
    
 />
@@ -201,20 +201,16 @@ Below are the steps to run the sample Java application with OpenTelemetry:
        -javaagent:../agents/opentelemetry-javaagent.jar"
     ```
 
-    <ZoomImage
+<ZoomImage
     alt="Code in scripts file"
-    
-    image={"/img/blog/2022/03/scripts_sh_file.webp"
+    image={"/img/blog/2022/03/scripts_sh_file.webp"}
     caption="Code in scripts.sh file"
-    
-    />
+/>
 
 <ZoomImage
     alt="Scripts folder"
-    
-    image={"/img/blog/2022/03/scripts_folder.webp"
+    image={"/img/blog/2022/03/scripts_folder.webp"}
     caption="Scritps.sh file under scripts folder"
-    
     />
     
     
@@ -249,9 +245,9 @@ Below are the steps to run the sample Java application with OpenTelemetry:
 
 
 <ZoomImage
-} alt="Running microservices on different ports using service registry"
+ alt="Running microservices on different ports using service registry"
 
-image={"/img/blog/2022/03/eureka_running_all_services.webp"
+image={"/img/blog/2022/03/eureka_running_all_services.webp"}
 caption="Running microservices on different ports using service registry"
 
 />
@@ -269,7 +265,7 @@ caption="Running microservices on different ports using service registry"
 <ZoomImage
     alt="Checking creation of tables"
     
-    image={"/img/blog/2022/03/confirm_table_creation.webp"
+    image={"/img/blog/2022/03/confirm_table_creation.webp"}
     caption="Checking creation of tables after running microservices"
     
     />
@@ -301,10 +297,8 @@ Use the buttons to interact with the app and generate some data. For example, cl
 
 <ZoomImage
    alt="Create a new user"
-   height={250}
-   image={"/img/blog/2022/03/create_new_user_java.webp"
+   image={"/img/blog/2022/03/create_new_user_java.webp"}
    caption="Create a new user"
-   width={450}
 />
 
 Now go to SigNoz dashboard, you will notice the list of service names that we configured:
@@ -315,8 +309,7 @@ Now go to SigNoz dashboard, you will notice the list of service names that we co
 
 <ZoomImage
    alt="Microservices in our Java app being monitored in the SigNoz dashboard"
-   
-   image={"/img/blog/2022/03/java_microservices_list.webp"
+   image={"/img/blog/2022/03/java_microservices_list.webp"}
    caption="Microservices in our Java app being monitored in the SigNoz dashboard"
    
 />
@@ -332,7 +325,7 @@ The traces tab of the SigNoz dashboard provides powerful filters to analyze the 
 <ZoomImage
  alt="Count of requests"
 
-image={"/img/blog/2022/03/java_count_of_requests.webp"
+image={"/img/blog/2022/03/java_count_of_requests.webp"}
 caption="Use advanced filters to see count of requests by service and HTTP status code"
 
 />
@@ -343,7 +336,7 @@ caption="Use advanced filters to see count of requests by service and HTTP statu
 <ZoomImage
     alt="Run aggregates"
     
-    image={"/img/blog/2022/03/run_aggregates.webp"
+    image={"/img/blog/2022/03/run_aggregates.webp"}
     caption="Run aggregates using the dropdown on your traces data quickly"
     
     />
@@ -357,7 +350,7 @@ caption="Use advanced filters to see count of requests by service and HTTP statu
 <ZoomImage
     alt="Group aggregates"
     
-    image={"/img/blog/2022/03/group_aggregates.webp"
+    image={"/img/blog/2022/03/group_aggregates.webp"}
     caption="Group aggregates across a list of dimensions"
     
     />
@@ -372,17 +365,17 @@ caption="Use advanced filters to see count of requests by service and HTTP statu
 <ZoomImage
  alt="Use filters to inspect spans that you want to investigate further"
 
-image={"/img/blog/2022/03/span_specific_filter.webp"
+image={"/img/blog/2022/03/span_specific_filter.webp"}
 caption="Use filters to inspect spans that you want to investigate further"
 
 />
     
    You will be able to see the Flamegraph of the selected span which shows how the request traveled between the `payment-service` and the `user-service`. You can also use the Gantt chart to analyze each event in detail.
-    
+
+
 <ZoomImage
  alt="Flamegraphs and Gantt charts"
-
-image={"/img/blog/2022/03/java_payment_service_traces.webp"
+image={"/img/blog/2022/03/java_payment_service_traces.webp"}
 caption="Flamegraph and Gantt chart for the selected event showing payment service traces with HTTP semantics"
 
 />
@@ -391,7 +384,7 @@ caption="Flamegraph and Gantt chart for the selected event showing payment servi
 <ZoomImage
  alt="Database traces"
 
-image={"/img/blog/2022/03/db_traces.webp"
+image={"/img/blog/2022/03/db_traces.webp"}
 caption="Databases traces which show semantics related to mysql db and query details"
 
 />
