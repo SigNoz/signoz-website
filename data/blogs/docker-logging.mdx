@@ -83,25 +83,25 @@ docker logs [OPTIONS] <container-id>
 
 - Using `-f` or `--follow` option, if you want to follow the logs:
     
-    ```docker
+    ```
     docker logs <container_id> --follow
     ```
     
 - If you want to see the last `N` log lines:
     
-    ```docker
+    ```
     docker logs <container-id> --tail N
     ```
     
 - If you want to see the specific logs, use the `grep` command:
     
-    ```docker
+    ```
     docker logs <container_id> | grep pattern
     ```
     
 - If you want to show errors:
     
-    ```docker
+    ```
     docker logs <container_id> | grep -i error
     ```
     
