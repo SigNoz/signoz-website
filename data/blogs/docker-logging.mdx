@@ -44,7 +44,7 @@ With other systems, recording application log messages can be done explicitly by
     
     `json-file` is the default logging driver which writes JSON-formatted logs to a container-specific file.The `json-file` is stored in the `/var/lib/docker/containers/` directory on a Linux Docker host. Here’s how you can access the file:
     
-    ```docker
+    ```bash
     /var/lib/docker/containers/<container id>/<container-id>-json.log      
     ```
     
@@ -57,7 +57,7 @@ With other systems, recording application log messages can be done explicitly by
 
 The example below shows JSON logs created by the [hello-world](https://hub.docker.com/_/hello-world) Docker image using json-file driver:
 
-```docker
+```bash
 {"log":"Hello there!\n","stream":"stdout","time":"2022-07-28T22:51:31.549390877Z"}
 {"log":"This message shows that everything seems to be working correctly.\n","stream":"stdout","time":"2022-07-28T22:51:31.549396749Z"}
 ```
@@ -70,14 +70,14 @@ The log follows a pattern of printing:
 
 In order to review a container’s logs from the command line, you can use the `docker logs <container-id>`  command. Using this command, the logs shown above are displayed this way:
 
-```docker
+```bash
 Hello there!
 This message shows that everything seems to be working correctly.
 ```
 
 Here are a few [options](https://docs.docker.com/engine/reference/commandline/logs/#options) in the command that you can use to modify the output of your log:
 
-```docker
+```bash
 docker logs [OPTIONS] <container-id>
 ```
 
@@ -131,7 +131,7 @@ Let’s set up a default driver with some additional information:
 
 To find the current logging driver for the Docker daemon:
 
-```docker
+```bash
 $ docker info --format '{{.LoggingDriver}}'
 
 json-file
@@ -141,7 +141,7 @@ In order to use a different driver, you can override the default by adding the 
 
 For example, the following command creates an Apache httpd container, overriding the default logging driver to use the **journald** driver instead.
 
-```docker
+```bash
 docker run --log-driver journald httpd
 ```
 
