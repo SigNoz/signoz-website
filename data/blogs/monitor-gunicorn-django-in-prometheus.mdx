@@ -84,8 +84,7 @@ Run below commands to run the application as docker container:
     $ cd django_sample_project
     $ docker run  -ti -p 8000:8000 -v `pwd`:/usr/src/app ankitnayan/django_sample_project:quantiles_v1
 
-Run `curl http://localhost:8000/polls/2xx_success/` from your terminal to check the response
-The application also logs `Error sending message to statsd` because we have not run statsd server till now but the django application runs perfectly.
+Run `curl http://localhost:8000/polls/2xx_success/` from your terminal to check the response. The application also logs `Error sending message to statsd` because we have not run statsd server till now but the django application runs perfectly.
 
 ## Choosing the metric collection system in gunicorn + django and other python applications
 
