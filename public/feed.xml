@@ -172,7 +172,7 @@
 
   <item>
     <guid>undefined/blog/distributed-tracing-jaeger</guid>
-    <title>Jaeger distributed tracing - complete guide</title>
+    <title>Jaeger Distributed Tracing - Complete Guide</title>
     <link>undefined/blog/distributed-tracing-jaeger</link>
     <description>Jaeger is a popular open-source tool used for distributed tracing in a microservice architecture. See a demo ride-sharing application reporting its traces through Jaeger...</description>
     <pubDate>Fri, 26 Aug 2022 00:00:00 GMT</pubDate>
@@ -604,7 +604,7 @@
     <guid>undefined/blog/jaeger-vs-signoz</guid>
     <title>Jaeger vs SigNoz - Taking distributed tracing to the next level</title>
     <link>undefined/blog/jaeger-vs-signoz</link>
-    <description>Thinking of using Jaeger for distributed tracing? But wait, there is a much better alternative. SigNoz provides advanced capabilities for distributed tracing along with metrics and ...</description>
+    <description>Thinking of using Jaeger for distributed tracing? But wait there is a much better alternative. SigNoz provides advanced capabilities for distributed tracing along with metrics and ...</description>
     <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>tools-comparison</category><category>jaeger</category><category>signoz</category>

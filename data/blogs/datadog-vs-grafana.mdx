@@ -45,33 +45,36 @@ The disadvantage of using Grafana is the cost and bandwidth required to maintain
 Some of the key differences between DataDog and Grafana:
 
 - **Getting started**<br></br>
-  You need to sign up for a DataDog account and then install DataDog agents on your host. The DataDog agent can be installed on many platforms either directly or as a containerized version. The agent reports events and metrics from the host.
 
-  For getting started with Grafana, you first need to install it. Check out the different <a href = "https://grafana.com/docs/grafana/latest/installation/" rel="noopener noreferrer nofollow" target="_blank" ><b>operating systems and requirements</b></a> for installation. Once Grafana is installed you can connect it to your desired data source and start visualizing the data.
+You need to sign up for a DataDog account and then install DataDog agents on your host. The DataDog agent can be installed on many platforms either directly or as a containerized version. The agent reports events and metrics from the host.
+
+For getting started with Grafana, you first need to install it. Check out the different <a href = "https://grafana.com/docs/grafana/latest/installation/" rel="noopener noreferrer nofollow" target="_blank" ><b>operating systems and requirements</b></a> for installation. Once Grafana is installed you can connect it to your desired data source and start visualizing the data.
   
-  Some of the popular data sources that Grafana supports are:
-    - Prometheus
-    - Jaeger
-    - Zipkin
-    - AWS CloudWatch
-    - Graphite
-    - Azure Monitor
+Some of the popular data sources that Grafana supports are:
+- Prometheus
+- Jaeger
+- Zipkin
+- AWS CloudWatch
+- Graphite 
+- Azure Monitor
 
-- **Monitoring use-cases**<br></br>
-  DataDog has an extensive list of monitoring services it offers. List of all monitoring products that DataDog provides:
-    - Log Management
-    - APM
-    - Security Monitoring
-    - Infrastructure Monitoring
-    - Network Monitoring
+<br />
+
+**Monitoring use-cases**<br></br> 
+DataDog has an extensive list of monitoring services it offers. List of all monitoring products that DataDog provides:
+- Log Management
+- APM
+- Security Monitoring
+- Infrastructure Monitoring
+- Network Monitoring
     
-  Grafana can be combined with popular tools for monitoring use-cases:
-    - ElasticSearch(for logs)
-    - Prometheus(for metrics)
-    - Jaeger(for traces)
+Grafana can be combined with popular tools for monitoring use-cases:
+   - ElasticSearch(for logs)
+   - Prometheus(for metrics)
+   - Jaeger(for traces)
     
-- **User Experience**<br></br>
-  With DataDog, everything comes out of the box. Based on the plan you purchase, DataDog provides in-built dashboards and widgets to take care of popular use-cases of monitoring.
+**User Experience**<br></br>
+With DataDog, everything comes out of the box. Based on the plan you purchase, DataDog provides in-built dashboards and widgets to take care of popular use-cases of monitoring.
 
 <ZoomImage
     alt="DataDog dashboard"
@@ -89,12 +92,12 @@ Grafana is a popular open-source analytics and visualization tool. But you need 
 
 Another great point to consider is that you can build an open-source monitoring stack using Grafana and other open-source specialized tools meant for monitoring like Prometheus.  You can host this stack within your infra, which takes care of data privacy concerns.
 
-  DataDog is a third-party SaaS vendor and your data will be sent to DataDog cloud for analyses and visualization.
+DataDog is a third-party SaaS vendor and your data will be sent to DataDog cloud for analyses and visualization.
 
 - **Pricing**<br></br>
-  The ease of use and the varied use-cases that DataDog provides are not cheap. DataDog is an expensive enterprise monitoring tool that has many different pricing tiers which vary on your use-cases. For example, infrastructure enterprise monitoring starts at $23 per host per month while its APM sand continuous profiler starts at $40 per host per month.
+The ease of use and the varied use-cases that DataDog provides are not cheap. DataDog is an expensive enterprise monitoring tool that has many different pricing tiers which vary on your use-cases. For example, infrastructure enterprise monitoring starts at $23 per host per month while its APM sand continuous profiler starts at $40 per host per month.
 
-  The open-source version of Grafana comes for free, although you do need to account for the cost of data storage and networking. GrafanaLabs offers paid cloud plans starting at $49 per month, which scale up based on usage.
+The open-source version of Grafana comes for free, although you do need to account for the cost of data storage and networking. GrafanaLabs offers paid cloud plans starting at $49 per month, which scale up based on usage.
 
 ## Key Features of DataDog
 
@@ -122,23 +125,24 @@ Grafana is an open-source dashboard tool. The biggest feature of Grafana is that
 Some of the key features of Grafana are: 
 
 - **Flexible dashboards**<br></br>
-  Grafana provides a lot of panels that can be used for building dashboards. To build dashboards that suit your needs, you can choose from multiple chart types like heatmaps, histograms, pie charts, etc.
+Grafana provides a lot of panels that can be used for building dashboards. To build dashboards that suit your needs, you can choose from multiple chart types like heatmaps, histograms, pie charts, etc.
+
 <ZoomImage
     alt="Grafana visualization options"
-    
     image={"/img/blog/2021/10/datadog_vs_grafana_grafana_visualizations-min.webp"}
     caption="Grafana visualization widgets for creating dashboards"
     
 />
 
 - **Plugins**<br></br>
-  Grafana provides an extensive set of plugins to extend Grafana capabilities. Some of the plugins that Grafana offers are:
-    - Data Source plugins
-    - App plugins
-    - Panel Plugins
+Grafana provides an extensive set of plugins to extend Grafana capabilities. Some of the plugins that Grafana offers are:
+  - Data Source plugins
+  - App plugins
+  - Panel Plugins
 
-- **Alerting system**<br></br>
-  Grafana provides a central UI to set and manage alerts with a central UI.
+- **Alerting system**
+
+Grafana provides a central UI to set and manage alerts with a central UI.
 
 ## A better alternative to DataDog and Grafana - SigNoz
 
@@ -146,11 +150,12 @@ Some of the key features of Grafana are:
 
 Key architecture features:
 
-- **Native OpenTelemetry support**<br></br>
-  SigNoz is built to support <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTelemetry</b></a> natively, which is quietly becoming the world standard to generate and manage telemetry data.
+- **Native OpenTelemetry support**
 
-- **Flexible and scalable Database storage**<br></br>
-  SigNoz provides users flexibility in terms of storage. You can choose between ClickHouse or Kafka + Druid as your backend storage while installing SigNoz.
+SigNoz is built to support <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTelemetry</b></a> natively, which is quietly becoming the world standard to generate and manage telemetry data.
+
+- **Flexible and scalable Database storage**
+SigNoz provides users flexibility in terms of storage. You can choose between ClickHouse or Kafka + Druid as your backend storage while installing SigNoz.
 
 
 <ZoomImage
