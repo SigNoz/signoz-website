@@ -57,13 +57,16 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
       return "Java";
     }
     case "javascript": {
-      return "Javascript";
+      return "JavaScript";
     }
     case "open-source": {
       return "Open Source";
     }
+    case "hero-section": {
+      return "Hero Section";
+    }
     case "opentelemetry-instrumentation": {
-      return "opentelemetry-instrumentation";
+      return "OpenTelemetry Instrumentation";
     }
     case "php": {
       return "PHP";
@@ -90,10 +93,10 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
       return "Talks";
     }
     case "tech-tutorial": {
-      return "Tech tTutorial";
+      return "Tech Tutorial";
     }
     case "tools-comparison": {
-      return "tools-comparison";
+      return "Tools Comparison";
     }
     case "opentelemetry": {
       return "OpenTelemetry";
@@ -102,7 +105,7 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
       return "Recommended for you";
     }
     default: {
-      console.error("Tags is not implemented");
+      console.error(tags, "tag is not implemented");
       return "";
     }
   }
