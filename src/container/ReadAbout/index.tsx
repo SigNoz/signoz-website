@@ -39,7 +39,7 @@ const OutPlay = (): JSX.Element => {
           <AuthorBy
             position="VP - Engineering, Outplay"
             name="Pawan Bhadauria"
-            avatar="/images/authors/user1.jpg"
+            avatar="/images/authors/ankit_anand.webp"
           />
           <Button className="mt-9 md:w-[12.6rem]" fullWidth variant="primary">
             Read full case study
