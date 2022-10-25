@@ -27,7 +27,7 @@
     <description>There are many ELK alternatives that you can use for logs analytics. Top 14 ELK alternatives in 2022. 1.SigNoz 2.Logz.io 3.Graylog 4.Logtail 5.Sumologic 6.Grafana Loki...</description>
     <pubDate>Thu, 13 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>tech-resources</category>
+    <category>tech-resources</category><category>most-recent-post</category>
   </item>
 
   <item>
@@ -37,7 +37,7 @@
     <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during September, 2022.</description>
     <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>product-updates</category>
+    <category>product-updates</category><category>hero-section</category><category>most-recent-post</category>
   </item>
 
   <item>
@@ -527,7 +527,7 @@
     <description>Nodejs performance monitoring can give you actionable insights into the performance of your Nodejs application. In this tutorial, we will use two open-source tools - SigNoz and OpenTelemetry to monitor a full-stack nodejs application...</description>
     <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>opentelemetry-instrumentation</category><category>javascript</category>
+    <category>opentelemetry-instrumentation</category><category>javascript</category><category>hero-section</category>
   </item>
 
   <item>
@@ -1318,16 +1318,6 @@
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>opentelemetry-instrumentation</category><category>python</category><category>prometheus</category>
-  </item>
-
-  <item>
-    <guid>undefined/blog/monitor-gunicorn-hero</guid>
-    <title>title</title>
-    <link>undefined/blog/monitor-gunicorn-hero</link>
-    <description>In this blog, let&#39;s see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>hero-section</category>
   </item>
 
   <item>
