@@ -17,7 +17,7 @@
     <description>Unlike traces and metrics, OpenTelemetry logs take a different approach. In order to be successful, OpenTelemetry needs to support the existing legacy of logs and logging libraries. And this is the main design philosophy of OpenTelemetry logs....</description>
     <pubDate>Mon, 17 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>opentelemetry</category>
+    <category>opentelemetry</category><category>hero-section</category>
   </item>
 
   <item>
@@ -27,7 +27,7 @@
     <description>There are many ELK alternatives that you can use for logs analytics. Top 14 ELK alternatives in 2022. 1.SigNoz 2.Logz.io 3.Graylog 4.Logtail 5.Sumologic 6.Grafana Loki...</description>
     <pubDate>Thu, 13 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>tech-resources</category>
+    <category>tech-resources</category><category>most-recent-post</category>
   </item>
 
   <item>
@@ -37,7 +37,7 @@
     <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during September, 2022.</description>
     <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>product-updates</category>
+    <category>product-updates</category><category>hero-section</category><category>most-recent-post</category>
   </item>
 
   <item>
@@ -527,7 +527,7 @@
     <description>Nodejs performance monitoring can give you actionable insights into the performance of your Nodejs application. In this tutorial, we will use two open-source tools - SigNoz and OpenTelemetry to monitor a full-stack nodejs application...</description>
     <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>opentelemetry-instrumentation</category><category>javascript</category>
+    <category>opentelemetry-instrumentation</category><category>javascript</category><category>hero-section</category>
   </item>
 
   <item>
@@ -1321,16 +1321,6 @@
   </item>
 
   <item>
-    <guid>undefined/blog/monitor-gunicorn-hero</guid>
-    <title>title</title>
-    <link>undefined/blog/monitor-gunicorn-hero</link>
-    <description>In this blog, let&#39;s see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>hero-section</category>
-  </item>
-
-  <item>
     <guid>undefined/blog/monitoring-tools-comparing-instana-and-sysdig</guid>
     <title>Monitoring Tools: Comparing Instana and Sysdig</title>
     <link>undefined/blog/monitoring-tools-comparing-instana-and-sysdig</link>
@@ -1338,56 +1328,6 @@
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>tools-comparison</category>
-  </item>
-
-  <item>
-    <guid>undefined/blog/monitoring-tools</guid>
-    <title>monitoring-tools</title>
-    <link>undefined/blog/monitoring-tools</link>
-    <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code.</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>tools</category>
-  </item>
-
-  <item>
-    <guid>undefined/blog/sample-post</guid>
-    <title>sample-post</title>
-    <link>undefined/blog/sample-post</link>
-    <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>most-recent-post</category>
-  </item>
-
-  <item>
-    <guid>undefined/blog/sample-tools</guid>
-    <title>sample-tools</title>
-    <link>undefined/blog/sample-tools</link>
-    <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>open-telementry-implementations</category>
-  </item>
-
-  <item>
-    <guid>undefined/blog/some-techincal</guid>
-    <title>some-techincal</title>
-    <link>undefined/blog/some-techincal</link>
-    <description>in this sample description we will discuss about monitoring tools comparing instana and sysdig</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>product</category>
-  </item>
-
-  <item>
-    <guid>undefined/blog/some-title</guid>
-    <title>The Time Machine</title>
-    <link>undefined/blog/some-title</link>
-    <description>The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...</description>
-    <pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>blog-recent-post</category>
   </item>
 
     </channel>
