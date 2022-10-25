@@ -17,7 +17,7 @@
     <description>Unlike traces and metrics, OpenTelemetry logs take a different approach. In order to be successful, OpenTelemetry needs to support the existing legacy of logs and logging libraries. And this is the main design philosophy of OpenTelemetry logs....</description>
     <pubDate>Mon, 17 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>OpenTelemetry</category>
+    <category>opentelemetry</category>
   </item>
 
   <item>
@@ -31,13 +31,23 @@
   </item>
 
   <item>
-    <guid>undefined/blog/community-update-17</guid>
+    <guid>undefined/blog/signal-17</guid>
     <title>First page of Hacker News, 9000+ GitHub stars, improved dashboards and documentation - SigNal 17</title>
-    <link>undefined/blog/community-update-17</link>
+    <link>undefined/blog/signal-17</link>
     <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during September, 2022.</description>
     <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>Product Updates</category>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/hacktoberfest</guid>
+    <title>SigNoz is taking part in Hacktoberfest - 2022!</title>
+    <link>undefined/blog/hacktoberfest</link>
+    <description>As an open-source project, we are excited to announce that SigNoz is participating in Hacktoberfest 2022!..</description>
+    <pubDate>Mon, 03 Oct 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
   </item>
 
   <item>
@@ -47,7 +57,7 @@
     <description>We believe the aim of observability is to solve customer issues quickly. Creating monitoring dashboards is useless if it can’t help engineering teams quickly identify the root causes of performance issues...</description>
     <pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>Observability</category><category>OpenTelemetry</category>
+    <category>observability</category><category>opentelemetry</category>
   </item>
 
   <item>
@@ -61,6 +71,16 @@
   </item>
 
   <item>
+    <guid>undefined/blog/current-state-of-opentelemetry</guid>
+    <title>Current state of OpenTelemetry and how it fits in the DevOps ecosystem | Q&amp;A</title>
+    <link>undefined/blog/current-state-of-opentelemetry</link>
+    <description>OpenTelemetry is quietly becoming the world standard for instrumenting cloud-native applications.To understand complex distributed systems, DevOps engineers need to implement a robust observability &amp; monitoring framework. OpenTelemetry provides vendor-neutral open source observability framework...</description>
+    <pubDate>Wed, 21 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>talks</category>
+  </item>
+
+  <item>
     <guid>undefined/blog/opentelemetry-collector-complete-guide</guid>
     <title>OpenTelemetry Collector - architecture and configuration guide</title>
     <link>undefined/blog/opentelemetry-collector-complete-guide</link>
@@ -71,13 +91,1233 @@
   </item>
 
   <item>
+    <guid>undefined/blog/opentelemetry-collector</guid>
+    <title>OpenTelemetry Collector - architecture and configuration guide</title>
+    <link>undefined/blog/opentelemetry-collector</link>
+    <description>OpenTelemetry collector provides a vendor-neutral way to collect, process, and export your telemetry data to an analysis backend of your choice. Learn how to configure..</description>
+    <pubDate>Mon, 12 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/query-tracing</guid>
+    <title>What is N+1 query problem and how distributed tracing solves it?</title>
+    <link>undefined/blog/query-tracing</link>
+    <description>N+1 query problem is a problem in database retrieval where the related entities of an object are queried individually from a database, leading to O(n) queries</description>
+    <pubDate>Tue, 06 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-16</guid>
+    <title>Logs Management made available in the latest release, podcasts, office hours &amp; more - SigNal 16</title>
+    <link>undefined/blog/signal-16</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during August, 2022.</description>
+    <pubDate>Tue, 06 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/observability-net</guid>
+    <title>Not 3 pillars but a single whole to help customers solve issues faster</title>
+    <link>undefined/blog/observability-net</link>
+    <description>Not 3 pillars but a single whole to help customers solve issues faster</description>
+    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>observability</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/open-source-datadog-alternative</guid>
+    <title>SigNoz - Open-source alternative to DataDog</title>
+    <link>undefined/blog/open-source-datadog-alternative</link>
+    <description>DataDog is a popular APM tool. But it is very expensive and opaque about its billing practices. What if you could get a SaaS like experience from an open-source APM tool....</description>
+    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/podcast-genesis-of-signoz</guid>
+    <title>Building a one-stop Open Source Observability Platform | OpenObservability Podcast</title>
+    <link>undefined/blog/podcast-genesis-of-signoz</link>
+    <description>In this blog, we are excited to announce Pranay Prateek, the co-founder and creator of SigNoz, was invited as a guest speaker with Jonah Kowall, on this episode of OpenObservability Talks...</description>
+    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>talks</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-kafka</guid>
+    <title>Complete Guide to tracing Kafka clients with OpenTelemetry in Go</title>
+    <link>undefined/blog/opentelemetry-kafka</link>
+    <description>In this tutorial, we will learn how to use OpenTelemtry for Kafka-based applications. OpenTelemetry can help instrument Kafka clients and provide an end-to-end tracing. In this guide, we will demonstrate how to instrument a Go application that uses Kafka with OpenTelemetry...</description>
+    <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-spring-boot</guid>
+    <title>Monitor your Spring Boot application with OpenTelemetry and SigNoz</title>
+    <link>undefined/blog/opentelemetry-spring-boot</link>
+    <description>End-to-end performance monitoring of Spring Boot application with OpenTelemetry. Get your telemetry data visualized with SigNoz.</description>
+    <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>java</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-jaeger</guid>
+    <title>Jaeger Distributed Tracing - Complete Guide</title>
+    <link>undefined/blog/distributed-tracing-jaeger</link>
+    <description>Jaeger is a popular open-source tool used for distributed tracing in a microservice architecture. See a demo ride-sharing application reporting its traces through Jaeger...</description>
+    <pubDate>Fri, 26 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/single-pane-of-glass-monitoring</guid>
+    <title>Open Source Single Pane of Glass Monitoring | SigNoz</title>
+    <link>undefined/blog/single-pane-of-glass-monitoring</link>
+    <description>Single plane of glass monitoring integrates the key aspects of monitoring an IT system to bring application and infrastructure monitoring under a single set of dashboards where it’s easy to correlate data for debugging performance issues...</description>
+    <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/open-source-newrelic-alternative</guid>
+    <title>SigNoz - Open-source alternative to New Relic</title>
+    <link>undefined/blog/open-source-newrelic-alternative</link>
+    <description>If you&#39;re looking for an open-source alternative to New Relic, then you&#39;re at the right place. SigNoz is a perfect open-source alternative to New Relic. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...</description>
+    <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/open-source-apm-tools</guid>
+    <title>Top 13 open source APM tools in 2022</title>
+    <link>undefined/blog/open-source-apm-tools</link>
+    <description>Latest top open source APM tool list - 1.SigNoz 2.Graphite 3.Pinpoint 4.Prometheus 5.JavaMelody 6.StageMonitor 7.Scouter 8.Zipkin 9.Jaeger 10.Skywalking...</description>
+    <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/red-metrics-calculation</guid>
+    <title>How are RED metrics calculated in SigNoz | SigNoz Office Hours</title>
+    <link>undefined/blog/red-metrics-calculation</link>
+    <description>Welcome to SigNoz office hours! In this series, one of our team members gives a presentation about a topic of their choice. This talk is presented by Srikanth Chekuri, backend engineer at SigNoz. He talks about how RED metrics are calculated in SigNoz...</description>
+    <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/intro-to-opentelemetry-metrics</guid>
+    <title>An introduction to OpenTelemetry Metrics</title>
+    <link>undefined/blog/intro-to-opentelemetry-metrics</link>
+    <description>OpenTelemetry metrics API consists of three main components - Meter Provider, Meter, and Instruments. The Meter provider serves as the entry point to the metrics API. Meter is the class responsible for creating instruments, and instruments is responsible for reporting measurements…...</description>
+    <pubDate>Fri, 19 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-angular</guid>
+    <title>Implementing OpenTelemetry in Angular application</title>
+    <link>undefined/blog/opentelemetry-angular</link>
+    <description>It is essential to monitor your Angular frontend apps. OpenTelemetry can help instrument Angular apps and provide you with end-to-end tracing. In this guide, we will demonstrate how to implement the OpenTelemetry Angular library.....</description>
+    <pubDate>Fri, 19 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-vs-newrelic</guid>
+    <title>DataDog vs New Relic | Detailed comparison (5 key features)</title>
+    <link>undefined/blog/datadog-vs-newrelic</link>
+    <description>Want to choose between DataDog and New Relic? In this article, let&#39;s go through 5 key capabilities of both the tools...</description>
+    <pubDate>Thu, 18 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-tools</guid>
+    <title>Latest Top 13 distributed tracing tools [perfect for microservices]</title>
+    <link>undefined/blog/distributed-tracing-tools</link>
+    <description>Latest top distributed tracing tools list in 2022 - 1.SigNoz 2.Dynatrace 3.New Relic 4.Honeycomb 5.Lightstep 6.Elastic APM 7.Jaeger 8.DataDog 9.Zipkin..</description>
+    <pubDate>Thu, 18 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-vs-prometheus</guid>
+    <title>OpenTelemetry vs Prometheus - differences, use-cases and alternatives</title>
+    <link>undefined/blog/opentelemetry-vs-prometheus</link>
+    <description>OpenTelemetry and Prometheus are both open-source projects under Cloud Native Computing Foundation. One is used for managing telemetry data and the other is a metrics monitoring tool..</description>
+    <pubDate>Tue, 16 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/appdynamics-alternative</guid>
+    <title>SigNoz - Open-source alternative to AppDynamics</title>
+    <link>undefined/blog/appdynamics-alternative</link>
+    <description>If you&#39;re looking for an open-source alternative to AppDynamics, then you&#39;re at the right place. SigNoz is a perfect open-source alternative to AppDynamics. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...</description>
+    <pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/kubernetes-metrics-server</guid>
+    <title>Kubernetes Metrics Server | How to deploy k8s metrics server and use it for monitoring</title>
+    <link>undefined/blog/kubernetes-metrics-server</link>
+    <description>The Kubernetes Metrics Server is a resource metrics monitoring tool for Kubernetes. The Kubernetes Metrics Server measures CPU and memory usage across the Kubernetes cluster...</description>
+    <pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-15</guid>
+    <title>One-stop Open Source Observability is now a reality with Log Management in SigNoz - SigNal 15</title>
+    <link>undefined/blog/signal-15</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during July, 2022.</description>
+    <pubDate>Thu, 11 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/dynatrace-alternative</guid>
+    <title>SigNoz - Open-source alternative to Dynatrace</title>
+    <link>undefined/blog/dynatrace-alternative</link>
+    <description>If you&#39;re looking for an open-source alternative to Dynatrace, then you&#39;re at the right place. SigNoz is a perfect open-source alternative to Dynatrace. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...</description>
+    <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-alternatives</guid>
+    <title>Top 5 DataDog alternatives in 2022</title>
+    <link>undefined/blog/datadog-alternatives</link>
+    <description>Are you looking for a DataDog alternative? Then you&#39;ve come to the right place. In this article, we will explore the top 5 alternatives to DataDog. 1.SigNoz 2.New Relic 3.Dynatrace...</description>
+    <pubDate>Tue, 09 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/docker-logging</guid>
+    <title>Docker Logging - A Complete Guide to Logs in Docker</title>
+    <link>undefined/blog/docker-logging</link>
+    <description>In this article, we will discuss log analysis in Docker and how logging in Docker containers is different than in other applications. These logs are specific to Docker and are stored on the Docker host. We’ll thoroughly discuss the `docker logs` command and how we can configure a logging driver for containers...</description>
+    <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/kubernetes-audit-logs</guid>
+    <title>Kubernetes Audit Logs - Best Practices And Configuration</title>
+    <link>undefined/blog/kubernetes-audit-logs</link>
+    <description>In this article, learn how to configure Kubernetes Audit Logs so that you can have a record of events happening in your clusters. Kubernetes audit logs are captured based on the audit policy configured...</description>
+    <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/prometheus-query</guid>
+    <title>Prometheus Query Tutorial with examples</title>
+    <link>undefined/blog/prometheus-query</link>
+    <description>Prometheus Query Language (PromQL) lets users query and aggregate metrics data in Prometheus for further analysis. In this tutorial, we will learn about Prometheus Query Language and see it in action using examples of PromQL...</description>
+    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/mongodb-monitoring</guid>
+    <title>MongoDB Monitoring | Beginner’s Guide to MongoDB performance monitoring</title>
+    <link>undefined/blog/mongodb-monitoring</link>
+    <description>Top metrics to monitor for MongoDB performance 1.Database operations 2.Operation Execution Time 3.Clients or connections 4.Resource Utilization 5.Queues...</description>
+    <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>database-monitoring</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/redis-monitoring</guid>
+    <title>Redis Monitoring | 101 Guide to Redis Metrics Monitoring</title>
+    <link>undefined/blog/redis-monitoring</link>
+    <description>Monitoring Redis for performance issues is critical. Metrics that need to be monitored for Redis instances can be divided into these categories - Performance metrics, Memory metrics, and basic activity metrics. Redis monitoring metrics - 1.Latency 2.CPU usage 3.Hit rate 4. Memory fragmentation...</description>
+    <pubDate>Tue, 26 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>database-monitoring</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/redis-monitoring-opentelemetry-signoz</guid>
+    <title>Redis Monitoring with OpenTelemetry and SigNoz</title>
+    <link>undefined/blog/redis-monitoring-opentelemetry-signoz</link>
+    <description>In this post, we will show you how to set up Redis monitoring with SigNoz - an open-source full-stack APM. SigNoz captures data using OpenTelemetry, which is becoming the world standard for instrumenting cloud-native applications. Apart from capturing metrics from your Redis server, you can also capture logs and traces with OpenTelemetry...</description>
+    <pubDate>Wed, 20 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>database-monitoring</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/container-monitoring-tools</guid>
+    <title>Top 15 Docker Container Monitoring tools in 2022</title>
+    <link>undefined/blog/container-monitoring-tools</link>
+    <description>Docker Containers are ephemeral. Containers are created and destroyed on demand. Hence monitoring container-based environments is hard. Top 15 Docker Container monitoring tools. 1.SigNoz 2.Prometheus 3.ELK stack 4.cAdvisor...</description>
+    <pubDate>Tue, 12 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/docker-log-rotation</guid>
+    <title>Docker Log Rotation Configuration Guide | SigNoz</title>
+    <link>undefined/blog/docker-log-rotation</link>
+    <description>Docker uses the JSON-file logging driver by default, and it records all stdout and stderr output in JSON format. The logs are often stored on the Docker host, and Docker does not impose a size restriction on log files. And that’s where Docker log rotation is required...</description>
+    <pubDate>Fri, 08 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-14</guid>
+    <title>7000+ GitHub stars, DIY Query Builder &amp; UX improvements - SigNal 14</title>
+    <link>undefined/blog/signal-14</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during June, 2022.</description>
+    <pubDate>Thu, 07 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/api-monitoring-tools</guid>
+    <title>Latest top 17 API monitoring tools [open-source included]</title>
+    <link>undefined/blog/api-monitoring-tools</link>
+    <description>Top 17 API monitoring tools including open source tools to monitor your APIs. 1.SigNoz 2.Prometheus 3.Graphite 4.Datadog 5.New Relic 6.Sauce Labs...</description>
+    <pubDate>Tue, 05 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/prometheus-vs-influxdb</guid>
+    <title>Prometheus vs InfluxDB - Key Differences, concepts, and similarities</title>
+    <link>undefined/blog/prometheus-vs-influxdb</link>
+    <description>Prometheus and InfluxDB are both open-source projects that can be used for monitoring time-series data. While Prometheus is a metrics monitoring tool graduated under CNCF, InfluDB is a time-series database. In this article, let’s have a side-to-side review of Prometheus vs InfluxDB to...</description>
+    <pubDate>Tue, 05 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/docker-container-lifecycle</guid>
+    <title>Docker Container Lifecycle Tutorial | Create, Run, Pause, Stop, Kill</title>
+    <link>undefined/blog/docker-container-lifecycle</link>
+    <description>In this tutorial, we will learn about Docker container lifecycle. The Docker container lifecycle has five phases - Create, Run, Pause, Stop, and Kill. Understanding the complete lifecycle of containers is key to using Docker containers correctly and efficiently...</description>
+    <pubDate>Fri, 01 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-apm</guid>
+    <title>An open source OpenTelemetry APM | SigNoz</title>
+    <link>undefined/blog/opentelemetry-apm</link>
+    <description>SigNoz is an open source APM built to support OpenTelemetry natively. In this article, we will talk about things to be kept in mind while selecting an OpenTelemetry APM. We will also see how SigNoz can help you in setting up full-stack observability....</description>
+    <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/docker-stats</guid>
+    <title>Docker Stats | Understand how to monitor Docker Metrics with docker stats</title>
+    <link>undefined/blog/docker-stats</link>
+    <description>Understand how to use Docker stats command to monitor your Docker containers. 1.CPU % Stat 2.MEM Usage/LIMIT Stats 3.MEM% Stat 4.Block I/O Status...</description>
+    <pubDate>Mon, 27 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category><category>docker</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-elixir</guid>
+    <title>Monitor your Elixir application with OpenTelemetry and SigNoz</title>
+    <link>undefined/blog/opentelemetry-elixir</link>
+    <description>In this tutorial, we&#39;ll show you how to monitor your Elixir application using OpenTelemetry and Signoz. OpenTelemetry can be used to instrument your Elixir applications to generate telemetry data. The telemetry data can then be visualized using an observability tool to monitor your Elixir application performance...</description>
+    <pubDate>Mon, 27 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>elixir-erlang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-visualization</guid>
+    <title>Getting started with OpenTelemetry visualization</title>
+    <link>undefined/blog/opentelemetry-visualization</link>
+    <description>OpenTelemetry provides language-specific client libraries to instrument application code for generating telemetry data. You can then use a backend analysis tool to visualize the collected OpenTelemetry data. In this article, we will see what types of OpenTelemetry visualizations are possible and how to use a backend analysis tool for OpenTelemetry visualization...</description>
+    <pubDate>Mon, 27 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-nestjs</guid>
+    <title>Monitoring your Nestjs application using OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-nestjs</link>
+    <description>OpenTelemetry is a vendor-agnostic isntrumentation library. In this article, learn how to set up monitoring for a Nestjs application using OpenTelemetry.</description>
+    <pubDate>Sun, 26 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-backend</guid>
+    <title>Choosing an OpenTelemetry backend - Things to keep in mind</title>
+    <link>undefined/blog/opentelemetry-backend</link>
+    <description>Confused about choosing a backend analysis tool for OpenTelemetry? Here’s a guide on what factors you should consider while choosing a backend to store and visualize the telemetry data collected by OpenTelemetry...</description>
+    <pubDate>Fri, 24 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/kibana-vs-grafana</guid>
+    <title>Kibana vs Grafana - Which tool to choose?</title>
+    <link>undefined/blog/kibana-vs-grafana</link>
+    <description>The difference between Kibana and Grafana lies in their genesis. While Kibana was built on top of the Elasticsearch stack, famous for log analysis and management, Grafana was created mainly for metrics monitoring, supporting visualization for time-series databases...</description>
+    <pubDate>Wed, 22 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/prometheus-vs-elasticsearch</guid>
+    <title>Prometheus vs Elasticsearch stack - Key concepts, features, and differences</title>
+    <link>undefined/blog/prometheus-vs-elasticsearch</link>
+    <description>Both Prometheus and Elasticsearch stack provide monitoring solutions for applications in production. But while Prometheus is focused on metrics monitoring, the Elasticsearch stack or the ELK stack specializes in logs...</description>
+    <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/nodejs-performance-monitoring</guid>
+    <title>Nodejs Performance Monitoring | Monitor a full-stack Nodejs application with open-source tools</title>
+    <link>undefined/blog/nodejs-performance-monitoring</link>
+    <description>Nodejs performance monitoring can give you actionable insights into the performance of your Nodejs application. In this tutorial, we will use two open-source tools - SigNoz and OpenTelemetry to monitor a full-stack nodejs application...</description>
+    <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/mysql-monitoring-tools</guid>
+    <title>Top 11 MYSQL monitoring tools in 2022 [open-source included]</title>
+    <link>undefined/blog/mysql-monitoring-tools</link>
+    <description>Top MySQL Monitoring Tools List - 1.SigNoz 2.Prometheus 3.Dynatrace 4.Sematext 5.Solar winds 6.DataDog 7.MySQL Enterprise Monitor 8.Paessler PRTG Network Monitor...</description>
+    <pubDate>Wed, 15 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-php</guid>
+    <title>OpenTelemetry PHP | Monitoring a PHP application with OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-php</link>
+    <description>OpenTelemetry PHP libraries can be used to instrument PHP applications for tracing. OpenTelemetry can help set up an observability framework for your PHP applications. In this tutorial, we will learn how to use manual OpenTelemetry instrumentation for your PHP applications...</description>
+    <pubDate>Fri, 10 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>php</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-13</guid>
+    <title>1000+ Community Members, Async APIs for retention settings &amp; improved UI - SigNal 13</title>
+    <link>undefined/blog/signal-13</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during May, 2022.</description>
+    <pubDate>Fri, 10 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/kubectl-top</guid>
+    <title>Kubectl Top Pod/Node | How to get &amp; read resource utilization metrics of K8s?</title>
+    <link>undefined/blog/kubectl-top</link>
+    <description>Kubectl Top command can be used to retrieve snapshots of resource utilization of pods/nodes in your Kubernetes cluster. You can even retrieve metrics information about specific pods or nodes by specifying a namespace...</description>
+    <pubDate>Thu, 09 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/mevn-stack-tutorial</guid>
+    <title>MEVN stack tutorial | Build a CRUD app using Vue 3, Node, Express &amp; MongoDB</title>
+    <link>undefined/blog/mevn-stack-tutorial</link>
+    <description>In this beginner-friendly tutorial, we will create a simple CRUD To Do application using the popular MEVN stack. Users can use the end application to create, read, update, and delete data...</description>
+    <pubDate>Tue, 07 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/kubernetes-monitoring</guid>
+    <title>Kubernetes monitoring with open-source tools [OpenTelemetry and SigNoz]</title>
+    <link>undefined/blog/kubernetes-monitoring</link>
+    <description>In this article, we will learn how to monitor a Kubernetes cluster using two completely free open-source tools. Kubernetes monitoring is a critical process needed for keeping your Kubernetes clusters in fine health...</description>
+    <pubDate>Fri, 03 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-dotnet</guid>
+    <title>OpenTelemetry .NET | Monitor a .NET application with OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-dotnet</link>
+    <description>OpenTelemetry .NET client libraries can be used to instrument .NET applications for generating logs, metrics, and traces. In this hands-on example, we will learn how to instrument a .NET application with OpenTelemetry to generate logs, metrics, and traces. We will then visualize the data using SigNoz...</description>
+    <pubDate>Fri, 03 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>dot-net</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-signoz</guid>
+    <title>Jaeger vs SigNoz - Taking distributed tracing to the next level</title>
+    <link>undefined/blog/jaeger-vs-signoz</link>
+    <description>Thinking of using Jaeger for distributed tracing? But wait there is a much better alternative. SigNoz provides advanced capabilities for distributed tracing along with metrics and ...</description>
+    <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/monitoring-your-go-application-with-signoz</guid>
+    <title>How to set up Golang application performance monitoring with open source monitoring tool - SigNoz</title>
+    <link>undefined/blog/monitoring-your-go-application-with-signoz</link>
+    <description>In this article, learn how to setup application monitoring for Golang apps using an open-source solution, SigNoz.</description>
+    <pubDate>Mon, 30 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-gin</guid>
+    <title>Implementing OpenTelemetry in a Gin application</title>
+    <link>undefined/blog/opentelemetry-gin</link>
+    <description>It is essential to monitor your Gin apps in Go(Golang). OpenTelemetry can help instrument Gin apps and provide you with end-to-end tracing. In this guide, we will demonstrate how to instrument your Gin app with OpenTelemetry...</description>
+    <pubDate>Mon, 30 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-golang</guid>
+    <title>Implementing Distributed Tracing in a Golang application</title>
+    <link>undefined/blog/distributed-tracing-golang</link>
+    <description>Distributed tracing provides insights into how a particular service is performing as part of the whole in a distributed system. In this article, we will implement distributed tracing for a Golang application based on microservices architecture with OpenTelemetry, and visualize the collected data with SigNoz...</description>
+    <pubDate>Sat, 28 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/celery-worker</guid>
+    <title>Celery worker | Tutorial on how to set up with Flask &amp; Redis</title>
+    <link>undefined/blog/celery-worker</link>
+    <description>In this tutorial, learn how to implement a Celery worker with Flask and Redis. Celery worker is a simple and reliable task queue with a focus on real-time processing while also supporting task scheduling...</description>
+    <pubDate>Fri, 27 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category><category>python</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/openmetrics-vs-opentelemetry</guid>
+    <title>OpenMetrics vs OpenTelemetry - A guide on understanding these two specifications</title>
+    <link>undefined/blog/openmetrics-vs-opentelemetry</link>
+    <description>OpenMetrics and OpenTelemetry are popular open-source standards for generating telemetry data from application code. While OpenTelemetry can be used for logs, metrics, and traces, OpenMetrics is focused on generating metrics at scale from...</description>
+    <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-vs-grafana</guid>
+    <title>DataDog vs Grafana - Key features &amp; differences</title>
+    <link>undefined/blog/datadog-vs-grafana</link>
+    <description>In this article, we will compare DataDog with Grafana. Both are monitoring tools but differ significantly in their offerings. DataDog is a paid SaaS monitoring tool, while Grafana is an open-source metrics...</description>
+    <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-mongodb</guid>
+    <title>OpenTelemetry MongoDB | Monitor and visualize your MongoDB database calls</title>
+    <link>undefined/blog/opentelemetry-mongodb</link>
+    <description>In this tutorial, we will learn how to use OpenTelemetry to trace MongoDB calls. OpenTelemetry provides client libraries for instrumentation of application code in major programming languages &amp; technologies, including databases like MongoDB...</description>
+    <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>database-monitoring</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/angular-graphql</guid>
+    <title>Complete guide to GraphQL in Angular [with example]</title>
+    <link>undefined/blog/angular-graphql</link>
+    <description>See Angular GraphQL in action implemented in a CRUD app. Learn how to build an Angular GraphQL client with an example with detailed steps…...</description>
+    <pubDate>Thu, 19 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-tutorial</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-react</guid>
+    <title>Implementing OpenTelemetry in React applications</title>
+    <link>undefined/blog/opentelemetry-react</link>
+    <description>It is essential to monitor your React frontend apps for performance issues. OpenTelemetry can help instrument React apps and provide you with frontend monitoring. In this guide, we will demonstrate how to implement the OpenTelemetry Web library.....</description>
+    <pubDate>Tue, 17 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-ruby</guid>
+    <title>Tracing a Ruby application with OpenTelemetry for performance monitoring</title>
+    <link>undefined/blog/opentelemetry-ruby</link>
+    <description>OpenTelemetry’s Ruby client libraries can be used to trace Ruby applications for performance monitoring. In this tutorial, we will auto-instrument a sample Ruby app with OpenTelemetry to collect tracing data and then visualize it using SigNoz...</description>
+    <pubDate>Mon, 16 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>ruby</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-rust</guid>
+    <title>Implementing OpenTelemetry in a Rust application for performance monitoring</title>
+    <link>undefined/blog/opentelemetry-rust</link>
+    <description>OpenTelemetry can be used to instrument Rust applications in production for performance monitoring. OpenTelemetry provides libraries, APIs, and SDKs to collect telemetry data(logs, metrics, and traces), using which you can monitor and debug your Rust application for...</description>
+    <pubDate>Wed, 11 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>rust</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-12</guid>
+    <title>Auth, Org management, Exceptions monitoring &amp; a team workation - SigNal 12</title>
+    <link>undefined/blog/signal-12</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during April, 2022.</description>
+    <pubDate>Sun, 08 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-nextjs</guid>
+    <title>Monitoring your Nextjs application using OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-nextjs</link>
+    <description>OpenTelemetry can help instrument Nextjs applications and provide you with end-to-end tracing. In this guide, we will demonstrate how to instrument your Nextjs app with OpenTelemetry...</description>
+    <pubDate>Sat, 30 Apr 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-vs-opentracing</guid>
+    <title>OpenTelemetry vs OpenTracing - choosing one for instrumentation</title>
+    <link>undefined/blog/opentelemetry-vs-opentracing</link>
+    <description>If you’re thinking of choosing between OpenTelemetry and OpenTracing, go for OpenTelemetry. OpenTracing is now deprecated, and users of OpenTracing are advised to migrate to OpenTelemetry...</description>
+    <pubDate>Sun, 24 Apr 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-grpc-golang</guid>
+    <title>Monitor gRPC calls with OpenTelemetry - explained with a Golang example</title>
+    <link>undefined/blog/opentelemetry-grpc-golang</link>
+    <description>This article demonstrates how to monitor gRPC calls with OpenTelemetry using a sample Golang application using gRPC framework. OpenTelemetry is a vendor-agnostic instrumentation library that can be used to monitor gRPC calls...</description>
+    <pubDate>Wed, 13 Apr 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-vs-jaeger</guid>
+    <title>OpenTelemetry and Jaeger | Key concepts, features, and differences</title>
+    <link>undefined/blog/opentelemetry-vs-jaeger</link>
+    <description>Both OpenTelemetry and Jaeger enable application owners to set up monitoring and observability to measure application performance. But their solutions are meant to address different problems...</description>
+    <pubDate>Fri, 08 Apr 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-11</guid>
+    <title>Crossed 6k+ GitHub stars, enabled S3, better dashboards and webhooks - SigNal 11</title>
+    <link>undefined/blog/signal-11</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during March, 2022.</description>
+    <pubDate>Wed, 06 Apr 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/observability-in-microservices-using-distributed-tracing</guid>
+    <title>How to achieve Observability for Microservices-based apps using Distributed Tracing?</title>
+    <link>undefined/blog/observability-in-microservices-using-distributed-tracing</link>
+    <description>Modern digital organizations have rapidly adopted microservices-based architecture for their applications. But microservices architecture is complex, and troubleshooting performance issues is challenging. Making your microservices observable with distributed tracing is critical to solve...</description>
+    <pubDate>Sat, 26 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/apm-vs-distributed-tracing</guid>
+    <title>How Distributed Tracing augments the APM experience?</title>
+    <link>undefined/blog/apm-vs-distributed-tracing</link>
+    <description>There are standalone distributed tracing tools like Jaeger, and there are APM tools that do not provide distributed tracing capabilities. In this article, we will see how distributed tracing complements an APM tool for a holistic performance monitoring experience.</description>
+    <pubDate>Fri, 25 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/monitoring-graphql</guid>
+    <title>Monitoring GraphQL APIs with OpenTelemetry</title>
+    <link>undefined/blog/monitoring-graphql</link>
+    <description>GraphQL enables frontend developers or consumers of APIs to request the exact data that they need, with no over-fetching or under-fetching. It&#39;s a popular alternative to REST, but monitoring it is challenging. In this article, let&#39;s learn how to monitor GraphQL in simple steps with...</description>
+    <pubDate>Thu, 24 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-in-microservices</guid>
+    <title>Why is Distributed Tracing in Microservices needed?</title>
+    <link>undefined/blog/distributed-tracing-in-microservices</link>
+    <description>Microservices architecture allows technology companies to build application services around business capabilities. It enables rapid development and also boosts developer productivity. But it also introduces complexity. Distributed tracing is the...</description>
+    <pubDate>Fri, 18 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-java</guid>
+    <title>Implementing Distributed Tracing in a Java application</title>
+    <link>undefined/blog/distributed-tracing-java</link>
+    <description>Distributed tracing provides insights into how a particular service is performing as part of the whole in a distributed system. In this article, we will implement distributed tracing for a Java application based on microservices architecture.</description>
+    <pubDate>Wed, 09 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>java</category><category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-nodejs</guid>
+    <title>Implementing Distributed Tracing in a Nodejs application</title>
+    <link>undefined/blog/distributed-tracing-nodejs</link>
+    <description>Distributed tracing provides insights into how a particular service is performing as part of the whole in a distributed system. In this article, we will implement distributed tracing for a nodejs application based on microservices architecture.</description>
+    <pubDate>Tue, 08 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javaScript</category><category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-vs-prometheus</guid>
+    <title>DataDog vs Prometheus - Key features &amp; differences</title>
+    <link>undefined/blog/datadog-vs-prometheus</link>
+    <description>In this article, we will compare DataDog with Prometheus. Both are monitoring tools but differ significantly in their offerings. DataDog is a paid SaaS monitoring tool, while Prometheus is an open-source metrics...</description>
+    <pubDate>Sat, 05 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-10</guid>
+    <title>A sleek new trace filter and trace details tab, 50+ contributors in our tribe - SigNal 10</title>
+    <link>undefined/blog/signal-10</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during February, 2022.</description>
+    <pubDate>Sat, 05 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-zipkin</guid>
+    <title>Jaeger vs Zipkin - Key architecture components, differences and alternatives</title>
+    <link>undefined/blog/jaeger-vs-zipkin</link>
+    <description>Jaeger and Zipkin are two popular open-source projects used for end-to-end distributed tracing. While Zipkin is an older project and has a wider community, Jaeger has a modern, scalable architecture and supports open standards of instrumentation libraries..</description>
+    <pubDate>Wed, 02 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-09</guid>
+    <title>Advanced filters on the upcoming Traces tab, 40+ PRs and getting featured - SigNal 09</title>
+    <link>undefined/blog/signal-09</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during January, 2022.</description>
+    <pubDate>Mon, 07 Feb 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/rbi-guidelines-on-data-storage-for-fintech-companies</guid>
+    <title>Challenges in Choosing an APM tool for Fintech Companies in India due to RBI Guidelines</title>
+    <link>undefined/blog/rbi-guidelines-on-data-storage-for-fintech-companies</link>
+    <description>RBI has issued guidelines on storing payment system data of Indian users for fintech companies in India. All user data needs to be stored in India. This also applies to all third-party tools they use, including monitoring tools..</description>
+    <pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category><category>security</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-falcon</guid>
+    <title>Monitoring apps based on Falcon Web Framework with OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-falcon</link>
+    <description>OpenTelemetry provides an open-source standard with a consistent collection mechanism and data format. In this article, learn how to set up monitoring for a Falcon based web application using OpenTelemetry.</description>
+    <pubDate>Thu, 03 Feb 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>python</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/context-propagation-in-distributed-tracing</guid>
+    <title>What is Context Propagation in Distributed Tracing?</title>
+    <link>undefined/blog/context-propagation-in-distributed-tracing</link>
+    <description>Distributed tracing is built on causal metadata context propagation. Context propagation correlates events in a specific user request or transaction with the help of global identifiers and some other metadata..</description>
+    <pubDate>Tue, 01 Feb 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-django</guid>
+    <title>Monitoring Django application performance with OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-django</link>
+    <description>OpenTelemetry provides an open-source standard with a consistent collection mechanism and data format. In this article, learn how to set up monitoring for a Django application using OpenTelemetry.</description>
+    <pubDate>Thu, 13 Jan 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>python</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/top-9-observability-tools-2022</guid>
+    <title>Top 9 observability tools in 2022 perfect for microservices</title>
+    <link>undefined/blog/top-9-observability-tools-2022</link>
+    <description>Latest top observability tools list - 1.SigNoz 2.Instana 3.Dynatrace 4.Grafana Labs 5.Honeycomb 6.Lightstep 7.New Relic 8.DataDog...</description>
+    <pubDate>Mon, 10 Jan 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-08</guid>
+    <title>Deploy SigNoz using Helm charts, 500+ members on our slack community - SigNal 08</title>
+    <link>undefined/blog/signal-08</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during December, 2021.</description>
+    <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-span</guid>
+    <title>Spans - a key concept of distributed tracing</title>
+    <link>undefined/blog/distributed-tracing-span</link>
+    <description>Spans are fundamental blocks of distributed tracing. A single trace in distributed tracing consists of a series of tagged time intervals known as spans...</description>
+    <pubDate>Sat, 18 Dec 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-07</guid>
+    <title>Get alerts on metrics that matter to you with SigNoz  - SigNal 07</title>
+    <link>undefined/blog/signal-07</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during November, 2021.</description>
+    <pubDate>Sat, 04 Dec 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-fastapi</guid>
+    <title>Monitoring your FastAPI application using OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-fastapi</link>
+    <description>OpenTelemetry is a vendor-agnostic isntrumentation library. In this article, learn how to set up monitoring for FastAPI web framework using OpenTelemetry.</description>
+    <pubDate>Sat, 20 Nov 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>python</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-flask</guid>
+    <title>Monitoring your Flask application using OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-flask</link>
+    <description>OpenTelemetry is a vendor-agnostic isntrumentation library. In this article, learn how to set up monitoring for a Flask application using OpenTelemetry.</description>
+    <pubDate>Fri, 19 Nov 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>python</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-express</guid>
+    <title>Monitoring your Express application using OpenTelemetry</title>
+    <link>undefined/blog/opentelemetry-express</link>
+    <description>OpenTelemetry is a vendor-agnostic isntrumentation library. In this article, learn how to set up monitoring for an Express application using OpenTelemetry.</description>
+    <pubDate>Thu, 18 Nov 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-06</guid>
+    <title>Crossed 5000+ GitHub stars, metrics generation from spans - SigNal 06</title>
+    <link>undefined/blog/signal-06</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source and observability tool. Find out what we&#39;ve been upto at SigNoz during October, 2021.</description>
+    <pubDate>Wed, 03 Nov 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-vs-cloudwatch</guid>
+    <title>DataDog vs Cloudwatch - Which tool to choose?</title>
+    <link>undefined/blog/datadog-vs-cloudwatch</link>
+    <description>DataDog is a paid SaaS tool that provides a range of products for monitoring applications and tech infrastructure. While CloudWatch is an Amazon Web Services product that monitors applications running on AWS infrastructure and using AWS services....</description>
+    <pubDate>Tue, 12 Oct 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-05</guid>
+    <title>Metrics Dashboard, Scale testing upto 500K events/sec - Signal 05</title>
+    <link>undefined/blog/signal-05</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source and observability tool. Find out what we&#39;ve been upto at SigNoz during September, 2021.</description>
+    <pubDate>Mon, 04 Oct 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/apm-tools</guid>
+    <title>Latest top 21 APM tools [open-source included]</title>
+    <link>undefined/blog/apm-tools</link>
+    <description>APM tools are a critical component of distributed applications now. But choosing the right one can be tricky. We have listed out the latest top 21 APM tools based on languages supported, cost...</description>
+    <pubDate>Sat, 02 Oct 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-microservices</guid>
+    <title>Using Jaeger for your microservices</title>
+    <link>undefined/blog/jaeger-microservices</link>
+    <description>Jaeger is a popular open-source tool used for distributed tracing in a microservice architecture. In a microservice architecture, a user request or transaction can travel across hundreds of services before serving what a user wants.</description>
+    <pubDate>Wed, 22 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-tempo</guid>
+    <title>Jaeger vs Tempo - key features, differences, and alternatives</title>
+    <link>undefined/blog/jaeger-vs-tempo</link>
+    <description>Both Jaeger and Grafana Tempo are tools aimed at distributed tracing for microservice architecture. Tempo supports multiple open-source instrumentation standards, while Jaeger supports OpenTracing APIs..</description>
+    <pubDate>Thu, 16 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-vs-jaeger</guid>
+    <title>DataDog vs Jaeger - key features, differences and alternatives</title>
+    <link>undefined/blog/datadog-vs-jaeger</link>
+    <description>DataDog is an enterprise-level monitoring and security tool. On the other hand, Jaeger is an open-source tool focused on end-to-end distributed tracing for microservice architecture. DataDog is a full-stack paid APM tool, whereas Jaeger is free and open-source..</description>
+    <pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/aws-xray-vs-jaeger</guid>
+    <title>AWS X-Ray vs Jaeger - key features, differences and alternatives</title>
+    <link>undefined/blog/aws-xray-vs-jaeger</link>
+    <description>Both AWS X-Ray and Jaeger are distributed tracing tools used for performance monitoring in a microservices architecture. Jaeger was originally built by teams at Uber and then open-sourced in 2015. On the other hand, AWS X-Ray is a distributed tracing tool provided by AWS specifically focused on distributed tracing for applications using Amazon Cloud Services.</description>
+    <pubDate>Tue, 14 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-prometheus</guid>
+    <title>Jaeger vs Prometheus - Key differences, use-cases and alternatives</title>
+    <link>undefined/blog/jaeger-vs-prometheus</link>
+    <description>Both Jaeger and Prometheus are popular open-source application performance monitoring tools. While Jaeger is an end-to-end distributed tracing tool, Prometheus is used as a time-series database for monitoring metrics. Let&#39;s dive in to explore their key features and differences.</description>
+    <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-elastic-apm</guid>
+    <title>Jaeger vs Elastic APM - key differences, features and alternatives</title>
+    <link>undefined/blog/jaeger-vs-elastic-apm</link>
+    <description>Jaeger is an open-source end-to-end distributed tracing tool for microservices architecture. On the other hand, Elastic APM is an application performance monitoring system which is built on top of the ELK Stack...</description>
+    <pubDate>Sun, 12 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-newrelic</guid>
+    <title>Jaeger vs New Relic - Key differences, use-cases and alternatives</title>
+    <link>undefined/blog/jaeger-vs-newrelic</link>
+    <description>Jaeger and New Relic are tools used in the application monitoring and observability domain. While Jaeger is open-source, New Relic is a SaaS vendor. Jaeger is suited for distributed tracing and New Relic...</description>
+    <pubDate>Thu, 09 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-opentracing</guid>
+    <title>Jaeger and OpenTracing - Key concepts, use-cases and alternatives</title>
+    <link>undefined/blog/jaeger-vs-opentracing</link>
+    <description>Jaeger and OpenTracing are both open-source projects aimed to solve pain-points of distributed tracing. But the scope of the projects are completely different. While Jaeger is an end-to-end distributed tracing tool..</description>
+    <pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-04</guid>
+    <title>Metrics first look, more robust frontend and much more - Signal 04</title>
+    <link>undefined/blog/signal-04</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source and observability tool. Find out what we&#39;ve been upto at SigNoz during August, 2021.</description>
+    <pubDate>Mon, 06 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-tracing</guid>
+    <title>OpenTelemetry tracing - things you need to know before implementing</title>
+    <link>undefined/blog/opentelemetry-tracing</link>
+    <description>Thinking about using OpenTelemetry for distributed tracing? OpenTelemetry Tracing API provides options for manual as well as automated instrumentation..</description>
+    <pubDate>Sat, 04 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-nodejs</guid>
+    <title>Monitor your Nodejs application with OpenTelemetry and SigNoz</title>
+    <link>undefined/blog/opentelemetry-nodejs</link>
+    <description>In this article, learn how to setup application monitoring for Node.js apps with OpenTelemetry and SigNoz.</description>
+    <pubDate>Wed, 18 Aug 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-03</guid>
+    <title>A major release, tons of bug fixes and amazing new contributors - Signal 03</title>
+    <link>undefined/blog/signal-03</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source and observability tool. Find out what we&#39;ve been upto at SigNoz during July, 2021.</description>
+    <pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/getting-to-know-our-4000-plus-stargazers-on-github</guid>
+    <title>Getting to know our 4000+ stargazers on GitHub</title>
+    <link>undefined/blog/getting-to-know-our-4000-plus-stargazers-on-github</link>
+    <description>SigNoz crossed 4000+ stars recently. In this article, we dig deep to find out about our GitHub stargazers using a tool called Stargazers.</description>
+    <pubDate>Sat, 10 Jul 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-02</guid>
+    <title>Launched ClickHouse support, crossed 4k stars on GitHub -Signal 02</title>
+    <link>undefined/blog/signal-02</link>
+    <description>SigNoz is now available with ClickHouse as a storage backend. This and other updates on what we&#39;ve been upto at SigNoz. And yes, we trended at number 1 on GitHub trending.</description>
+    <pubDate>Tue, 06 Jul 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/clickhouse-storage-monitoring</guid>
+    <title>Launching support for ClickHouse as storage backend for SigNoz</title>
+    <link>undefined/blog/clickhouse-storage-monitoring</link>
+    <description>In this article, we dig deeper into why we decided to extend support for ClickHouse as a storage backend for SigNoz and the efficiency gains we achieved using it.</description>
+    <pubDate>Wed, 16 Jun 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category><category>database-monitoring</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/python-application-monitoring</guid>
+    <title>Monitor your Python application with full stack open source APM tool - SigNoz</title>
+    <link>undefined/blog/python-application-monitoring</link>
+    <description>In this article, learn how to setup application monitoring for Python apps using an open-source solution, SigNoz.</description>
+    <pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>python</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-01</guid>
+    <title>Our first community update - Signal</title>
+    <link>undefined/blog/signal-01</link>
+    <description>Excited to launch our first newsletter. We are delighted to have crossed 1.6k stars on GitHub, growing more than 30% last month. Catch up on what we&#39;re upto at SigNoz!</description>
+    <pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/nodejs-opensource-application-monitoring</guid>
+    <title>Set up application monitoring for your Node JS app in 20 mins with open source - SigNoz</title>
+    <link>undefined/blog/nodejs-opensource-application-monitoring</link>
+    <description>In this article, learn how to setup application monitoring for Node.js apps with our open-source solution, SigNoz.</description>
+    <pubDate>Mon, 24 May 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/self-hosting-software-observability</guid>
+    <title>Self-hosting software &amp; why it may be worth considering again now</title>
+    <link>undefined/blog/self-hosting-software-observability</link>
+    <description>With changing privacy laws, it&#39;s getting riskier to send your data to third party SaaS vendors. In the observability domain, traces and logs are something which you don&#39;t want to send outside. Let&#39;s find out why self-hosted software solutions are replacing SaaS providers now.</description>
+    <pubDate>Fri, 16 Apr 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>open-source</category><category>product</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signoz-vs-prometheus-jaeger</guid>
+    <title>The genesis of SigNoz - A full-stack open source observability platform</title>
+    <link>undefined/blog/signoz-vs-prometheus-jaeger</link>
+    <description>Why we felt there was a need for a full-stack open source observability platform and how we went about building it.</description>
+    <pubDate>Fri, 16 Apr 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signoz-benchmarks</guid>
+    <title>Cost benchmarking - Self hosting SigNoz vs using a SaaS vendor</title>
+    <link>undefined/blog/signoz-benchmarks</link>
+    <description>With changing privacy laws, it&#39;s getting riskier to send your data to third party SaaS vendors. In the observability domain, traces and logs are something which you don&#39;t want to send outside. Let&#39;s find out why self-hosted software solutions are replacing SaaS providers now.</description>
+    <pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-kubernetes</guid>
+    <title>Getting started with OpenTelemetry on Kubernetes</title>
+    <link>undefined/blog/opentelemetry-kubernetes</link>
+    <description>OpenTelemetry is an instrumentation standard for application monitoring - both for monitoring metrics &amp; distributed tracing. In this blog, we take you through a hands on guide on how to run this on Kubernetes.</description>
+    <pubDate>Thu, 23 Jul 2020 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-jaeger-cassandra</guid>
+    <title>Distributed tracing using Jaeger with Cassandra</title>
+    <link>undefined/blog/distributed-tracing-jaeger-cassandra</link>
+    <description>With microservices becoming popular, tracing is increasingly more important in debugging production software. In this post, we take you through a step by step guide on setting up Jaeger over Kubernetes with Cassandra storage.</description>
+    <pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/why-are-we-building-signoz</guid>
+    <title>Why are we building SigNoz?</title>
+    <link>undefined/blog/why-are-we-building-signoz</link>
+    <description>In the world of microservices, who takes care of failures? How do you solve availability and performance issues quickly in your production environment. For a modern-day distributed system, observability needs to be built within the system. And, SigNoz attempts to bring you the best open-source observability stack for your distributed system.</description>
+    <pubDate>Wed, 15 Jan 2020 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/ha-prometheus-cortex-cassandra</guid>
+    <title>Setting up HA Prometheus with Cortex and Cassandra</title>
+    <link>undefined/blog/ha-prometheus-cortex-cassandra</link>
+    <description>In this blog, we explain how we enable high availability Prometheus using Cortex and Cassandra. This provides a single pane of view across multiple clusters - which enables visualising all monitoring metrics in one go.</description>
+    <pubDate>Sat, 30 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/out-of-box-application-monitoring-prometheus</guid>
+    <title>Bringing out of the box application monitoring to Prometheus</title>
+    <link>undefined/blog/out-of-box-application-monitoring-prometheus</link>
+    <description>Prometheus is a popular monitoring tool for kubernetes. Kube-state metrics and node exporters send a lot of metrics. But visualization of the metrics in charts is still painful. In this article, let&#39;s see how we can have some out of box visualizations with Prometheus.</description>
+    <pubDate>Fri, 29 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category><category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/7-takeaways-prometheus-conference-2019</guid>
+    <title>My 7 key takeaways from PromCon 2019</title>
+    <link>undefined/blog/7-takeaways-prometheus-conference-2019</link>
+    <description>PromCon is one of the premier conference on Prometheus and related tools like Grafana. This is held every year where developers from around the world gather to learn the latest in monitoring technologies.</description>
+    <pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/quantile-aggregation-for-statsd-exporter</guid>
+    <title>Quantile Aggregation for statsd-exporter in Prometheus</title>
+    <link>undefined/blog/quantile-aggregation-for-statsd-exporter</link>
+    <description>In this blog, we shall send observation frequencies in the bucket intervals chosen and aggregate those at the Prometheus back-end.</description>
+    <pubDate>Mon, 02 Sep 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category>
+  </item>
+
+  <item>
     <guid>undefined/blog/monitor-gunicorn-django-in-prometheus</guid>
     <title>Monitoring OpenMetrics for Gunicorn and Django application in Prometheus</title>
     <link>undefined/blog/monitor-gunicorn-django-in-prometheus</link>
     <description>In this blog, let&#39;s see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>hero-section</category>
+    <category>opentelemetry-instrumentation</category><category>python</category><category>prometheus</category>
   </item>
 
   <item>
@@ -97,7 +1337,7 @@
     <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code.</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>tools</category>
+    <category>tools-comparison</category>
   </item>
 
   <item>
@@ -141,9 +1381,9 @@
   </item>
 
   <item>
-    <guid>undefined/blog/some-techincal-issues</guid>
+    <guid>undefined/blog/some-title</guid>
     <title>The Time Machine</title>
-    <link>undefined/blog/some-techincal-issues</link>
+    <link>undefined/blog/some-title</link>
     <description>The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...</description>
     <pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
