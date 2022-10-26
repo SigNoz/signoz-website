@@ -51,9 +51,10 @@ const Link = ({
             }
           )}
         >
-          <div className="flex items-center justify-between">
+          <div
+            onClick={onClickHandler}
+            className="flex items-center justify-between">
             <div
-              onClick={onClickHandler}
               className="flex items-center justify-between cursor-pointer"
             >
               {name}

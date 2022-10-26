@@ -8,7 +8,7 @@ const DocsLayout = ({ children, toc, docsLinks }: LayoutProps): JSX.Element => (
     <div className="flex flex-1">
       <div className="relative px-4 pt-0 w-full">
         <DocsSideBar links={docsLinks} />
-        <div className="h-screen hidden md:block inset-0 absolute border border-signoz-border z-[-1]" />
+        <div className="h-screen hidden md:block inset-0 absolute border border-r-signoz-border z-[-1]" />
       </div>
     </div>
 
@@ -21,7 +21,6 @@ const DocsLayout = ({ children, toc, docsLinks }: LayoutProps): JSX.Element => (
             toc={toc}
             exclude="Overview"
             toHeading={6}
-            isBorderVisible={false}
           />
         </div>
         <div className="h-screen absolute top-0 -z-10 border border-signoz-border" />
