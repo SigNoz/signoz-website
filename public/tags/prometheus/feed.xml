@@ -7,9 +7,89 @@
       <language>undefined</language>
       <managingEditor>undefined (undefined)</managingEditor>
       <webMaster>undefined (undefined)</webMaster>
-      <lastBuildDate>Fri, 30 Aug 2019 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 16 Aug 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="undefined/tags/prometheus/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>undefined/blog/opentelemetry-vs-prometheus</guid>
+    <title>OpenTelemetry vs Prometheus - differences, use-cases and alternatives</title>
+    <link>undefined/blog/opentelemetry-vs-prometheus</link>
+    <description>OpenTelemetry and Prometheus are both open-source projects under Cloud Native Computing Foundation. One is used for managing telemetry data and the other is a metrics monitoring tool..</description>
+    <pubDate>Tue, 16 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/prometheus-query</guid>
+    <title>Prometheus Query Tutorial with examples</title>
+    <link>undefined/blog/prometheus-query</link>
+    <description>Prometheus Query Language (PromQL) lets users query and aggregate metrics data in Prometheus for further analysis. In this tutorial, we will learn about Prometheus Query Language and see it in action using examples of PromQL...</description>
+    <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/prometheus-vs-influxdb</guid>
+    <title>Prometheus vs InfluxDB - Key Differences, concepts, and similarities</title>
+    <link>undefined/blog/prometheus-vs-influxdb</link>
+    <description>Prometheus and InfluxDB are both open-source projects that can be used for monitoring time-series data. While Prometheus is a metrics monitoring tool graduated under CNCF, InfluDB is a time-series database. In this article, let’s have a side-to-side review of Prometheus vs InfluxDB to...</description>
+    <pubDate>Tue, 05 Jul 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/prometheus-vs-elasticsearch</guid>
+    <title>Prometheus vs Elasticsearch stack - Key concepts, features, and differences</title>
+    <link>undefined/blog/prometheus-vs-elasticsearch</link>
+    <description>Both Prometheus and Elasticsearch stack provide monitoring solutions for applications in production. But while Prometheus is focused on metrics monitoring, the Elasticsearch stack or the ELK stack specializes in logs...</description>
+    <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-vs-prometheus</guid>
+    <title>DataDog vs Prometheus - Key features &amp; differences</title>
+    <link>undefined/blog/datadog-vs-prometheus</link>
+    <description>In this article, we will compare DataDog with Prometheus. Both are monitoring tools but differ significantly in their offerings. DataDog is a paid SaaS monitoring tool, while Prometheus is an open-source metrics...</description>
+    <pubDate>Sat, 05 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-prometheus</guid>
+    <title>Jaeger vs Prometheus - Key differences, use-cases and alternatives</title>
+    <link>undefined/blog/jaeger-vs-prometheus</link>
+    <description>Both Jaeger and Prometheus are popular open-source application performance monitoring tools. While Jaeger is an end-to-end distributed tracing tool, Prometheus is used as a time-series database for monitoring metrics. Let&#39;s dive in to explore their key features and differences.</description>
+    <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/ha-prometheus-cortex-cassandra</guid>
+    <title>Setting up HA Prometheus with Cortex and Cassandra</title>
+    <link>undefined/blog/ha-prometheus-cortex-cassandra</link>
+    <description>In this blog, we explain how we enable high availability Prometheus using Cortex and Cassandra. This provides a single pane of view across multiple clusters - which enables visualising all monitoring metrics in one go.</description>
+    <pubDate>Sat, 30 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/7-takeaways-prometheus-conference-2019</guid>
+    <title>My 7 key takeaways from PromCon 2019</title>
+    <link>undefined/blog/7-takeaways-prometheus-conference-2019</link>
+    <description>PromCon is one of the premier conference on Prometheus and related tools like Grafana. This is held every year where developers from around the world gather to learn the latest in monitoring technologies.</description>
+    <pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category><category>prometheus</category>
+  </item>
+
   <item>
     <guid>undefined/blog/monitor-gunicorn-django-in-prometheus</guid>
     <title>Monitoring OpenMetrics for Gunicorn and Django application in Prometheus</title>
@@ -17,7 +97,7 @@
     <description>In this blog, let&#39;s see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.</description>
     <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>tools_comparison</category><category>monitoring</category><category>prometheus</category><category>gunicorn</category><category>django</category>
+    <category>opentelemetry-instrumentation</category><category>python</category><category>prometheus</category>
   </item>
 
     </channel>

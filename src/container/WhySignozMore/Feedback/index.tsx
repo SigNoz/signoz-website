@@ -29,7 +29,7 @@ const Feedback = (): JSX.Element => {
         </Content>
         <div className="flex flex-col justify-center items-center mt-6">
           <Image
-            src={"/images/authors/user1.jpg"}
+            src={"/images/authors/ankit_anand.webp"}
             alt="author image"
             objectFit="contain"
             layout="fixed"
