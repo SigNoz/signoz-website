@@ -79,7 +79,7 @@ const HeroSection = (props: HeroSectionProps) => {
         </div>
         <div className="mt-4">
           <AuthorBy
-            avatar="/images/authors/user1.jpg"
+            avatar="/images/authors/dchennaraidu.webp"
             name="Chenna Raidu D"
             position="SigNoz Community"
             nameClassName="font-medium text-white"

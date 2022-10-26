@@ -10,7 +10,7 @@ const SignozFeedback = (): JSX.Element => {
 
   const feedbacks: FeedbackCardProps[] = [
     {
-      authorImage: "/images/authors/user1.jpg",
+      authorImage: "/images/authors/ankit_anand.webp",
       authorName: "Pawan Bhadauria",
       feedback: `A new and yet powerful
           <span class="text-signoz-primary">
@@ -22,7 +22,7 @@ const SignozFeedback = (): JSX.Element => {
       id: "1",
     },
     {
-      authorImage: "/images/authors/user1.jpg",
+      authorImage: "/images/authors/ankit_anand.webp",
       authorName: "Pawan Bhadauria",
       feedback: `
       <div>
@@ -38,7 +38,7 @@ const SignozFeedback = (): JSX.Element => {
       id: "2",
     },
     {
-      authorImage: "/images/authors/user1.jpg",
+      authorImage: "/images/authors/ankit_anand.webp",
       authorName: "Pawan Bhadauria",
       feedback: `A new and yet powerful
           <span class="text-signoz-primary">
@@ -50,7 +50,7 @@ const SignozFeedback = (): JSX.Element => {
       id: "3",
     },
     {
-      authorImage: "/images/authors/user1.jpg",
+      authorImage: "/images/authors/ankit_anand.webp",
       authorName: "Pawan Bhadauria",
       feedback: `A new and yet powerful
           <span class="text-signoz-primary">

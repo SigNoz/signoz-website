@@ -1,6 +1,6 @@
 ---
 name: Prashant Shahi
-avatar: /images/authors/ankit_nayan.jpg
+avatar: /images/authors/prashant.webp
 occupation: SigNoz Team
 company: SigNoz Community
 url: https://github.com/prashant-shahi
