@@ -9,11 +9,13 @@ import { useIsDesktop } from "hooks/useDeviceType";
 import { useInterval } from "react-use";
 import SearchBar from "../SearchBar";
 import cx from "classnames";
+import { AuthorDetails } from "../../../../pages/blog/[...slug]";
 
 const HeroSection = (props: HeroSectionProps) => {
   const isDesktop = useIsDesktop();
+  const { allAuthors, data } = props;
 
-  const content: BlogCardProps[] = [...props.data];
+  const content: BlogCardProps[] = [...data];
   const [currentSelected, setCurrentSelected] = useState(0);
   const section = "hero-section";
 
@@ -35,6 +37,15 @@ const HeroSection = (props: HeroSectionProps) => {
   });
 
   const selectedBlog = content[currentSelected];
+  const selectedAuthor = useMemo(() => {
+    if (selectedBlog && selectedBlog.author && allAuthors) {
+      return selectedBlog?.author.map((author) =>
+        allAuthors.find((item) => item.fileName.split(".")[0] === author)
+      );
+    }
+    return [];
+  }, [selectedBlog, allAuthors]);
+
   const dateToRender = useMemo(
     () =>
       getBlogFooter(
@@ -77,14 +88,17 @@ const HeroSection = (props: HeroSectionProps) => {
         <div className="text-signoz-secondary-light font-openSans text-xs font-normal leading-[18px] mt-4">
           {dateToRender}
         </div>
-        <div className="mt-4">
-          <AuthorBy
-            avatar="/images/authors/user1.jpg"
-            name="Chenna Raidu D"
-            position="SigNoz Community"
-            nameClassName="font-medium text-white"
-            positionClassName="text-signoz-secondary-light"
-          />
+        <div className="mt-4 flex flex-col gap-2">
+          {selectedAuthor.map((author) => (
+            <AuthorBy
+              key={author?.name}
+              avatar={author?.avatar || "/images/authors/user1.jpg"}
+              name={author?.name || "Signoz"}
+              position={author?.occupation || "CEO"}
+              nameClassName="font-medium text-white"
+              positionClassName="text-signoz-secondary-light"
+            />
+          ))}
         </div>
         <div className="order-3 mt-6">{Element}</div>
       </div>
@@ -95,6 +109,7 @@ const HeroSection = (props: HeroSectionProps) => {
 
 interface HeroSectionProps {
   data: BlogCardProps[];
+  allAuthors: AuthorDetails[];
 }
 
 export default HeroSection;

@@ -1,46 +1,42 @@
 import { BlogCardProps } from "components/BlogCard";
 import { FrontMatterProps } from "./mdx";
-type AllTags = BlogCardProps["tags"];
+export type AllTags = BlogCardProps["tags"];
 
 export const blogsTagtoTagsMapping: Record<AllTags, string> = {
-  "tools": "tools_comparison",
-  "technical": "technical",
+  tools: "tools_comparison",
+  technical: "technical",
   "hero-section": "hero-section",
   "most-recent-post": "most-recent-post",
   "open-telementry-implementations": "open-telementry-implementations",
-  "product": "product",
+  product: "product",
   "blog-recent-post": "blog-recent-post",
-  "product-updates":"product-updates",
-  "observability":"observability",
-  "tech-resources":"tech-resources",
-  "dot-net" : "dot-net",
-  "apm" :  "apm",
-  "community": "community",
+  "product-updates": "product-updates",
+  observability: "observability",
+  "tech-resources": "tech-resources",
+  "dot-net": "dot-net",
+  apm: "apm",
+  community: "community",
   "database-monitoring": "database-monitoring",
   "distributed-tracing": "distributed-tracing",
-  "docker": "docker",
+  docker: "docker",
   "elixir-erlang": "elixir-erlang",
   "go-golang": "go-golang",
-  "jaeger": "jaeger",
-  "java": "java",
-  "javascript": "javascript",
+  jaeger: "jaeger",
+  java: "java",
+  javascript: "javascript",
   "open-source": "open-source",
   "opentelemetry-instrumentation": "opentelemetry-instrumentation",
-  "php": "php",
-  "prometheus": "prometheus",
-  "python": "python",
-  "ruby": "ruby",
-  "rust": "rust",
-  "security": "security",
-  "signoz": "signoz",
-  "talks": "talks",
+  php: "php",
+  prometheus: "prometheus",
+  python: "python",
+  ruby: "ruby",
+  rust: "rust",
+  security: "security",
+  signoz: "signoz",
+  talks: "talks",
   "tech-tutorial": "tech-tutorial",
   "tools-comparison": "tools-comparison",
-  "opentelemetry":"opentelemetry"
-};
-
-const isTagsMapping = (tag: string): tag is AllTags => {
-  return Object.keys(blogsTagtoTagsMapping).includes(tag);
+  opentelemetry: "opentelemetry",
 };
 
 const extractDate = (date: string | null): Date => {
@@ -62,20 +58,18 @@ export const getBlogCard = (
     description = "",
     time = { minutes: 0 },
     slug,
+    authors,
   } = post;
-
-  const tagsMapped = tags.filter((tag) => isTagsMapping(tag));
-
-  const tag = tagsMapped[0];
 
   return {
     title,
-    tags: tag as AllTags,
+    tags: tags[0] as AllTags,
     description,
     timeToReadInMinutes: time?.minutes || 0,
     date: extractDate(date),
     layout,
     slug: slug,
+    author: authors,
   };
 };
 
