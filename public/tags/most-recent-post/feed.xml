@@ -7,25 +7,35 @@
       <language>undefined</language>
       <managingEditor>undefined (undefined)</managingEditor>
       <webMaster>undefined (undefined)</webMaster>
-      <lastBuildDate>Mon, 19 Sep 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 13 Oct 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="undefined/tags/most-recent-post/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>undefined/blog/elk-alternatives</guid>
+    <title>Top 14 ELK alternatives[Open Source included] in 2022</title>
+    <link>undefined/blog/elk-alternatives</link>
+    <description>There are many ELK alternatives that you can use for logs analytics. Top 14 ELK alternatives in 2022. 1.SigNoz 2.Logz.io 3.Graylog 4.Logtail 5.Sumologic 6.Grafana Loki...</description>
+    <pubDate>Thu, 13 Oct 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tech-resources</category><category>most-recent-post</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signal-17</guid>
+    <title>First page of Hacker News, 9000+ GitHub stars, improved dashboards and documentation - SigNal 17</title>
+    <link>undefined/blog/signal-17</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during September, 2022.</description>
+    <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>product-updates</category><category>hero-section</category><category>most-recent-post</category>
+  </item>
+
   <item>
     <guid>undefined/blog/opentelemetry-collector-complete-guide</guid>
     <title>OpenTelemetry Collector - architecture and configuration guide</title>
     <link>undefined/blog/opentelemetry-collector-complete-guide</link>
     <description>OpenTelemetry collector provides a vendor-neutral way to collect, process, and export your telemetry data to an analysis backend of your choice. Learn how to configure..</description>
     <pubDate>Mon, 19 Sep 2022 00:00:00 GMT</pubDate>
-    <author>undefined (undefined)</author>
-    <category>most-recent-post</category>
-  </item>
-
-  <item>
-    <guid>undefined/blog/sample-post</guid>
-    <title>sample-post</title>
-    <link>undefined/blog/sample-post</link>
-    <description>In this blog, we compare Instana and Sysdig - two popular monitoring tools which claim to show APM metrics without need to instrument code</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>most-recent-post</category>
   </item>

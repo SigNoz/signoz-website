@@ -4,6 +4,7 @@ import { getBlogFooter, getTags } from "./utils";
 import cx from "classnames";
 import React, { useMemo, useCallback } from "react";
 import { useRouter } from "next/router";
+import { AuthorDetails } from "../../../pages/blog/[...slug]";
 
 const BlogCard = ({
   tags,
@@ -118,6 +119,7 @@ export interface BlogCardProps {
   description?: string;
   cardStyle?: React.CSSProperties;
   slug?: string;
+  author?: any[];
 }
 
 export default BlogCard;
