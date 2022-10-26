@@ -22,7 +22,7 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
     }
     case "observability": {
       return "Observability";
-    } 
+    }
     case "tech-resources": {
       return "Tech Resources";
     }
@@ -102,7 +102,7 @@ export const getTags = (tags: BlogCardProps["tags"]) => {
       return "OpenTelemetry";
     }
     case "blog-recent-post": {
-      return "Recommended for you";
+      return "Related Posts";
     }
     default: {
       console.error(tags, "tag is not implemented");
