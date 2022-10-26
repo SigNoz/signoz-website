@@ -4,7 +4,6 @@ import { getBlogFooter, getTags } from "./utils";
 import cx from "classnames";
 import React, { useMemo, useCallback } from "react";
 import { useRouter } from "next/router";
-import { AuthorDetails } from "../../../pages/blog/[...slug]";
 
 const BlogCard = ({
   tags,

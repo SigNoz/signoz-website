@@ -8,10 +8,20 @@ import Tutorials from "container/Tutorials";
 import LatestBlogPosts from "container/LatestBlogPost";
 import ReadAbout from "container/ReadAbout";
 import SignozFeedback from "container/SignozFeedback";
+import BlogsSEO from "components/BlogSEO";
 
 const HomePage = () => {
   return (
     <>
+      <BlogsSEO
+        authorName=""
+        coverImage=""
+        description=""
+        keywords={[]}
+        publishedTime={new Date().toString()}
+        tags={[]}
+        title="Open source APM | SigNoz"
+      />
       <div className="w-[95%] m-auto mb-16">
         <HeroSection />
       </div>

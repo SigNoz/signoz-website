@@ -159,6 +159,8 @@ export interface FrontMatterProps {
   referencePost?: string[];
   authors?: string[];
   fileName?: string;
+  hide_table_of_contents?: boolean;
+  readingTime?: ReadTimeResults;
 }
 
 const getDate = (date: string | null): Date => {
@@ -194,6 +196,7 @@ export async function getAllFilesFrontMatter(folder: string) {
       keywords = [],
       image = "",
       authors = [],
+      hide_table_of_contents = false,
     } = frontmatter;
 
     if (draft !== true) {
@@ -210,6 +213,7 @@ export async function getAllFilesFrontMatter(folder: string) {
         image,
         authors,
         fileName,
+        hide_table_of_contents,
       });
     }
   });

@@ -20,7 +20,14 @@ const Layout = ({
   toc,
   shareIcons,
 }: LayoutProps) => {
-  const { title, date = "", image } = frontMatter;
+  const {
+    title,
+    date = "",
+    image,
+    readingTime,
+    hide_table_of_contents,
+  } = frontMatter;
+
   const isDesktop = useIsDesktop(1200);
   const titleRef = useRef<HTMLDivElement>(null);
   const blogImageRef = useRef<HTMLImageElement>(null);
@@ -44,7 +51,7 @@ const Layout = ({
 
   return (
     <div className="w-full m-auto flex flex-col gap-4 md:flex-row">
-      {isDesktop && (
+      {isDesktop && !hide_table_of_contents && (
         <div
           className={cx("max-w-[26rem]")}
           style={{ marginTop: !isDesktop ? 0 : marginTop }}
@@ -92,9 +99,12 @@ const Layout = ({
                     <div className="text-xs text-signoz-medium font-semibold">
                       {getFormattedDate(new Date(date || ""))} ·
                     </div>
-                    <div className="text-xs text-signoz-medium font-semibold">
-                      {author.readingTime.text}
-                    </div>
+
+                    {readingTime && (
+                      <div className="text-xs text-signoz-medium font-semibold">
+                        {readingTime.text}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
