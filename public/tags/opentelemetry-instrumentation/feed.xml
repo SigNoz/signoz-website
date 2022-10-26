@@ -67,7 +67,7 @@
     <description>Nodejs performance monitoring can give you actionable insights into the performance of your Nodejs application. In this tutorial, we will use two open-source tools - SigNoz and OpenTelemetry to monitor a full-stack nodejs application...</description>
     <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>opentelemetry-instrumentation</category><category>javascript</category>
+    <category>opentelemetry-instrumentation</category><category>javascript</category><category>hero-section</category>
   </item>
 
   <item>
