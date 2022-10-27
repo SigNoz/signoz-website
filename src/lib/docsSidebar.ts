@@ -53,6 +53,57 @@ const docsLinks: DocsLinks[] = [
         subLinks: [],
       },
     ]
+  },
+  {
+    link: "/tutorials",
+    name: "Tutorials",
+    subLinks: [
+      {
+        link: "/jvm-metrics",
+        name: "Spring Boot JVM Metrics",
+        subLinks: [],
+      },
+      {
+        link: "/kubernetes-infra-metrics",
+        name: "K8s Infra Metrics",
+        subLinks: [],
+      },
+      {
+        link: "/mongodb-metrics",
+        name: "MongoDB Metrics",
+        subLinks: [],
+      },
+      {
+        link: "/instrumenting-angular-frontend",
+        name: "Instrumenting Angular Frontend Web App",
+        subLinks: [],
+      },
+      {
+        link: "/s3-integration-iam-role-eks",
+        name: "S3 Integration With AWS IAM role in EKS",
+        subLinks: [],
+      },
+      {
+        link: "/opentelemetry-operator-usage",
+        name: "OpenTelemetry Operator Usage",
+        subLinks: [],
+      },
+      {
+        link: "/opentelemetry-binary-usage-in-virtual-machine",
+        name: "OpenTelemetry Binary Usage in Virtual Machine",
+        subLinks: [],
+      },
+      {
+        link: "/setting-up-tls-for-signoz",
+        name: "Secure SigNoz in Kubernetes using Ingress-NGINX and Cert-Manager",
+        subLinks: [],
+      },
+      {
+        link: "/setting-up-sso-saml-with-keycloak",
+        name: "Setting Up SSO SAML 2.0 With Keycloak",
+        subLinks: [],
+      }
+    ]
   }
 ];
 
