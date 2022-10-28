@@ -54,6 +54,11 @@ const docsLinks: DocsLinks[] = [
     subLinks: [],
   },
   {
+    link: "/community",
+    name: "Community",
+    subLinks: [],
+  },
+  {
     link: "/faqs",
     name: "FAQs",
     subLinks: [
