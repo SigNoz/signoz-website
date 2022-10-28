@@ -44,52 +44,6 @@ const docsLinks: DocsLinks[] = [
     ]
   },
   {
-    link: "/architecture",
-    name: "Technical Architecture",
-    subLinks: [],
-  },
-  {
-    link: "/contributing",
-    name: "Contributing Guidelines",
-    subLinks: [],
-  },
-  {
-    link: "/community",
-    name: "Community",
-    subLinks: [],
-  },
-  {
-    link: "/roadmap",
-    name: "Product Roadmap",
-    subLinks: [],
-  },
-  {
-    link: "/faqs",
-    name: "FAQs",
-    subLinks: [
-      {
-        link: "/product",
-        name: "Product - FAQs",
-        subLinks: [],
-      },
-      {
-        link: "/troubleshooting",
-        name: "Troubleshooting - FAQs",
-        subLinks: [],
-      },
-      {
-        link: "/instrumentation",
-        name: "Instrumentation - FAQs",
-        subLinks: [],
-      },
-      {
-        link: "/installation",
-        name: "Installation - FAQs",
-        subLinks: [],
-      },
-    ]
-  },
-  {
     link: "/tutorials",
     name: "Tutorials",
     subLinks: [
@@ -139,7 +93,58 @@ const docsLinks: DocsLinks[] = [
         subLinks: [],
       }
     ]
-  }
+  },
+  {
+    link: "/architecture",
+    name: "Technical Architecture",
+    subLinks: [],
+  },
+  {
+    link: "/contributing",
+    name: "Contributing Guidelines",
+    subLinks: [],
+  },
+  {
+    link: "/community",
+    name: "Community",
+    subLinks: [],
+  },
+  {
+    link: "/roadmap",
+    name: "Product Roadmap",
+    subLinks: [],
+  },
+  {
+    link: "/faqs",
+    name: "FAQs",
+    subLinks: [
+      {
+        link: "/product",
+        name: "Product - FAQs",
+        subLinks: [],
+      },
+      {
+        link: "/troubleshooting",
+        name: "Troubleshooting - FAQs",
+        subLinks: [],
+      },
+      {
+        link: "/instrumentation",
+        name: "Instrumentation - FAQs",
+        subLinks: [],
+      },
+      {
+        link: "/installation",
+        name: "Installation - FAQs",
+        subLinks: [],
+      },
+    ]
+  },
+  {
+    link: "/telemetry",
+    name: "Telemetry",
+    subLinks: [],
+  },
 ];
 
 export default docsLinks;
