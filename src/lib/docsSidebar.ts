@@ -49,6 +49,11 @@ const docsLinks: DocsLinks[] = [
     subLinks: [],
   },
   {
+    link: "/contributing",
+    name: "Contributing Guidelines",
+    subLinks: [],
+  },
+  {
     link: "/faqs",
     name: "FAQs",
     subLinks: [
