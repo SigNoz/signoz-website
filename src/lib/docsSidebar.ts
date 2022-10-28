@@ -4,24 +4,7 @@ const docsLinks: DocsLinks[] = [
   {
     link: "/introduction",
     name: "Introduction",
-    subLinks: [
-      {
-        link: "/install",
-        name: "Install",
-        subLinks: [
-          {
-            link: "/docker",
-            name: "Docker Standalone",
-            subLinks: [],
-          },
-          {
-            link: "/docker-swarm",
-            name: "Docker Swarm",
-            subLinks: [],
-          },
-        ],
-      },
-    ],
+    subLinks: [],
   },
   {
     link: "/architecture",

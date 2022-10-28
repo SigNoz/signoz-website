@@ -1,39 +1,59 @@
 ---
-title: Monitoring OpenMetrics for Gunicorn and Django application in Prometheus
-slug: monitor-gunicorn-django-in-prometheus
-date: 2019-08-30
-tags: [tools_comparison, monitoring, prometheus, gunicorn, django]
-authors: [ankit_nayan]
-description: In this blog, let's see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.
-image: /images/blogHeroImage.png
-keywords:
-  - Prometheus
-  - Grafana
-  - kubernetes
-  - Application Monitoring
-  - python monitoring
+id: introduction
+title: Introduction
+slug: /
 ---
 
-# Introdution
-liv is a Python based application that is used to manage AWS resources.
+
+SigNoz is an open-source application performance monitoring tool that helps you monitor your applications and troubleshoot problems. SigNoz uses distributed tracing to gain visibility into your software stack.
+
+With SigNoz, you can do the following:
+
+- Monitor application metrics such as latency, requests per second, error rates
+- Monitor infrastructure metrics such as CPU utilization or memory usage
+- Track user requests across services
+- Set alerts on metrics
+- Find the root cause of the problem by going to the exact traces which are causing the problem
+- See detailed flame graphs of individual request traces
 
 
-## Prometheus
+## How Does SigNoz Work?
 
-### Prometheus is a tool for collecting and monitoring metrics.
+SigNoz collects data using [OpenTelemetry](https://opentelemetry.io/), an open-source observability solution. Therefore, SigNoz supports all the frameworks and languages supported by OpenTelemetry. You can find the complete list of supported languages on the [Instrumentation](https://opentelemetry.io/docs/instrumentation/) page of the OpenTelemetry documentation.
 
-### Grafana is a web application for visualizing and exploring metrics.
+Then, SigNoz aggregates all the collected data, and you use the dashboard to see all the metrics and traces related to your application.
 
-### Kubernetes is a container orchestration system.
+### Architecture
 
-### Application Monitoring
-
-## The Problem
-
-liv is a Python based application that is used to manage AWS resources.
-
+<ZoomImage
+  image={"/images/docs/architecture-signoz-clickhouse.svg"}
+  alt="Architecture of SigNoz"
+/>
 
 
-## The Solution
+SigNoz includes the following components:
+- **OpenTelemetry Collector**: Collects telemetry data from your services and applications.
+- **ClickHouse**: An open-source, high performance columnar OLAP database management system. 
+- **Query Service**: The interface between the front-end and ClickHouse
+- **Frontend**: The user interface, built in ReactJS and TypeScript.
 
-liv is a Python based application that is used to manage AWS resources.
+To learn more about the architecture of SigNoz, see the [Architecture](https://signoz.io/docs/architecture/) page.
+
+## Get Started
+
+Perform the following steps to get started with SigNoz and instrument your first application:
+
+**Learn how to install SigNoz:** [Install SigNoz](https://signoz.io/docs/install/)
+
+**Learn how to instrument your application:** [Instrument your application](https://signoz.io/docs/instrumentation/overview/)
+
+## Use SigNoz
+
+The topics in this section provide details on using SigNoz to monitor your application.
+
+**Learn about creating dashboards, set alerts, and perform other tasks:** [User Guides](https://signoz.io/docs/userguide/overview/)
+
+**Learn about monitoring your application and infrastructure:** [Turorials](https://signoz.io/docs/tutorials/)
+
+**Learn how to manage SigNoz:** [Operate](https://signoz.io/docs/operate/)
+
