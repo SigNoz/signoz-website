@@ -45,7 +45,7 @@ const docsLinks: DocsLinks[] = [
   },
   {
     link: "/architecture",
-    name: "Architecture",
+    name: "Technical Architecture",
     subLinks: [],
   },
   {
