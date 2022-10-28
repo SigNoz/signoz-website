@@ -7,6 +7,43 @@ const docsLinks: DocsLinks[] = [
     subLinks: [],
   },
   {
+    link: "/install",
+    name: "Install",
+    subLinks: [
+      {
+        link: "/docker",
+        name: "Docker Standalone",
+        subLinks: [],
+      },
+      {
+        link: "/docker-swarm",
+        name: "Docker Swarm",
+        subLinks: [],
+      },
+      {
+        link: "/kubernetes",
+        name: "Kubernetes",
+        subLinks: [
+          {
+            link: "/aws",
+            name: "Deploying to AWS",
+            subLinks: [],
+          },
+          {
+            link: "/gcp",
+            name: "Deploying to GCP",
+            subLinks: [],
+          },
+          {
+            link: "/others",
+            name: "Deploying to Helm directly",
+            subLinks: [],
+          },
+        ],
+      },
+    ]
+  },
+  {
     link: "/architecture",
     name: "Architecture",
     subLinks: [],
