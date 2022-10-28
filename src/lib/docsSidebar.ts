@@ -41,11 +41,6 @@ const docsLinks: DocsLinks[] = [
           },
         ],
       },
-      {
-        link: "/troubleshooting",
-        name: "Troubleshooting",
-        subLinks: [],
-      },
     ]
   },
   {
