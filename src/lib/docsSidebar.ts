@@ -158,6 +158,74 @@ const docsLinks: DocsLinks[] = [
     ]
   },
   {
+    link: "/operate",
+    name: "Operate",
+    subLinks: [
+      {
+        link: "/configuration",
+        name: "Configuration",
+        subLinks: [],
+      },
+      {
+        link: "/docker-standalone",
+        name: "Docker Standalone",
+        subLinks: [],
+      },
+      {
+        link: "/docker-swarm-operate",
+        name: "Docker Swarm",
+        subLinks: [],
+      },
+      {
+        link: "/kubernetes-operate",
+        name: "Kubernetes",
+        subLinks: [],
+      },
+      {
+        link: "/migration",
+        name: "Migration Guides",
+        subLinks: [
+          {
+            link: "/upgrade-0.8.0",
+            name: "Upgrade to 0.8.0",
+            subLinks: []
+          },
+          {
+            link: "/upgrade-0.8.1",
+            name: "Upgrade to 0.8.1",
+            subLinks: []
+          },
+          {
+            link: "/upgrade-0.9",
+            name: "Upgrade to 0.9",
+            subLinks: []
+          },
+          {
+            link: "/upgrade-0.10",
+            name: "Upgrade to 0.10",
+            subLinks: []
+          },
+        ],
+      },
+      {
+        link: "/clickhouse",
+        name: "ClickHouse",
+        subLinks: [
+          {
+            link: "/increase-clickhouse-pv",
+            name: "Increase ClickHouse PV",
+            subLinks: []
+          },
+          {
+            link: "/connect-to-clickhouse",
+            name: "Connect to ClickHouse",
+            subLinks: []
+          },
+        ],
+      },
+    ]
+  },
+  {
     link: "/tutorials",
     name: "Tutorials",
     subLinks: [
