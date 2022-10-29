@@ -44,6 +44,120 @@ const docsLinks: DocsLinks[] = [
     ]
   },
   {
+    link: "/instrumentation_app",
+    name: "Instrumentation",
+    subLinks: [
+      {
+        link: "/overview",
+        name: "Overview",
+        subLinks: [],
+      },
+      {
+        link: "/python",
+        name: "Python",
+        subLinks: [
+          {
+            link: "/django",
+            name: "Django OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+          {
+            link: "/fastapi",
+            name: " FastAPI OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+          {
+            link: "/flask",
+            name: " Flask OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+          {
+            link: "/falcon",
+            name: " Falcon OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+        ],
+      },
+      {
+        link: "/java",
+        name: "Java",
+        subLinks: [
+          {
+            link: "/springboot",
+            name: "Spring Boot OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+          {
+            link: "/tomcat",
+            name: "Tomcat OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+          {
+            link: "/jboss",
+            name: " JBoss OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+        ],
+      },
+      {
+        link: "/javascript",
+        name: "Javascript",
+        subLinks: [
+          {
+            link: "/express",
+            name: "Express OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+          {
+            link: "/nestjs",
+            name: "Nestjs OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+          {
+            link: "/angular",
+            name: " Angular OpenTelemetry Instrumentation",
+            subLinks: []
+          },
+        ],
+      },
+      {
+        link: "/golang",
+        name: "Go OpenTelemetry Instrumentation",
+        subLinks: [],
+      },
+      {
+        link: "/php",
+        name: "PHP OpenTelemetry Instrumentation",
+        subLinks: [],
+      },
+      {
+        link: "/dotnet",
+        name: ".NET OpenTelemetry Instrumentation",
+        subLinks: [],
+      },
+      {
+        link: "/ruby-on-rails",
+        name: "Ruby on Rails OpenTelemetry Instrumentation",
+        subLinks: [],
+      },
+      {
+        link: "/elixir",
+        name: "Elixir OpenTelemetry Instrumentation",
+        subLinks: [],
+      },
+      {
+        link: "/rust",
+        name: "Rust OpenTelemetry Instrumentation",
+        subLinks: [],
+      },
+      {
+        link: "/troubleshoot-instrumentation",
+        name: "Troubleshoot Instrumentation",
+        subLinks: [],
+      },
+    ]
+  },
+  {
     link: "/tutorials",
     name: "Tutorials",
     subLinks: [
