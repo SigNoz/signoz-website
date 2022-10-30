@@ -226,6 +226,179 @@ const docsLinks: DocsLinks[] = [
     ]
   },
   {
+    link: "/userguide",
+    name: "Use SigNoz",
+    subLinks: [
+      {
+        link: "/send-metrics",
+        name: "Send Metrics",
+        subLinks:[
+        ]
+      },
+      {
+        link: "/navigate-user-interface",
+        name: "Navigate the User Interface",
+        subLinks:[
+        ]
+      },
+      {
+        link: "/metrics",
+        name: "View Services",
+        subLinks:[
+        ]
+      },
+      {
+        link: "/traces",
+        name: "View Traces",
+        subLinks:[
+          {
+            link: "/span-details",
+            name: "Span Details",
+            subLinks:[
+            ]
+          },
+        ]
+      },
+      {
+        link: "/logs",
+        name: "Logs",
+        subLinks:[
+          {
+            link: "/logs_query_builder",
+            name: "Logs Query Builder",
+            subLinks:[
+            ]
+          },
+          {
+            link: "/logs_fields",
+            name: "Fields in Logs",
+            subLinks:[
+            ]
+          },
+          {
+            link: "/collecting-logs",
+            name: "Collecting Logs",
+            subLinks:[
+              {
+                link: "/collect_kubernetes_pod_logs",
+                name: "Collecting Kubernetes Pod Logs",
+                subLinks: []
+              },
+              {
+                link: "/collect_docker_logs",
+                name: "Collecting Docker Container Logs",
+                subLinks: []
+              },
+              {
+                link: "/collecting_syslogs",
+                name: "Collecting syslogs",
+                subLinks: []
+              },
+              {
+                link: "/collect_logs_from_file",
+                name: "Collecting Application Logs from Log File",
+                subLinks: []
+              },
+              {
+                link: "/collecting_nodejs_winston_logs",
+                name: "Collecting Nodejs Winston Logs",
+                subLinks: []
+              },
+              {
+                link: "/collecting-application-logs-using-otel-sdk",
+                name: "Collecting Application Logs using OTEL SDK",
+                subLinks: [
+                  {
+                    link: "/collecting_application_logs_otel_sdk_python",
+                    name: "Collecting Application Logs using OTEL Python SDK",
+                    subLinks: []
+                  },
+                  {
+                    link: "/collecting_application_logs_otel_sdk_java",
+                    name: "Collecting Application Logs using OTEL Java SDK",
+                    subLinks: []
+                  },
+                ]
+              },
+            ]
+          },
+          {
+            link: "/existing-collectors-to-signoz",
+            name: "Existing Collectors to SigNoz",
+            subLinks: [
+              {
+                link: "/fluentbit_to_signoz",
+                name: "FluentBit to SigNoz",
+                subLinks: []
+              },
+              {
+                link: "/fluentd_to_signoz",
+                name: "FluentD to SigNoz",
+                subLinks: []
+              },
+              {
+                link: "/logstash_to_signoz",
+                name: "Logstash to SigNoz",
+                subLinks: []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        link: "/manage-dashboards-and-panels",
+        name: "Manage Dashboards and Panels",
+        subLinks: [
+          {
+            link: "/manage-dashboards",
+            name: "Manage Dashboards",
+            subLinks: []
+          },
+          {
+            link: "/manage-panels",
+            name: "Manage Panels",
+            subLinks: []
+          },
+          {
+            link: "/manage-variables",
+            name: "Manage Vairables",
+            subLinks: []
+          },
+          {
+            link: "/create-a-custom-query",
+            name: "Create a Custom Query",
+            subLinks: []
+          },
+        ]
+      },
+      {
+        link: "/exceptions",
+        name: "Exceptions",
+        subLinks: []
+      },
+      {
+        link: "/alerts-management",
+        name: "Alerts",
+        subLinks: []
+      },
+      {
+        link: "/authentication",
+        name: "Authentication",
+        subLinks: []
+      },
+      {
+        link: "/retention-period",
+        name: "Retention Period",
+        subLinks: []
+      },
+      {
+        link: "/service-map",
+        name: "Service Map",
+        subLinks: []
+      },
+    ]
+  },
+  {
     link: "/tutorials",
     name: "Tutorials",
     subLinks: [
