@@ -19,9 +19,9 @@ const Link = ({
   const isCurrent = paths[level] === link;
 
   const { asPath } = useRouter();
-  const lastString = asPath.split("/");
+  const lastString = asPath.split("/").filter(e => Boolean(e));
 
-  const isCurrentLinkActive = ["/docs", link].join("") === asPath;
+  const isCurrentLinkActive = `/${lastString[lastString.length - 1]}` === link;
 
   const [isExpandale, setIsExpandale] = useState<boolean>(isCurrent);
   const { replace } = useRouter();
