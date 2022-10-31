@@ -69,7 +69,7 @@ const Layout = ({
               {description}
             </div> */}
 
-            <div className="mt-6">
+            <div className="mt-6 flex">
               {authorDetails.map((author: AuthorDetails) => (
                 <div key={author.slug + author.date}>
                   <div className="flex items-center">
@@ -95,20 +95,20 @@ const Layout = ({
                     </div>
                   </div>
 
-                  <div className="mt-4 mb-8 flex items-center gap-1">
+                  <div className="mt-4 flex items-center gap-1">
                     <div className="text-xs text-signoz-medium font-semibold">
                       {getFormattedDate(new Date(date || ""))} ·
                     </div>
-
-                    {readingTime && (
-                      <div className="text-xs text-signoz-medium font-semibold">
-                        {readingTime.text}
-                      </div>
-                    )}
                   </div>
                 </div>
               ))}
             </div>
+
+            {readingTime && (
+              <div className="text-xs text-signoz-medium font-semibold mt-4 mb-6">
+                {readingTime.text}
+              </div>
+            )}
 
             <img
               id="cover_image"
