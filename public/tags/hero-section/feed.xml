@@ -7,27 +7,37 @@
       <language>undefined</language>
       <managingEditor>undefined (undefined)</managingEditor>
       <webMaster>undefined (undefined)</webMaster>
-      <lastBuildDate>Fri, 30 Aug 2019 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 17 Oct 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="undefined/tags/hero-section/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>undefined/blog/monitor-gunicorn-django-in-prometheus</guid>
-    <title>Monitoring OpenMetrics for Gunicorn and Django application in Prometheus</title>
-    <link>undefined/blog/monitor-gunicorn-django-in-prometheus</link>
-    <description>In this blog, let&#39;s see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
+    <guid>undefined/blog/opentelemetry-logs</guid>
+    <title>OpenTelemetry Logs - A Complete Introduction &amp; Implementation</title>
+    <link>undefined/blog/opentelemetry-logs</link>
+    <description>Unlike traces and metrics, OpenTelemetry logs take a different approach. In order to be successful, OpenTelemetry needs to support the existing legacy of logs and logging libraries. And this is the main design philosophy of OpenTelemetry logs....</description>
+    <pubDate>Mon, 17 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>hero-section</category>
+    <category>opentelemetry</category><category>hero-section</category>
   </item>
 
   <item>
-    <guid>undefined/blog/monitor-gunicorn-hero</guid>
-    <title>title</title>
-    <link>undefined/blog/monitor-gunicorn-hero</link>
-    <description>In this blog, let&#39;s see how to set up Prometheus and Grafana in EKS and how to monitor Python based applications using Prometheus.</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
+    <guid>undefined/blog/signal-17</guid>
+    <title>First page of Hacker News, 9000+ GitHub stars, improved dashboards and documentation - SigNal 17</title>
+    <link>undefined/blog/signal-17</link>
+    <description>It&#39;s time for the monthly product update of SigNoz - a full-stack open-source APM tool. Find out what we&#39;ve been upto at SigNoz during September, 2022.</description>
+    <pubDate>Tue, 04 Oct 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
-    <category>hero-section</category>
+    <category>product-updates</category><category>hero-section</category><category>most-recent-post</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/nodejs-performance-monitoring</guid>
+    <title>Nodejs Performance Monitoring | Monitor a full-stack Nodejs application with open-source tools</title>
+    <link>undefined/blog/nodejs-performance-monitoring</link>
+    <description>Nodejs performance monitoring can give you actionable insights into the performance of your Nodejs application. In this tutorial, we will use two open-source tools - SigNoz and OpenTelemetry to monitor a full-stack nodejs application...</description>
+    <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>javascript</category><category>hero-section</category>
   </item>
 
     </channel>

@@ -1,0 +1,114 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Signoz</title>
+      <link>undefined/blog</link>
+      <description>Signoz is a blog about open telementry.</description>
+      <language>undefined</language>
+      <managingEditor>undefined (undefined)</managingEditor>
+      <webMaster>undefined (undefined)</webMaster>
+      <lastBuildDate>Mon, 17 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="undefined/tags/opentelemetry/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>undefined/blog/opentelemetry-logs</guid>
+    <title>OpenTelemetry Logs - A Complete Introduction &amp; Implementation</title>
+    <link>undefined/blog/opentelemetry-logs</link>
+    <description>Unlike traces and metrics, OpenTelemetry logs take a different approach. In order to be successful, OpenTelemetry needs to support the existing legacy of logs and logging libraries. And this is the main design philosophy of OpenTelemetry logs....</description>
+    <pubDate>Mon, 17 Oct 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>hero-section</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/open-source-observability</guid>
+    <title>An Open Source Observability Platform | SigNoz</title>
+    <link>undefined/blog/open-source-observability</link>
+    <description>We believe the aim of observability is to solve customer issues quickly. Creating monitoring dashboards is useless if it can’t help engineering teams quickly identify the root causes of performance issues...</description>
+    <pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>observability</category><category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-collector</guid>
+    <title>OpenTelemetry Collector - architecture and configuration guide</title>
+    <link>undefined/blog/opentelemetry-collector</link>
+    <description>OpenTelemetry collector provides a vendor-neutral way to collect, process, and export your telemetry data to an analysis backend of your choice. Learn how to configure..</description>
+    <pubDate>Mon, 12 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/intro-to-opentelemetry-metrics</guid>
+    <title>An introduction to OpenTelemetry Metrics</title>
+    <link>undefined/blog/intro-to-opentelemetry-metrics</link>
+    <description>OpenTelemetry metrics API consists of three main components - Meter Provider, Meter, and Instruments. The Meter provider serves as the entry point to the metrics API. Meter is the class responsible for creating instruments, and instruments is responsible for reporting measurements…...</description>
+    <pubDate>Fri, 19 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-apm</guid>
+    <title>An open source OpenTelemetry APM | SigNoz</title>
+    <link>undefined/blog/opentelemetry-apm</link>
+    <description>SigNoz is an open source APM built to support OpenTelemetry natively. In this article, we will talk about things to be kept in mind while selecting an OpenTelemetry APM. We will also see how SigNoz can help you in setting up full-stack observability....</description>
+    <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-visualization</guid>
+    <title>Getting started with OpenTelemetry visualization</title>
+    <link>undefined/blog/opentelemetry-visualization</link>
+    <description>OpenTelemetry provides language-specific client libraries to instrument application code for generating telemetry data. You can then use a backend analysis tool to visualize the collected OpenTelemetry data. In this article, we will see what types of OpenTelemetry visualizations are possible and how to use a backend analysis tool for OpenTelemetry visualization...</description>
+    <pubDate>Mon, 27 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-backend</guid>
+    <title>Choosing an OpenTelemetry backend - Things to keep in mind</title>
+    <link>undefined/blog/opentelemetry-backend</link>
+    <description>Confused about choosing a backend analysis tool for OpenTelemetry? Here’s a guide on what factors you should consider while choosing a backend to store and visualize the telemetry data collected by OpenTelemetry...</description>
+    <pubDate>Fri, 24 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-tracing</guid>
+    <title>OpenTelemetry tracing - things you need to know before implementing</title>
+    <link>undefined/blog/opentelemetry-tracing</link>
+    <description>Thinking about using OpenTelemetry for distributed tracing? OpenTelemetry Tracing API provides options for manual as well as automated instrumentation..</description>
+    <pubDate>Sat, 04 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>distributed-tracing</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-kubernetes</guid>
+    <title>Getting started with OpenTelemetry on Kubernetes</title>
+    <link>undefined/blog/opentelemetry-kubernetes</link>
+    <description>OpenTelemetry is an instrumentation standard for application monitoring - both for monitoring metrics &amp; distributed tracing. In this blog, we take you through a hands on guide on how to run this on Kubernetes.</description>
+    <pubDate>Thu, 23 Jul 2020 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/out-of-box-application-monitoring-prometheus</guid>
+    <title>Bringing out of the box application monitoring to Prometheus</title>
+    <link>undefined/blog/out-of-box-application-monitoring-prometheus</link>
+    <description>Prometheus is a popular monitoring tool for kubernetes. Kube-state metrics and node exporters send a lot of metrics. But visualization of the metrics in charts is still painful. In this article, let&#39;s see how we can have some out of box visualizations with Prometheus.</description>
+    <pubDate>Fri, 29 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category><category>opentelemetry</category><category>signoz</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,174 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Signoz</title>
+      <link>undefined/blog</link>
+      <description>Signoz is a blog about open telementry.</description>
+      <language>undefined</language>
+      <managingEditor>undefined (undefined)</managingEditor>
+      <webMaster>undefined (undefined)</webMaster>
+      <lastBuildDate>Thu, 20 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="undefined/tags/signoz/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>undefined/blog/elk-alternative-open-source</guid>
+    <title>A Lightweight Open Source ELK alternative | SigNoz</title>
+    <link>undefined/blog/elk-alternative-open-source</link>
+    <description>Are you looking for a lightweight ELK alternative? ELK stack is hard to manage at scale and is not resource efficient. Here&#39;s an alternative that is easy to deploy and manage...</description>
+    <pubDate>Thu, 20 Oct 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/hacktoberfest</guid>
+    <title>SigNoz is taking part in Hacktoberfest - 2022!</title>
+    <link>undefined/blog/hacktoberfest</link>
+    <description>As an open-source project, we are excited to announce that SigNoz is participating in Hacktoberfest 2022!..</description>
+    <pubDate>Mon, 03 Oct 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/open-source-datadog-alternative</guid>
+    <title>SigNoz - Open-source alternative to DataDog</title>
+    <link>undefined/blog/open-source-datadog-alternative</link>
+    <description>DataDog is a popular APM tool. But it is very expensive and opaque about its billing practices. What if you could get a SaaS like experience from an open-source APM tool....</description>
+    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/single-pane-of-glass-monitoring</guid>
+    <title>Open Source Single Pane of Glass Monitoring | SigNoz</title>
+    <link>undefined/blog/single-pane-of-glass-monitoring</link>
+    <description>Single plane of glass monitoring integrates the key aspects of monitoring an IT system to bring application and infrastructure monitoring under a single set of dashboards where it’s easy to correlate data for debugging performance issues...</description>
+    <pubDate>Wed, 24 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/open-source-newrelic-alternative</guid>
+    <title>SigNoz - Open-source alternative to New Relic</title>
+    <link>undefined/blog/open-source-newrelic-alternative</link>
+    <description>If you&#39;re looking for an open-source alternative to New Relic, then you&#39;re at the right place. SigNoz is a perfect open-source alternative to New Relic. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...</description>
+    <pubDate>Mon, 22 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/appdynamics-alternative</guid>
+    <title>SigNoz - Open-source alternative to AppDynamics</title>
+    <link>undefined/blog/appdynamics-alternative</link>
+    <description>If you&#39;re looking for an open-source alternative to AppDynamics, then you&#39;re at the right place. SigNoz is a perfect open-source alternative to AppDynamics. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...</description>
+    <pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/dynatrace-alternative</guid>
+    <title>SigNoz - Open-source alternative to Dynatrace</title>
+    <link>undefined/blog/dynatrace-alternative</link>
+    <description>If you&#39;re looking for an open-source alternative to Dynatrace, then you&#39;re at the right place. SigNoz is a perfect open-source alternative to Dynatrace. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...</description>
+    <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>open-source</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-apm</guid>
+    <title>An open source OpenTelemetry APM | SigNoz</title>
+    <link>undefined/blog/opentelemetry-apm</link>
+    <description>SigNoz is an open source APM built to support OpenTelemetry natively. In this article, we will talk about things to be kept in mind while selecting an OpenTelemetry APM. We will also see how SigNoz can help you in setting up full-stack observability....</description>
+    <pubDate>Wed, 29 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-visualization</guid>
+    <title>Getting started with OpenTelemetry visualization</title>
+    <link>undefined/blog/opentelemetry-visualization</link>
+    <description>OpenTelemetry provides language-specific client libraries to instrument application code for generating telemetry data. You can then use a backend analysis tool to visualize the collected OpenTelemetry data. In this article, we will see what types of OpenTelemetry visualizations are possible and how to use a backend analysis tool for OpenTelemetry visualization...</description>
+    <pubDate>Mon, 27 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-signoz</guid>
+    <title>Jaeger vs SigNoz - Taking distributed tracing to the next level</title>
+    <link>undefined/blog/jaeger-vs-signoz</link>
+    <description>Thinking of using Jaeger for distributed tracing? But wait there is a much better alternative. SigNoz provides advanced capabilities for distributed tracing along with metrics and ...</description>
+    <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/getting-to-know-our-4000-plus-stargazers-on-github</guid>
+    <title>Getting to know our 4000+ stargazers on GitHub</title>
+    <link>undefined/blog/getting-to-know-our-4000-plus-stargazers-on-github</link>
+    <description>SigNoz crossed 4000+ stars recently. In this article, we dig deep to find out about our GitHub stargazers using a tool called Stargazers.</description>
+    <pubDate>Sat, 10 Jul 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signoz-vs-prometheus-jaeger</guid>
+    <title>The genesis of SigNoz - A full-stack open source observability platform</title>
+    <link>undefined/blog/signoz-vs-prometheus-jaeger</link>
+    <description>Why we felt there was a need for a full-stack open source observability platform and how we went about building it.</description>
+    <pubDate>Fri, 16 Apr 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/signoz-benchmarks</guid>
+    <title>Cost benchmarking - Self hosting SigNoz vs using a SaaS vendor</title>
+    <link>undefined/blog/signoz-benchmarks</link>
+    <description>With changing privacy laws, it&#39;s getting riskier to send your data to third party SaaS vendors. In the observability domain, traces and logs are something which you don&#39;t want to send outside. Let&#39;s find out why self-hosted software solutions are replacing SaaS providers now.</description>
+    <pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/why-are-we-building-signoz</guid>
+    <title>Why are we building SigNoz?</title>
+    <link>undefined/blog/why-are-we-building-signoz</link>
+    <description>In the world of microservices, who takes care of failures? How do you solve availability and performance issues quickly in your production environment. For a modern-day distributed system, observability needs to be built within the system. And, SigNoz attempts to bring you the best open-source observability stack for your distributed system.</description>
+    <pubDate>Wed, 15 Jan 2020 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/out-of-box-application-monitoring-prometheus</guid>
+    <title>Bringing out of the box application monitoring to Prometheus</title>
+    <link>undefined/blog/out-of-box-application-monitoring-prometheus</link>
+    <description>Prometheus is a popular monitoring tool for kubernetes. Kube-state metrics and node exporters send a lot of metrics. But visualization of the metrics in charts is still painful. In this article, let&#39;s see how we can have some out of box visualizations with Prometheus.</description>
+    <pubDate>Fri, 29 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category><category>opentelemetry</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/7-takeaways-prometheus-conference-2019</guid>
+    <title>My 7 key takeaways from PromCon 2019</title>
+    <link>undefined/blog/7-takeaways-prometheus-conference-2019</link>
+    <description>PromCon is one of the premier conference on Prometheus and related tools like Grafana. This is held every year where developers from around the world gather to learn the latest in monitoring technologies.</description>
+    <pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>signoz</category><category>community</category><category>prometheus</category>
+  </item>
+
+    </channel>
+  </rss>

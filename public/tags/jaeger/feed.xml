@@ -1,0 +1,144 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Signoz</title>
+      <link>undefined/blog</link>
+      <description>Signoz is a blog about open telementry.</description>
+      <language>undefined</language>
+      <managingEditor>undefined (undefined)</managingEditor>
+      <webMaster>undefined (undefined)</webMaster>
+      <lastBuildDate>Fri, 26 Aug 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="undefined/tags/jaeger/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>undefined/blog/distributed-tracing-jaeger</guid>
+    <title>Jaeger Distributed Tracing - Complete Guide</title>
+    <link>undefined/blog/distributed-tracing-jaeger</link>
+    <description>Jaeger is a popular open-source tool used for distributed tracing in a microservice architecture. See a demo ride-sharing application reporting its traces through Jaeger...</description>
+    <pubDate>Fri, 26 Aug 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-signoz</guid>
+    <title>Jaeger vs SigNoz - Taking distributed tracing to the next level</title>
+    <link>undefined/blog/jaeger-vs-signoz</link>
+    <description>Thinking of using Jaeger for distributed tracing? But wait there is a much better alternative. SigNoz provides advanced capabilities for distributed tracing along with metrics and ...</description>
+    <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category><category>signoz</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-vs-jaeger</guid>
+    <title>OpenTelemetry and Jaeger | Key concepts, features, and differences</title>
+    <link>undefined/blog/opentelemetry-vs-jaeger</link>
+    <description>Both OpenTelemetry and Jaeger enable application owners to set up monitoring and observability to measure application performance. But their solutions are meant to address different problems...</description>
+    <pubDate>Fri, 08 Apr 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-zipkin</guid>
+    <title>Jaeger vs Zipkin - Key architecture components, differences and alternatives</title>
+    <link>undefined/blog/jaeger-vs-zipkin</link>
+    <description>Jaeger and Zipkin are two popular open-source projects used for end-to-end distributed tracing. While Zipkin is an older project and has a wider community, Jaeger has a modern, scalable architecture and supports open standards of instrumentation libraries..</description>
+    <pubDate>Wed, 02 Mar 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-microservices</guid>
+    <title>Using Jaeger for your microservices</title>
+    <link>undefined/blog/jaeger-microservices</link>
+    <description>Jaeger is a popular open-source tool used for distributed tracing in a microservice architecture. In a microservice architecture, a user request or transaction can travel across hundreds of services before serving what a user wants.</description>
+    <pubDate>Wed, 22 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-tempo</guid>
+    <title>Jaeger vs Tempo - key features, differences, and alternatives</title>
+    <link>undefined/blog/jaeger-vs-tempo</link>
+    <description>Both Jaeger and Grafana Tempo are tools aimed at distributed tracing for microservice architecture. Tempo supports multiple open-source instrumentation standards, while Jaeger supports OpenTracing APIs..</description>
+    <pubDate>Thu, 16 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/datadog-vs-jaeger</guid>
+    <title>DataDog vs Jaeger - key features, differences and alternatives</title>
+    <link>undefined/blog/datadog-vs-jaeger</link>
+    <description>DataDog is an enterprise-level monitoring and security tool. On the other hand, Jaeger is an open-source tool focused on end-to-end distributed tracing for microservice architecture. DataDog is a full-stack paid APM tool, whereas Jaeger is free and open-source..</description>
+    <pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/aws-xray-vs-jaeger</guid>
+    <title>AWS X-Ray vs Jaeger - key features, differences and alternatives</title>
+    <link>undefined/blog/aws-xray-vs-jaeger</link>
+    <description>Both AWS X-Ray and Jaeger are distributed tracing tools used for performance monitoring in a microservices architecture. Jaeger was originally built by teams at Uber and then open-sourced in 2015. On the other hand, AWS X-Ray is a distributed tracing tool provided by AWS specifically focused on distributed tracing for applications using Amazon Cloud Services.</description>
+    <pubDate>Tue, 14 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-prometheus</guid>
+    <title>Jaeger vs Prometheus - Key differences, use-cases and alternatives</title>
+    <link>undefined/blog/jaeger-vs-prometheus</link>
+    <description>Both Jaeger and Prometheus are popular open-source application performance monitoring tools. While Jaeger is an end-to-end distributed tracing tool, Prometheus is used as a time-series database for monitoring metrics. Let&#39;s dive in to explore their key features and differences.</description>
+    <pubDate>Mon, 13 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category><category>prometheus</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-elastic-apm</guid>
+    <title>Jaeger vs Elastic APM - key differences, features and alternatives</title>
+    <link>undefined/blog/jaeger-vs-elastic-apm</link>
+    <description>Jaeger is an open-source end-to-end distributed tracing tool for microservices architecture. On the other hand, Elastic APM is an application performance monitoring system which is built on top of the ELK Stack...</description>
+    <pubDate>Sun, 12 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-newrelic</guid>
+    <title>Jaeger vs New Relic - Key differences, use-cases and alternatives</title>
+    <link>undefined/blog/jaeger-vs-newrelic</link>
+    <description>Jaeger and New Relic are tools used in the application monitoring and observability domain. While Jaeger is open-source, New Relic is a SaaS vendor. Jaeger is suited for distributed tracing and New Relic...</description>
+    <pubDate>Thu, 09 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/jaeger-vs-opentracing</guid>
+    <title>Jaeger and OpenTracing - Key concepts, use-cases and alternatives</title>
+    <link>undefined/blog/jaeger-vs-opentracing</link>
+    <description>Jaeger and OpenTracing are both open-source projects aimed to solve pain-points of distributed tracing. But the scope of the projects are completely different. While Jaeger is an end-to-end distributed tracing tool..</description>
+    <pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>tools-comparison</category><category>jaeger</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-jaeger-cassandra</guid>
+    <title>Distributed tracing using Jaeger with Cassandra</title>
+    <link>undefined/blog/distributed-tracing-jaeger-cassandra</link>
+    <description>With microservices becoming popular, tracing is increasingly more important in debugging production software. In this post, we take you through a step by step guide on setting up Jaeger over Kubernetes with Cassandra storage.</description>
+    <pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>distributed-tracing</category><category>jaeger</category>
+  </item>
+
+    </channel>
+  </rss>

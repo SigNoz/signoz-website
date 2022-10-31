@@ -109,7 +109,7 @@ const TOCInline = ({
   return (
     <div className="font-WorkSans">
       <div className="text-signoz-dark-light font-normal text-sm">
-        IN THIS ARTICLE
+        On this page
       </div>
       <div className="border-l-2 border-solid list-none">{tocList}</div>
     </div>

@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Signoz</title>
+      <link>undefined/blog</link>
+      <description>Signoz is a blog about open telementry.</description>
+      <language>undefined</language>
+      <managingEditor>undefined (undefined)</managingEditor>
+      <webMaster>undefined (undefined)</webMaster>
+      <lastBuildDate>Wed, 21 Sep 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="undefined/tags/talks/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>undefined/blog/current-state-of-opentelemetry</guid>
+    <title>Current state of OpenTelemetry and how it fits in the DevOps ecosystem | Q&amp;A</title>
+    <link>undefined/blog/current-state-of-opentelemetry</link>
+    <description>OpenTelemetry is quietly becoming the world standard for instrumenting cloud-native applications.To understand complex distributed systems, DevOps engineers need to implement a robust observability &amp; monitoring framework. OpenTelemetry provides vendor-neutral open source observability framework...</description>
+    <pubDate>Wed, 21 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>talks</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/podcast-genesis-of-signoz</guid>
+    <title>Building a one-stop Open Source Observability Platform | OpenObservability Podcast</title>
+    <link>undefined/blog/podcast-genesis-of-signoz</link>
+    <description>In this blog, we are excited to announce Pranay Prateek, the co-founder and creator of SigNoz, was invited as a guest speaker with Jonah Kowall, on this episode of OpenObservability Talks...</description>
+    <pubDate>Fri, 02 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>talks</category>
+  </item>
+
+    </channel>
+  </rss>

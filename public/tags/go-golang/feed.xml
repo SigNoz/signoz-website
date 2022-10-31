@@ -1,0 +1,64 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Signoz</title>
+      <link>undefined/blog</link>
+      <description>Signoz is a blog about open telementry.</description>
+      <language>undefined</language>
+      <managingEditor>undefined (undefined)</managingEditor>
+      <webMaster>undefined (undefined)</webMaster>
+      <lastBuildDate>Thu, 01 Sep 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="undefined/tags/go-golang/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>undefined/blog/opentelemetry-kafka</guid>
+    <title>Complete Guide to tracing Kafka clients with OpenTelemetry in Go</title>
+    <link>undefined/blog/opentelemetry-kafka</link>
+    <description>In this tutorial, we will learn how to use OpenTelemtry for Kafka-based applications. OpenTelemetry can help instrument Kafka clients and provide an end-to-end tracing. In this guide, we will demonstrate how to instrument a Go application that uses Kafka with OpenTelemetry...</description>
+    <pubDate>Thu, 01 Sep 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/monitoring-your-go-application-with-signoz</guid>
+    <title>How to set up Golang application performance monitoring with open source monitoring tool - SigNoz</title>
+    <link>undefined/blog/monitoring-your-go-application-with-signoz</link>
+    <description>In this article, learn how to setup application monitoring for Golang apps using an open-source solution, SigNoz.</description>
+    <pubDate>Mon, 30 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-gin</guid>
+    <title>Implementing OpenTelemetry in a Gin application</title>
+    <link>undefined/blog/opentelemetry-gin</link>
+    <description>It is essential to monitor your Gin apps in Go(Golang). OpenTelemetry can help instrument Gin apps and provide you with end-to-end tracing. In this guide, we will demonstrate how to instrument your Gin app with OpenTelemetry...</description>
+    <pubDate>Mon, 30 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/distributed-tracing-golang</guid>
+    <title>Implementing Distributed Tracing in a Golang application</title>
+    <link>undefined/blog/distributed-tracing-golang</link>
+    <description>Distributed tracing provides insights into how a particular service is performing as part of the whole in a distributed system. In this article, we will implement distributed tracing for a Golang application based on microservices architecture with OpenTelemetry, and visualize the collected data with SigNoz...</description>
+    <pubDate>Sat, 28 May 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/opentelemetry-grpc-golang</guid>
+    <title>Monitor gRPC calls with OpenTelemetry - explained with a Golang example</title>
+    <link>undefined/blog/opentelemetry-grpc-golang</link>
+    <description>This article demonstrates how to monitor gRPC calls with OpenTelemetry using a sample Golang application using gRPC framework. OpenTelemetry is a vendor-agnostic instrumentation library that can be used to monitor gRPC calls...</description>
+    <pubDate>Wed, 13 Apr 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>opentelemetry-instrumentation</category><category>go-golang</category>
+  </item>
+
+    </channel>
+  </rss>

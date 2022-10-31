@@ -7,17 +7,27 @@
       <language>undefined</language>
       <managingEditor>undefined (undefined)</managingEditor>
       <webMaster>undefined (undefined)</webMaster>
-      <lastBuildDate>Fri, 30 Aug 2019 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 20 Aug 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="undefined/tags/product/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>undefined/blog/some-techincal</guid>
-    <title>some-techincal</title>
-    <link>undefined/blog/some-techincal</link>
-    <description>in this sample description we will discuss about monitoring tools comparing instana and sysdig</description>
-    <pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate>
+    <guid>undefined/blog/red-metrics-calculation</guid>
+    <title>How are RED metrics calculated in SigNoz | SigNoz Office Hours</title>
+    <link>undefined/blog/red-metrics-calculation</link>
+    <description>Welcome to SigNoz office hours! In this series, one of our team members gives a presentation about a topic of their choice. This talk is presented by Srikanth Chekuri, backend engineer at SigNoz. He talks about how RED metrics are calculated in SigNoz...</description>
+    <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
     <author>undefined (undefined)</author>
     <category>product</category>
+  </item>
+
+  <item>
+    <guid>undefined/blog/self-hosting-software-observability</guid>
+    <title>Self-hosting software &amp; why it may be worth considering again now</title>
+    <link>undefined/blog/self-hosting-software-observability</link>
+    <description>With changing privacy laws, it&#39;s getting riskier to send your data to third party SaaS vendors. In the observability domain, traces and logs are something which you don&#39;t want to send outside. Let&#39;s find out why self-hosted software solutions are replacing SaaS providers now.</description>
+    <pubDate>Fri, 16 Apr 2021 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>open-source</category><category>product</category>
   </item>
 
     </channel>

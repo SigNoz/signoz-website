@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Signoz</title>
+      <link>undefined/blog</link>
+      <description>Signoz is a blog about open telementry.</description>
+      <language>undefined</language>
+      <managingEditor>undefined (undefined)</managingEditor>
+      <webMaster>undefined (undefined)</webMaster>
+      <lastBuildDate>Fri, 04 Feb 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="undefined/tags/security/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>undefined/blog/rbi-guidelines-on-data-storage-for-fintech-companies</guid>
+    <title>Challenges in Choosing an APM tool for Fintech Companies in India due to RBI Guidelines</title>
+    <link>undefined/blog/rbi-guidelines-on-data-storage-for-fintech-companies</link>
+    <description>RBI has issued guidelines on storing payment system data of Indian users for fintech companies in India. All user data needs to be stored in India. This also applies to all third-party tools they use, including monitoring tools..</description>
+    <pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate>
+    <author>undefined (undefined)</author>
+    <category>apm</category><category>security</category>
+  </item>
+
+    </channel>
+  </rss>
