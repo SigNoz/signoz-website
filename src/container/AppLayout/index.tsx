@@ -1,5 +1,5 @@
 import BlogStrip from "components/BlogStrip";
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useState } from "react";
 import { useIsDesktop } from "hooks/useDeviceType";
 import dynamic from "next/dynamic";
 
@@ -19,15 +19,22 @@ const PropertyControlledComponent = dynamic(
 
 const AppLayout = ({ children }: PropsWithChildren) => {
   const isDesktop = useIsDesktop();
+
+  const [isOpen, setIsOpen] = useState(true);
+
+  const onToggleHandler = (value: boolean) => {
+    return () => setIsOpen(value);
+  };
+
   return (
     <main>
       <PropertyControlledComponent controllerProperty={isDesktop}>
-        <BlogStrip />
+        <BlogStrip onToggleHandler={onToggleHandler} isOpen={isOpen} />
       </PropertyControlledComponent>
-      <div className="mb-5 py-6 px-4">
-        <Header />
+      <Header isBlogStripOpen={isOpen} />
+      <div className="mt-32">
+        {children}
       </div>
-      {children}
       <Footer />
     </main>
   );

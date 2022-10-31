@@ -8,18 +8,20 @@ import { headerElements, leftItems, rightItems } from "./config";
 import { useIsDesktop } from "hooks/useDeviceType";
 import { useQuery } from "@tanstack/react-query";
 import getRepoInfo from "api/getRepoInfo";
+import { useWindowScroll } from "react-use";
 
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),
   { ssr: false }
 );
 
-const Header = (): JSX.Element => {
+const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
   const repoInfoResult = useQuery({
     queryFn: getRepoInfo,
   });
   const { push } = useRouter();
+  const { y } = useWindowScroll()
 
   const onClickLogoHandler = useCallback(() => {
     push("/", undefined, {
@@ -44,10 +46,11 @@ const Header = (): JSX.Element => {
 
   return (
     <header
-      className={cx("list-none", {
+      className={cx("list-none fixed top-0 w-full bg-white mb-5 py-6 px-4 z-50", {
         flex: isDesktop,
         "items-center": isDesktop,
       })}
+      style={{ top: y === 0 ? isBlogStripOpen ? "48px" : 0 : 0 }}
     >
       <div className="font-openSans flex items-center justify-between relative">
         <div
@@ -153,5 +156,9 @@ const Header = (): JSX.Element => {
     </header>
   );
 };
+
+interface HeaderProps {
+  isBlogStripOpen: boolean;
+}
 
 export default Header;

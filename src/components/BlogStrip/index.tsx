@@ -2,13 +2,7 @@ import React, { useState } from "react";
 import CloseIcon from "./close.png";
 import NextImage from "next/image";
 
-const BlogStrip = (): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(true);
-
-  const onToggleHandler = (value: boolean) => {
-    return () => setIsOpen(value);
-  };
-
+const BlogStrip = ({ onToggleHandler, isOpen }: Props): JSX.Element => {
   if (!isOpen) {
     return <></>;
   }
@@ -36,5 +30,10 @@ const BlogStrip = (): JSX.Element => {
     </div>
   );
 };
+
+interface Props {
+  onToggleHandler: (value: boolean) => VoidFunction
+  isOpen: boolean;
+}
 
 export default BlogStrip;
