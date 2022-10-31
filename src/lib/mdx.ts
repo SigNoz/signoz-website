@@ -98,7 +98,10 @@ export async function getFileBySlug(type: string, slug: string) {
 
   const { code, frontmatter } = await bundleMDX({
     source,
-    cwd: path.join(root, "components"),
+    cwd: path.join(root, 'data'),
+    grayMatterOptions: (options) => {
+      return options;
+    },
     mdxOptions(options) {
       options.remarkPlugins = [
         ...(options.remarkPlugins ?? []),
