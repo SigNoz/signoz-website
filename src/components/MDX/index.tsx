@@ -10,19 +10,12 @@ import OL from "./components/OL";
 import UL from "./components/UL";
 import dynamic from "next/dynamic";
 import LI from "./components/LI";
-
-const Code = dynamic(() => import("./components/Code"), {
-  ssr: false,
-});
-const TOCInline = dynamic(() => import("./components/TOCInline"), {
-  ssr: false,
-});
-const Youtube = dynamic(() => import("./components/Youtube"), {
-  ssr: false,
-});
-const ZoomImage = dynamic(() => import("./components/ZoomImage"), {
-  ssr: false,
-});
+import Table from "./components/Table";
+import th from "./components/th";
+import Code from "./components/Code";
+import TOCInline from "./components/TOCInline";
+import Youtube from "./components/Youtube";
+import ZoomImage from "./components/ZoomImage";
 
 import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
@@ -45,6 +38,8 @@ export const MDXComponents = {
   ol: OL,
   ul: UL,
   li: LI,
+  table: Table,
+  th: th,
 };
 
 interface MDXLayoutProps {
