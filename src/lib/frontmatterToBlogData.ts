@@ -70,6 +70,7 @@ export const getBlogCard = (
     layout,
     slug: slug,
     author: authors,
+    coverImage: post.image,
   };
 };
 
