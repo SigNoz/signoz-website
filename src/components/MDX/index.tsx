@@ -16,6 +16,7 @@ import TOCInline from "./components/TOCInline";
 import Youtube from "./components/Youtube";
 import ZoomImage from "./components/ZoomImage";
 import tr from "./components/tr";
+import DocList from "./components/Doc";
 
 import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
@@ -41,6 +42,7 @@ export const MDXComponents = {
   table: Table,
   th,
   tr,
+  DocList,
 };
 
 interface MDXLayoutProps {
