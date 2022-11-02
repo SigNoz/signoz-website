@@ -33,16 +33,17 @@ const Code = ({ children }: Props) => {
         ref={textInput}
         onMouseEnter={onEnter}
         onMouseLeave={onExit}
-        className="relative bg-opacity-10 bg-signoz-medium my-2 p-4 rounded-lg overflow-x-auto"
+        className="relative bg-signoz-medium my-2 p-4 rounded-lg overflow-x-auto"
       >
         {hovered && (
           <button
             aria-label="Copy code"
             type="button"
-            className={`absolute right-2 top-2 h-6 w-6 rounded border-2 bg-gray-700 p-1 dark:bg-gray-800 ${copied
-              ? "border-signoz-primary focus:border-signoz-primary focus:outline-none"
-              : "border-gray-300"
-              }`}
+            className={`absolute right-2 top-2 h-6 w-6 rounded border-2 bg-gray-700 p-1 dark:bg-gray-800 ${
+              copied
+                ? "border-signoz-primary focus:border-signoz-primary focus:outline-none"
+                : "border-gray-300"
+            }`}
             onClick={onCopy}
           >
             <svg
@@ -50,7 +51,9 @@ const Code = ({ children }: Props) => {
               viewBox="0 0 24 24"
               stroke="currentColor"
               fill="none"
-              className={copied ? "text-signoz-secondary-light" : "text-gray-300"}
+              className={
+                copied ? "text-signoz-secondary-light" : "text-gray-300"
+              }
             >
               {copied ? (
                 <>
@@ -75,7 +78,7 @@ const Code = ({ children }: Props) => {
           </button>
         )}
 
-        <code>{children}</code>
+        <code className="text-white">{children}</code>
       </div>
     );
   }

@@ -13,12 +13,10 @@ const docsLinks: DocsLinks[] = [
       {
         link: "/docker",
         name: "Docker Standalone",
-        subLinks: [],
       },
       {
         link: "/docker-swarm",
         name: "Docker Swarm",
-        subLinks: [],
       },
       {
         link: "/kubernetes",
@@ -27,21 +25,18 @@ const docsLinks: DocsLinks[] = [
           {
             link: "/aws",
             name: "Deploying to AWS",
-            subLinks: [],
           },
           {
             link: "/gcp",
             name: "Deploying to GCP",
-            subLinks: [],
           },
           {
             link: "/others",
             name: "Deploying to Helm directly",
-            subLinks: [],
           },
         ],
       },
-    ]
+    ],
   },
   {
     link: "/instrumentation_app",
@@ -50,7 +45,6 @@ const docsLinks: DocsLinks[] = [
       {
         link: "/overview",
         name: "Overview",
-        subLinks: [],
       },
       {
         link: "/python",
@@ -59,22 +53,18 @@ const docsLinks: DocsLinks[] = [
           {
             link: "/django",
             name: "Django OpenTelemetry Instrumentation",
-            subLinks: []
           },
           {
             link: "/fastapi",
             name: " FastAPI OpenTelemetry Instrumentation",
-            subLinks: []
           },
           {
             link: "/flask",
             name: " Flask OpenTelemetry Instrumentation",
-            subLinks: []
           },
           {
             link: "/falcon",
             name: " Falcon OpenTelemetry Instrumentation",
-            subLinks: []
           },
         ],
       },
@@ -85,17 +75,14 @@ const docsLinks: DocsLinks[] = [
           {
             link: "/springboot",
             name: "Spring Boot OpenTelemetry Instrumentation",
-            subLinks: []
           },
           {
             link: "/tomcat",
             name: "Tomcat OpenTelemetry Instrumentation",
-            subLinks: []
           },
           {
             link: "/jboss",
             name: " JBoss OpenTelemetry Instrumentation",
-            subLinks: []
           },
         ],
       },
@@ -106,56 +93,46 @@ const docsLinks: DocsLinks[] = [
           {
             link: "/express",
             name: "Express OpenTelemetry Instrumentation",
-            subLinks: []
           },
           {
             link: "/nestjs",
             name: "Nestjs OpenTelemetry Instrumentation",
-            subLinks: []
           },
           {
             link: "/angular",
             name: " Angular OpenTelemetry Instrumentation",
-            subLinks: []
           },
         ],
       },
       {
         link: "/golang",
         name: "Go OpenTelemetry Instrumentation",
-        subLinks: [],
       },
       {
         link: "/php",
         name: "PHP OpenTelemetry Instrumentation",
-        subLinks: [],
       },
       {
         link: "/dotnet",
         name: ".NET OpenTelemetry Instrumentation",
-        subLinks: [],
       },
       {
         link: "/ruby-on-rails",
         name: "Ruby on Rails OpenTelemetry Instrumentation",
-        subLinks: [],
       },
       {
         link: "/elixir",
         name: "Elixir OpenTelemetry Instrumentation",
-        subLinks: [],
       },
       {
         link: "/rust",
         name: "Rust OpenTelemetry Instrumentation",
-        subLinks: [],
       },
       {
         link: "/troubleshoot-instrumentation",
         name: "Troubleshoot Instrumentation",
-        subLinks: [],
       },
-    ]
+    ],
   },
   {
     link: "/operate",
@@ -164,22 +141,18 @@ const docsLinks: DocsLinks[] = [
       {
         link: "/configuration",
         name: "Configuration",
-        subLinks: [],
       },
       {
         link: "/docker-standalone",
         name: "Docker Standalone",
-        subLinks: [],
       },
       {
         link: "/docker-swarm-operate",
         name: "Docker Swarm",
-        subLinks: [],
       },
       {
         link: "/kubernetes-operate",
         name: "Kubernetes",
-        subLinks: [],
       },
       {
         link: "/migration",
@@ -188,22 +161,18 @@ const docsLinks: DocsLinks[] = [
           {
             link: "/upgrade-0.8.0",
             name: "Upgrade to 0.8.0",
-            subLinks: []
           },
           {
             link: "/upgrade-0.8.1",
             name: "Upgrade to 0.8.1",
-            subLinks: []
           },
           {
             link: "/upgrade-0.9",
             name: "Upgrade to 0.9",
-            subLinks: []
           },
           {
             link: "/upgrade-0.10",
             name: "Upgrade to 0.10",
-            subLinks: []
           },
         ],
       },
@@ -214,16 +183,14 @@ const docsLinks: DocsLinks[] = [
           {
             link: "/increase-clickhouse-pv",
             name: "Increase ClickHouse PV",
-            subLinks: []
           },
           {
             link: "/connect-to-clickhouse",
             name: "Connect to ClickHouse",
-            subLinks: []
           },
         ],
       },
-    ]
+    ],
   },
   {
     link: "/userguide",
@@ -232,77 +199,60 @@ const docsLinks: DocsLinks[] = [
       {
         link: "/send-metrics",
         name: "Send Metrics",
-        subLinks:[
-        ]
       },
       {
         link: "/navigate-user-interface",
         name: "Navigate the User Interface",
-        subLinks:[
-        ]
       },
       {
         link: "/metrics",
         name: "View Services",
-        subLinks:[
-        ]
       },
       {
         link: "/traces",
         name: "View Traces",
-        subLinks:[
+        subLinks: [
           {
             link: "/span-details",
             name: "Span Details",
-            subLinks:[
-            ]
           },
-        ]
+        ],
       },
       {
         link: "/logs",
         name: "Logs",
-        subLinks:[
+        subLinks: [
           {
             link: "/logs_query_builder",
             name: "Logs Query Builder",
-            subLinks:[
-            ]
           },
           {
             link: "/logs_fields",
             name: "Fields in Logs",
-            subLinks:[
-            ]
           },
           {
             link: "/collecting-logs",
             name: "Collecting Logs",
-            subLinks:[
+            subLinks: [
               {
                 link: "/collect_kubernetes_pod_logs",
                 name: "Collecting Kubernetes Pod Logs",
-                subLinks: []
               },
               {
                 link: "/collect_docker_logs",
                 name: "Collecting Docker Container Logs",
-                subLinks: []
               },
               {
                 link: "/collecting_syslogs",
                 name: "Collecting syslogs",
-                subLinks: []
               },
               {
                 link: "/collect_logs_from_file",
                 name: "Collecting Application Logs from Log File",
-                subLinks: []
               },
               {
                 link: "/collecting_nodejs_winston_logs",
                 name: "Collecting Nodejs Winston Logs",
-                subLinks: []
               },
               {
                 link: "/collecting-application-logs-using-otel-sdk",
@@ -311,16 +261,14 @@ const docsLinks: DocsLinks[] = [
                   {
                     link: "/collecting_application_logs_otel_sdk_python",
                     name: "Collecting Application Logs using OTEL Python SDK",
-                    subLinks: []
                   },
                   {
                     link: "/collecting_application_logs_otel_sdk_java",
                     name: "Collecting Application Logs using OTEL Java SDK",
-                    subLinks: []
                   },
-                ]
+                ],
               },
-            ]
+            ],
           },
           {
             link: "/existing-collectors-to-signoz",
@@ -329,21 +277,18 @@ const docsLinks: DocsLinks[] = [
               {
                 link: "/fluentbit_to_signoz",
                 name: "FluentBit to SigNoz",
-                subLinks: []
               },
               {
                 link: "/fluentd_to_signoz",
                 name: "FluentD to SigNoz",
-                subLinks: []
               },
               {
                 link: "/logstash_to_signoz",
                 name: "Logstash to SigNoz",
-                subLinks: []
-              }
-            ]
-          }
-        ]
+              },
+            ],
+          },
+        ],
       },
       {
         link: "/manage-dashboards-and-panels",
@@ -352,51 +297,42 @@ const docsLinks: DocsLinks[] = [
           {
             link: "/manage-dashboards",
             name: "Manage Dashboards",
-            subLinks: []
           },
           {
             link: "/manage-panels",
             name: "Manage Panels",
-            subLinks: []
           },
           {
             link: "/manage-variables",
             name: "Manage Vairables",
-            subLinks: []
           },
           {
             link: "/create-a-custom-query",
             name: "Create a Custom Query",
-            subLinks: []
           },
-        ]
+        ],
       },
       {
         link: "/exceptions",
         name: "Exceptions",
-        subLinks: []
       },
       {
         link: "/alerts-management",
         name: "Alerts",
-        subLinks: []
       },
       {
         link: "/authentication",
         name: "Authentication",
-        subLinks: []
       },
       {
         link: "/retention-period",
         name: "Retention Period",
-        subLinks: []
       },
       {
         link: "/service-map",
         name: "Service Map",
-        subLinks: []
       },
-    ]
+    ],
   },
   {
     link: "/tutorials",
@@ -405,7 +341,6 @@ const docsLinks: DocsLinks[] = [
       {
         link: "/jvm-metrics",
         name: "Spring Boot JVM Metrics",
-        subLinks: [],
       },
       {
         link: "/kubernetes-infra-metrics",
@@ -446,8 +381,8 @@ const docsLinks: DocsLinks[] = [
         link: "/setting-up-sso-saml-with-keycloak",
         name: "Setting Up SSO SAML 2.0 With Keycloak",
         subLinks: [],
-      }
-    ]
+      },
+    ],
   },
   {
     link: "/architecture",
@@ -493,7 +428,7 @@ const docsLinks: DocsLinks[] = [
         name: "Installation - FAQs",
         subLinks: [],
       },
-    ]
+    ],
   },
   {
     link: "/telemetry",
