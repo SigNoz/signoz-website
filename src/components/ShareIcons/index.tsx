@@ -23,7 +23,7 @@ const ShareIcons = ({ shareIcons }: SharedIconProps): JSX.Element => (
 );
 
 export interface ShareIcon {
-  type: "facebook" | "twitter" | "linkedin";
+  type: "redit" | "twitter" | "linkedin";
   url: string;
 }
 

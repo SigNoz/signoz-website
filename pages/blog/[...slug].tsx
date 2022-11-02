@@ -115,6 +115,7 @@ const Blogs: NextPage<BlogProps> = ({
 }: BlogProps) => {
   const { frontMatter, mdxSource, toc } = post;
   const { asPath } = useRouter();
+  const url = `https://www.signoz.co/${asPath}`;
 
   const recentBlogs = referencePost.map((frontMatter) =>
     getBlogCard(frontMatter)
@@ -123,15 +124,15 @@ const Blogs: NextPage<BlogProps> = ({
   const shareIcons: ShareIcon[] = [
     {
       type: "twitter",
-      url: `https://twitter.com/intent/tweet?text=${asPath}`,
+      url: `https://twitter.com/intent/tweet?text=${url}`,
     },
     {
-      type: "facebook",
-      url: `https://twitter.com/intent/tweet?text=${asPath}`,
+      type: 'redit',
+      url: `https://reddit.com/submit?url=${url}`,
     },
     {
       type: "linkedin",
-      url: `https://twitter.com/intent/tweet?text=${asPath}`,
+      url: `https://linkedin.com/shareArticle?mini=true&url=${url}`,
     },
   ];
 

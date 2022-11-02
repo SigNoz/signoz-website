@@ -20,6 +20,7 @@ import ArrowRight from "./icons/arrowRight";
 import Search from "./icons/search";
 import Twitter from "./icons/twitter";
 import Facebook from "./icons/facebook";
+import Redit from "./icons/redit";
 
 type Icons =
   | "plus"
@@ -43,7 +44,8 @@ type Icons =
   | "arrowRight"
   | "search"
   | "twitter"
-  | "facebook";
+  | "facebook"
+  | "redit";
 
 const getIcons = (
   icons: Icons,
@@ -94,6 +96,8 @@ const getIcons = (
       return <Twitter className={className} />;
     case "facebook":
       return <Facebook className={className} />;
+    case "redit":
+      return <Redit className={className} />;
     default: {
       throw new Error("Icon not found");
     }
