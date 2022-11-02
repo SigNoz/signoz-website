@@ -8,6 +8,7 @@ import { NextPage } from "next";
 import { getSectionPosts } from "lib/frontmatterToBlogData";
 import dynamic from "next/dynamic";
 import { AuthorDetails } from "../blog/[...slug]";
+import Head from "next/head";
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),
   {
@@ -32,6 +33,9 @@ const AllBlogs: NextPage<AllBlogsProps> = (
 
   return (
     <>
+      <Head>
+        <title>SigNoz Blog</title>
+      </Head>
       <PropertyControlledComponent controllerProperty={heroPost.length > 0}>
         <HeroSection allAuthors={allAuthors} data={heroPost} />
       </PropertyControlledComponent>
