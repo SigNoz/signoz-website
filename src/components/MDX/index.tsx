@@ -8,7 +8,6 @@ import Paragraph from "./components/Paragraph";
 import Heading from "./components/Heading";
 import OL from "./components/OL";
 import UL from "./components/UL";
-import dynamic from "next/dynamic";
 import LI from "./components/LI";
 import Table from "./components/Table";
 import th from "./components/th";
@@ -16,6 +15,7 @@ import Code from "./components/Code";
 import TOCInline from "./components/TOCInline";
 import Youtube from "./components/Youtube";
 import ZoomImage from "./components/ZoomImage";
+import tr from "./components/tr";
 
 import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
@@ -39,7 +39,8 @@ export const MDXComponents = {
   ul: UL,
   li: LI,
   table: Table,
-  th: th,
+  th,
+  tr,
 };
 
 interface MDXLayoutProps {

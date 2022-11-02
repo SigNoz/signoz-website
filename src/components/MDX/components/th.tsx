@@ -1,6 +1,6 @@
 const th = ({ children, ...props }: Props): JSX.Element => {
   return (
-    <th className="text-left" {...props}>
+    <th className="text-center" {...props}>
       {children}
     </th>
   );
