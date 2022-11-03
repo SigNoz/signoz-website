@@ -13,6 +13,7 @@ import {
 } from "@tanstack/react-query";
 import { config } from "lib/react-query-config";
 import { MDXComponents } from "components/MDX";
+import { Analytics } from '@vercel/analytics/react';
 
 interface MyAppProps extends AppProps {
   device: DeviceType;
@@ -32,6 +33,7 @@ function MyApp({ Component, pageProps, device }: MyAppProps) {
           </AppLayout>
           {/* </ThemeProvider> */}
         </DeviceTypeProvider>
+        <Analytics />
       </Hydrate>
     </QueryClientProvider>
   );
