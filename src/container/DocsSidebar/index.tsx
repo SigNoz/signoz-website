@@ -32,6 +32,7 @@ const DocsSideBar = ({ links }: DocsProps): JSX.Element => {
 export interface DocsLinks {
   name: string;
   link: string;
+  url: string;
   subLinks?: DocsLinks[];
 }
 

@@ -1,10 +1,10 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { DocsLinks } from "..";
 import cx from "classnames";
 import AllLink from "./index";
 import getIcons from "asset/icons";
-import { getPathFromNodeToRoot } from "lib/utils/getPathFromNodeToRoot";
 import { useRouter } from "next/router";
+import { getActivePath } from "container/Layout/util";
 
 const Link = ({
   links,
@@ -15,15 +15,16 @@ const Link = ({
   level,
   paths,
 }: LinksProps): JSX.Element => {
-  const { name, subLinks, link } = links;
+  const { name, subLinks, link, url } = links;
   const isCurrent = paths[level] === link;
+  const [isExpandale, setIsExpandale] = useState<boolean>(isCurrent);
 
   const { asPath } = useRouter();
-  const lastString = asPath.split("/").filter(e => Boolean(e));
 
-  const isCurrentLinkActive = `/${lastString[lastString.length - 1]}` === link;
+  const isActive = useMemo(() => getActivePath(asPath), [asPath]);
 
-  const [isExpandale, setIsExpandale] = useState<boolean>(isCurrent);
+  const isCurrentLinkActive = isActive?.link === link;
+
   const { replace } = useRouter();
 
   const onClickHandler: React.MouseEventHandler<HTMLDivElement> = useCallback(
@@ -31,11 +32,9 @@ const Link = ({
       event.preventDefault();
       event.stopPropagation();
       setActiveLink(link);
-      const rootpaths: string = getPathFromNodeToRoot(rootLinks, link).join("");
-
-      replace(`/docs${rootpaths}`);
+      replace(`/docs${url}`);
     },
-    [link, setActiveLink, rootLinks, replace]
+    [link, setActiveLink, replace, url]
   );
 
   const onExpandHandler: React.MouseEventHandler<HTMLDivElement> = useCallback(

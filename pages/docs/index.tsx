@@ -2,7 +2,7 @@ import { MDXLayoutRenderer } from "components/MDX";
 import { TocHeadingProps } from "components/MDX/components/TOCInline";
 import Layout from "container/Layout";
 
-import docsLinks from "lib/docsSidebar";
+import docsLinks from "lib/docs/docsSidebar";
 import { FrontMatterProps, getFileBySlug } from "lib/mdx";
 import { GetStaticPropsContext, NextPage } from "next";
 
