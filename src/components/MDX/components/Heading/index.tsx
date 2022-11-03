@@ -9,7 +9,7 @@ const Header = ({ type, children, id }: HeaderProps) => {
   return (
     <Component
       id={id}
-      className="font-semibold font-WorkSans text-signoz-medium"
+      className="font-semibold font-WorkSans text-signoz-medium my-3"
       style={{
         fontSize: isDesktop
           ? headingConfig[type].desktop
