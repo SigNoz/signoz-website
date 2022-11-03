@@ -41,7 +41,7 @@ const AuthorBy = ({
   );
 };
 
-interface AuthorProps {
+export interface AuthorProps {
   name: string;
   avatar: string;
   position: string;

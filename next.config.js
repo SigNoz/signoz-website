@@ -13,6 +13,9 @@ const nextConfig = withMDX({
   swcMinify: true,
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   trailingSlash: true,
+  images: {
+    domains: ['avatars.githubusercontent.com'],
+  },
 });
 
 module.exports = nextConfig;
