@@ -31,25 +31,17 @@ const Link = ({
     (event) => {
       event.preventDefault();
       event.stopPropagation();
+      setIsExpandale((value) => !value);
       setActiveLink(link);
       replace(`/docs${url}`);
     },
     [link, setActiveLink, replace, url]
   );
 
-  const onExpandHandler: React.MouseEventHandler<HTMLDivElement> = useCallback(
-    (event) => {
-      event.preventDefault();
-      event.persist();
-      setIsExpandale((value) => !value);
-    },
-    []
-  );
-
   return (
     <>
       <div
-        onClick={onExpandHandler}
+        onClick={onClickHandler}
         key={name}
         className="w-full cursor-pointer min-w-[200px]"
       >
@@ -64,10 +56,7 @@ const Link = ({
             )}
           >
             <div className="flex items-center justify-between">
-              <div
-                onClick={onClickHandler}
-                className="flex items-center justify-between cursor-pointer"
-              >
+              <div className="flex items-center justify-between cursor-pointer">
                 {name}
               </div>
               {subLinks &&

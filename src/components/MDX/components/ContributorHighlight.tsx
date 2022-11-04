@@ -1,9 +1,16 @@
 import AuthorBy, { AuthorProps } from "components/AuthorBy";
 
-const ContributorHighlight = ({ list }: ContributorHighlightProps): JSX.Element => (
-  <div className="grid grid-cols-3 gap-4 my-4">
+const ContributorHighlight = ({
+  list,
+}: ContributorHighlightProps): JSX.Element => (
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-4">
     {list.map((item) => (
-      <a target={"_blank"} rel="noreferrer" href={item.link} key={item.avatar + item.name}>
+      <a
+        target={"_blank"}
+        rel="noreferrer"
+        href={item.link}
+        key={item.avatar + item.name}
+      >
         <AuthorBy
           {...{
             avatar: item?.avatar,
@@ -14,7 +21,7 @@ const ContributorHighlight = ({ list }: ContributorHighlightProps): JSX.Element 
       </a>
     ))}
   </div>
-)
+);
 
 interface List extends AuthorProps {
   link: string

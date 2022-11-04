@@ -69,7 +69,7 @@ const Layout = ({
               {description}
             </div> */}
 
-            <div className="mt-6 flex">
+            <div className="mt-6 flex md:flex-row flex-col gap-4">
               {authorDetails.map((author: AuthorDetails) => (
                 <div key={author.slug + author.date}>
                   <div className="flex items-center">
@@ -94,14 +94,14 @@ const Layout = ({
                       </div>
                     </div>
                   </div>
-
-                  <div className="mt-4 flex items-center gap-1">
-                    <div className="text-xs text-signoz-medium font-semibold">
-                      {getFormattedDate(new Date(date || ""))} ·
-                    </div>
-                  </div>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-4 flex items-center gap-1">
+              <div className="text-xs text-signoz-medium font-semibold">
+                {getFormattedDate(new Date(date || ""))}
+              </div>
             </div>
 
             {readingTime && (
