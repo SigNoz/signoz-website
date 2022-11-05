@@ -24,14 +24,14 @@ const docsLinks: DocsLinks[] = [
     ],
   },
   {
-    link: "/instrumentation_app",
+    link: "/instrumentation",
     name: "Instrumentation",
     url: "/instrumentation_app",
     subLinks: [
       {
-        link: "/instrumentation_app/overview",
+        link: "/instrumentation/overview",
         name: "Overview",
-        url: "/instrumentation_app/overview",
+        url: "/instrumentation/overview",
       },
     ],
   },
