@@ -183,7 +183,7 @@ const Blogs: NextPage<BlogProps> = ({
               section="blog-recent-post"
               data={recentBlogs}
               cardStyle={{
-                maxWidth: isDesktop ? "20vw" : "unset",
+                maxWidth: isDesktop ? "300px" : "unset",
               }}
             />
           </div>
