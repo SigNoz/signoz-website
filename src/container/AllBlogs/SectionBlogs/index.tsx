@@ -9,6 +9,7 @@ const SectionBlogs = ({
   section,
   data,
   customUrl,
+  cardStyle,
 }: SectionBlogsProps): JSX.Element => {
   const isDesktop = useIsDesktop();
   const [currentSelected, setCurrentSelected] = useState(0);
@@ -52,6 +53,7 @@ const SectionBlogs = ({
           <BlogCard
             cardStyle={{
               minWidth: isDesktop ? "unset" : "100%",
+              ...cardStyle,
             }}
             key={JSON.stringify(post)}
             {...post}
@@ -68,6 +70,7 @@ interface SectionBlogsProps {
   section: BlogCardProps["tags"];
   data: BlogCardProps[];
   customUrl?: string;
+  cardStyle?: React.CSSProperties;
 }
 
 export default SectionBlogs;

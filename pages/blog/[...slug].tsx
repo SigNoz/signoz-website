@@ -18,6 +18,7 @@ import { ShareIcon } from "components/ShareIcons";
 import { useRouter } from "next/router";
 import BlogsSEO from "components/BlogSEO";
 import dynamic from "next/dynamic";
+import { useIsDesktop } from "hooks/useDeviceType";
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),
   { ssr: false }
@@ -127,7 +128,7 @@ const Blogs: NextPage<BlogProps> = ({
       url: `https://twitter.com/intent/tweet?text=${url}`,
     },
     {
-      type: 'redit',
+      type: "redit",
       url: `https://reddit.com/submit?url=${url}`,
     },
     {
@@ -137,6 +138,7 @@ const Blogs: NextPage<BlogProps> = ({
   ];
 
   const isBlogInDraft = frontMatter.draft === true;
+  const isDesktop = useIsDesktop();
 
   return (
     <>
@@ -180,6 +182,9 @@ const Blogs: NextPage<BlogProps> = ({
               customUrl="/blogs"
               section="blog-recent-post"
               data={recentBlogs}
+              cardStyle={{
+                maxWidth: isDesktop ? "20vw" : "unset",
+              }}
             />
           </div>
         </>
