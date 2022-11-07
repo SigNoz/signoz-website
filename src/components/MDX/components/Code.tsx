@@ -29,21 +29,20 @@ const Code = ({ children }: Props) => {
     (typeof children === "string" && children.indexOf(" ") >= 0)
   ) {
     return (
-      <div
+      <span
         ref={textInput}
         onMouseEnter={onEnter}
         onMouseLeave={onExit}
-        className="relative bg-signoz-medium my-2 p-4 rounded-lg overflow-x-auto"
+        className="relative bg-signoz-medium block my-2 p-4 rounded-lg overflow-x-auto"
       >
         {hovered && (
           <button
             aria-label="Copy code"
             type="button"
-            className={`absolute right-2 top-2 h-6 w-6 rounded border-2 bg-gray-700 p-1 dark:bg-gray-800 ${
-              copied
-                ? "border-signoz-primary focus:border-signoz-primary focus:outline-none"
-                : "border-gray-300"
-            }`}
+            className={`absolute right-2 top-2 h-6 w-6 rounded border-2 bg-gray-700 p-1 dark:bg-gray-800 ${copied
+              ? "border-signoz-primary focus:border-signoz-primary focus:outline-none"
+              : "border-gray-300"
+              }`}
             onClick={onCopy}
           >
             <svg
@@ -79,14 +78,14 @@ const Code = ({ children }: Props) => {
         )}
 
         <code className="text-white">{children}</code>
-      </div>
+      </span>
     );
   }
 
   return (
-    <div className="bg-signoz-medium bg-opacity-10 inline-block leading-relaxed rounded-lg px-2 py-0">
+    <span className="bg-signoz-medium bg-opacity-10 inline-block leading-relaxed rounded-lg px-2 py-0">
       {children}
-    </div>
+    </span>
   );
 };
 
