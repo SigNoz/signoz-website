@@ -33,7 +33,7 @@ const DocsLayout = ({ children, toc, docsLinks }: LayoutProps): JSX.Element => {
       </Head>
 
       {isMounted && (
-        <div className="flex-[3] max-w-[60%] font-WorkSans px-4">
+        <div className="flex-[3] w-full md:max-w-[60%] font-WorkSans px-4">
           {children}
         </div>
       )}
