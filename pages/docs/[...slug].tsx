@@ -5,6 +5,7 @@ import Layout from "container/Layout";
 import { formatSlug, FrontMatterProps, getFileBySlug, getFiles } from "lib/mdx";
 import { GetStaticPropsContext, NextPage } from "next";
 import { findLinkByUrl } from "lib/docs/findLinkByUrl";
+import { DocsLinks } from "container/DocsSidebar";
 
 interface DocsProps {
   docs: FrontMatterProps[];
@@ -16,22 +17,27 @@ interface DocsProps {
   notFound: boolean;
 }
 
+const getAllLinks = (docs: DocsLinks[]) => {
+  let links: DocsLinks[] = [];
+  docs.forEach((doc) => {
+    links.push(doc);
+    if (doc.subLinks) {
+      links = [...links, ...getAllLinks(doc.subLinks)];
+    }
+  });
+  return links;
+};
+
 export async function getStaticPaths() {
   const posts = getFiles("docs");
-  const initialPaths: string[] = []
+  const initialPaths: string[] = [];
 
-  const allLinks = docsLinks.reduce((acc, curr) => {
-    acc.push(curr.url)
-    if (curr.subLinks) {
-      curr.subLinks.forEach((subLink) => {
-        acc.push(subLink.url)
-      })
-    }
-    return acc
+  const allLinks = getAllLinks(docsLinks).reduce((acc, link) => {
+    return [...acc, link.url];
   }, initialPaths);
 
   return {
-    paths: allLinks.map(e => `/docs${e}`),
+    paths: allLinks.map((e) => `/docs${e}`),
     fallback: false,
   };
 }
