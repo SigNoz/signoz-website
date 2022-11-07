@@ -491,23 +491,23 @@ const docsLinks: DocsLinks[] = [
     name: "FAQs",
     subLinks:[
       {
-        link: "/product",
-        url: "/product",
+        link: "/faqs/product",
+        url: "/faqs/product",
         name: "Product - FAQs",
       },
       {
-        link: "/troubleshooting",
-        url: "/troubleshooting",
+        link: "/faqs/troubleshooting",
+        url: "/faqs/troubleshooting",
         name: "Troubleshooting - FAQs",
       },
       {
-        link: "/instrumentation",
-        url: "/instrumentation",
+        link: "/faqs/instrumentation",
+        url: "/faqs/instrumentation",
         name: "Instrumentation - FAQs",
       },
       {
-        link: "/installation",
-        url: "/installation",
+        link: "/faqs/installation",
+        url: "/faqs/installation",
         name: "Installation - FAQs",
       },
     ],
