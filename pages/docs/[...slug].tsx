@@ -2,10 +2,10 @@ import { MDXLayoutRenderer } from "components/MDX";
 import { TocHeadingProps } from "components/MDX/components/TOCInline";
 import docsLinks from "lib/docs/docsSidebar";
 import Layout from "container/Layout";
-import { formatSlug, FrontMatterProps, getFileBySlug, getFiles } from "lib/mdx";
+import { FrontMatterProps, getFileBySlug, getFiles } from "lib/mdx";
 import { GetStaticPropsContext, NextPage } from "next";
-import { findLinkByUrl } from "lib/docs/findLinkByUrl";
-import { DocsLinks } from "container/DocsSidebar";
+import { findDocsLinkByUrl } from "lib/docs/findLinkByUrl";
+import getAllDocsLinks from "lib/docs/allLinks";
 
 interface DocsProps {
   docs: FrontMatterProps[];
@@ -15,24 +15,13 @@ interface DocsProps {
     toc: TocHeadingProps["toc"];
   };
   notFound: boolean;
-}
-
-const getAllLinks = (docs: DocsLinks[]) => {
-  let links: DocsLinks[] = [];
-  docs.forEach((doc) => {
-    links.push(doc);
-    if (doc.subLinks) {
-      links = [...links, ...getAllLinks(doc.subLinks)];
-    }
-  });
-  return links;
 };
 
 export async function getStaticPaths() {
   const posts = getFiles("docs");
   const initialPaths: string[] = [];
 
-  const allLinks = getAllLinks(docsLinks).reduce((acc, link) => {
+  const allLinks = getAllDocsLinks(docsLinks).reduce((acc, link) => {
     return [...acc, link.url];
   }, initialPaths);
 
@@ -83,7 +72,7 @@ const Docs: NextPage<DocsProps> = (props: DocsProps): JSX.Element => {
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   const postSlug = (params?.slug as string[])?.join("/");
 
-  const postUrl = findLinkByUrl(`/${postSlug}`);
+  const postUrl = findDocsLinkByUrl(`/${postSlug}`);
 
   if (!postSlug) {
     return {

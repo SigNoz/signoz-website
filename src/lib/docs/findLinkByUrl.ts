@@ -1,24 +1,6 @@
-import { DocsLinks } from "container/DocsSidebar";
-import List from "./docsSidebar";
+import getAllDocsLinks from "./allLinks";
+import allDocsLinks from "./docsSidebar";
 
-export const findLinkByUrl = (url: DocsLinks) => {
-  const link = List.find((item) => item.url === url.url);
+const allList = getAllDocsLinks(allDocsLinks)
 
-  if (link) {
-    return link;
-  }
-
-  for (const item of List) {
-    if (item.subLinks) {
-      const link = item.subLinks.find((child) => child.url === url.url);
-
-      if (link) {
-        if (link.subLinks) {
-          return link.subLinks[0];
-        }
-        return link;
-      }
-    }
-  }
-  return null;
-};
+export const findDocsLinkByUrl = (url: string) => allList.find((link) => link.url === url);

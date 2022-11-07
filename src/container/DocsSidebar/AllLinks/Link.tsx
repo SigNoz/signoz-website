@@ -48,7 +48,7 @@ const Link = ({
         <div className="w-100% flex flex-col gap-4">
           <div
             className={cx(
-              " text-lg tracking-lightTigher p-[6px] rounded hover:bg-[#E6E6E6]",
+              " text-lg tracking-lightTigher p-[6px] my-1 rounded hover:bg-[#E6E6E6]",
               {
                 "text-signoz-primary-light bg-[#E6E6E6]": isCurrentLinkActive,
                 "text-signoz-dark-light": !isCurrentLinkActive,
