@@ -9,7 +9,6 @@ export default function Document() {
           strategy="worker"
           src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
         />
-        <meta httpEquiv="Content-Security-Policy" content="script-src 'none'" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       <body>
