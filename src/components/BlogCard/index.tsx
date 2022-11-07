@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import Card from "components/Card";
 import { getBlogFooter, getTags } from "./utils";
 import cx from "classnames";
 import React, { useMemo } from "react";
 import Link from "next/link";
+import NextImage from "next/image";
 
 const BlogCard = ({
   tags,
@@ -38,11 +38,18 @@ const BlogCard = ({
             "flex-row": layout === "right",
           })}
         >
-          <div className="rounded-tr-lg rounded-tl-none overflow-hidden">
-            <img
+          <div className="rounded-tr-lg w-full relative rounded-tl-none overflow-hidden">
+            <NextImage
               alt="blog cover image"
               className="w-full h-full rounded-tr-lg rounded-tl-lg rounded-bl-none rounded-br-none"
               src={coverImage || "/img/blog/header.jpg"}
+              layout="responsive"
+              width={500}
+              height={300}
+              objectFit="contain"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={coverImage || "/img/blog/header.jpg"}
             />
           </div>
 
