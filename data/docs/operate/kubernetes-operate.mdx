@@ -3,9 +3,9 @@ id: kubernetes
 title: Kubernetes
 description: Learn how to operate SigNoz on Kubernetes.
 ---
-{/* 
-import UpgradeInfo from '../shared/helm-upgrade-info.md'
-import UpgradeWarning from '../shared/upgrade-warning.md' */}
+
+import UpgradeInfo from './shared/helm-upgrade-info.mdx'
+import UpgradeWarning from './shared/upgrade-warning.mdx' 
 
 Once you have successfully installed SigNoz on Kubernetes, the following sections
 provide an overview of the activities that are required to successfully operate SigNoz.
@@ -42,7 +42,7 @@ helm repo update
 helm -n platform upgrade my-release signoz/signoz
 ```
 
-{/* <UpgradeInfo/> */}
+<UpgradeInfo/>
 
 In case you wish to upgrade the SigNoz cluster to a specific version,
 follow the steps below:
@@ -73,7 +73,7 @@ version `0.10.2` with the release name `my-release` and namespace `platform`:
 helm -n platform upgrade my-release signoz/signoz --version 0.2.5
 ```
 
-{/* <UpgradeWarning/> */}
+<UpgradeWarning/>
 
 ## Uninstall
 
