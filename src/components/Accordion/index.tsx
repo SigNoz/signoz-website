@@ -35,9 +35,10 @@ const Accordion = ({ expandableText, text, className }: AccordionProps) => {
       </div>
 
       {isOpen && (
-        <div className="text-signoz-dark-intermediate font-semibold font-openSans text-sm mt-3">
-          {expandableText}
-        </div>
+        <div
+          className="text-signoz-dark-intermediate font-semibold font-openSans text-sm mt-3"
+          dangerouslySetInnerHTML={{ __html: expandableText }}
+        />
       )}
     </div>
   );
