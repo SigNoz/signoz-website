@@ -21,6 +21,19 @@ const docsLinks: DocsLinks[] = [
         name: "Docker Swarm",
         url: "/install/docker-swarm",
       },
+      {
+        link: "/install/kubernetes",
+        name: "Kubernetes",
+        url: "/install/kubernetes",
+        subLinks: [
+          {
+          link: "/install/kubernetes/aws",
+          name: "AWS",
+          url: "/install/kubernetes/aws"
+          }
+        ]
+      },
+
     ],
   },
   {

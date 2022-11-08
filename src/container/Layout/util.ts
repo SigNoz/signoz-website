@@ -1,4 +1,4 @@
-import { findLinkByUrl } from "lib/docs/findLinkByUrl";
+import { findDocsLinkByUrl } from "lib/docs/findLinkByUrl";
 
 const months = [
   "Jan",
@@ -31,9 +31,6 @@ function getFormattedDate(date: Date | null): string {
   return `${month} ${day},${year}`;
 }
 
-
-export const getActivePath = (path: string) => {
-  return findLinkByUrl(`/${path.split('/').filter(e => Boolean(e)).slice(1).join('/')}`)
-}
+export const getActivePath = (path: string) => findDocsLinkByUrl(`/${path.split('/').filter(e => Boolean(e)).slice(1).join('/')}`)
 
 export default getFormattedDate;
