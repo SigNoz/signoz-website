@@ -137,9 +137,9 @@ const docsLinks: DocsLinks[] = [
         url: "/instrumentation/golang",
       },
       {
-        link: "/instrumentation/golang",
+        link: "/instrumentation/php",
         name: "PHP OpenTelemetry Instrumentation",
-        url: "/instrumentation/golang",
+        url: "/instrumentation/php",
       },
       {
         link: "/instrumentation/dotnet",
