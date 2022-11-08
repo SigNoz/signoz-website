@@ -47,12 +47,12 @@ const SectionBlogs = ({
       />
       <div
         id={section + "scrollContainer"}
-        className="py-4 px-4 grid grid-cols-3 gap-6 overflow-x-scroll pb-6"
+        className="py-4 px-4 flex md:grid grid-cols-3 gap-6 overflow-x-scroll pb-6"
       >
         {data.map((post) => (
           <BlogCard
             cardStyle={{
-              minWidth: "100%",
+              minWidth: "300px",
               ...cardStyle,
             }}
             key={JSON.stringify(post)}

@@ -30,56 +30,54 @@ const BlogCard = ({
       passHref
       prefetch
     >
-      <a>
-        <Card
-          style={{ padding: 0, ...cardStyle }}
-          className={cx("flex p-0 cursor-pointer", {
-            "flex-col": layout === "left",
-            "flex-row": layout === "right",
-          })}
-        >
-          <div className="rounded-tr-lg w-full relative rounded-tl-none overflow-hidden">
-            <NextImage
-              alt="blog cover image"
-              className="w-full h-full rounded-tr-lg rounded-tl-lg rounded-bl-none rounded-br-none"
-              src={coverImage || "/img/blog/header.jpg"}
-              layout="responsive"
-              width={500}
-              height={300}
-              objectFit="contain"
-              loading="lazy"
-              placeholder="blur"
-              blurDataURL={coverImage || "/img/blog/header.jpg"}
-            />
+      <Card
+        style={{ padding: 0, ...cardStyle }}
+        className={cx("flex p-0 cursor-pointer", {
+          "flex-col": layout === "left",
+          "flex-row": layout === "right",
+        })}
+      >
+        <div className="rounded-tr-lg w-full relative rounded-tl-none overflow-hidden">
+          <NextImage
+            alt="blog cover image"
+            className="w-full h-full rounded-tr-lg rounded-tl-lg rounded-bl-none rounded-br-none"
+            src={coverImage || "/img/blog/header.jpg"}
+            layout="responsive"
+            width={500}
+            height={300}
+            objectFit="contain"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL={coverImage || "/img/blog/header.jpg"}
+          />
+        </div>
+
+        <div className="p-4">
+          <div
+            className={cx("text-sm font-openSans font-semibold", {
+              "text-signoz-primary-light": tags === "tools",
+              "text-signoz-purple": tags === "technical",
+              "text-signoz-blue": tags === "product",
+            })}
+          >
+            {getTags(tags)}
           </div>
 
-          <div className="p-4">
-            <div
-              className={cx("text-sm font-openSans font-semibold", {
-                "text-signoz-primary-light": tags === "tools",
-                "text-signoz-purple": tags === "technical",
-                "text-signoz-blue": tags === "product",
-              })}
-            >
-              {getTags(tags)}
-            </div>
-
-            <div className="mt-2 line-clamp-2 font-WorkSans font-semibold text-lg">
-              {title}
-            </div>
-
-            {(description?.length || 0) > 0 && (
-              <div className="font-openSans text-xs line-clamp-3 text-signoz-pure font-light leading-5">
-                {description}
-              </div>
-            )}
-
-            <div className="mt-4 text-signoz-dark-light font-openSans font-normal text-xs">
-              {dateToRender}
-            </div>
+          <div className="mt-2 line-clamp-2 font-WorkSans font-semibold text-lg">
+            {title}
           </div>
-        </Card>
-      </a>
+
+          {(description?.length || 0) > 0 && (
+            <div className="font-openSans text-xs line-clamp-3 text-signoz-pure font-light leading-5">
+              {description}
+            </div>
+          )}
+
+          <div className="mt-4 text-signoz-dark-light font-openSans font-normal text-xs">
+            {dateToRender}
+          </div>
+        </div>
+      </Card>
     </Link>
   );
 };

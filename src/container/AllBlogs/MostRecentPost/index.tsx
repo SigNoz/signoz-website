@@ -46,7 +46,7 @@ const MostRecentPost = (props: MostRecentPostProps): JSX.Element => {
         <div className="w-full h-full">
           {firstBlogs && (
             <BlogCard
-              cardStyle={{ background: "none", boxShadow: "none" }}
+              cardStyle={{ background: "none", boxShadow: "none", minWidth: "300px" }}
               {...firstBlogs}
             />
           )}
@@ -54,7 +54,7 @@ const MostRecentPost = (props: MostRecentPostProps): JSX.Element => {
         <div className="min-w-[369px] flex-1 gap-4 flex md:flex-col">
           {rest.map((blog) => (
             <BlogCard
-              cardStyle={{ background: "none", boxShadow: "none" }}
+              cardStyle={{ background: "none", boxShadow: "none", minWidth: "300px" }}
               key={blog.title}
               {...blog}
             />
