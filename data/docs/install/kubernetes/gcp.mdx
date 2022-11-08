@@ -4,26 +4,26 @@ title: Deploying to GCP
 description: Instructions to install SigNoz on GKE cluster
 ---
 
-// import K8sComponents from '../../shared/k8s-components.md'
-// import CommonPrerequisites from '../../shared/k8s-common-prerequisites.md'
-// import InstallSigNozPart1 from '../../shared/install-signoz-k8s-part-1.md'
-// import InstallSigNozPart2 from '../../shared/install-signoz-k8s-part-2.md'
-// import VerifyInstallation from '../../shared/k8s-verify-installation.md'
-// import K8sHotrod from '../../shared/k8s-hotrod.md'
-// import NextSteps from '../../shared/next-steps.md'
-// import StorageClass from '../../shared/k8s-storageclass.md'
+import K8sComponents from './shared/k8s-components.mdx'
+import CommonPrerequisites from './shared/k8s-common-prerequisites.mdx'
+import InstallSigNozPart1 from './shared/install-signoz-k8s-part-1.mdx'
+import InstallSigNozPart2 from './shared/install-signoz-k8s-part-2.mdx'
+import VerifyInstallation from './shared/k8s-verify-installation.mdx'
+import K8sHotrod from './shared/k8s-hotrod.mdx'
+import NextSteps from './shared/next-steps.mdx'
+import StorageClass from './shared/k8s-storageclass.mdx'
 
 First, we need to set up a Kubernetes cluster (see the
 [official GCP documentation](https://cloud.google.com/kubernetes-engine/)
 for more info).
  
-{/* <K8sComponents /> */}
+<K8sComponents />
 
 ## Prerequisites
 
 - You must have a GKE cluster
 
-{/* <CommonPrerequisites /> */}
+<CommonPrerequisites />
 
 ## Chart configuration
 
@@ -40,26 +40,26 @@ clickhouse:
   installCustomStorageClass: true
 ```
 
-{/* <StorageClass /> */}
+<StorageClass />
 
 ## Install SigNoz on Kubernetes with Helm
 
-{/* <InstallSigNozPart1 /> */}
+<InstallSigNozPart1 />
 
 ```bash
 helm --namespace platform install my-release signoz/signoz -f override-values.yaml
 ```
 
-{/* <InstallSigNozPart2 /> */}
+<InstallSigNozPart2 />
 
 ## Verify the Installation
 
-{/* <VerifyInstallation /> */}
+<VerifyInstallation />
 
 ## (Optional) Install a Sample Application and Generate Tracing Data
 
-{/* <K8sHotrod /> */}
+<K8sHotrod />
 
 ## Next Steps
 
-{/* <NextSteps /> */}
+<NextSteps />

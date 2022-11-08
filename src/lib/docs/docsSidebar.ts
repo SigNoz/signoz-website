@@ -44,9 +44,9 @@ const docsLinks: DocsLinks[] = [
         ],
       },
       {
-        link: "/install/docker-swarm",
+        link: "/install/troubleshooting",
         name: "Troubleshooting",
-        url: "/install/docker-swarm",
+        url: "/install/troubleshooting",
       },
     ],
   },
@@ -317,9 +317,9 @@ const docsLinks: DocsLinks[] = [
                 url: "/userguide/collecting_nodejs_winston_logs",
               },
               {
-                link: "/userguide/collecting_application_logs_otel_sdk_python",
+                link: "/userguide/collecting_application_logs_otel_sdk_java_and_python",
                 name: "Collecting Application Logs using OTEL SDK",
-                url: "/userguide/collecting_application_logs_otel_sdk_python",
+                url: "/userguide/collecting_application_logs_otel_sdk_java_and_python",
                 subLinks: [
                   {
                     link: "/userguide/collecting_application_logs_otel_sdk_python",
