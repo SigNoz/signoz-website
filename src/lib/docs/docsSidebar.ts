@@ -336,9 +336,9 @@ const docsLinks: DocsLinks[] = [
             ],
           },
           {
-            link: "/userguide/logs_query_builder",
+            link: "/userguide/collector-overview",
             name: "Existing Collectors to SigNoz",
-            url: "/userguide/logs_query_builder",
+            url: "/userguide/collector-overview",
             subLinks:[
               {
                 link: "/userguide/fluentbit_to_signoz",
