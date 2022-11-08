@@ -16,6 +16,19 @@ const nextConfig = withMDX({
   images: {
     domains: ['avatars.githubusercontent.com'],
   },
+  generateEtags: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  compress: true,
+  devIndicators: {
+    buildActivity: true,
+    buildActivityPosition: "bottom-right"
+  },
+  optimizeFonts: true,
+  experimental: {
+    optimisticClientCache: true,
+  }
 });
 
 module.exports = nextConfig;

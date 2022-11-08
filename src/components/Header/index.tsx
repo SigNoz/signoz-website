@@ -46,11 +46,11 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
 
   return (
     <header
-      className={cx("list-none fixed top-0 w-full bg-white mb-5 py-6 px-4 z-50", {
+      className={cx("list-none fixed w-full bg-white mb-5 py-6 px-4 z-50", {
         flex: isDesktop,
         "items-center": isDesktop,
       })}
-      style={{ top: y === 0 ? isBlogStripOpen ? "48px" : 0 : 0 }}
+      style={{ top: y === 0 ? isBlogStripOpen && isDesktop ? "48px" : 0 : 0 }}
     >
       <div className="font-openSans flex items-center justify-between relative">
         <div
@@ -76,11 +76,10 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
               return (
                 <ul key={name}>
                   <li
-                    className={
-                      isActive
-                        ? "text-base text-signoz-medium font-bold"
-                        : "font-semibold text-signoz-dark-light text-base"
-                    }
+                    className={cx({
+                      "text-base text-signoz-medium font-bold": isActive,
+                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                    })}
                   >
                     <Link scroll={false} href={path}>
                       {name}
@@ -104,19 +103,18 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
               return (
                 <ul key={name}>
                   <li
-                    className={
-                      isActive
-                        ? "text-base text-signoz-medium font-bold"
-                        : "font-semibold text-signoz-dark-light text-base"
-                    }
+                    className={cx({
+                      "text-base text-signoz-medium font-bold": isActive,
+                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                    })}
                   >
                     <Link scroll={false} href={path}>
                       {name}
                     </Link>
                   </li>
-                  {isActive && (
+                  <PropertyControlledComponent controllerProperty={isActive}>
                     <div className="h-[2px] w-4 bg-signoz-primary" />
-                  )}
+                  </PropertyControlledComponent>
                 </ul>
               );
             })}
@@ -134,19 +132,18 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
               return (
                 <ul key={name}>
                   <li
-                    className={
-                      isActive
-                        ? "text-base text-signoz-medium font-bold"
-                        : "font-semibold text-signoz-dark-light text-base"
-                    }
+                    className={cx({
+                      "text-base text-signoz-medium font-bold": isActive,
+                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                    })}
                   >
                     <Link scroll={false} href={path}>
                       {name}
                     </Link>
                   </li>
-                  {isActive && (
+                  <PropertyControlledComponent controllerProperty={isActive}>
                     <div className="h-[2px] w-4 bg-signoz-primary" />
-                  )}
+                  </PropertyControlledComponent>
                 </ul>
               );
             })}

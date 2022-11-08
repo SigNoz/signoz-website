@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://signoz.io
+
+# Sitemaps
+Sitemap: https://signoz.io/sitemap.xml
