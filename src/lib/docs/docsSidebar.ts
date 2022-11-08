@@ -365,22 +365,22 @@ const docsLinks: DocsLinks[] = [
         url: "/userguide/manage-dashboards-and-panels",
         subLinks: [
           {
-            link: "/userguide/manage-dashboards",
+            link: "/userguide/manage-dashboards-and-panels/manage-dashboards",
             name: "Manage Dashboards",
             url: "/userguide/manage-dashboards",
           },
           {
-            link: "/userguide/manage-panels",
+            link: "/userguide/manage-dashboards-and-panels/manage-panels",
             name: "Manage Panels",
             url: "/userguide/manage-panels",
           },
           {
-            link: "/userguide/manage-variables",
+            link: "/userguide/manage-dashboards-and-panels/manage-variables",
             name: "Manage variables",
             url: "/userguide/manage-variables",
           },
           {
-            link: "/userguide/create-a-custom-query",
+            link: "/userguide/manage-dashboards-and-panels/create-a-custom-query",
             name: "Create a Custom Query",
             url: "/userguide/create-a-custom-query",
           },
