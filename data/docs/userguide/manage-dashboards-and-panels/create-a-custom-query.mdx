@@ -3,11 +3,11 @@ id: create-a-custom-query
 title: Create a Custom Query
 sidebar_label: Create a Custom Query
 ---
-{/* 
-import MetricsDefinition from '../shared/metrics-definition.md'
-import AddPanelTimeSeries from '../shared/add-panel-time-series.md'
-import SaveGraph from '../shared/save-graph.md'
-import SeeAggregateFunctions from '../shared/see-aggregate-functions.md' */}
+
+import MetricsDefinition from './shared/metrics-definition.mdx'
+import AddPanelTimeSeries from './shared/add-panel-time-series.mdx'
+import SaveGraph from './shared/save-graph.mdx'
+import SeeAggregateFunctions from './shared/see-aggregate-functions.mdx' 
 
 
 This page describes the elements that define a custom query and provides several examples of using the Query Builder to create custom queries.
@@ -70,7 +70,7 @@ SigNoz supports the following aggregation functions:
 
 ### Metrics
 
-{/* <MetricsDefinition /> */}
+<MetricsDefinition />
 
 You can use a `where` clause to specify the filtering condition for your query, enabling you to select only data that meets the specified criteria. SigNoz will only plot data for which the where clause evaluates to `true`, and it’ll exclude everything else. For example, you can use a where clause to plot only the HTTP requests from a service named `foo`  that returned a `500` status code.
 
@@ -111,7 +111,7 @@ Use host metrics to monitor the resource utilization of the hosts on which your 
 
 #### CPU Utilization
 
-{/* 1. <AddPanelTimeSeries /> */}
+1. <AddPanelTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “CPU Utilization”:
   ![](/images/docs/new-panel-cpu-utilization.png)
@@ -119,7 +119,7 @@ Use host metrics to monitor the resource utilization of the hosts on which your 
 3. Choose `RATE_AVG` as the aggregate function:
   ![](/images/docs/choose-rate-avg.png)
 
-  {/* <SeeAggregateFunctions /> */}
+  <SeeAggregateFunctions />
 
 4. From the **Metrics** drop-down, select `system_cpu_time`:
   ![](/images/docs/select-system-cpu-time.png)
@@ -139,13 +139,13 @@ Use host metrics to monitor the resource utilization of the hosts on which your 
 9. _(Optional)_ To further drill down, you can plot the a separate graph for each state by specifying `state` in the **Group By** drop-down and selecting the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
   ![](/images/docs/group-by-specify-state.png)
 
-{/* 10. <SaveGraph /> */}
+10. <SaveGraph />
 
 #### Disk Saturation
 
 Disk saturation means the disk is often accessed, and applications usually must wait before being able to read or write data. Follow the steps in this section to build a panel that shows the disk saturation metric.
 
-{/* 1. <AddPanelTimeSeries /> */}
+1. <AddPanelTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Disk Saturation”:
   ![](/images/docs/new-panel-disk-saturation.png)
@@ -153,7 +153,7 @@ Disk saturation means the disk is often accessed, and applications usually must 
 3. Choose `RATE` as the aggregate function:
   ![](/images/docs/choose-rate.png)
 
-    {/* <SeeAggregateFunctions /> */}
+    <SeeAggregateFunctions />
 
 4. From the **Metrics** drop-down, select `system_weighted_io_time`:
   ![](/images/docs/select-system_weighted_io_time.png)
@@ -166,11 +166,11 @@ Disk saturation means the disk is often accessed, and applications usually must 
 
 7. (Optional) To further drill down, you can plot the a separate graph for each host name by specifying host_name in the **Group By** drop-down and selecting the **Stage & Run Query** button.
 
-{/* 8. <SaveGraph /> */}
+8. <SaveGraph />
 
 #### Network Errors
 
-{/* 1. <AddPanelTimeSeries /> */}
+1. <AddPanelTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Network Errors”:
 
@@ -198,7 +198,7 @@ Disk saturation means the disk is often accessed, and applications usually must 
 
 7. _(Optional)_ To further drill down, you can plot the a separate graph for sending and receiving data by specifying `direction` in the **Group By** drop-down and selecting the **Stage & Run Query** button.
 
-{/* 8. <SaveGraph /> */}
+8. <SaveGraph />
 
 ### Configure Application Metrics
 
@@ -209,7 +209,7 @@ Use application metrics to monitor the performance of your applications and iden
 
 The example in this section calculates the request rate per service for the SigNoz application, but the steps you’ll learn will help you calculate this metric for your own application.
 
-{/* 1. <AddPanelTimeSeries /> */}
+1. <AddPanelTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Requests per Service”:
 
@@ -219,7 +219,7 @@ The example in this section calculates the request rate per service for the SigN
 
   ![](/images/docs/choose-sum-rate.png)
 
-    {/* <SeeAggregateFunctions /> */}
+    <SeeAggregateFunctions />
 
 4. Use the **Metrics** drop-down to specify that you want to plot the total number requests made to your application. The example screenshot below plots the total number of requests made to SigNoz:
 
@@ -238,13 +238,13 @@ The example in this section calculates the request rate per service for the SigN
 7. To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
   ![](/images/docs/preview-requests-per-service.png)
 
-{/* 8. <SaveGraph /> */}
+8. <SaveGraph />
 
 #### Average Latency per Service
 
 This example plots the average latency per service using a formula based on two queries. 
 
-{/* 1. <AddPanelTimeSeries /> */}
+1. <AddPanelTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Latency per Service”:
 
@@ -254,7 +254,7 @@ This example plots the average latency per service using a formula based on two 
 
   3.1 Under **A**, choose `SUM_RATE` as the aggregate function:
     ![](/images/docs/choose-sum-rate-avg-latency.png)
-    {/* <SeeAggregateFunctions /> */}
+    <SeeAggregateFunctions />
   
   3.2 Use the **Metrics** drop-down to specify that you want to plot the latency of your application’s requests. The example screenshot below plots the total latency for SigNoz:
     ![](/images/docs/total-latency-for-signoz.png)
@@ -273,7 +273,7 @@ This example plots the average latency per service using a formula based on two 
 
   4.3 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
     ![](/images/docs/choose-sum-rate-under-b.png)
-    {/* <SeeAggregateFunctions /> */}
+    <SeeAggregateFunctions />
 
   4.4 Indicate that you want to plot the a separate graph each service, by specifying `service_name` in the **Group By** drop-down:
     ![](/images/docs/latency-per-svc-specify-svc-name.png)
@@ -287,13 +287,13 @@ This example plots the average latency per service using a formula based on two 
 
 7. Select the **Stage & Run Query** button to preview your graph.
 
-{/* 8. <SaveGraph /> */}
+8. <SaveGraph />
 
 #### Error Rate per Service
 
 This example plots the error rate per service using a formula based on two queries.
 
-{/* 1. <AddPanelTimeSeries /> */}
+1. <AddPanelTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Error rates per service”:
 
@@ -304,7 +304,7 @@ This example plots the error rate per service using a formula based on two queri
 
   3.1 Choose `SUM_RATE` as the aggregate function:
     ![](/images/docs/error-rate-choose-sum-rate.png)
-    {/* <SeeAggregateFunctions /> */}
+    <SeeAggregateFunctions />
   
   3.2 Use the **Metrics** drop-down to specify that you want to plot the total number calls for your application. The example screenshot below plots the total number of calls for SigNoz:
     ![](/images/docs/plot-total-number-of-calls.png)
@@ -337,5 +337,5 @@ This example plots the error rate per service using a formula based on two queri
 7. Select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
   ![](/images/docs/error-rate-preview.png)
 
-{/* 8. <SaveGraph /> */}
+8. <SaveGraph />
 

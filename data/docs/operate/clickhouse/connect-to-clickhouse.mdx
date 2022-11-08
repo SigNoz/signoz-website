@@ -3,8 +3,8 @@ id: connect-to-clickhouse
 title: Connect to ClickHouse
 sidebar_label: Connect to ClickHouse
 ---
-{/* 
-import CHClientWithOutput from '../../shared/ch-client-with-output.md' */}
+
+import CHClientWithOutput from './shared/ch-client-with-output.mdx' 
 
 Follow the instructions below for connecting to your clickhouse database:
 
@@ -16,7 +16,7 @@ Follow the instructions below for connecting to your clickhouse database:
 docker exec -it clickhouse-setup_clickhouse_1 bash
 ```
 
-{/* <CHClientWithOutput/> */}
+<CHClientWithOutput/>
 
 ## Docker Swarm
 
@@ -26,7 +26,7 @@ To exec to `clickhouse` container:
 docker exec -it $(docker ps -q -f name=signoz_clickhouse) bash
 ```
 
-{/* <CHClientWithOutput/> */}
+<CHClientWithOutput/>
 
 ## Kubernetes
 
@@ -36,7 +36,7 @@ To exec to `clickhouse` pod:
 kubectl -n platform exec -i --tty pod/chi-signoz-cluster-0-0-0 -- bash
 ```
 
-{/* <CHClientWithOutput/> */}
+<CHClientWithOutput/>
 
 :::warning
 You are connected to your production database, proceed with caution!
