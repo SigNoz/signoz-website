@@ -19,6 +19,7 @@ import tr from "./components/tr";
 import DocList from "./components/Doc";
 import ContributorHighlight from "./components/ContributorHighlight";
 import BlockQuote from "./components/blockquote";
+import Priyansh from "./components/Shared/Priyansh";
 
 import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
@@ -47,6 +48,7 @@ export const MDXComponents = {
   DocList,
   ContributorHighlight,
   blockquote: BlockQuote,
+  AddTimeSeries: Priyansh,
 };
 
 interface MDXLayoutProps {

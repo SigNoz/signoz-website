@@ -5,7 +5,6 @@ sidebar_label: Create a Custom Query
 ---
 
 import MetricsDefinition from './shared/metrics-definition.mdx'
-import AddPanelTimeSeries from './shared/add-panel-time-series.mdx'
 import SaveGraph from './shared/save-graph.mdx'
 import SeeAggregateFunctions from './shared/see-aggregate-functions.mdx' 
 
@@ -111,7 +110,7 @@ Use host metrics to monitor the resource utilization of the hosts on which your 
 
 #### CPU Utilization
 
-1. <AddPanelTimeSeries />
+1. <AddTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “CPU Utilization”:
   ![](/images/docs/new-panel-cpu-utilization.png)
@@ -145,7 +144,7 @@ Use host metrics to monitor the resource utilization of the hosts on which your 
 
 Disk saturation means the disk is often accessed, and applications usually must wait before being able to read or write data. Follow the steps in this section to build a panel that shows the disk saturation metric.
 
-1. <AddPanelTimeSeries />
+1. <AddTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Disk Saturation”:
   ![](/images/docs/new-panel-disk-saturation.png)
@@ -170,7 +169,7 @@ Disk saturation means the disk is often accessed, and applications usually must 
 
 #### Network Errors
 
-1. <AddPanelTimeSeries />
+1. <AddTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Network Errors”:
 
@@ -209,7 +208,7 @@ Use application metrics to monitor the performance of your applications and iden
 
 The example in this section calculates the request rate per service for the SigNoz application, but the steps you’ll learn will help you calculate this metric for your own application.
 
-1. <AddPanelTimeSeries />
+1. <AddTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Requests per Service”:
 
@@ -244,7 +243,7 @@ The example in this section calculates the request rate per service for the SigN
 
 This example plots the average latency per service using a formula based on two queries. 
 
-1. <AddPanelTimeSeries />
+1. <AddTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Latency per Service”:
 
@@ -293,7 +292,7 @@ This example plots the average latency per service using a formula based on two 
 
 This example plots the error rate per service using a formula based on two queries.
 
-1. <AddPanelTimeSeries />
+1. <AddTimeSeries />
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Error rates per service”:
 
