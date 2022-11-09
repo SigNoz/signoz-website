@@ -29,7 +29,10 @@ import UpgradeInfo from "./components/Shared/helm-upgrade-info";
 import InstallSigNozPart1 from "./components/Shared/install-signoz-k8s-part-1";
 import InstallSigNozPart2 from "./components/Shared/install-signoz-k8s-part-2";
 import InstrumentationFAQ from "./components/Shared/instrumentation-faq";
-
+import K8sComponents from "./components/Shared/k8s-components";
+import K8sHotrod from "./components/Shared/k8s-hotrod";
+import StorageClass from "./components/Shared/k8s-storageclass";
+import CommonPrerequisites from "./components/Shared/k8s-common-prerequisites";
 
 export const MDXComponents = {
   Image,
@@ -62,6 +65,10 @@ export const MDXComponents = {
   InstallSigNozPart1:InstallSigNozPart1,
   InstallSigNozPart2: InstallSigNozPart2,
   InstrumentationFAQ: InstrumentationFAQ,
+  K8sComponents: K8sComponents,
+  K8sHotrod: K8sHotrod,
+  StorageClass: StorageClass,
+  CommonPrerequisites: CommonPrerequisites,
 
 };
 

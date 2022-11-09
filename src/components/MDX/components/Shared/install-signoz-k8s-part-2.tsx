@@ -7,12 +7,12 @@ const InstallSigNozPart2 = () => {
         <>
             <Paragraph>Output:</Paragraph>
             <Code>
-                NAME, my-release <br />
-                LAST DEPLOYED, Mon May 23 20:34:55 2022<br />
-                NAMESPACE, platform<br />
-                STATUS, deployed<br />
-                REVISION, 1<br />
-                NOTES,<br/>
+                NAME: my-release <br />
+                LAST DEPLOYED: Mon May 23 20:34:55 2022<br />
+                NAMESPACE: platform<br />
+                STATUS: deployed<br />
+                REVISION: 1<br />
+                NOTES:<br />
                 1. You have just deployed SigNoz cluster:<br />
                 <br />
                 - frontend version: '0.8.0'<br />
@@ -38,10 +38,10 @@ const InstallSigNozPart2 = () => {
             </Code>
 
 
-            <Paragraph>5. You can access SigNoz by setting up port forwarding and browsing to the specified port. The following `kubectl port-forward` example command forwards all connections made to `localhost:3301` to `<signoz-frontend-service>:3301`:</Paragraph>
+            <Paragraph>5. You can access SigNoz by setting up port forwarding and browsing to the specified port. The following `kubectl port-forward` example command forwards all connections made to `localhost:3301` to `{'<signoz-frontend-service>:3301'}`:</Paragraph>
 
             <Code>
-                export SERVICE_NAME=$(kubectl get svc --namespace platform -l "app.kubernetes.io/component=frontend" -o jsonpath="{.items[0].metadata.name}")<br />
+                export SERVICE_NAME=$(kubectl get svc --namespace platform -l "app.kubernetes.io/component=frontend" -o jsonpath="{'.items[0].metadata.name'}")<br />
                 <br />
                 kubectl --namespace platform port-forward svc/$SERVICE_NAME 3301:3301
             </Code>

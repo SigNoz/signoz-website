@@ -1,17 +1,15 @@
-import Image from "../Image";
+import Code from "../Code";
 import Paragraph from "../Paragraph";
-import ZoomImage from "../ZoomImage";
 
-const AddPanel = () => {
+
+const StorageClass = () => {
     return (
         <>
-            <Paragraph>On a new or existing dashboard select the <b>Add Panel</b> button. Then, select <b>Time Series</b>:</Paragraph>
-            <ZoomImage 
-                image="./../../images/docs/add-panel-time-series.png"
-                alt=""
-                />
+            <Paragraph>In case, you would like to use your own storage class, you can remove `installCustomStorageClass` and replace `storageClass` to desired storage class from above YAML.</Paragraph>
+
+            <Code>Note: To list storage class in your Kubernetes cluster: `kubectl get storageclass`.</Code>
         </>
     )
 }
 
-export default AddPanel;
+export default StorageClass;
