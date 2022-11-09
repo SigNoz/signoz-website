@@ -23,6 +23,9 @@ import BlockQuote from "./components/blockquote";
 import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
 import Accordion from "components/Accordion";
+import CHClientWithOutput from "./components/Shared/ch-client-with-output";
+
+
 
 export const MDXComponents = {
   Image,
@@ -49,6 +52,8 @@ export const MDXComponents = {
   ContributorHighlight,
   blockquote: BlockQuote,
   Accordion: Accordion,
+  CHClientWithOutput: CHClientWithOutput,
+
 };
 
 interface MDXLayoutProps {

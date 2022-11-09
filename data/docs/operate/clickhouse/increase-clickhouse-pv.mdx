@@ -4,7 +4,6 @@ title: Increase the ClickHouse Persistent Volume Size
 sidebar_label: Increase ClickHouse PV
 ---
 
-import UpgradeInfo from './shared/helm-upgrade-info.mdx'
 
 You can use the following `helm upgrade` command to increase the size
 of the persistent volume used by SigNoz.
@@ -58,7 +57,10 @@ helm -n platform upgrade my-release signoz/signoz \
   --set clickhouse.persistence.size=25Gi
 ```
 
-<UpgradeInfo/>
+```
+Note:
+To override values in a Helm chart, you can also use the `values`/`-f` flag. See the [Helm Upgrade](https://helm.sh/docs/helm/helm_upgrade/) page of the Helm documentation for more details.
+````
 
 ## EKS - Amazon Web Service (AWS)
 

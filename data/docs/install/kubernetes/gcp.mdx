@@ -10,7 +10,6 @@ import InstallSigNozPart1 from './shared/install-signoz-k8s-part-1.mdx'
 import InstallSigNozPart2 from './shared/install-signoz-k8s-part-2.mdx'
 import VerifyInstallation from './shared/k8s-verify-installation.mdx'
 import K8sHotrod from './shared/k8s-hotrod.mdx'
-import NextSteps from './shared/next-steps.mdx'
 import StorageClass from './shared/k8s-storageclass.mdx'
 
 First, we need to set up a Kubernetes cluster (see the
@@ -62,4 +61,7 @@ helm --namespace platform install my-release signoz/signoz -f override-values.ya
 
 ## Next Steps
 
-<NextSteps />
+- [Instrument Your Application](/docs/instrumentation/overview)
+- [Use OpenTelemetry Operator for automatic instrumentaion (if your applications are in k8s)](https://signoz.io/docs/tutorial/opentelemetry-operator-usage/#opentelemetry-auto-instrumentation-injection)
+- [User Guides](/docs/userguide/overview/)
+- [Tutorials](/docs/tutorials/)

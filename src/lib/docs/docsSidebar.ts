@@ -260,6 +260,11 @@ const docsLinks: DocsLinks[] = [
         url: "/userguide/navigate-user-interface",
       },
       {
+        link: "/userguide/metrics",
+        name: "View Services",
+        url: "/userguide/metrics",
+      },
+      {
         link: "/userguide/traces",
         name: "View Traces",
         url: "/userguide/traces",
