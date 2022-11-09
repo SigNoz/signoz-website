@@ -24,6 +24,7 @@ import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
 import Accordion from "components/Accordion";
 import CHClientWithOutput from "./components/Shared/ch-client-with-output";
+import GetHelp from "./components/Shared/get-help";
 
 
 
@@ -53,6 +54,7 @@ export const MDXComponents = {
   blockquote: BlockQuote,
   Accordion: Accordion,
   CHClientWithOutput: CHClientWithOutput,
+  GetHelp: GetHelp
 
 };
 

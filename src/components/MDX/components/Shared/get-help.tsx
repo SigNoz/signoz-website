@@ -1,17 +1,13 @@
-import Image from "../Image";
+import Link from "../Link"
 import Paragraph from "../Paragraph";
-import ZoomImage from "../ZoomImage";
 
-const AddPanel = () => {
+
+const GetHelp = () => {
     return (
         <>
-            <Paragraph>On a new or existing dashboard select the <b>Add Panel</b> button. Then, select <b>Time Series</b>:</Paragraph>
-            <ZoomImage 
-                image="./../../images/docs/add-panel-time-series.png"
-                alt=""
-                />
+            <Paragraph>If you need help with the steps in this topic, please reach out to us on <Link href="https://join.slack.com/t/signoz-community/shared_invite/zt-lrjknbbp-J_mI13rlw8pGF4EWBnorJA"> SLACK</Link></Paragraph>
         </>
     )
 }
 
-export default AddPanel;
+export default GetHelp;
