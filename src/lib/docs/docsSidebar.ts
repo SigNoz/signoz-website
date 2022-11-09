@@ -449,9 +449,9 @@ const docsLinks: DocsLinks[] = [
         url: "/tutorial/s3-integration-iam-role-eks",
       },
       {
-        link: "/tutorials/opentelemetry-operator-usage",
+        link: "/tutorials/instrumentation-using-opentelemetry-operator",
         name: "OpenTelemetry Operator Usage",
-        url: "/tutorial/opentelemetry-operator-usage",
+        url: "/tutorial/instrumentation-using-opentelemetry-operator",
       },
       {
         link: "/tutorials/opentelemetry-binary-usage-in-virtual-machine",

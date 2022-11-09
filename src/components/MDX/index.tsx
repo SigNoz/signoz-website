@@ -25,7 +25,10 @@ import { AuthorDetails } from "../../../pages/blog/[...slug]";
 import Accordion from "components/Accordion";
 import CHClientWithOutput from "./components/Shared/ch-client-with-output";
 import GetHelp from "./components/Shared/get-help";
-
+import UpgradeInfo from "./components/Shared/helm-upgrade-info";
+import InstallSigNozPart1 from "./components/Shared/install-signoz-k8s-part-1";
+import InstallSigNozPart2 from "./components/Shared/install-signoz-k8s-part-2";
+import InstrumentationFAQ from "./components/Shared/instrumentation-faq";
 
 
 export const MDXComponents = {
@@ -54,7 +57,11 @@ export const MDXComponents = {
   blockquote: BlockQuote,
   Accordion: Accordion,
   CHClientWithOutput: CHClientWithOutput,
-  GetHelp: GetHelp
+  GetHelp: GetHelp,
+  UpgradeInfo: UpgradeInfo,
+  InstallSigNozPart1:InstallSigNozPart1,
+  InstallSigNozPart2: InstallSigNozPart2,
+  InstrumentationFAQ: InstrumentationFAQ,
 
 };
 
