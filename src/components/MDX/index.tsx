@@ -33,6 +33,11 @@ import K8sComponents from "./components/Shared/k8s-components";
 import K8sHotrod from "./components/Shared/k8s-hotrod";
 import StorageClass from "./components/Shared/k8s-storageclass";
 import CommonPrerequisites from "./components/Shared/k8s-common-prerequisites";
+import VerifyInstallation from "./components/Shared/k8s-verify-installation";
+import OtelOperatorOTLPEndpoint from "./components/Shared/otel-operator-otlp-endpoint";
+import OtelOperatorCleanUp from "./components/Shared/otel-operator-cleanup";
+import OtelOperatorAutoInstrumentation from "./components/Shared/otel-operator-auto-instrumentation";
+import OtelOperatorPetClinic from "./components/Shared/otel-operator-pet-clinic";
 
 export const MDXComponents = {
   Image,
@@ -69,7 +74,11 @@ export const MDXComponents = {
   K8sHotrod: K8sHotrod,
   StorageClass: StorageClass,
   CommonPrerequisites: CommonPrerequisites,
-
+  VerifyInstallation: VerifyInstallation,
+  OtelOperatorOTLPEndpoint: OtelOperatorOTLPEndpoint,
+  OtelOperatorCleanUp: OtelOperatorCleanUp,
+  OtelOperatorAutoInstrumentation: OtelOperatorAutoInstrumentation,
+  OtelOperatorPetClinic: OtelOperatorPetClinic
 };
 
 interface MDXLayoutProps {
