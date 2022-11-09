@@ -35,8 +35,8 @@ const K8sHotrod = () => {
 
                 <Code>
                     kubectl --namespace sample-application run strzal --image=djbingham/curl \
-                    --restart='OnFailure' -i --tty --rm --command -- curl -X POST -F \
-                    'locust_count=6' -F 'hatch_rate=2' http://locust-master:8089/swarm
+                    --restart=&apos;OnFailure&apos; -i --tty --rm --command -- curl -X POST -F \
+                    &apos;locust_count=6&apos; -F &apos;hatch_rate=2&apos; http://locust-master:8089/swarm
                 </Code>
 
                 4. Browse to `http://localhost:3301` and see the metrics and traces for your sample application.
@@ -46,7 +46,7 @@ const K8sHotrod = () => {
 
                 <Code>
                     kubectl -n sample-application run strzal --image=djbingham/curl \
-                    --restart='OnFailure' -i --tty --rm --command -- curl \
+                    --restart=&apos;OnFailure&apos; -i --tty --rm --command -- curl \
                     http://locust-master:8089/stop
                 </Code>
 

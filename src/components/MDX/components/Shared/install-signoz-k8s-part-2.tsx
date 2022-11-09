@@ -15,11 +15,11 @@ const InstallSigNozPart2 = () => {
                 NOTES:<br />
                 1. You have just deployed SigNoz cluster:<br />
                 <br />
-                - frontend version: '0.8.0'<br />
-                - query-service version: '0.8.0'<br />
-                - alertmanager version: '0.23.0-0.1'<br />
-                - otel-collector version: '0.43.0-0.1'<br />
-                - otel-collector-metrics version: '0.43.0-0.1'
+                - frontend version: &apos;0.8.0&apos;<br />
+                - query-service version: &apos;0.8.0&apos;<br />
+                - alertmanager version: &apos;0.23.0-0.1&apos;<br />
+                - otel-collector version: &apos;0.43.0-0.1&apos;<br />
+                - otel-collector-metrics version: &apos;0.43.0-0.1&apos;
             </Code>
 
             <em>Note that the above command installs the latest stable version of SigNoz.</em>
@@ -28,8 +28,8 @@ const InstallSigNozPart2 = () => {
 
             <Code>
                 helm --namespace platform install my-release signoz/signoz \ <br />
-                --set frontend.image.tag="0.8.0" \ <br />
-                --set queryService.image.tag="0.8.0"
+                --set frontend.image.tag=&quot;0.8.0&quot; \ <br />
+                --set queryService.image.tag=&quot;0.8.0&quot;
             </Code>
 
             <Code>
@@ -41,7 +41,7 @@ const InstallSigNozPart2 = () => {
             <Paragraph>5. You can access SigNoz by setting up port forwarding and browsing to the specified port. The following `kubectl port-forward` example command forwards all connections made to `localhost:3301` to `{'<signoz-frontend-service>:3301'}`:</Paragraph>
 
             <Code>
-                export SERVICE_NAME=$(kubectl get svc --namespace platform -l "app.kubernetes.io/component=frontend" -o jsonpath="{'.items[0].metadata.name'}")<br />
+                export SERVICE_NAME=$(kubectl get svc --namespace platform -l &quot;app.kubernetes.io/component=frontend&quot; -o jsonpath=&quot;{'.items[0].metadata.name'}&quot;)<br />
                 <br />
                 kubectl --namespace platform port-forward svc/$SERVICE_NAME 3301:3301
             </Code>

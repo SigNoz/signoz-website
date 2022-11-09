@@ -12,7 +12,7 @@ const OtelOperatorPetClinic = () => {
                 To obtain name of the Pet Clinic pod:
 
                 <Code>
-                    export POD_NAME=$(kubectl get pod -l app=spring-petclinic -o jsonpath="{'.items[0].metadata.name'}")
+                    export POD_NAME=$(kubectl get pod -l app=spring-petclinic -o jsonpath=&quot;{'.items[0].metadata.name'}&quot;)
                 </Code>
 
                 To forward port `8080` of the Pet Clinic pod:
@@ -21,7 +21,7 @@ const OtelOperatorPetClinic = () => {
                     kubectl port-forward ${'POD_NAME'} 8080:8080
                 </Code>
 
-                Now, let's use Pet Clinic UI for a while in browser to generate telemetry data: <Link href="http://localhost:8080">http://localhost:8080 </Link>
+                Now, let&apos;s use Pet Clinic UI for a while in browser to generate telemetry data: <Link href="http://localhost:8080">http://localhost:8080 </Link>
 
                 <ZoomImage
                     image={"/img/docs/otel-operator-spring-pet-clinic.png"}
