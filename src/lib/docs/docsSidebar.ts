@@ -7,6 +7,12 @@ const docsLinks: DocsLinks[] = [
     name: "Introduction",
   },
   {
+    link: "/shared_comp_demo",
+    url: "/shared_comp",
+    name: "Shared Comp",
+  },
+
+  {
     link: "/install",
     url: "/install",
     name: "Install",
