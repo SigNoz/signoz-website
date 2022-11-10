@@ -4,8 +4,6 @@ title: K8s Infra Metrics
 description: View Kubernetes infrastructure metrics in SigNoz
 ---
 
-import K8sMetrics from './shared/k8s-metrics-list.mdx'
-import HostMetrics from './shared/hostmetrics-list.mdx' 
 
 ### Overview
 To export K8s metrics, you can enable different receivers in OpenTelemetry
@@ -96,9 +94,99 @@ you have to provide the address to send data from the above receivers.
 
 ### List of metrics
 
-<K8sMetrics />
+<details>
+  <summary>
+   Kubernetes Metrics - <i>kubeletstats</i> and <i>k8s_cluster</i>
+   </summary>
 
-<HostMetrics name="Node Metrics"/> 
+- container_cpu_time
+- container_cpu_utilization
+- container_filesystem_available
+- container_filesystem_capacity
+- container_filesystem_usage
+- container_memory_available
+- container_memory_major_page_faults
+- container_memory_page_faults
+- container_memory_rss
+- container_memory_usage
+- container_memory_working_set
+- k8s_container_cpu_limit
+- k8s_container_cpu_request
+- k8s_container_ephemeral_storage_request
+- k8s_container_memory_limit
+- k8s_container_memory_request
+- k8s_container_ready
+- k8s_container_restarts
+- k8s_daemonset_current_scheduled_nodes
+- k8s_daemonset_desired_scheduled_nodes
+- k8s_daemonset_misscheduled_nodes
+- k8s_daemonset_ready_nodes
+- k8s_deployment_available
+- k8s_deployment_desired
+- k8s_namespace_phase
+- k8s_node_condition_memory_pressure
+- k8s_node_condition_ready
+- k8s_node_cpu_time
+- k8s_node_cpu_utilization
+- k8s_node_filesystem_available
+- k8s_node_filesystem_capacity
+- k8s_node_filesystem_usage
+- k8s_node_memory_available
+- k8s_node_memory_major_page_faults
+- k8s_node_memory_page_faults
+- k8s_node_memory_rss
+- k8s_node_memory_usage
+- k8s_node_memory_working_set
+- k8s_node_network_errors
+- k8s_node_network_io
+- k8s_pod_cpu_time
+- k8s_pod_cpu_utilization
+- k8s_pod_filesystem_available
+- k8s_pod_filesystem_capacity
+- k8s_pod_filesystem_usage
+- k8s_pod_memory_available
+- k8s_pod_memory_major_page_faults
+- k8s_pod_memory_page_faults
+- k8s_pod_memory_rss
+- k8s_pod_memory_usage
+- k8s_pod_memory_working_set
+- k8s_pod_phase
+- k8s_replicaset_available
+- k8s_replicaset_desired
+- k8s_statefulset_current_pods
+- k8s_statefulset_desired_pods
+- k8s_statefulset_ready_pods
+- k8s_statefulset_updated_pods
+
+</details>
+
+
+<details>
+    <summary>
+        HostMetrics - <i>Node Metrics</i>
+    </summary>
+
+- system_network_connections
+- system_disk_weighted_io_time
+- system_disk_merged
+- system_disk_operation_time
+- system_disk_pending_operations
+- system_disk_io_time
+- system_disk_operations
+- system_disk_io
+- system_filesystem_inodes_usage
+- system_filesystem_usage
+- system_cpu_time
+- system_memory_usage
+- system_network_packets
+- system_network_dropped
+- system_network_io
+- system_network_errors
+- system_cpu_load_average_5m
+- system_cpu_load_average_15m
+- system_cpu_load_average_1m
+
+</details>
 
 ---
 

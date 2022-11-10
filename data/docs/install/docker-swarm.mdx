@@ -5,10 +5,6 @@ id: docker-swarm
 slug: /install/docker-swarm
 ---
 
-{/* import useBaseUrl from '@docusaurus/useBaseUrl'; */}
-import CloneRepo from './shared/clone-repo.mdx';
-
-{/* data/docs/shared/clone-repo.mdx */}
 
 This section provides information on installing SigNoz on Docker Swarm.
 
@@ -23,11 +19,15 @@ must be allocated to each Docker node.
 
 ## Install SigNoz on Docker Swarm
     
-1. <CloneRepo />
+1. In a directory of your choosing, clone the SigNoz repository and `cd` into the `signoz/deploy` directory by entering the following commands:
+  ```bash
+    git clone -b main https://github.com/SigNoz/signoz.git && cd signoz/deploy/
+  ```
+
 
 2. Initialize a single-node swarm by entering the following command:
   ```bash
-docker swarm init
+  docker swarm init
   ```
 
   The output should look similar as shown below:

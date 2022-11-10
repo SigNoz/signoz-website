@@ -4,7 +4,11 @@ title: OpenTelemetry Operator Usage
 description: How to use OpenTelemetry Operator to ease otelcol deployment and instrumentation in SigNoz
 ---
 
-
+{/* // import OtelOperatorOTLPEndpoint from './shared/otel-operator-otlp-endpoint.mdx' 
+import OtelOperatorAutoInstrumentation from './shared/otel-operator-auto-instrumentation.mdx'
+import OtelOperatorPetClinic from './shared/otel-operator-pet-clinic.mdx'
+import OtelOperatorCleanUp from './shared/otel-operator-cleanup.mdx'
+*/}
 
 ## Overview
 
@@ -312,6 +316,8 @@ spec:
 EOF
 ```
 
+<OtelOperatorOTLPEndpoint/>
+
 To create an instance of `Instrumentation`:
 
 ```bash
@@ -368,6 +374,12 @@ spec:
 EOF
 ```
 
+<OtelOperatorAutoInstrumentation/>
+
+<OtelOperatorPetClinic/>
+
+<OtelOperatorCleanUp/>
+
 To remove `Sidecar` instance of `otelcol`:
 
 ```bash
@@ -403,6 +415,8 @@ spec:
 EOF
 ```
 
+<OtelOperatorOTLPEndpoint/>
+
 We would just have set the pod annotation `instrumentation.opentelemetry.io/inject-java`
 to `"true"` for our Java Springboot workload deployed in K8s.
 
@@ -431,6 +445,12 @@ spec:
         image: ghcr.io/pavolloffay/spring-petclinic:latest
 EOF
 ```
+
+<OtelOperatorAutoInstrumentation/>
+
+<OtelOperatorPetClinic/>
+
+<OtelOperatorCleanUp/>
 
 ---
 
