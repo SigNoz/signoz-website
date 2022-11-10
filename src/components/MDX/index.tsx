@@ -23,6 +23,8 @@ import BlockQuote from "./components/blockquote";
 import { FrontMatterProps } from "lib/mdx";
 import { AuthorDetails } from "../../../pages/blog/[...slug]";
 import Accordion from "components/Accordion";
+
+// Shared Components
 import CHClientWithOutput from "./components/Shared/ch-client-with-output";
 import GetHelp from "./components/Shared/get-help";
 import UpgradeInfo from "./components/Shared/helm-upgrade-info";
