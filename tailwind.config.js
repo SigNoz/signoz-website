@@ -30,9 +30,9 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern-gradient":
-          "linear-gradient(0deg, rgba(19, 39, 66, 0.008) -18.5%, rgba(246, 170, 152, 0.128) 25.41%, rgba(250, 250, 250, 0.4) 104.41%),url('/images/whysignozmore.jpg')",
+          "linear-gradient(0deg, rgba(19, 39, 66, 0.008) -18.5%, rgba(246, 170, 152, 0.128) 25.41%, rgba(250, 250, 250, 0.4) 104.41%),url('/img/whysignozmore.jpg')",
         "card-pattern-gradient":
-          "linear-gradient(0deg, rgba(250, 250, 250, 0.4) -18.5%, rgba(246, 170, 152, 0.128) 25.41%, rgba(19, 39, 66, 0.008) 104.41%),url('/images/coloredbglines.png')",
+          "linear-gradient(0deg, rgba(250, 250, 250, 0.4) -18.5%, rgba(246, 170, 152, 0.128) 25.41%, rgba(19, 39, 66, 0.008) 104.41%),url('/img/coloredbglines.png')",
         "recommended-post":
           "linear-gradient(0deg, rgba(250, 250, 250, 0.4) -18.5%, rgba(246, 170, 152, 0.128) 25.41%, rgba(19, 39, 66, 0.008) 104.41%)",
       },

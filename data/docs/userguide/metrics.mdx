@@ -35,7 +35,7 @@ The **Services** section relies on the rate, errors, and duration (”RED”) me
 
 From the sidebar, select **Services**:
 
-![Open the Services section](/images/docs/open-services-v0.10.2.png)
+![Open the Services section](/img/docs/open-services-v0.10.2.png)
 
 This page provides an overview of your applications’ health and performance. It shows the list of your applications formatted as a table and, for each application, SigNoz displays the RED metrics mentioned above.
 
@@ -45,7 +45,7 @@ What services are shown? And how are the RED metrics calculated?
 
 We rely on the semantic conventions provided by OpenTelemetry. Every unique `service.name` configured and received is part of the service list. The following logic is used for the RED metrics generation of each service.
 
-![trace-request](/images/docs/trace_request_shop.png)
+![trace-request](/img/docs/trace_request_shop.png)
 
 In a distributed trace, a request goes through several entities performing various kinds of work. There is an entry point span for each service that took part in the trace journey. This can be thought of as a sub-root span for the service. This sub-root span can have many child spans which could be doing work in parallel or sequential or a combination of both. From an outside perspective this sub-root span work is an operation done by the service and how much time it took to complete this operation is the duration metric. For a web server, this is an API endpoint returning some data and request time is the duration metric. For a messaging consumer service, this is a consume trigger, and till it is done with the message received. For a mobile client application, this could be a button click to submit a form and the time taken to fulfill the request.
 
@@ -54,7 +54,7 @@ In a distributed trace, a request goes through several entities performing vario
 - Error rate - Number of sub-root spans with status error / Total number of sub-root spans
 
 
-![RED metrics](/images/docs/open-services-v0.10.2.png)
+![RED metrics](/img/docs/open-services-v0.10.2.png)
 
 ## Sort the List of Applications
 
@@ -64,7 +64,7 @@ Select a column heading to sort the list by the values in that column. Select th
 
 You can add attributes to applications and filter based on these attributes. 
 
-![resource-attribute-filtering](/images/docs/resource-attribute-filtering.png)
+![resource-attribute-filtering](/img/docs/resource-attribute-filtering.png)
 
 ### Steps to add resource attributes
 
@@ -85,30 +85,30 @@ To add another dimension, update the dimension fields at https://github.com/SigN
 
 The RED metrics help you spot performance bottlenecks or failures  across all your applications.  For example, if the error rate of an application increases, you can assume that these errors will impact the experience of your customers. Once you’ve identified a potential issue, select a row to open the application details page:
 
-![Open the application details page](/images/docs/open-application-details-v0.10.2.png)
+![Open the application details page](/img/docs/open-application-details-v0.10.2.png)
 
 The application details pane contains three panes that are explained in the following sections:
 - Application Metrics
 - External Calls
 - Database Calls
 
-![Panes on the application details page](/images/docs/application-details-page-panes-v0.10.2.png)
+![Panes on the application details page](/img/docs/application-details-page-panes-v0.10.2.png)
 
 ### Application Metrics
 
 The application metrics pane is comprised of four graphs:
 
 - **Application Latency in Milliseconds**: this graph shows the `P99`, `P95`, and `P50` latencies for the selected period of time.
-    ![Application latency](/images/docs/application-latency-v0.10.2.png)
+    ![Application latency](/img/docs/application-latency-v0.10.2.png)
 
 - **Requests per Second**: this graph shows the number of requests per second your application currently serves.
-    ![Requests per second](/images/docs/requests-per-second-v0.10.2.png)
+    ![Requests per second](/img/docs/requests-per-second-v0.10.2.png)
 
 - **Error Percentage**: this graph shows the percentage of errors of the total sum of requests.
-    ![Error percentage](/images/docs/error-percentage-v0.10.2.png)
+    ![Error percentage](/img/docs/error-percentage-v0.10.2.png)
 
 - **Key Operations**: this list helps you find the slow operations of your application. You can select a column heading to sort the list by the values in that column. Select the column heading again to reverse the sort order or to cancel sorting.
-    ![Key operations](/images/docs/key-operations-v0.10.2.png)
+    ![Key operations](/img/docs/key-operations-v0.10.2.png)
 
 ### External Calls
 

@@ -28,7 +28,7 @@ Alert Rules set the expression you want to evaluate to start firing alerts. The 
 
 
 
-![alert-rules](/images/docs/alert-rules.webp)
+![alert-rules](/img/docs/alert-rules.webp)
 
 
 #### Create Alert Rules
@@ -45,7 +45,7 @@ In Query Builder, you can use the dropdowns in the dashboard to select the right
 - Evaluation period of the expression
 - Set name, descriptions and tags about the alert to make it more informative
 
-![alerts-query-builder](/images/docs/alerts-query-builder.webp)
+![alerts-query-builder](/img/docs/alerts-query-builder.webp)
 
 
 ##### PromQL
@@ -56,7 +56,7 @@ In PromQL, you can write the Prometheus expression to evaluate.
 - Threshold which the value of expression should cross ( above or below) to trigger an alert.
 - Set labels like `severity` to communicate how severe the issue is if this alert starts firing
 
-![prometheus-alert-rules](/images/docs/promql-alerts.webp)
+![prometheus-alert-rules](/img/docs/promql-alerts.webp)
 
 
 #### Triggered Alerts
@@ -67,7 +67,7 @@ Pending means that the rule threshold is crossed, but it is still waiting based 
 
 It also has different tags like alert name, severity, since when the alert started firing, etc.
 
-![triggered-alerts](/images/docs/triggered-alerts.webp)
+![triggered-alerts](/img/docs/triggered-alerts.webp)
 
 - Filtering and grouping Triggered alerts
 
@@ -76,7 +76,7 @@ You can also filter and group triggered alerts based on tags. The filtering fiel
 For grouping, you can use any of the tags like `severity`, `alertname` or any other label you would have specified in your alert rule. You can use the grouping feature to group the list of triggered alerts based on these tags.
 
 
-![triggered-alerts-groups](/images/docs/triggered-alerts-groups.webp)
+![triggered-alerts-groups](/img/docs/triggered-alerts-groups.webp)
 
 
 ## Setting up a Notification channel
@@ -90,7 +90,7 @@ We are also working towards adding more channels (like OpsGenie, Email) in the u
 
 The alert channel tabs can be accessed from `Settings > Alert Channels` tab. This shows a list of configured alert channels. When multiple channels are setup, the alerts will be sent to all the configured channels.
 
-![alert-channels](/images/docs/alert-channels.webp)
+![alert-channels](/img/docs/alert-channels.webp)
 
 
 ### Configure Slack Channel
@@ -101,7 +101,7 @@ For setting up Slack as a notification channel, you need to first configure an I
 
 You have to provide a name, webhook URL and channel name (with # prefix) to configure a notification channel. You may use [go templates](https://prometheus.io/docs/alerting/latest/notifications/) for the title and description. 
 
-![new-notification-channel](/images/docs/new-notification-channel.webp)
+![new-notification-channel](/img/docs/new-notification-channel.webp)
 
 You can also verify the configuration by using the _Test_ button. When you click _Test_, a test alert will be sent to the configured slack channel. The purpose of this feature is to confirm that signoz alert manager can talk to your webhook URL. 
 
@@ -109,7 +109,7 @@ You can also verify the configuration by using the _Test_ button. When you click
 
 You can edit slack webhook URL or other parameters except the channel name and channel type. 
 
-![edit-notification-channel](/images/docs/edit-notification-channel.webp)
+![edit-notification-channel](/img/docs/edit-notification-channel.webp)
 
 
 #### Receive Alert in Slack
@@ -118,7 +118,7 @@ Once everything is set up correctly, you should see your alerts in the configure
 
 Now you can stay relaxed that SigNoz will promptly alert you whenever something goes wrong in any of your applications or infra components.
 
-![alerts-in-slack](/images/docs/alerts-in-slack.webp)
+![alerts-in-slack](/img/docs/alerts-in-slack.webp)
 
 ### Configure Webhook Channel
 #### Prerequisite

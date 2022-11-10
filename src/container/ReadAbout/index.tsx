@@ -11,7 +11,7 @@ const OutPlay = (): JSX.Element => {
     <div className="rounded-lg md:flex md:justify-center">
       <div className="py-10 px-20 md:py-48 md:px-[5.2rem] md:min-w-[28rem] flex items-center justify-center bg-signoz-secondary-light">
         <NextImage
-          src={"/images/readabout/outplay.png"}
+          src={"/img/readabout/outplay.png"}
           layout="intrinsic"
           width={176}
           height={40}
@@ -39,7 +39,7 @@ const OutPlay = (): JSX.Element => {
           <AuthorBy
             position="VP - Engineering, Outplay"
             name="Pawan Bhadauria"
-            avatar="/images/authors/ankit_anand.webp"
+            avatar="/img/authors/ankit_anand.webp"
           />
           <Button className="mt-9 md:w-[12.6rem]" fullWidth variant="primary">
             Read full case study

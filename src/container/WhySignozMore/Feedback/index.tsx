@@ -14,7 +14,7 @@ const Feedback = (): JSX.Element => {
         backgroundPositionX: isDesktop ? "20%" : "10%",
         backgroundPositionY: isDesktop ? "0%" : "10%",
       }}
-      className="p-4 bg-signoz-light bg-[url('/images/QuotationMark.png')] bg-no-repeat md:bg-[length:10rem] bg-[length:8rem] bg-left-1"
+      className="p-4 bg-signoz-light bg-[url('/img/QuotationMark.png')] bg-no-repeat md:bg-[length:10rem] bg-[length:8rem] bg-left-1"
     >
       <div className="md:max-w-2xl md:m-auto">
         <Content>
@@ -29,7 +29,7 @@ const Feedback = (): JSX.Element => {
         </Content>
         <div className="flex flex-col justify-center items-center mt-6">
           <Image
-            src={"/images/authors/ankit_anand.webp"}
+            src={"/img/authors/ankit_anand.webp"}
             alt="author image"
             objectFit="contain"
             layout="fixed"
