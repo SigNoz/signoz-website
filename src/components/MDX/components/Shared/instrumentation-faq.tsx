@@ -6,6 +6,7 @@ import Paragraph from "../Paragraph";
 const InstrumentationFAQ = () => {
   return (
     <>
+    <Paragraph><b>Frequently Asked Questions</b></Paragraph>
       <Paragraph>
         <b>
           1. How to find what to use in `IP of SigNoz` if I have installed

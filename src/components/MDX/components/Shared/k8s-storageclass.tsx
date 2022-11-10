@@ -11,8 +11,7 @@ const StorageClass = () => {
       </Paragraph>
 
       <Code>
-        Note: To list storage class in your Kubernetes cluster: `kubectl get
-        storageclass`.
+        Note: To list storage class in your Kubernetes cluster: `kubectl get storageclass`.
       </Code>
     </>
   );

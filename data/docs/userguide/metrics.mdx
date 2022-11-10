@@ -4,7 +4,7 @@ title: View Services
 sidebar_label: View Services
 ---
 
-
+# View Services
 
 This page walks you through the **Services** section and gets you started with monitoring your application. You’ll learn the following:
 
@@ -13,7 +13,7 @@ This page walks you through the **Services** section and gets you started with m
 - How to view details about a specific application
 
 
-<UseHotRod /> 
+This section uses the [HotR.O.D](https://github.com/jaegertracing/jaeger/tree/master/examples/hotrod) sample application that comes preinstalled with SigNoz and generates sample data that you can query. You can apply the concepts and techniques you’ll learn to monitor your own applications.
 
 ## Prerequisites
 
@@ -99,16 +99,20 @@ The application details pane contains three panes that are explained in the foll
 The application metrics pane is comprised of four graphs:
 
 - **Application Latency in Milliseconds**: this graph shows the `P99`, `P95`, and `P50` latencies for the selected period of time.
-    ![Application latency](/img/docs/application-latency-v0.10.2.png)
+
+![Application latency](/img/docs/application-latency-v0.10.2.png)
 
 - **Requests per Second**: this graph shows the number of requests per second your application currently serves.
-    ![Requests per second](/img/docs/requests-per-second-v0.10.2.png)
+
+![Requests per second](/img/docs/requests-per-second-v0.10.2.png)
 
 - **Error Percentage**: this graph shows the percentage of errors of the total sum of requests.
-    ![Error percentage](/img/docs/error-percentage-v0.10.2.png)
+
+![Error percentage](/img/docs/error-percentage-v0.10.2.png)
 
 - **Key Operations**: this list helps you find the slow operations of your application. You can select a column heading to sort the list by the values in that column. Select the column heading again to reverse the sort order or to cancel sorting.
-    ![Key operations](/img/docs/key-operations-v0.10.2.png)
+
+![Key operations](/img/docs/key-operations-v0.10.2.png)
 
 ### External Calls
 

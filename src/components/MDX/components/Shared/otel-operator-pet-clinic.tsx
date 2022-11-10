@@ -9,7 +9,7 @@ const OtelOperatorPetClinic = () => {
       <Paragraph>
         To obtain name of the Pet Clinic pod:
         <Code>
-          export POD_NAME=$(kubectl get pod -l app=spring-petclinic -o
+          export POD_NAME=$(kubectl get pod -l app=spring-petclinic -o<br />
           jsonpath=&quot;{".items[0].metadata.name"}&quot;)
         </Code>
         To forward port `8080` of the Pet Clinic pod:

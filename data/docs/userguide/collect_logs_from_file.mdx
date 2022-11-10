@@ -67,7 +67,7 @@ We will create a sample python script name `main.py` and the following code for 
     ...
     ```
     Here we are collecting the logs from the path and parsing them using the json parser and extracting the timestamp. After that we are cleaning up the attributes using different operators.You can read more about operators [here](./logs.md#operators-for-parsing-and-manipulating-logs)
-
+<br />
     For more configurations that are available for filelog receiver please check [here](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/filelogreceiver).
 
 * Next we will modify our pipeline inside `otel-collector-config.yaml` to include the receiver we have created above.
@@ -127,9 +127,9 @@ If you have a signoz running on a different host then you will have to run a ote
         exporters: [ otlp/log ]
   ```
    Here we are collecting the logs from the path and parsing them using the json parser and extracting the timestamp. After that we are cleaning up the attributes using different operators.You can read more about operators [here](./logs.md#operators-for-parsing-and-manipulating-logs)
-
+<br />
   The parsed logs are batched up using the batch processor and then exported to the host where signoz is deployed. The `otlp/log` exporter here uses a http endpoint but if you want to use https you will have to provide the certificate and the key. You can read more about it [here](https://github.com/open-telemetry/opentelemetry-collector/blob/main/exporter/otlpexporter/README.md)
-
+<br />
   For finding the right host and port for your SigNoz cluster please follow the guide [here](../install/troubleshooting.md#signoz-otel-collector-address-grid).  
 
 * We will start our otel-collector container and mount the logs file so that the logs can be read from log file.
