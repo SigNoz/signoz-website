@@ -33,18 +33,18 @@ SigNoz natively supports OpenTelemetry for collecting logs. OpenTelemetry provid
         
         Here, the logs of the application are directly collected by the OpenTelemetry receiver using collectors like **filelog receiver** and operators and processors to parse them into the OTEL model.
         
-        ![via file or stdout logs](/images/docs/logs/file_stdout.png)
+        ![via file or stdout logs](/img/docs/logs/file_stdout.png)
 
         
         If advanced parsing and collecting capabilities are needed which is not present in OpenTelemetry or something like FluentBit/LogStash etc is already present then the agents can push the logs to OpenTelemetry collector using protocols like **FluentForward/TCP/UDP** etc.
         
-        ![Untitled](/images/docs/logs/using_agent.png)
+        ![Untitled](/img/docs/logs/using_agent.png)
         
     - **Direct to collector**➖
         
         In this approach you can modify your logging library that is used by the application to use the logging SDK provided by OpenTelemetry and directly forward the logs from the application to OpenTelemetry.  This approach removes any need for agents/intermediary medium but loses the simplicity of having the log file locally.
         
-        ![Untitled](/images/docs/logs/direct_to_collector.png)
+        ![Untitled](/img/docs/logs/direct_to_collector.png)
         
 - **Collecting third-party application logs**
     
@@ -73,7 +73,7 @@ SigNoz natively supports OpenTelemetry for collecting logs. OpenTelemetry provid
     
     Currently OpenTelemetry does’t define a new logging API or create new user-facing logging libraries. The initial goal is to enhance existing popular logging libraries as needed. This is how a typical new application uses OpenTelemetry API, SDK and the existing log libraries
     
-    ![first_party](/images/docs/docs/first_party_collection.webp)
+    ![first_party](/img/docs/docs/first_party_collection.webp)
 
 ## Storing logs
 
@@ -83,7 +83,7 @@ This brings a requirement that the final collector should be SigNoz OTEL collect
 
 - If you have N number of OpenTelemetry collectors running in different places then they should process and send data to SigNoz OTEL collector using OTLP for it to be able to store in ClickHouse.
     
-    ![notelcollectors.png](/images/docs/logs/n_collectors.png)
+    ![notelcollectors.png](/img/docs/logs/n_collectors.png)
     
 - The other way is to use SigNoz OTEL collector everywhere which can directly write to ClickHouse.
     

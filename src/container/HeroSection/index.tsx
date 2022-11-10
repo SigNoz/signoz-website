@@ -15,7 +15,7 @@ const HeroSection = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="bg-[url('/images/bglines.png')] bg-no-repeat bg-contain">
+    <div className="bg-[url('/img/bglines.png')] bg-no-repeat bg-contain">
       <div
         className="flex flex-col text-center justify-center md:w-[42.75rem] md:m-auto"
         style={{
@@ -46,7 +46,7 @@ const HeroSection = (): JSX.Element => {
       <div className="h-52 w-full md:h-[31rem] md:w-[57.5rem] md:m-auto rounded-lg overflow-hidden md:mt-12">
         <VideoPlayer
           thumbnail="https://i.ytimg.com/vi_webp/J1Bof55DOb4/maxresdefault.webp"
-          PlayerIcon="/images/Play.png"
+          PlayerIcon="/img/Play.png"
           VideoUrl="https://www.youtube.com/watch?v=J1Bof55DOb4"
           palyIconHeight={PlayIconHeightController}
           playIconWidth={PlayIconHeightController}

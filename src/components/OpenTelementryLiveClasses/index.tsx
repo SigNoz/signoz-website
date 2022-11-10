@@ -16,7 +16,7 @@ const OpenTelementryLiveClasses = (): JSX.Element => {
           width={400}
           height={300}
           objectFit="cover"
-          src={"/images/opentelementry.jpg"}
+          src={"/img/opentelementry.jpg"}
           alt="opentelementry caption"
         />
       </div>

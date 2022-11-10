@@ -28,13 +28,13 @@ Aggregation is a method of reducing the amount of data that SigNoz displays, and
 
 SigNoz re-aggregates into longer intervals the metrics you collect at a high frequency, allowing low-resolution time series to be pre-calculated or used in place of the original metric data. SigNoz auto-adjusts this interval based on the time range selected to limit the number of points it plots on the chart. The following example diagram shows the aggregation of data into ten seconds intervals:
 
-![Temporal Aggregation](/images/docs/temporal_aggregation.png)
+![Temporal Aggregation](/img/docs/temporal_aggregation.png)
 
 ### Spatial Aggregation
 
 If you collect a metric and you don’t need all the attributes, you can remove unwanted attributes. This way, your metrics will only have the attributes that you need. The following diagram shows the aggregation of the entire set of time series into a single value at each interval of time:
 
-![Spatial Aggregation](/images/docs/spatial_aggregation.png)
+![Spatial Aggregation](/img/docs/spatial_aggregation.png)
 
 ### Supported Aggregation Functions
 
@@ -83,7 +83,7 @@ Note that you can use the *`IN`* and *`NIN`* operators as an alternative for 
 
 You can use the `Group By` clause to divide the results of your query based on the property you specify. The following example diagram shows how a `Group By` clause aggregates the same metric into separate groups, each group representing an AWS region:
 
-![Group By Clause](/images/docs/aggregation_by_region.png)
+![Group By Clause](/img/docs/aggregation_by_region.png)
 
 ### Legend
 
@@ -109,16 +109,16 @@ Use host metrics to monitor the resource utilization of the hosts on which your 
 
 On a new or existing dashboard select the **Add Panel** button. Then, select **Time Series**: 
 
-![](/images/docs/add-panel-time-series.png)
+![](/img/docs/add-panel-time-series.png)
 
 
 Enter the title of your new panel. The example screenshot creates a new panel named “CPU Utilization”:
 
-![](/images/docs/new-panel-cpu-utilization.png)
+![](/img/docs/new-panel-cpu-utilization.png)
 
 Choose `RATE_AVG` as the aggregate function:
 
-![](/images/docs/choose-rate-avg.png)
+![](/img/docs/choose-rate-avg.png)
 
 ```
   Info:
@@ -127,27 +127,27 @@ Choose `RATE_AVG` as the aggregate function:
 
 From the **Metrics** drop-down, select `system_cpu_time`:
 
-![](/images/docs/select-system-cpu-time.png)
+![](/img/docs/select-system-cpu-time.png)
 
 Specify that the state should not be `idle` by adding a filtering condition as shown below:
 
-![](/images/docs/state-nin-idle.png)
+![](/img/docs/state-nin-idle.png)
 
 In the **Legend Format** text box, enter `{{state}}`:
 
-![](/images/docs/legend-format-enter-state.png)
+![](/img/docs/legend-format-enter-state.png)
 
 Use the **Y Axis Unit** dropdown to specify that the value displayed on the Y-axis is a percentage and can take values from 0 to 100:
 
-![](/images/docs/y-axis-percentage.png)
+![](/img/docs/y-axis-percentage.png)
 
 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
 
-![](/images/docs/preview-cpu-utilization.png)
+![](/img/docs/preview-cpu-utilization.png)
 
 _(Optional)_ To further drill down, you can plot the a separate graph for each state by specifying `state` in the **Group By** drop-down and selecting the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
 
-![](/images/docs/group-by-specify-state.png)
+![](/img/docs/group-by-specify-state.png)
 
 When you’ve finished, select the **Save** button at the top right corner of the screen. Then, select the **OK** button to confirm.
 
@@ -162,11 +162,11 @@ On a new or existing dashboard select the **Add Panel** button. Then, select **T
 
 Enter the title of your new panel. The example screenshot creates a new panel named “Disk Saturation”:
 
-![](/images/docs/new-panel-disk-saturation.png)
+![](/img/docs/new-panel-disk-saturation.png)
 
 Choose `RATE` as the aggregate function:
 
-![](/images/docs/choose-rate.png)
+![](/img/docs/choose-rate.png)
 
 ```
   Info:
@@ -175,15 +175,15 @@ Choose `RATE` as the aggregate function:
 
 From the **Metrics** drop-down, select `system_weighted_io_time`:
 
-![](/images/docs/select-system_weighted_io_time.png)
+![](/img/docs/select-system_weighted_io_time.png)
 
 In the **Legend Format** text box, enter `{{device}}`:
 
-![](/images/docs/legend-format-enter-device.png)
+![](/img/docs/legend-format-enter-device.png)
 
 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
 
-![](/images/docs/preview-disk-saturation.png)
+![](/img/docs/preview-disk-saturation.png)
 
 (Optional) To further drill down, you can plot the a separate graph for each host name by specifying host_name in the **Group By** drop-down and selecting the **Stage & Run Query** button.
 
@@ -198,27 +198,27 @@ On a new or existing dashboard select the **Add Panel** button. Then, select **T
 
 Enter the title of your new panel. The example screenshot creates a new panel named “Network Errors”:
 
-![](/images/docs/new-panel-network-errors.png)
+![](/img/docs/new-panel-network-errors.png)
 
 From the **Metrics** drop-down, select `system_network_errors`:
 
-![](/images/docs/select-system_network_errors.png)
+![](/img/docs/select-system_network_errors.png)
 
 _(Optional)_ Specify that you want to see the network errors for a specific host (this example uses `signoz-host`) by adding a filtering condition as shown below:
 
-![](/images/docs/host-name-in-signoz.png)
+![](/img/docs/host-name-in-signoz.png)
 
   Note that, for each network interface, SigNoz plots separate time series for sending and receiving data. The example screenshot below shows a system named `signoz-host` with two network interfaces (`lo` and `eth0`):
 
-![](/images/docs/show-two-network-interfaces.png)
+![](/img/docs/show-two-network-interfaces.png)
 
 In the **Legend Format** text box, enter `{{device}}-{{direction}}`:
 
-![](/images/docs/legend-format-enter-device-direction.png)
+![](/img/docs/legend-format-enter-device-direction.png)
 
 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
 
-![](/images/docs/preview-network-errors.png)
+![](/img/docs/preview-network-errors.png)
 
 _(Optional)_ To further drill down, you can plot the a separate graph for sending and receiving data by specifying `direction` in the **Group By** drop-down and selecting the **Stage & Run Query** button.
 
@@ -240,11 +240,11 @@ On a new or existing dashboard select the **Add Panel** button. Then, select **T
 
 Enter the title of your new panel. The example screenshot creates a new panel named “Requests per Service”:
 
-![](/images/docs/new-panel-requests-per-service.png)
+![](/img/docs/new-panel-requests-per-service.png)
 
 Choose `SUM_RATE` as the aggregate function:
 
-![](/images/docs/choose-sum-rate.png)
+![](/img/docs/choose-sum-rate.png)
 
 ```
   Info:
@@ -253,23 +253,23 @@ Choose `SUM_RATE` as the aggregate function:
 
 Use the **Metrics** drop-down to specify that you want to plot the total number requests made to your application. The example screenshot below plots the total number of requests made to SigNoz:
 
-![](/images/docs/signoz-total-calls.png)
+![](/img/docs/signoz-total-calls.png)
 
 Specify the the services that you want to plot.
 
 To plot a single service, add a filtering condition as shown below:
 
-![](/images/docs/plot-a-single-service.png)
+![](/img/docs/plot-a-single-service.png)
 
 To plot all the services, choose `service_name` from the **GROUP_BY** drop-down:
 
-![](/images/docs/plot-all-services.png)
+![](/img/docs/plot-all-services.png)
 
 _(Optional)_ If you are plotting all the services, enter `{{service_name}}` in the **Legend Format** text box.
 
 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
 
-![](/images/docs/preview-requests-per-service.png)
+![](/img/docs/preview-requests-per-service.png)
 
 When you’ve finished, select the **Save** button at the top right corner of the screen. Then, select the **OK** button to confirm.
 
@@ -284,12 +284,12 @@ On a new or existing dashboard select the **Add Panel** button. Then, select **T
 
 Enter the title of your new panel. The example screenshot creates a new panel named “Latency per Service”:
 
-![](/images/docs/new-panel-latency-per-service.png)
+![](/img/docs/new-panel-latency-per-service.png)
 
 **Specify the First Query (A)**
 
   3.1 Under **A**, choose `SUM_RATE` as the aggregate function:
-    ![](/images/docs/choose-sum-rate-avg-latency.png)
+    ![](/img/docs/choose-sum-rate-avg-latency.png)
 
 ```
   Info:
@@ -297,13 +297,13 @@ Enter the title of your new panel. The example screenshot creates a new panel na
 ```
   
   3.2 Use the **Metrics** drop-down to specify that you want to plot the latency of your application’s requests. The example screenshot below plots the total latency for SigNoz:
-    ![](/images/docs/total-latency-for-signoz.png)
+    ![](/img/docs/total-latency-for-signoz.png)
 
   3.3 Indicate that you want to plot the a separate graph each service, by specifying `service_name` in the **Group By** drop-down:
-    ![](/images/docs/specify-service-name.png)
+    ![](/img/docs/specify-service-name.png)
 
   3.4 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
-    ![](/images/docs/preview-avg-latency-per-svc.png)
+    ![](/img/docs/preview-avg-latency-per-svc.png)
 
 4. **Specify the Second Query (B)**
 
@@ -312,7 +312,7 @@ Enter the title of your new panel. The example screenshot creates a new panel na
   4.2 Under **B**, choose `SUM_RATE` as the aggregate function:
 
   4.3 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
-    ![](/images/docs/choose-sum-rate-under-b.png)
+    ![](/img/docs/choose-sum-rate-under-b.png)
 
 ```
   Info:
@@ -320,14 +320,14 @@ Enter the title of your new panel. The example screenshot creates a new panel na
 ```
 
   4.4 Indicate that you want to plot the a separate graph each service, by specifying `service_name` in the **Group By** drop-down:
-    ![](/images/docs/latency-per-svc-specify-svc-name.png)
+    ![](/img/docs/latency-per-svc-specify-svc-name.png)
 
 5. Hide **A** and **B** by selecting the corresponding eye icons:
     
-  ![](/images/docs/avg-latency-per-svc-hide-a-b.png)
+  ![](/img/docs/avg-latency-per-svc-hide-a-b.png)
 
 6. Create a function that calculates `A/B` by selecting the **+Formula** button and entering `A/B` in the text box:
-  ![](/images/docs/avg-latency-per-svc-create-formula.png)
+  ![](/img/docs/avg-latency-per-svc-create-formula.png)
 
 7. Select the **Stage & Run Query** button to preview your graph.
 
@@ -343,13 +343,13 @@ This example plots the error rate per service using a formula based on two queri
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Error rates per service”:
 
-  ![](/images/docs/error-rate-per-service.png)
+  ![](/img/docs/error-rate-per-service.png)
 
 
 3. **Specify the First Query (A)**
 
   3.1 Choose `SUM_RATE` as the aggregate function:
-    ![](/images/docs/error-rate-choose-sum-rate.png)
+    ![](/img/docs/error-rate-choose-sum-rate.png)
 
 ```
   Info:
@@ -357,35 +357,35 @@ This example plots the error rate per service using a formula based on two queri
 ```
   
   3.2 Use the **Metrics** drop-down to specify that you want to plot the total number calls for your application. The example screenshot below plots the total number of calls for SigNoz:
-    ![](/images/docs/plot-total-number-of-calls.png)
+    ![](/img/docs/plot-total-number-of-calls.png)
 
   3.3 Specify that the you want to plot only the calls that failed by adding a filtering condition as shown below:
-    ![](/images/docs/plot-the-calls-that-failed.png)
+    ![](/img/docs/plot-the-calls-that-failed.png)
 
   3.4 To plot a particular service add a new `WHERE clause`. The following example plots a service named `redis`:
-    ![](/images/docs/plot-redis.png)
+    ![](/img/docs/plot-redis.png)
 
 4. **Specify the Second Query (B)**
 
   4.1 To add a new query, select the **+Query** button.
 
   4.2 Choose `SUM_RATE` as the aggregate function:
-    ![](/images/docs/error-rate-choose-sum-rate-b.png)
+    ![](/img/docs/error-rate-choose-sum-rate-b.png)
 
   4.3 Use the **Metrics** drop-down to specify that you want to plot the total number calls for your application. The example screenshot below plots the total number of calls for SigNoz:
-    ![](/images/docs/plot-the-total-number-of-calls.png)
+    ![](/img/docs/plot-the-total-number-of-calls.png)
 
   4.4 Indicate that the you do not want to plot the calls for the service you’ve previously specified (`redis`):
-    ![](/images/docs/dont-plot-redis.png)
+    ![](/img/docs/dont-plot-redis.png)
 
 5. Hide **A** and **B** by selecting the corresponding eye icons:
-  ![](/images/docs/error-rate-hide-a-b.png)
+  ![](/img/docs/error-rate-hide-a-b.png)
 
 6. Create a function that calculates `A/B` by selecting the **+Formula** button and entering `A/B` in the text box:
-  ![](/images/docs/error-rate-create-function.png)
+  ![](/img/docs/error-rate-create-function.png)
 
 7. Select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
-  ![](/images/docs/error-rate-preview.png)
+  ![](/img/docs/error-rate-preview.png)
 
 8. When you’ve finished, select the **Save** button at the top right corner of the screen. Then, select the **OK** button to confirm.
 

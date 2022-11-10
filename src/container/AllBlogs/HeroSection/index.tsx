@@ -99,7 +99,7 @@ const HeroSection = (props: HeroSectionProps) => {
             {selectedAuthor.map((author) => (
               <AuthorBy
                 key={author?.name}
-                avatar={author?.avatar || "/images/authors/user1.jpg"}
+                avatar={author?.avatar || "/img/authors/user1.jpg"}
                 name={author?.name || "Signoz"}
                 position={author?.occupation || "CEO"}
                 nameClassName="font-medium text-white"
