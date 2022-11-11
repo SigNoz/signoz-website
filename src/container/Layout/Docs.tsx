@@ -33,8 +33,8 @@ const DocsLayout = ({ children, toc, docsLinks }: LayoutProps): JSX.Element => {
 
       {isMounted && (
         <div
-          style={{ borderTop: "none" }}
-          className="flex-[3] border border-l-signoz-border border-r-signoz-border w-full md:max-w-[60%] font-WorkSans px-4"
+          style={{ borderTop: "none", borderRight: "none" }}
+          className="flex-[3] border border-l-signoz-border w-full md:max-w-[60%] font-WorkSans px-4"
         >
           {children}
         </div>
