@@ -24,7 +24,6 @@ const DocsLayout = ({ children, toc, docsLinks }: LayoutProps): JSX.Element => {
       <div className="flex flex-1">
         <div className="relative px-4 pt-0 w-full">
           <DocsSideBar links={docsLinks} />
-          <div className="min-h-screen hidden md:block inset-0 absolute border border-r-signoz-border z-[-1]" />
         </div>
       </div>
 
@@ -33,17 +32,19 @@ const DocsLayout = ({ children, toc, docsLinks }: LayoutProps): JSX.Element => {
       </Head>
 
       {isMounted && (
-        <div className="flex-[3] w-full md:max-w-[60%] font-WorkSans px-4">
+        <div
+          style={{ borderTop: "none" }}
+          className="flex-[3] border border-l-signoz-border border-r-signoz-border w-full md:max-w-[60%] font-WorkSans px-4"
+        >
           {children}
         </div>
       )}
 
       <div className="md:flex hidden flex-1">
         <div className="relative pt-0">
-          <div className="px-4">
+          <div className="px-4 sticky top-40">
             <TOCInline toc={toc} exclude="Overview" toHeading={6} />
           </div>
-          <div className="h-screen absolute top-0 -z-10 border border-signoz-border" />
         </div>
       </div>
     </div>

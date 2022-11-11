@@ -16,7 +16,7 @@ const DocsSideBar = ({ links }: DocsProps): JSX.Element => {
     .map((e) => `/${e}`);
 
   return (
-    <div className="font-WorkSans text-base md:text-lg">
+    <div className="font-WorkSans sticky top-40 text-base md:text-lg">
       <Links
         activeLink={activeLink}
         setActiveLink={setActiveLink}
