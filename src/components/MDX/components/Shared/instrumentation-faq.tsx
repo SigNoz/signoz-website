@@ -2,11 +2,13 @@ import Link from "../Link";
 import LI from "../LI";
 import UL from "../UL";
 import Paragraph from "../Paragraph";
+import Heading from "../Heading"
 
 const InstrumentationFAQ = () => {
   return (
     <>
-    <Paragraph><b>Frequently Asked Questions</b></Paragraph>
+    <Heading type="h2">Frequently Asked Questions</Heading>
+
       <Paragraph>
         <b>
           1. How to find what to use in `IP of SigNoz` if I have installed
