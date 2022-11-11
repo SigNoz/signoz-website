@@ -13,14 +13,14 @@ export const headingConfig = {
   },
   h3: {
     mobile: 18,
-    desktop: 20,
+    desktop: 22,
   },
   h2: {
     mobile: 20,
-    desktop: 22,
+    desktop: 26,
   },
   h1: {
-    mobile: 22,
-    desktop: 24,
+    mobile: 24,
+    desktop: 36,
   },
 };
