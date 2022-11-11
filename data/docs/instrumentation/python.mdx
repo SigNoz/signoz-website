@@ -7,7 +7,7 @@ description: Send events from your Python application to SigNoz
 
 
 
-
+# Python OpenTelemetry Instrumentation
 
 
 This document contains instructions on how to set up OpenTelemetry instrumentation in your Python applications. OpenTelemetry, also known as OTel for short, is an open source observability framework that can help you generate and collect telemetry data - traces, metrics, and logs from your Python application.
@@ -123,7 +123,7 @@ With your application running, you can verify that you’ve instrumented your ap
 
 To do this, you need to ensure that your application generates some data. Applications will not produce traces unless they are being interacted with, and OpenTelemetry will often buffer data before sending. So you need to interact with your application and wait for some time to see your tracing data in SigNoz.
 
-Validate your traces in SigNoz:
+#### Validate your traces in SigNoz:
 
 1. Trigger an action in your app that generates a web request. Hit the endpoint a number of times to generate some data. Then, wait for some time.
 2. In SigNoz, open the `Services` tab. Hit the `Refresh` button on the top right corner, and your application should appear in the list of `Applications`.

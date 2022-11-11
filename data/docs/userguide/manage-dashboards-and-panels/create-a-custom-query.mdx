@@ -5,6 +5,7 @@ sidebar_label: Create a Custom Query
 ---
 
 
+# Create a Custom Query
 
 This page describes the elements that define a custom query and provides several examples of using the Query Builder to create custom queries.
 
@@ -289,7 +290,8 @@ Enter the title of your new panel. The example screenshot creates a new panel na
 **Specify the First Query (A)**
 
   3.1 Under **A**, choose `SUM_RATE` as the aggregate function:
-    ![](/img/docs/choose-sum-rate-avg-latency.png)
+  
+  ![](/img/docs/choose-sum-rate-avg-latency.png)
 
 ```
   Info:
@@ -297,13 +299,16 @@ Enter the title of your new panel. The example screenshot creates a new panel na
 ```
   
   3.2 Use the **Metrics** drop-down to specify that you want to plot the latency of your application’s requests. The example screenshot below plots the total latency for SigNoz:
-    ![](/img/docs/total-latency-for-signoz.png)
+  
+  ![](/img/docs/total-latency-for-signoz.png)
 
   3.3 Indicate that you want to plot the a separate graph each service, by specifying `service_name` in the **Group By** drop-down:
-    ![](/img/docs/specify-service-name.png)
+  
+  ![](/img/docs/specify-service-name.png)
 
   3.4 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
-    ![](/img/docs/preview-avg-latency-per-svc.png)
+  
+  ![](/img/docs/preview-avg-latency-per-svc.png)
 
 4. **Specify the Second Query (B)**
 
@@ -312,7 +317,8 @@ Enter the title of your new panel. The example screenshot creates a new panel na
   4.2 Under **B**, choose `SUM_RATE` as the aggregate function:
 
   4.3 To preview your query, select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
-    ![](/img/docs/choose-sum-rate-under-b.png)
+  
+  ![](/img/docs/choose-sum-rate-under-b.png)
 
 ```
   Info:
@@ -320,13 +326,15 @@ Enter the title of your new panel. The example screenshot creates a new panel na
 ```
 
   4.4 Indicate that you want to plot the a separate graph each service, by specifying `service_name` in the **Group By** drop-down:
-    ![](/img/docs/latency-per-svc-specify-svc-name.png)
+  
+  ![](/img/docs/latency-per-svc-specify-svc-name.png)
 
 5. Hide **A** and **B** by selecting the corresponding eye icons:
     
   ![](/img/docs/avg-latency-per-svc-hide-a-b.png)
 
 6. Create a function that calculates `A/B` by selecting the **+Formula** button and entering `A/B` in the text box:
+  
   ![](/img/docs/avg-latency-per-svc-create-formula.png)
 
 7. Select the **Stage & Run Query** button to preview your graph.
@@ -338,18 +346,20 @@ Enter the title of your new panel. The example screenshot creates a new panel na
 This example plots the error rate per service using a formula based on two queries.
 
 1. On a new or existing dashboard select the **Add Panel** button. Then, select **Time Series**:
-  ![](/img/docs/add-panel-time-series.png)
+  
+![](/img/docs/add-panel-time-series.png)
 
 
 2. Enter the title of your new panel. The example screenshot creates a new panel named “Error rates per service”:
 
-  ![](/img/docs/error-rate-per-service.png)
+![](/img/docs/error-rate-per-service.png)
 
 
 3. **Specify the First Query (A)**
 
   3.1 Choose `SUM_RATE` as the aggregate function:
-    ![](/img/docs/error-rate-choose-sum-rate.png)
+  
+  ![](/img/docs/error-rate-choose-sum-rate.png)
 
 ```
   Info:
@@ -357,34 +367,43 @@ This example plots the error rate per service using a formula based on two queri
 ```
   
   3.2 Use the **Metrics** drop-down to specify that you want to plot the total number calls for your application. The example screenshot below plots the total number of calls for SigNoz:
-    ![](/img/docs/plot-total-number-of-calls.png)
+  
+  ![](/img/docs/plot-total-number-of-calls.png)
 
   3.3 Specify that the you want to plot only the calls that failed by adding a filtering condition as shown below:
-    ![](/img/docs/plot-the-calls-that-failed.png)
+  
+  ![](/img/docs/plot-the-calls-that-failed.png)
 
   3.4 To plot a particular service add a new `WHERE clause`. The following example plots a service named `redis`:
-    ![](/img/docs/plot-redis.png)
+  
+  ![](/img/docs/plot-redis.png)
 
 4. **Specify the Second Query (B)**
 
   4.1 To add a new query, select the **+Query** button.
 
   4.2 Choose `SUM_RATE` as the aggregate function:
-    ![](/img/docs/error-rate-choose-sum-rate-b.png)
+  
+  ![](/img/docs/error-rate-choose-sum-rate-b.png)
 
   4.3 Use the **Metrics** drop-down to specify that you want to plot the total number calls for your application. The example screenshot below plots the total number of calls for SigNoz:
-    ![](/img/docs/plot-the-total-number-of-calls.png)
+  
+  ![](/img/docs/plot-the-total-number-of-calls.png)
 
   4.4 Indicate that the you do not want to plot the calls for the service you’ve previously specified (`redis`):
-    ![](/img/docs/dont-plot-redis.png)
+  
+  ![](/img/docs/dont-plot-redis.png)
 
 5. Hide **A** and **B** by selecting the corresponding eye icons:
+  
   ![](/img/docs/error-rate-hide-a-b.png)
 
 6. Create a function that calculates `A/B` by selecting the **+Formula** button and entering `A/B` in the text box:
+  
   ![](/img/docs/error-rate-create-function.png)
 
 7. Select the **Stage & Run Query** button. SigNoz will plot a graph similar to the following one:
+  
   ![](/img/docs/error-rate-preview.png)
 
 8. When you’ve finished, select the **Save** button at the top right corner of the screen. Then, select the **OK** button to confirm.

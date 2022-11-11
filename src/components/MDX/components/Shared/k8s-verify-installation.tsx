@@ -10,13 +10,13 @@ const VerifyInstallation = () => {
         <Code>kubectl -n platform get pods</Code>
         Output:
         <Code>
-          NAME READY STATUS RESTARTS AGE chi-signoz-cluster-0-0-0 1/1 Running 0
-          8m21s clickhouse-operator-8cff468-n5s99 2/2 Running 0 8m55s
-          my-release-signoz-alertmanager-0 1/1 Running 0 8m54s
-          my-release-signoz-frontend-78774f44d7-wl87p 1/1 Running 0 8m55s
-          my-release-signoz-otel-collector-66c8c7dc9d-d8v5c 1/1 Running 0 8m55s
-          my-release-signoz-otel-collector-metrics-68bcfd5556-9tkgh 1/1 Running
-          0 8m55s my-release-signoz-query-service-0 1/1 Running 0 8m54s
+          NAME READY STATUS RESTARTS AGE chi-signoz-cluster-0-0-0 1/1 Running 0<br />
+          8m21s clickhouse-operator-8cff468-n5s99 2/2 Running 0 8m55s<br />
+          my-release-signoz-alertmanager-0 1/1 Running 0 8m54s<br />
+          my-release-signoz-frontend-78774f44d7-wl87p 1/1 Running 0 8m55s<br />
+          my-release-signoz-otel-collector-66c8c7dc9d-d8v5c 1/1 Running 0 8m55s<br />
+          my-release-signoz-otel-collector-metrics-68bcfd5556-9tkgh 1/1 Running<br />
+          0 8m55s my-release-signoz-query-service-0 1/1 Running 0 8m54s<br />
           my-release-zookeeper-0 1/1 Running 0 8m54s
         </Code>
       </Paragraph>
