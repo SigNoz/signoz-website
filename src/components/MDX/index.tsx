@@ -66,10 +66,12 @@ export const MDXComponents = {
   ContributorHighlight,
   blockquote: BlockQuote,
   Accordion: Accordion,
+
+  // shared components
   CHClientWithOutput: CHClientWithOutput,
   GetHelp: GetHelp,
   UpgradeInfo: UpgradeInfo,
-  InstallSigNozPart1:InstallSigNozPart1,
+  InstallSigNozPart1: InstallSigNozPart1,
   InstallSigNozPart2: InstallSigNozPart2,
   InstrumentationFAQ: InstrumentationFAQ,
   K8sComponents: K8sComponents,

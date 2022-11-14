@@ -11,7 +11,7 @@ const K8sHotrod = () => {
             <Link href="https://github.com/jaegertracing/jaeger/tree/master/examples/hotrod">
                 HotR.O.D
             </Link>{" "}
-            , and generate tracing data. 
+            , and generate tracing data.
             <OL>
                 <LI>
                     Use the HotROD install script below to create a `sample-application` namespace and deploy HotROD application on it:
@@ -23,11 +23,11 @@ const K8sHotrod = () => {
                 \ | HELM_RELEASE=my-release SIGNOZ_NAMESPACE=platform bash
             </Code>
             <OL>
-                <LI> 
+                <LI>
                     Using the `kubectl -n sample-application get pods` command, monitor the sample application pods. Wait for all the pods to be in running state:
                 </ LI>
             </OL>
-           
+
             <Code>kubectl -n sample-application get pods</Code>
             Output:
             <Code>
@@ -43,7 +43,7 @@ const K8sHotrod = () => {
                 http://locust-master:8089/swarm
             </Code>
             4. Browse to `http://localhost:3301` and see the metrics and traces for
-            your sample application. 
+            your sample application.
             <br />5. Use the following command to stop load
             generation:
             <Code>

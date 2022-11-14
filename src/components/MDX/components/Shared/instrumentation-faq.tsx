@@ -7,7 +7,7 @@ import Heading from "../Heading"
 const InstrumentationFAQ = () => {
   return (
     <>
-    <Heading type="h2">Frequently Asked Questions</Heading>
+      <Heading type="h2">Frequently Asked Questions</Heading>
 
       <Paragraph>
         <b>
@@ -18,9 +18,9 @@ const InstrumentationFAQ = () => {
         Based on where you have installed your application and where you have
         installed SigNoz, you need to find the right value for this. Please use {" "}
         <Link href="/docs/instrumentation/troubleshoot-instrumentation/">
-          this grid 
+          this grid
         </Link>
-         {" "}to find the value you should use for `IP of SigNoz`
+        {" "}to find the value you should use for `IP of SigNoz`
       </Paragraph>
 
       <Paragraph>
