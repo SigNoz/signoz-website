@@ -6,7 +6,7 @@ import NextImage from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-signoz-medium relative ">
+    <footer className="bg-signoz-medium relative mt-20 ">
       <div className="transform -translate-y-1/4 md:-translate-y-2/4">
         <div className="w-[95%] md:w-full m-auto">
           <SubscribeToUpdates />
@@ -30,6 +30,9 @@ const Footer = () => {
         <Link text="COMMUNITY" subLinks={getSubLinks("COMMUNITY")} />
         <Link text="BLOGS" subLinks={getSubLinks("BLOGS")} />
         <Link text="MORE" subLinks={getSubLinks("MORE")} />
+      </div>
+      <div className="text-center pb-12 font-openSans font-light leading-6 text-white">
+        Copyright © 2022 SigNoz, Inc.
       </div>
     </footer>
   );
