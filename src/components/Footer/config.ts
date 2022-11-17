@@ -36,13 +36,13 @@ const getSubLinks = (section: string): SubLinks[] => {
           to: "https://signoz.io/learn/",
         },
         {
-          text: "Community",
+          text: "Community Archive",
           to: "https://signoz.io/community/",
         },
-        {
-          text: "Archive",
-          to: "https://signoz.io/archive/",
-        },
+        // {
+        //   text: "Archive",
+        //   to: "https://signoz.io/archive/",
+        // },
       ];
     }
 
@@ -53,7 +53,7 @@ const getSubLinks = (section: string): SubLinks[] => {
           to: "/",
         },
         {
-          text: "OpenTelemetry",
+          text: "OpenTelemetry Collector Guide",
           to: "/",
         },
       ];
