@@ -12,8 +12,6 @@ const Footer = () => {
           <SubscribeToUpdates />
         </div>
       </div>
-
-      {/* <div className="w-[95%] pb-12 flex flex-row justify-evenly relative border"> */}
       <div className="flex pb-14 px-8 md:mt-8 md:flex-row flex-col md:gap-20  justify-evenly flex-wrap relative">
         <div className="md:w-93px md:h-11 flex flex-col">
           <div className="flex sm:flex-col sm:flex-wrap items-start mb-6 mt-4 md:px-2">
@@ -33,7 +31,6 @@ const Footer = () => {
         <Link text="BLOGS" subLinks={getSubLinks("BLOGS")} />
         <Link text="MORE" subLinks={getSubLinks("MORE")} />
       </div>
-      {/* </div> */}
     </footer>
   );
 };
