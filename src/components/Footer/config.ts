@@ -6,15 +6,15 @@ const getSubLinks = (section: string): SubLinks[] => {
       return [
         {
           text: "Introduction",
-          to: "/introduction",
+          to: "/docs/introduction",
         },
         {
           text: "Install",
-          to: "/install",
+          to: "/docs/install",
         },
         {
           text: "Instrumentation",
-          to: "/instrumentation",
+          to: "/docs/instrumentation",
         },
       ];
     case "COMMUNITY": {
@@ -39,10 +39,6 @@ const getSubLinks = (section: string): SubLinks[] => {
           text: "Community Archive",
           to: "https://signoz.io/community/",
         },
-        // {
-        //   text: "Archive",
-        //   to: "https://signoz.io/archive/",
-        // },
       ];
     }
 
@@ -54,7 +50,7 @@ const getSubLinks = (section: string): SubLinks[] => {
         },
         {
           text: "OpenTelemetry Collector Guide",
-          to: "/",
+          to: "/blog/opentelemetry-collector-complete-guide/",
         },
       ];
     }
