@@ -29,7 +29,10 @@ const LinkComponent = ({ subLinks, text }: LinkProps) => {
             <div className="mt-2 flex flex-col">
               {subLinks.map((link) => (
                 <Link scroll={false} href={link.to} passHref key={link.text}>
-                  <a className="font-light mt-3 text-base font-openSans text-white">
+                  <a
+                    target="_blank"
+                    className="font-light mt-3 text-base font-openSans text-white hover:text-[#f25733] "
+                  >
                     {link.text}
                   </a>
                 </Link>
