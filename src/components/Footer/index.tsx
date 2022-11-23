@@ -12,18 +12,20 @@ const Footer = () => {
           <SubscribeToUpdates />
         </div>
       </div>
-      <div className="flex pb-14 px-8 md:mt-8 md:flex-row flex-col md:gap-20  justify-evenly flex-wrap relative">
-        <div className="md:w-93px md:h-11 flex flex-col">
-          <div className="flex sm:flex-col sm:flex-wrap items-start mb-6 mt-4 md:px-2">
-            <NextImage
-              src={"/img/yc-logo.png"}
-              alt={"Y Combinator"}
-              width={80}
-              height={80}
-            />
+      <div className="flex pb-14 px-12 md:mt-8 md:flex-row flex-col md:gap-20  justify-center flex-wrap relative">
+        <div className="flex flex-col flex-wrap items-start mb-6 mt-4 md:pr-2 ">
+          <NextImage
+            src={"/img/yc-logo.png"}
+            alt={"Y Combinator"}
+            width={80}
+            height={80}
+          />
+
+          <div className="mt-4 font-openSans font-semibold text-white text-lg">
+            Backed by Y
           </div>
-          <div className="md:w-3/5 mb-4  font-openSans font-semibold text-white text-lg">
-            Backed by Y Combinator
+          <div className="font-openSans font-semibold text-white text-lg">
+            Combinator
           </div>
         </div>
         <Link text="DOCS" subLinks={getSubLinks("DOCS")} />
