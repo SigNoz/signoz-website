@@ -7,7 +7,7 @@ const CustomLink = ({ href, ...rest }: LinkProps) => {
   if (isInternalLink) {
     return (
       <Link scroll={false} soft passHref href={href}>
-        <a href={href} {...rest} />
+        <a className="text-signoz-primary" href={href} {...rest} />
       </Link>
     );
   }
