@@ -9,6 +9,7 @@ import { useIsDesktop } from "hooks/useDeviceType";
 import { useQuery } from "@tanstack/react-query";
 import getRepoInfo from "api/getRepoInfo";
 import { useWindowScroll } from "react-use";
+import SearchBar from "container/AllBlogs/SearchBar";
 
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),
@@ -21,7 +22,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
     queryFn: getRepoInfo,
   });
   const { push } = useRouter();
-  const { y } = useWindowScroll()
+  const { y } = useWindowScroll();
 
   const onClickLogoHandler = useCallback(() => {
     push("/", undefined, {
@@ -50,7 +51,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
         flex: isDesktop,
         "items-center": isDesktop,
       })}
-      style={{ top: y === 0 ? isBlogStripOpen && isDesktop ? "48px" : 0 : 0 }}
+      style={{ top: y === 0 ? (isBlogStripOpen && isDesktop ? "48px" : 0) : 0 }}
     >
       <div className="font-openSans flex items-center justify-between relative">
         <div
@@ -78,7 +79,8 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                   <li
                     className={cx({
                       "text-base text-signoz-medium font-bold": isActive,
-                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                      "font-semibold text-signoz-dark-light text-base":
+                        !isActive,
                     })}
                   >
                     <Link scroll={false} href={path}>
@@ -105,7 +107,8 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                   <li
                     className={cx({
                       "text-base text-signoz-medium font-bold": isActive,
-                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                      "font-semibold text-signoz-dark-light text-base":
+                        !isActive,
                     })}
                   >
                     <Link scroll={false} href={path}>
@@ -134,13 +137,15 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                   <li
                     className={cx({
                       "text-base text-signoz-medium font-bold": isActive,
-                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                      "font-semibold text-signoz-dark-light text-base":
+                        !isActive,
                     })}
                   >
                     <Link scroll={false} href={path}>
                       {name}
                     </Link>
                   </li>
+
                   <PropertyControlledComponent controllerProperty={isActive}>
                     <div className="h-[2px] w-4 bg-signoz-primary" />
                   </PropertyControlledComponent>
