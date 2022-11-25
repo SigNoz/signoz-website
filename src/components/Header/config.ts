@@ -1,20 +1,4 @@
 export const leftItems: Links[] = [
-  // {
-  //   name: "Home",
-  //   path: "/",
-  // },
-  // {
-  //   name: "Features",
-  //   path: "/features",
-  // },
-  // {
-  //   name: "Testimonials",
-  //   path: "/testimonials",
-  // },
-  // {
-  //   name: "FAQ",
-  //   path: "/faq",
-  // },
   {
     name: "Docs",
     path: "/docs",
@@ -42,10 +26,6 @@ export const rightItems: Links[] = [
     name: "Slack",
     path: "https://signoz-community.slack.com/join/shared_invite/zt-lrjknbbp-J_mI13rlw8pGF4EWBnorJA#/shared-invite/email",
   },
-  // {
-  //   name: "Community",
-  //   path: "/community",
-  // },
 ];
 
 export const headerElements = [...leftItems, ...rightItems];
