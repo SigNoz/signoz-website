@@ -59,7 +59,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
           className="flex items-center cursor-pointer"
         >
           <div>{getIcons("logo")}</div>
-          <div className="text-signoz-medium text-xl ml-3 font-bold">
+          <div className="text-signoz-medium text-xl ml-3 font-bold hover:text-[#f25733]">
             SigNoz
           </div>
         </div>
@@ -112,7 +112,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                     })}
                   >
                     <Link scroll={false} href={path}>
-                      {name}
+                      <a className="hover:text-[#f25733]">{name}</a>
                     </Link>
                   </li>
                   <PropertyControlledComponent controllerProperty={isActive}>
@@ -142,7 +142,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                     })}
                   >
                     <Link scroll={false} href={path}>
-                      {name}
+                      <a className="hover:text-[#f25733]">{name}</a>
                     </Link>
                   </li>
 
