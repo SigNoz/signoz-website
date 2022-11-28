@@ -9,6 +9,7 @@ import { useIsDesktop } from "hooks/useDeviceType";
 import { useQuery } from "@tanstack/react-query";
 import getRepoInfo from "api/getRepoInfo";
 import { useWindowScroll } from "react-use";
+import Search from "./search";
 import SearchBar from "container/AllBlogs/SearchBar";
 
 const PropertyControlledComponent = dynamic(
@@ -70,8 +71,8 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
         </PropertyControlledComponent>
       </div>
       <PropertyControlledComponent controllerProperty={isOpen}>
-        <div className="mt-4 absolute z-10 left-0 bg-white w-full px-6 pb-8">
-          <div className="flex flex-col gap-6">
+        <div className="mt-4 absolute z-10 left-0 bg-white w-full px-6 pb-8 border">
+          <div className="flex flex-col justify-center gap-6 border">
             {headerElements.map(({ name, path }) => {
               const isActive = router.pathname === path;
               return (
@@ -98,7 +99,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
         </div>
       </PropertyControlledComponent>
       <PropertyControlledComponent controllerProperty={isDesktop}>
-        <div className="w-full justify-around items-center flex">
+        <div className="w-full justify-evenly items-center flex gap-8">
           <div className="flex gap-12">
             {leftItems.map(({ name, path }) => {
               const isActive = router.pathname === path;
@@ -128,7 +129,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
               className="flex gap-2 items-center font-bold cursor-pointer"
             >
               {getIcons("github")}
-              {repoCount}
+              <a className="hover:text-[#f25733]">{repoCount}</a>
             </div>
             {rightItems.map(({ name, path }) => {
               const isActive = router.pathname === path;
@@ -153,6 +154,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
               );
             })}
           </div>
+          <Search></Search>
         </div>
       </PropertyControlledComponent>
     </header>
