@@ -10,7 +10,6 @@ import { useQuery } from "@tanstack/react-query";
 import getRepoInfo from "api/getRepoInfo";
 import { useWindowScroll } from "react-use";
 import Search from "./search";
-import SearchBar from "container/AllBlogs/SearchBar";
 
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),
