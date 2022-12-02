@@ -3,6 +3,9 @@ id: exceptions
 title: Errors and Exceptions 
 sidebar_label: Exceptions
 ---
+
+# Errors and Exceptions 
+
 ## Recording exceptions
 
 Languages that support auto instrumentations(Python, Java, Ruby, Javascript) automatically record exceptions. For other languages, we need to record exceptions manually. Also, in some cases even for an auto-instrumented app, you may want to record custom exceptions manually.
@@ -142,12 +145,12 @@ It shows the list of exceptions in the applications in a separate page so that u
 
 You can sort exceptions by Last Seen, First Seen, Count, Exception type and Application name
 
-![exception-list](../../static/img/docs/exception-list.png)
+![exception-list](/img/docs/exception-list.png)
 
 Exception detail page includes the stack trace of the exception, exception attributes and link to the span which caused the exception.
 
-![exception-detail-1](../../static/img/docs/exception-detail-1.png)
+![exception-detail-1](/img/docs/exception-detail-1.png)
 
 By clicking `errors in the trace page` you can see the exceptions in the context of the trace request in which the exception was thrown
 
-![exception-detail-2](../../static/img/docs/exception-detail-2.png)
+![exception-detail-2](/img/docs/exception-detail-2.png)

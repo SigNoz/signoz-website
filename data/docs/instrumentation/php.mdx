@@ -5,16 +5,16 @@ description: Send events from your PHP application to SigNoz
 ---
 
 
+# PHP Opentelemetry Instrumentation
 
-import InstrumentationFAQ from './shared/instrumentation-faq.mdx'
 
-### Introduction to SigNoz for PHP
+## Introduction to SigNoz for PHP
 
 SigNoz can help you monitor your PHP applications for application-related metrics like latency, request per second, error rates, etc. It can also monitor infrastructure metrics like CPU utilization and memory usage.
 
 You can set alerts on metrics of your choice to stay on top of any issues arising in your deployed application.
 
-### Getting started for PHP with SigNoz
+## Getting started for PHP with SigNoz
 
 SigNoz uses [OpenTelemetry](https://opentelemetry.io/) for enabling your application code to generate telemetry data. OpenTelemetry provides a vendor-neutral [specification](https://github.com/open-telemetry/opentelemetry-specification)  to instrument your application so that you can export data to any backend of your choice, such as SigNoz.
 
@@ -108,14 +108,14 @@ OTEL_SERVICE_NAME=signoz-php-app php FILENAME.php
 
 <ZoomImage
   alt="SigNoz dashboard showing Trace Detail with tags"
-  image={"/images/docs/php-trace-detail-tags.webp"}
+  image={"/img/docs/php-trace-detail-tags.webp"}
   caption="Detailed view of the Trace showing attached attributes/tags to the spans"
 />
 
 
 <ZoomImage
   alt="SigNoz dashboard showing Trace Detail with events"
-  image={"/images/docs/php-trace-detail-events.webp"}
+  image={"/img/docs/php-trace-detail-events.webp"}
   caption="Detailed view of the Trace showing attached events to spans."
 />
 

@@ -37,3 +37,5 @@ export SERVICE_NAME=$(kubectl get svc --namespace platform -l "app.kubernetes.io
 
 kubectl --namespace platform port-forward svc/$SERVICE_NAME 3301:3301
 ```
+
+

@@ -4,12 +4,13 @@ title: Manage variables
 sidebar_label: Manage variables
 ---
 
-import GetHelp from './shared/get-help.mdx'
-import PrereqsInstrument from './shared/prereqs-instrument.mdx' 
+# Manage variables
 
 ## Prerequisites
 
-<PrereqsInstrument />
+- This section assumes that your application is already instrumented. For details about how you can instrument your application, see the [Instrument Your Application](/docs/instrumentation/) section.
+- This section assumes that you are familiar with the basics of monitoring applications.
+
 
 
 ## Variables
@@ -48,16 +49,16 @@ The following shows some examples to create a variable with hypothetical scenari
 
 1. You want to query the list of host names from the metrics database and use them as a variable
 
-    ![Variables-with-ClickHouse](/images/docs/var-with-clickhouse-query.png)
+    ![Variables-with-ClickHouse](/img/docs/var-with-clickhouse-query.png)
 
 
 2. Some list of known endpoints as a variable
-    ![Variables-with-Custom](/images/docs/custom-endpoint-vars.png)
+    ![Variables-with-Custom](/img/docs/custom-endpoint-vars.png)
 
 
 3. Free text as a variable
 
-    ![Variables-with-Text](/images/docs/text-box-limit-variable.png)
+    ![Variables-with-Text](/img/docs/text-box-limit-variable.png)
 
 ## Using variables in queries
 
@@ -65,15 +66,15 @@ The following shows some example widget plots using the variables created from t
 
 1. Metric Builder
 
-    ![Variables-in-MetricsBuilder](/images/docs/query-builder-with-host_name-var.png)
+    ![Variables-in-MetricsBuilder](/img/docs/query-builder-with-host_name-var.png)
 
 2. ClickHouse Query
 
-    ![Variables-in-ClickHouse](/images/docs/req-rate-chart-with-promql-query-and-var.png)
+    ![Variables-in-ClickHouse](/img/docs/req-rate-chart-with-promql-query-and-var.png)
 
 3. PromQL
 
-    ![Variables-in-PromQL](/images/docs/custom-endpoint-vars.png)
+    ![Variables-in-PromQL](/img/docs/custom-endpoint-vars.png)
 
 
 ## Get Help

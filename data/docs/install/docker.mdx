@@ -5,9 +5,7 @@ id: docker-standalone
 slug: /install/docker
 ---
 
-import CloneRepo from './shared/clone-repo.mdx'
-
-
+# Docker Standalone
 
 SigNoz can be installed on macOS or Linux computers, and there are two ways in which you can install SigNoz:
 
@@ -39,7 +37,11 @@ before you run the install script. The install script automatically installs Doc
 
 ## Install SigNoz Using the Install Script
 
-1. <CloneRepo />
+1. In a directory of your choosing, clone the SigNoz repository and `cd` into the `signoz/deploy` directory by entering the following commands:
+  ```bash
+    git clone -b main https://github.com/SigNoz/signoz.git && cd signoz/deploy/
+  ```
+
 
 2. Run the `install.sh` script:
    ```bash
@@ -52,7 +54,11 @@ before you run the install script. The install script automatically installs Doc
 Before you install Signoz, ensure that [Docker Compose](https://docs.docker.com/compose/install/) is installed on your machine.
 :::
 
-1. <CloneRepo />
+1. In a directory of your choosing, clone the SigNoz repository and `cd` into the `signoz/deploy` directory by entering the following commands:
+  ```bash
+    git clone -b main https://github.com/SigNoz/signoz.git && cd signoz/deploy/
+  ```
+
 
 2. To install SigNoz, enter the `docker-compose up` command, specifying the following:
     - `-f` and the path to your configuration file
@@ -96,7 +102,11 @@ The `docker-compose.yaml` installs a sample application named [HotR.O.D](https:/
 
 ## Install specific version of SigNoz
 
-1. <CloneRepo />
+1. In a directory of your choosing, clone the SigNoz repository and `cd` into the `signoz/deploy` directory by entering the following commands:
+  ```bash
+    git clone -b main https://github.com/SigNoz/signoz.git && cd signoz/deploy/
+  ```
+
 
 2. Checkout to the specific version tag. For example, to install SigNoz version `v0.6.1`:
 	```

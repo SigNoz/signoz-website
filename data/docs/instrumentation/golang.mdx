@@ -4,10 +4,7 @@ title: Go OpenTelemetry Instrumentation
 description: Send events from your Go application to SigNoz
 
 ---
-
-
-
-import InstrumentationFAQ from './shared/instrumentation-faq.mdx'
+# Go OpenTelemetry Instrumentation
 
 
 This document contains instructions on how to set up OpenTelemetry instrumentation in your Go applications. OpenTelemetry, also known as OTel for short, is an open source observability framework that can help you generate and collect telemetry data - traces, metrics, and logs from your Go application.
@@ -153,7 +150,7 @@ With your application running, you can verify that you’ve instrumented your ap
 
 To do this, you need to ensure that your application generates some data. Applications will not produce traces unless they are being interacted with, and OpenTelemetry will often buffer data before sending. So you need to interact with your application and wait for some time to see your tracing data in SigNoz.
 
-Validate your traces in SigNoz:
+#### Validate your traces in SigNoz:
 
 1. Trigger an action in your app that generates a web request. Hit the endpoint a number of times to generate some data. Then, wait for some time.
 2. In SigNoz, open the `Services` tab. Hit the `Refresh` button on the top right corner, and your application should appear in the list of `Applications`.
@@ -217,7 +214,6 @@ router.Use(middleware.Middleware(serviceName))
 import (
   "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
-
 ```
 
 In each place where you pass an http.Handler to a ServeMux, you’ll wrap the handler function. For instance, you’ll make the following replacements:
@@ -266,7 +262,7 @@ SigNoz dashboards can be used to track these custom attributes.
 
 <ZoomImage
   alt="Custom attributes under 'Tags' section on SigNoz trace detail page"
-  image={"/images/docs/opentelemetry_go_custom_attributes.webp"}
+  image={"/img/docs/opentelemetry_go_custom_attributes.webp"}
   caption="Custom attributes can be seen under `Tags` section on SigNoz trace detail page"
 />
 
@@ -278,7 +274,7 @@ span.AddEvent("This is a sample event", trace.WithAttributes(attribute.Int("pid"
 
 <ZoomImage
   alt="Events can be seen under `Events` section on SigNoz trace detail page"
-  image={"/images/docs/opentelemetry_go_events.webp"}
+  image={"/img/docs/opentelemetry_go_events.webp"}
   caption="Events can be seen under `Events` section on SigNoz trace detail page"
 />
 

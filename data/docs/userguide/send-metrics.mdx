@@ -4,8 +4,8 @@ title: Send Metrics to SigNoz
 sidebar_label: Send Metrics
 ---
 
-import GetHelp from './shared/get-help.mdx'
-import SaveChangesRestart from './shared/save-changes-and-restart.mdx' 
+# Send Metrics to SigNoz
+
 
 
 By default, when you install SigNoz, only the [Hostmetric receiver](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/hostmetricsreceiver/README.md) is enabled. Before you can query other metrics, you must first enable additional receivers in SigNoz.
@@ -90,7 +90,11 @@ To enable a new OpenTelemetry receiver, follow the steps below:
   # This file was truncated for brevity.
   ```
   For details about configuring OpenTelemetry receivers, see the [README](https://github.com/open-telemetry/opentelemetry-collector/blob/main/receiver/README.md) page of the `opentelemetry-collector` GitHub repository.
-3. <SaveChangesRestart /> 
+3. Save the changes you’ve made and restart SigNoz. Depending on how you installed SigNoz, follow the steps in one of the sections below:
+  - [Docker Standalone](/docs/install/docker)
+  - [Docker Swarm](/docs/install/docker-swarm)
+  - [Kubernetes](/docs/install/kubernetes)
+
 
 ## Enable a Prometheus Receiver
 
@@ -150,7 +154,12 @@ To enable a Prometheus receiver, follow the steps below:
     Note that all the jobs are scraped in parallel, and all targets inside a job are scraped serially. For more details about configuring jobs and targets, see the following sections of the Prometheus documentation:
       - [Scrape_config](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config)
       - [Jobs and Instances](https://prometheus.io/docs/concepts/jobs_instances/)
-{/* 3. <SaveChangesRestart /> */}
+    
+3. Save the changes you’ve made and restart SigNoz. Depending on how you installed SigNoz, follow the steps in one of the sections below:
+  - [Docker Standalone](/docs/install/docker)
+  - [Docker Swarm](/docs/install/docker-swarm)
+  - [Kubernetes](/docs/install/kubernetes)
+
 
 ## Find Metrics available in SigNoz
 

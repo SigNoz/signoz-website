@@ -42,7 +42,7 @@ const Tutorials = (): JSX.Element => {
             >
               <div className="bg-signoz-light-pink py-4 flex items-center justify-center rounded-top1">
                 <NextImage
-                  src={"/images/tutorials.png"}
+                  src={"/img/tutorials.png"}
                   alt="tutorials"
                   layout="intrinsic"
                   width={192}

@@ -200,22 +200,22 @@ const docsLinks: DocsLinks[] = [
         subLinks:[
           {
             link: "/operate/migration/upgrade-0.8.0",
-            name: "upgrade-0.8.0",
+            name: "Upgrade to v0.8.0",
             url: "/operate/migration/upgrade-0.8.0",
           },
           {
             link: "/operate/migration/upgrade-0.8.1",
-            name: "upgrade-0.8.1",
+            name: "Upgrade to v0.8.1",
             url: "/operate/migration/upgrade-0.8.1",
           },
           {
             link: "/operate/migration/upgrade-0.9",
-            name: "upgrade-0.9",
+            name: "Upgrade to v0.9",
             url: "/operate/migration/upgrade-0.9",
           },
           {
             link: "/operate/migration/upgrade-0.10",
-            name: "upgrade-0.10",
+            name: "Upgrade to v0.10",
             url: "/operate/migration/upgrade-0.10",
           },
         ],
@@ -258,6 +258,11 @@ const docsLinks: DocsLinks[] = [
         link: "/userguide/navigate-user-interface",
         name: "Navigate the User Interface",
         url: "/userguide/navigate-user-interface",
+      },
+      {
+        link: "/userguide/metrics",
+        name: "View Services",
+        url: "/userguide/metrics",
       },
       {
         link: "/userguide/traces",
@@ -444,9 +449,9 @@ const docsLinks: DocsLinks[] = [
         url: "/tutorial/s3-integration-iam-role-eks",
       },
       {
-        link: "/tutorials/opentelemetry-operator-usage",
+        link: "/tutorials/instrumentation-using-opentelemetry-operator",
         name: "OpenTelemetry Operator Usage",
-        url: "/tutorial/opentelemetry-operator-usage",
+        url: "/tutorial/instrumentation-using-opentelemetry-operator",
       },
       {
         link: "/tutorials/opentelemetry-binary-usage-in-virtual-machine",

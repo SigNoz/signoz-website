@@ -5,9 +5,7 @@ description: Instrument your Tomcat application with OpenTelemetry and send data
 ---
 
 
-
-import InstrumentationFAQ from './shared/instrumentation-faq.mdx'
-
+# Tomcat OpenTelemetry Instrumentation
 
 This document contains instructions on how to set up OpenTelemetry instrumentation in your Tomcat applications. OpenTelemetry, also known as OTel for short, is an open source observability framework that can help you generate and collect telemetry data - traces, metrics, and logs from your Tomcat application.
 
@@ -23,7 +21,7 @@ There are three major steps to using OpenTelemetry:
 
 <ZoomImage
   alt="OpenTelemetry helps to generate and collect telemetry data from your application which is then sent to an observability backend like SigNoz"
-  image={"/images/docs/opentelemetry_java_instrument.webp"}
+  image={"/img/docs/opentelemetry_java_instrument.webp"}
   caption="OpenTelemetry helps generate and collect telemetry data from JBoss applications which can then be sent to SigNoz for storage, visualization, and analysis."
 />
 
@@ -112,7 +110,7 @@ With your application running, you can verify that you’ve instrumented your ap
 
 To do this, you need to ensure that your application generates some data. Applications will not produce traces unless they are being interacted with, and OpenTelemetry will often buffer data before sending. So you need to interact with your application and wait for some time to see your tracing data in SigNoz.
 
-Validate your traces in SigNoz:
+#### Validate your traces in SigNoz:
 
 1. Trigger an action in your app that generates a web request. Hit the endpoint a number of times to generate some data. Then, wait for some time.
 2. In SigNoz, open the `Services` tab. Hit the `Refresh` button on the top right corner, and your application should appear in the list of `Applications`.
@@ -122,7 +120,7 @@ You might see other dummy applications if you’re using SigNoz for the first ti
 
 <ZoomImage
   alt="Java Application in the list of services being monitored in SigNoz"
-  image={"/images/docs/java_app_services_list.webp"}
+  image={"/img/docs/java_app_services_list.webp"}
   caption="Java Application in the list of services being monitored in SigNoz"
 />
 

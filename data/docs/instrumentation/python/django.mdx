@@ -4,11 +4,7 @@ title: Django OpenTelemetry Instrumentation
 description: Instrument your Django application with OpenTelemetry and send data to SigNoz
 
 ---
-
-
-
-import InstrumentationFAQ from './shared/instrumentation-faq.mdx' 
-
+# Django OpenTelemetry Instrumentation
 
 This document contains instructions on how to set up OpenTelemetry instrumentation in your Django applications. OpenTelemetry, also known as OTel for short, is an open source observability framework that can help you generate and collect telemetry data - traces, metrics, and logs from your Django application.
 
@@ -22,7 +18,7 @@ There are three major steps to using OpenTelemetry:
 
 <ZoomImage
   alt="OpenTelemetry helps to generate and collect telemetry data from your application which is then sent to an observability backend like SigNoz"
-  image={"/images/docs/otel_python_instrumentation.webp"}
+  image={"/img/docs/otel_python_instrumentation.webp"}
   caption="OpenTelemetry helps generate and collect telemetry data from Python applications which can then be sent to SigNoz for storage, visualization, and analysis."
 />
 
@@ -66,13 +62,14 @@ You can use OpenTelemetry to send your traces directly to SigNoz. OpenTelemetry 
     
     `opentelemetry-exporter-otlp` - This library provides a convenient way to install all supported OpenTelemetry Collector Exporters. You will need an exporter to send the data to SigNoz.
     
-    :::note
+
+:::note
     💡 The `opentelemetry-exporter-otlp` is a convenient way to install all supported OpenTelemetry exporters. Currently it installs:
     - opentelemetry-exporter-otlp-proto-http
     - opentelemetry-exporter-otlp-proto-grpc
     
     We recommend using the http exporter for sending data to SigNoz.
-    :::
+:::
     
 3. **Add automatic instrumentation**<br></br>
      The below command inspects the dependencies of your application and installs the instrumentation packages relevant for your Django application.
@@ -90,9 +87,10 @@ You can use OpenTelemetry to send your traces directly to SigNoz. OpenTelemetry 
      We recommend using the `otlp_proto_http` exporter.
      
      For running your application, there are a few things that you need to keep in mind. Below are the notes:
-    :::note
+
+:::note
      Don’t run app in reloader/hot-reload mode as it breaks instrumentation. For example, if you use `export FLASK_ENV=development`, it enables the reloader mode which breaks OpenTelemetry isntrumentation.
-    :::
+:::
 
     
     For running applications with application servers which are based on [pre fork model](#running-applications-with-gunicorn-uwsgi), like Gunicorn, uWSGI you have to add a post_fork hook or a @postfork decorator in your configuration.
@@ -109,9 +107,9 @@ You can use OpenTelemetry to send your traces directly to SigNoz. OpenTelemetry 
 
      `IP of SigNoz backend` is the IP of the machine where you installed SigNoz. If you have installed SigNoz on `localhost`, the endpoint will be `http://localhost:4318`.
      
-    :::note
-     The port numbers are 4317 and 4318 for the gRPC and HTTP exporters respectively. Remember to allow incoming requests to port **4317**/**4318** of machine where SigNoz backend is hosted.
-    :::
+```
+Note : The port numbers are 4317 and 4318 for the gRPC and HTTP exporters respectively. Remember to allow incoming requests to port **4317**/**4318** of machine where SigNoz backend is hosted.
+```
      
 
 ### Validating instrumentation by checking for traces
@@ -120,7 +118,7 @@ With your application running, you can verify that you’ve instrumented your ap
 
 To do this, you need to ensure that your application generates some data. Applications will not produce traces unless they are being interacted with, and OpenTelemetry will often buffer data before sending. So you need to interact with your application and wait for some time to see your tracing data in SigNoz.
 
-Validate your traces in SigNoz:
+#### Validate your traces in SigNoz:
 
 1. Trigger an action in your app that generates a web request. Hit the endpoint a number of times to generate some data. Then, wait for some time.
 2. In SigNoz, open the `Services` tab. Hit the `Refresh` button on the top right corner, and your application should appear in the list of `Applications`.
@@ -130,7 +128,7 @@ You might see other dummy applications if you’re using SigNoz for the first ti
 
 <ZoomImage
   alt="Python Application in the list of services being monitored in SigNoz"
-  image={"/images/docs/opentelemetry_python_app_instrumented.webp"}
+  image={"/img/docs/opentelemetry_python_app_instrumented.webp"}
   caption="Python Application in the list of services being monitored in SigNoz"
 />
 

@@ -13,7 +13,7 @@ const FeedbackCard = (props: FeedbackCardProps): JSX.Element => {
       <Card className="relative p-8 w-[448px] h-[240px]">
         <img
           className="absolute top-8 left-5 w-10 h-10"
-          src="/images/QuotationMark.png"
+          src="/img/QuotationMark.png"
           alt="quotation mark"
         />
         <div

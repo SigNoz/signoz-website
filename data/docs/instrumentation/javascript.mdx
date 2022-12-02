@@ -5,9 +5,7 @@ description: Send events from your Javascript application to SigNoz
 
 ---
 
-
-import InstrumentationFAQ from './shared/instrumentation-faq.mdx' 
-
+# Javascript OpenTelemetry Instrumentation
 
 This document contains OpenTelemetry instrumentation instructions for Javascript backend frameworks and modules based on Nodejs.
 
@@ -48,7 +46,7 @@ The instrumentation automatically identifies the following within your applicati
 
 <ZoomImage
   alt="All in one OpenTelemetry nodejs instrumentation"
-  image={"/images/docs/all_in_one_auto_instrumentation.webp"}
+  image={"/img/docs/all_in_one_auto_instrumentation.webp"}
   caption="All in one auto instrumentation library - identifies and instruments packages used by your Nodejs application"
 />
 
@@ -148,7 +146,7 @@ With your application running, you can verify that you’ve instrumented your ap
 
 To do this, you need to ensure that your application generates some data. Applications will not produce traces unless they are being interacted with, and OpenTelemetry will often buffer data before sending. So you need to interact with your application and wait for some time to see your tracing data in SigNoz.
 
-Validate your traces in SigNoz:
+#### Validate your traces in SigNoz:
 
 1. Trigger an action in your app that generates a web request. Hit the endpoint a number of times to generate some data. Then, wait for some time.
 2. In SigNoz, open the `Services` tab. Hit the `Refresh` button on the top right corner, and your application should appear in the list of `Applications`.
@@ -158,7 +156,7 @@ You might see other dummy applications if you’re using SigNoz for the first ti
 
 <ZoomImage
   alt="Node Application in the list of services being monitored in SigNoz"
-  image={"/images/docs/nodejs_in_services_list.webp"}
+  image={"/img/docs/nodejs_in_services_list.webp"}
   caption="Node Application in the list of services being monitored in SigNoz"
 />
 
@@ -173,7 +171,7 @@ But you can also install specific auto-instrumenation packages for the component
 
 <ZoomImage
   alt="All in one OpenTelemetry nodejs instrumentation"
-  image={"/images/docs/individual_auto_instrumentation_libraries.webp"}
+  image={"/img/docs/individual_auto_instrumentation_libraries.webp"}
   caption="You can also choose individual auto-instrumenation libraries, but the all-in-one library is recommended to get started"
 />
 

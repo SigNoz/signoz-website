@@ -108,11 +108,16 @@ If you have a signoz running on a different host then you will have to run a ote
         processors: [batch]
         exporters: [ otlp/log ]
   ```
-  Here we are parsing the logs and extracting different values like timestamp, body and removing duplicate fields using different operators that are available. You can read more about operators [here](./logs.md#operators-for-parsing-and-manipulating-logs)
 
+Here we are parsing the logs and extracting different values like timestamp, body and removing duplicate fields using different operators that are available. You can read more about operators [here](./logs.md#operators-for-parsing-and-manipulating-logs)
+
+<br />
   The parsed logs are batched up using the batch processor and then exported to the host where signoz is deployed. The `otlp/log` exporter here uses a http endpoint but if you want to use https you will have to provide the certificate and the key. You can read more about it [here](https://github.com/open-telemetry/opentelemetry-collector/blob/main/exporter/otlpexporter/README.md)
 
+<br />
+
   For finding the right host and port for your SigNoz cluster please follow the guide [here](../install/troubleshooting.md#signoz-otel-collector-address-grid).  
+
 
 * We will start our otel-collector container and mount the docker container path so that the logs can be read for all containers.
   ```

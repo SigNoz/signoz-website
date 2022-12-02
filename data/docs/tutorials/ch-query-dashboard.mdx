@@ -3,6 +3,9 @@ id: ch-query-dashboard
 title: Powerful analytics on distributed tracing data
 description: Example clickhouse queries to run analytics on distributed tracing data
 ---
+
+# Powerful analytics on distributed tracing data
+
 ### GroupBy a tag
 ```
 select toStartOfInterval(timestamp, INTERVAL 1 MINUTE) AS interval, tagMap['peer.service'] as op_name, toFloat64(avg(durationNano)) as value from signoz_traces.signoz_index_v2  where tagMap['peer.service']!='' and timestamp > now() - INTERVAL 30 MINUTE  group by (op_name, interval) order by (op_name, interval) asc;

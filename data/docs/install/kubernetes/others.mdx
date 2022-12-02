@@ -5,13 +5,16 @@ title: Deploying with Helm directly
 description: Instructions to install on other Cloud Platform and Bare-Metal Servers
 ---
 
-import K8sComponents from './shared/k8s-components.mdx'
-import CommonPrerequisites from './shared/k8s-common-prerequisites.mdx'
-import InstallSigNozPart1 from './shared/install-signoz-k8s-part-1.mdx'
-import InstallSigNozPart2 from './shared/install-signoz-k8s-part-2.mdx'
-import VerifyInstallation from './shared/k8s-verify-installation.mdx'
-import K8sHotrod from './shared/k8s-hotrod.mdx'
-import NextSteps from './shared/next-steps.mdx'
+# Deploying with Helm directly
+
+{/* // import K8sComponents from './shared/k8s-components.mdx' 
+// import CommonPrerequisites from './shared/k8s-common-prerequisites.mdx'
+// import InstallSigNozPart1 from './shared/install-signoz-k8s-part-1.mdx'
+// import InstallSigNozPart2 from './shared/install-signoz-k8s-part-2.mdx'
+// import VerifyInstallation from './shared/k8s-verify-installation.mdx'
+// import K8sHotrod from './shared/k8s-hotrod.mdx'
+*/}
+
 
 Follow the steps on this page for instructions to install SigNoz on other Kubernetes
 Cloud Platform and bare-metal servers with Helm. 
@@ -62,4 +65,7 @@ helm --namespace platform install my-release signoz/signoz
 
 ## Next Steps
 
-<NextSteps />
+- [Instrument Your Application](/docs/instrumentation/overview)
+- [Use OpenTelemetry Operator for automatic instrumentaion (if your applications are in k8s)](https://signoz.io/docs/tutorial/opentelemetry-operator-usage/#opentelemetry-auto-instrumentation-injection)
+- [User Guides](/docs/userguide/overview/)
+- [Tutorials](/docs/tutorials/)

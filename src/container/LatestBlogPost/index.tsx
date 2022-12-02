@@ -15,7 +15,7 @@ const LatestBlogPosts = (): JSX.Element => {
       authors: [
         {
           name: "Prashant",
-          imageSourceUrl: "/images/blogauthor.png",
+          imageSourceUrl: "/img/blogauthor.png",
           community: "SigNoz Community",
         },
       ],
@@ -29,7 +29,7 @@ const LatestBlogPosts = (): JSX.Element => {
       authors: [
         {
           name: "Prashant 1",
-          imageSourceUrl: "/images/blogauthor.png",
+          imageSourceUrl: "/img/blogauthor.png",
           community: "SigNoz Community",
         },
       ],
@@ -43,7 +43,7 @@ const LatestBlogPosts = (): JSX.Element => {
       authors: [
         {
           name: "Prashant 2",
-          imageSourceUrl: "/images/blogauthor.png",
+          imageSourceUrl: "/img/blogauthor.png",
           community: "SigNoz Community",
         },
       ],
