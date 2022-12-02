@@ -34,7 +34,7 @@ const AboutUs = () => {
             <br></br>
             <br></br>
 
-            Reducing noise in developers' and devops engineers' life is my current passion 
+            Reducing noise in developers&apos; and devops&apos; engineers life is my current passion 
             </p>
 
             <Button className="px-4 py-2 my-3 " > <a href="https://twitter.com/pranay01">Twitter</a> </Button> 
