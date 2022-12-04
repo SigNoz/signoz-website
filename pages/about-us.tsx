@@ -6,11 +6,11 @@ import Button from "components/Button";
 const AboutUs = () => {
 
 
-  return <div>
-<div className="grid grid-cols-4 gap-8">
+  return <div className="flex">
+  <div className="grid md:grid-cols-4 grid-cols-1 gap-8">
 
 
-  <Card className="col-span-2 col-start-2 ">
+  <Card className="md:col-span-2 col-span-1 md:col-start-2 ">
             <p className="text-signoz-medium font-bold text-base">Why the name SigNoz?</p>        
             <p className="text-signoz-pure mt-2"> 
             Some of you may wonder, what does SigNoz mean? As engineers we are obsessed with the idea of signal vs noise. 
@@ -27,7 +27,7 @@ const AboutUs = () => {
 
   
         
-    <Card className="col-start-2 my-8">
+    <Card className="md:col-start-2 col-span-1 md:my-8">
             <AuthorBy avatar="/img/authors/pranay.webp" name="Pranay Prateek" position="CEO"/>
         
             <p className="text-signoz-pure mt-2"> After spending a lot of time in college reading philosophy, I got interested in technology. Biometric & image recognition was especially interesting to me. Led product teams in startups & MNCs like Microsoft, before stumbling into the domain of observability.
@@ -40,7 +40,7 @@ const AboutUs = () => {
             <Button className="px-4 py-2 my-3 " > <a href="https://twitter.com/pranay01">Twitter</a> </Button> 
     </Card>
     
-    <Card className="my-8">
+    <Card className=" col-span-1 md:my-8">
             <AuthorBy avatar="/img/authors/ankit_nayan.webp" name="Ankit Nayan" position="CTO"/>
         
             <p className="text-signoz-pure mt-2"> Playing Badminton professionally was my dream at one time. But that seemed too tough, so I started coding. 
