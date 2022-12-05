@@ -63,7 +63,7 @@ const getSubLinks = (section: string): SubLinks[] => {
         },
         {
           text: "About",
-          to: "/",
+          to: "/about-us",
         },
         {
           text: "Terms",
