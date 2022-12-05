@@ -70,8 +70,8 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
         </PropertyControlledComponent>
       </div>
       <PropertyControlledComponent controllerProperty={isOpen}>
-        <div className="mt-4 absolute z-10 left-0 bg-white w-full px-6 pb-8 border">
-          <div className="flex flex-col justify-center gap-6 border">
+        <div className="mt-4 absolute z-10 left-0 bg-white w-full px-6 pb-8 rounded-br-lg rounded-bl-lg">
+          <div className="flex flex-col justify-between gap-6 my-4">
             {headerElements.map(({ name, path }) => {
               const isActive = router.pathname === path;
               return (
@@ -90,7 +90,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                 </ul>
               );
             })}
-            <div onClick={onGithubClickHandler} className="flex gap-2">
+            <div onClick={onGithubClickHandler} className="flex gap-2 pb-4">
               {getIcons("github")}
               {repoCount}
             </div>
