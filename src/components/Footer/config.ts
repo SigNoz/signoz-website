@@ -71,7 +71,7 @@ const getSubLinks = (section: string): SubLinks[] => {
         },
         {
           text: "Privacy",
-          to: "/",
+          to: "/privacy",
         },
       ];
     }
