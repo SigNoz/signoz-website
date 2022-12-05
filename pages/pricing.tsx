@@ -12,18 +12,23 @@ const Pricing = (): JSX.Element => {
         <Paragraph>
           Our aim is to make SigNoz accessible to everyone. Read our philosophy
           on pricing{" "}
-          <a href="https://signoz.notion.site/Our-Philosophy-on-Pricing-73f5e6939c1f42be905fe937b4107dad">
+          <a
+            className="text-[#f25733]"
+            href="https://signoz.notion.site/Our-Philosophy-on-Pricing-73f5e6939c1f42be905fe937b4107dad"
+          >
             here
           </a>
         </Paragraph>
-        <div className="flex md:flex-row justify-start text-left gap-8 px-4">
+        <div className="flex md:flex-row justify-start text-left gap-8 px-4 my-16">
           <div className="px-4 flex static ">
             <Card>
               <div>
-                <Header type="h3">Community</Header>
+                <Header type="h3" style={{ marginBottom: 8 }}>
+                  Community
+                </Header>
                 <Paragraph>Free</Paragraph>
               </div>
-              <div className="flex flex-row">
+              <div className="flex flex-row mt-4">
                 <p>
                   <li> Open Source </li>
                   <li> Self Hosted </li>
@@ -33,7 +38,7 @@ const Pricing = (): JSX.Element => {
                   <li> Community Support </li>
                 </p>
               </div>
-              <Button variant="primary" className="my-4">
+              <Button variant="primary" className="my-4" onClick={() => {}}>
                 Get Started
               </Button>
             </Card>
@@ -41,10 +46,12 @@ const Pricing = (): JSX.Element => {
           <div className="px-4 flex static ">
             <Card>
               <div>
-                <Header type="h3">SigNoz Cloud</Header>
+                <Header type="h3" style={{ marginBottom: 0 }}>
+                  SigNoz Cloud
+                </Header>
                 <Paragraph>Starts from USD 200/month</Paragraph>
               </div>
-              <div className="flex flex-row">
+              <div className="flex flex-row mt-4">
                 <p>
                   <li> Hosted and Managed by SigNoz </li>
                   <li> Single Sign On and SAML support included </li>

@@ -4,7 +4,7 @@ import { Faqs } from "./config";
 
 const PricingFAQ = () => (
   <>
-    <div className="flex flex-col items-center justify-center text-center">
+    <div className="flex flex-col items-center justify-center text-center mt-8">
       <Title className="text-2xl" isLastWordColor>
         Frequently asked questions
       </Title>
