@@ -86,7 +86,10 @@ const Pricing = (): JSX.Element => {
                 <li> Dashboard configuration support </li>
                 <br />
                 <div
-                  style={{ fontSize: "medium", fontStretch: "-moz-initial" }}
+                  style={{
+                    fontSize: "medium",
+                    fontStyle: "italic",
+                  }}
                 >
                   Upcoming features
                 </div>
