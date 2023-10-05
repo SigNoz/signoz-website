@@ -67,7 +67,7 @@
     "js-yaml": "^4.1.0",
     "mdx-bundler": "9.0.1",
     "next-themes": "0.2.0",
-    "postcss": "8.4.14",
+    "postcss": "8.4.31",
     "postcss-loader": "7.0.1",
     "react-lite-youtube-embed": "2.3.1",
     "react-medium-image-zoom": "5.0.2",
