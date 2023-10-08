@@ -18,6 +18,9 @@ keywords:
   - signoz
 ---
 
+import UL from "../src/components/MDX/components/UL";
+import LI from "../src/components/MDX/components/LI";
+
 <head>
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-logs/"/>
 </head>
@@ -141,10 +144,13 @@ OpenTelemetry also provides processors for processing logs. Processors are used 
 
 Processors are also helpful when you have multiple receivers for logs and you want to parse/transforms logs collected from all the receivers. Some well-known log processors are:
 
-- Batch Processor
-- Memory Limit Processor
-- Attributes Processor
-- Resource Processor
+<UL>
+  <LI className="list-disc">Batch Processor</LI>
+  <LI className="list-disc">Memory Limit Processor</LI>
+  <LI className="list-disc">Attributes Processor</LI>
+  <LI className="list-disc">Resource Processor</LI>
+</UL>
+
 
 ## SigNoz - a full-stack logging system based on OpenTelemetry
 
