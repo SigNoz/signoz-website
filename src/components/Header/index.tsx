@@ -9,6 +9,7 @@ import { useIsDesktop } from "hooks/useDeviceType";
 import { useQuery } from "@tanstack/react-query";
 import getRepoInfo from "api/getRepoInfo";
 import { useWindowScroll } from "react-use";
+import Search from "./search";
 
 const PropertyControlledComponent = dynamic(
   () => import("components/PropertyControllComponent"),
@@ -21,7 +22,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
     queryFn: getRepoInfo,
   });
   const { push } = useRouter();
-  const { y } = useWindowScroll()
+  const { y } = useWindowScroll();
 
   const onClickLogoHandler = useCallback(() => {
     push("/", undefined, {
@@ -50,7 +51,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
         flex: isDesktop,
         "items-center": isDesktop,
       })}
-      style={{ top: y === 0 ? isBlogStripOpen && isDesktop ? "48px" : 0 : 0 }}
+      style={{ top: y === 0 ? (isBlogStripOpen && isDesktop ? "48px" : 0) : 0 }}
     >
       <div className="font-openSans flex items-center justify-between relative">
         <div
@@ -58,7 +59,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
           className="flex items-center cursor-pointer"
         >
           <div>{getIcons("logo")}</div>
-          <div className="text-signoz-medium text-xl ml-3 font-bold">
+          <div className="text-signoz-medium text-xl ml-3 font-bold hover:text-[#f25733]">
             SigNoz
           </div>
         </div>
@@ -69,8 +70,8 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
         </PropertyControlledComponent>
       </div>
       <PropertyControlledComponent controllerProperty={isOpen}>
-        <div className="mt-4 absolute z-10 left-0 bg-white w-full px-6 pb-8">
-          <div className="flex flex-col gap-6">
+        <div className="mt-4 absolute z-10 left-0 bg-white w-full px-6 pb-8 rounded-br-lg rounded-bl-lg">
+          <div className="flex flex-col justify-between gap-6 my-4">
             {headerElements.map(({ name, path }) => {
               const isActive = router.pathname === path;
               return (
@@ -78,7 +79,8 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                   <li
                     className={cx({
                       "text-base text-signoz-medium font-bold": isActive,
-                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                      "font-semibold text-signoz-dark-light text-base":
+                        !isActive,
                     })}
                   >
                     <Link scroll={false} href={path}>
@@ -88,7 +90,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                 </ul>
               );
             })}
-            <div onClick={onGithubClickHandler} className="flex gap-2">
+            <div onClick={onGithubClickHandler} className="flex gap-2 pb-4">
               {getIcons("github")}
               {repoCount}
             </div>
@@ -96,7 +98,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
         </div>
       </PropertyControlledComponent>
       <PropertyControlledComponent controllerProperty={isDesktop}>
-        <div className="w-full justify-around items-center flex">
+        <div className="w-full justify-evenly items-center flex gap-8">
           <div className="flex gap-12">
             {leftItems.map(({ name, path }) => {
               const isActive = router.pathname === path;
@@ -105,11 +107,12 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                   <li
                     className={cx({
                       "text-base text-signoz-medium font-bold": isActive,
-                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                      "font-semibold text-signoz-dark-light text-base":
+                        !isActive,
                     })}
                   >
                     <Link scroll={false} href={path}>
-                      {name}
+                      <a className="hover:text-[#f25733]">{name}</a>
                     </Link>
                   </li>
                   <PropertyControlledComponent controllerProperty={isActive}>
@@ -125,7 +128,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
               className="flex gap-2 items-center font-bold cursor-pointer"
             >
               {getIcons("github")}
-              {repoCount}
+              <a className="hover:text-[#f25733]">{repoCount}</a>
             </div>
             {rightItems.map(({ name, path }) => {
               const isActive = router.pathname === path;
@@ -134,13 +137,15 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
                   <li
                     className={cx({
                       "text-base text-signoz-medium font-bold": isActive,
-                      "font-semibold text-signoz-dark-light text-base": !isActive,
+                      "font-semibold text-signoz-dark-light text-base":
+                        !isActive,
                     })}
                   >
                     <Link scroll={false} href={path}>
-                      {name}
+                      <a className="hover:text-[#f25733]">{name}</a>
                     </Link>
                   </li>
+
                   <PropertyControlledComponent controllerProperty={isActive}>
                     <div className="h-[2px] w-4 bg-signoz-primary" />
                   </PropertyControlledComponent>
@@ -148,6 +153,7 @@ const Header = ({ isBlogStripOpen }: HeaderProps): JSX.Element => {
               );
             })}
           </div>
+          <Search></Search>
         </div>
       </PropertyControlledComponent>
     </header>
